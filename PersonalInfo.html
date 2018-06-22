@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <script src="jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script>
+
+    </script>
+</head>
+<body style="background-color: #f5f5f5;">
+<div class="nav navbar">
+    <img src="Images/mnnit%20logo.png" class="nav-item navbar-brand nav nav-link" href="#"> <h1 class="text-capitalize">Recruitment Portal</h1>
+</div>
+<div class="container ">
+    <div class="container bg-dark"><h3 class="text-primary">1. Personal Information</h3></div>
+
+    <form id="PersonalInformation" action="#" style="width: 100%">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="text-capitalize" for="applicant_first_name">FIRST NAME</label>
+                    <input id="applicant_first_name" class="form-control" placeholder="" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="text-capitalize" for="applicant_last_name">LAST NAME</label>
+                    <input id="applicant_last_name" class="form-control" placeholder="" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" >
+            <label class="text-capitalize" for="Specialization" >Specialization</label>
+            <input id="Specialization" class="form-control" placeholder="">
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group" >
+                    <label class="text-capitalize" for="email" >Email</label>
+                    <input id="email" class="form-control" type="email" placeholder="">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="text-capitalize" for="Gender">Gender</label>
+                    <select class="form-control" id="Gender" required>
+                        <option></option>
+                        <option>MALE</option>
+                        <option>FEMALE</option>
+                        <option>OTHERS</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="text-capitalize" for="Marital_Status">Marital Status</label>
+            <select class="form-control" id="Marital_Status" required>
+                <option></option>
+                <option>SINGLE</option>
+                <option>MARRIED</option>
+                <option>DIVORCED</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label class="text-capitalize" for="Domicile">Domicile</label>
+            <input id="Domicile" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label class="text-capitalize" for="Handicapped">Handicapped</label>
+            <input id="Handicapped" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label class="text-capitalize" for="Category">Category</label>
+            <select class="form-control" id="Category" required>
+                <option></option>
+                <option>GENERAL</option>
+                <option>OBC</option>
+                <option>OBC-Creamy Layer</option>
+                <option>SC/ST</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="text-capitalize" for="DateOfBirth">Date Of Birth</label>
+            <input id="DateOfBirth" class="form-control" type="date" placeholder="dd/mm/yyyy" required>
+        </div>
+
+        <div class="form-group">
+            <label class="text-capitalize" for="Nationality">Nationality</label>
+            <input id="Nationality" class="form-control" placeholder="" >
+        </div>
+        <div class="form-group">
+            <label class="text-capitalize" for="Name_Father">Name Of Father</label>
+            <input id="Name_Father" class="form-control" placeholder="" >
+        </div>
+        <div class="form-group">
+            <label class="text-capitalize" for="Name_Mother">Name of Mother</label>
+            <input id="Name_Mother" class="form-control" placeholder="" >
+        </div>
+        <div class="form-group">
+            <label class="text-capitalize" for="ID">Identity Proof</label>
+            <input id="ID" class="form-control" placeholder="" >
+        </div>
+        <div class="form-group">
+            <label class="text-capitalize" for="Correspondence_Address">Correspondence Address</label>
+            <input id="Correspondence_Address" class="form-control" placeholder="" >
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="filladdress" onclick="fillAddress()">
+            <label class="form-check-label" for="filladdress" onclick="fillAddress()">Correspondence address same as permanent address</label>
+        </div>
+        <div class="form-group">
+            <label class="text-capitalize" for="Permanent_Address">Permanent Address</label>
+            <input id="Permanent_Address" class="form-control" placeholder="" >
+        </div>
+        <div class="form-group">
+            <label class="text-capitalize" for="Phone">Phone Number</label>
+            <input id="Phone" type="phone" class="form-control" placeholder="" >
+        </div>
+        <div class="form-group">
+            <label class="text-capitalize" for="ApplyingPlace">Port/Place of Applying Form</label>
+            <input id="ApplyingPlace" class="form-control" placeholder="" >
+        </div>
+        <div class="form-actions" style="margin: 0;background-color: transparent;text-align: center;">
+            <button class="btn btn-lg btn-danger m-1" id="reset" type="reset">Reset</button>
+        <button class="btn btn-lg btn-primary m-1" id="submit" type="submit">Save and Continue</button>
+        </div>
+    </form>
+</div>
+<div class="card-footer align-bottom text-center mt-2"> This is footer</div>
+</body>
+</html>
