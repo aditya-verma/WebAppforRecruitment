@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03a65e6-8bd1-4cfb-b8a0-b130d107c7bf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Images/text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/form-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/mnnit logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.html" afterDir="false" />
     </list>
@@ -19,31 +20,32 @@
       <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="48" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="48" />
+            <state relative-caret-position="374">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="40" />
               <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#1387#1393#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUp.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SignUp.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SignUp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="654">
+              <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Images/text">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
+      <file leaf-file-name="mnnit logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Images/mnnit logo.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -55,6 +57,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>style=&quot;margin-left: 0.2em;&quot;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -63,8 +73,8 @@
       <list>
         <option value="$PROJECT_DIR$/WebAppforRecruitment.iml" />
         <option value="$PROJECT_DIR$/Login.html" />
-        <option value="$PROJECT_DIR$/SignUp.html" />
         <option value="$PROJECT_DIR$/Images/text" />
+        <option value="$PROJECT_DIR$/SignUp.html" />
       </list>
     </option>
   </component>
@@ -78,7 +88,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="794" />
+    <option name="y" value="26" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -116,6 +127,14 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADITYA\Documents\GitHub\WebAppforRecruitment\Images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADITYA\Documents\GitHub\WebAppforRecruitment\Images" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -128,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.SignUp.html">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -149,6 +168,7 @@
       <patterns />
     </configuration>
     <configuration name="Login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebAppforRecruitment/Login.html" />
+    <configuration name="SignUp.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebAppforRecruitment/SignUp.html" />
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -171,8 +191,13 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Login.html" />
+      <item itemvalue="JavaScript Debug.SignUp.html" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.SignUp.html" />
         <item itemvalue="JavaScript Debug.Login.html" />
       </list>
     </recent_temporary>
@@ -189,7 +214,7 @@
       <updated>1529574217785</updated>
       <workItem from="1529574221232" duration="9063000" />
       <workItem from="1529651167585" duration="1148000" />
-      <workItem from="1529658568448" duration="2642000" />
+      <workItem from="1529658568448" duration="9152000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1529662155122</created>
@@ -202,7 +227,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12853000" />
+    <option name="totallyTimeSpent" value="19363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -221,8 +246,9 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1546875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0828125" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -235,7 +261,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +279,7 @@
         <state relative-caret-position="484">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1387#1393#0" expanded="true" />
           </folding>
         </state>
@@ -281,11 +307,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Images/text">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/mnnit logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="48" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="48" />
+        <state relative-caret-position="374">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="40" />
           <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1387#1393#0" expanded="true" />
           </folding>
         </state>
@@ -293,15 +330,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SignUp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images/text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="654">
+          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
