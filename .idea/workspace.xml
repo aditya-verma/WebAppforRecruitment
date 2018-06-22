@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03a65e6-8bd1-4cfb-b8a0-b130d107c7bf" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Images/mnnit logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/mnnit logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login.html" beforeDir="false" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,18 +20,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login.html">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="440">
               <caret line="20" column="40" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="40" />
+=======
+            <state relative-caret-position="432">
+              <caret line="39" column="95" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUp.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SignUp.html">
+      <file leaf-file-name="floating-labels.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/floating-labels.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="22">
               <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
@@ -34,13 +49,12 @@
                 <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="192">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mnnit logo.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Images/mnnit logo.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -70,6 +84,8 @@
         <option value="$PROJECT_DIR$/Login.html" />
         <option value="$PROJECT_DIR$/Images/text" />
         <option value="$PROJECT_DIR$/SignUp.html" />
+        <option value="$PROJECT_DIR$/login/login.html" />
+        <option value="$PROJECT_DIR$/css/floating-labels.css" />
       </list>
     </option>
   </component>
@@ -82,16 +98,29 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="793" />
+    <option name="y" value="25" />
+    <option name="width" value="975" />
+    <option name="height" value="1048" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -103,21 +132,29 @@
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="Images" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="AndroidView" />
       <pane id="Scope" />
+=======
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -209,6 +246,7 @@
       <workItem from="1529574221232" duration="9063000" />
       <workItem from="1529651167585" duration="1148000" />
       <workItem from="1529658568448" duration="12282000" />
+      <workItem from="1529691251049" duration="1903000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1529662155122</created>
@@ -228,10 +266,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="27258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="24396000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -242,23 +287,35 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32946146" />
+=======
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16597077" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08280621" />
+      <window_info anchor="right" id="Database" order="3" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Designer" order="2" />
+=======
+      <window_info id="Favorites" order="2" side_tool="true" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -281,9 +338,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+=======
+      <window_info id="Learn" order="2" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,8 +358,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Login.html">
+    <entry file="file://$PROJECT_DIR$/SignUp.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="440">
           <caret line="20" column="40" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="40" />
         </state>
@@ -310,15 +372,23 @@
     <entry file="file://$PROJECT_DIR$/SignUp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1628">
+=======
+        <state relative-caret-position="1184">
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
           <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+<<<<<<< HEAD
             <element signature="n#style#0;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+            <element signature="n#style#0;n#div#9;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -332,7 +402,13 @@
           <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/Images/mnnit logo.png">
+      <provider selected="true" editor-type-id="images" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
     </entry>
+    <entry file="file://$PROJECT_DIR$/Login.html" />
+    <entry file="file://$PROJECT_DIR$/Login.html" />
     <entry file="file://$PROJECT_DIR$/WebAppforRecruitment.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -355,11 +431,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/mnnit logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login.html">
+    <entry file="file://$PROJECT_DIR$/Login.html" />
+    <entry file="file://$PROJECT_DIR$/SignUp.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="440">
           <caret line="20" column="40" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="40" />
         </state>
@@ -373,10 +448,19 @@
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+        <state relative-caret-position="1184">
+          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#9;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -431,7 +515,26 @@
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/Images/mnnit logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="39" column="95" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> f9b535097f9fb510d16daa7263043e08cba5e465
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/floating-labels.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
