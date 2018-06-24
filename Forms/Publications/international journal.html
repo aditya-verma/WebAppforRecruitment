@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>International</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" >
+    <script src="../../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div class="container">
+    <form id="international_journal">
+        <div class="form-group text-uppercase">
+            <label for="Author">Author(s)</label>
+            <input class="form-control" id="Author" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="paperTitle">Paper Title</label>
+            <input class="form-control" id="paperTitle" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="journalName">Journal Name</label>
+            <input class="form-control" id="journalName" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Volume">Volume</label>
+            <input class="form-control" id="Volume" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Issue">Issue</label>
+            <input class="form-control" id="Issue" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Pages">Pages</label>
+            <input class="form-control" id="Pages" placeholder="start page - end page" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Month/Year">Month/Year</label>
+            <input class="form-control" id="Month/Year" placeholder="MM/YYYY" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="publisher">publisher</label>
+            <input class="form-control" id="publisher" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="ImpactFactor">Impact factor</label>
+            <input class="form-control" id="ImpactFactor" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="SCI">Wheather SCI</label>
+            <div class="row" id="SCI">
+                <div class="col">
+                    <input id="SCI_yes" name="inlineRadioOptions" type="radio">
+                    <label for="SCI_yes" class="mr-3">Yes</label>
+                    <input id="SCI_no" name="inlineRadioOptions" type="radio">
+                    <label for="SCI_no">No</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Scopus">Wheather Scopus</label>
+            <div class="row" id="Scopus">
+                <div class="col">
+                    <input id="Scopus_yes" name="inlineRadioOptions" type="radio">
+                    <label for="Scopus_yes" class="mr-3">Yes</label>
+                    <input id="Scopus_no" name="inlineRadioOptions" type="radio">
+                    <label for="Scopus_no">No</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Co-authorFromDept">Wheather Co-authors are faculty from same Department</label>
+            <div class="row" id="Co-authorFromDept">
+                <div class="col">
+                    <input id="Co-authorFromDept_yes" name="inlineRadioOptions" type="radio">
+                    <label for="Co-authorFromDept_yes" class="mr-3">Yes</label>
+                    <input id="Co-authorFromDept_no" name="inlineRadioOptions" type="radio">
+                    <label for="Co-authorFromDept_no">No</label>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
