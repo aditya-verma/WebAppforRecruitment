@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Present Employer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+
+<script src="jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery/popper.js/1.14.3/popper.min.js"></script>
+<script src="js/bootstrap.min.js" ></script>
+
+<style>
+  .rcorners2 {
+    border-radius: 20px;
+    border: 2px ;
+    height: 50px;
+    width: 101%;
+  }
+  body {
+
+    background-color: #f5f5f5;
+  }
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+
+
+  <nav class="navbar sticky-top navbar-light bg-light"  style="border-bottom-color: #000">
+    <div class="container" >
+      <div class="navbar-header" >
+        <a class="navbar-brand" href="#">
+          <img class="img-fluid float-left" src="Images/form-background.png"  style="margin-left: 5rem;max-width: 7%; height: auto">
+          <img class="img-fluid " src="Images/name3.png"  style="margin-left: 3rem;max-width: 80%;height: auto">
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron" style="height: 10%">
+    <div class="container" >
+      <h1>Recruitment Portal</h1>
+      <div class="bg-dark rcorners2 ">
+        <h3  style="color: #FFF;padding: 1%; ">5. Present Employer:</h3>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="container">
+  <form id="PresentEmployer" action="#" style="width: 100%">
+    <div class="row " style="margin-top: 5%">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label class="text-capitalize" for="applicant_oragnisation">Organisation</label>
+          <input id="applicant_oragnisation" class="form-control" placeholder="Enter Organisation" required>
+        </div>
+      </div>
+    </div>
+    <div class="row " style="margin-top: 2%">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="text-capitalize" for="position-held">Position held</label>
+          <input id="position-held" class="form-control" placeholder="Enter Position" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="text-capitalize" for="type-of-employee">Type of employee</label>
+          <input id="type-of-employee" class="form-control" placeholder="Enter Type" required>
+        </div>
+      </div>
+    </div>
+    <div class="row " style="margin-top: 2%">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="text-capitalize" for="from">From</label>
+          <input id="from" class="form-control" placeholder="From Date" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="text-capitalize" for="to-date">To</label>
+          <input id="to-date" class="form-control" placeholder="To Date" required>
+        </div>
+      </div>
+    </div>
+    <div class="row " style="margin-top: 2%">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="text-capitalize" for="pay-band">Pay In Pay Band</label>
+          <select class="form-control" id="pay-band" required >
+            <option value="" selected disabled>Select Pay Band</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="text-capitalize" for="agp-gp">AGP/GP</label>
+          <input id="agp-gp" class="form-control" placeholder="Enter AGP/GP" required>
+        </div>
+      </div>
+    </div>
+    <div class="row " style="margin-top: 2%">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label class="text-capitalize" for="basic-pay">Basic Pay</label>
+          <input id="basic-pay" class="form-control" placeholder="Enter Basic Pay" required>
+        </div>
+      </div>
+    </div>
+    <div class="row " style="margin-top: 2%">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label class="text-capitalize" for="nature-of work">Nature Of Work</label>
+          <input id="nature-of work" class="form-control" placeholder="Enter Nature of Work" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-actions" style="margin: 4%;background-color: transparent;text-align: center;">
+      <button class="btn btn-lg btn-danger m-1" id="reset" type="reset">Reset</button>
+      <button class="btn btn-lg btn-primary m-1" id="submit" type="submit">Save and Continue</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
