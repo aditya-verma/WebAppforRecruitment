@@ -5,9 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/datepicker.css" rel="stylesheet">
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#Oral" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "days",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
 </head>
 <body>
 <div class="container">
@@ -33,7 +44,7 @@
         <div class="form-group row">
             <label for="Oral" class="col-md-2">Oral-Viva Date</label>
             <div class="col-md-10">
-                <input type="date" class="form-control" id="Oral" placeholder="Enter Viva Date">
+                <input type="text" class="form-control" id="Oral" placeholder="Enter Viva Date">
             </div>
         </div>
         <fieldset class="form-group">
