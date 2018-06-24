@@ -39,6 +39,13 @@
 <div class="container ">
     <form id="References" action="#" style="width: 100%;">
         <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="text"><b>1.</b></label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="name"><b>A)</b>Name:</label>
@@ -88,13 +95,69 @@
                     </div>
                 </div>
             </div>
+        <div class="col-md-12 mb-3" style="margin: 0;text-align: center">
+            <button class="btn btn-dark btn-" id="reset"  type="reset">Reset</button>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="text"><b>2.</b></label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="text" for="name"><b>A)</b>Name:</label>
+                    <input id="name" class="form-control" placeholder="" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="text" for="designation"><b>B)</b>Designation:</label>
+                    <input id="designation" class="form-control" placeholder="" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="text" for="Address"><b>C)</b>Address</label>
+                    <input id="Address" class="form-control" placeholder="" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="text" for="city"><b>D)</b>City:</label>
+                    <input id="city" class="form-control" placeholder="" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="text" for="pin"><b>E)</b>PIN:</label>
+                    <input id="pin" class="form-control" placeholder="" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="text" for="mobile"><b>F)</b>Mobile no:</label>
+                    <input id="mobile" class="form-control" placeholder="" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="text" for="email"><b>G)</b>Email:</label>
+                    <input id="email" class="form-control" placeholder="" required>
+                </div>
+            </div>
+        </div>
     <div class="col-md-12 mb-3" style="margin: 0;text-align: center">
         <button class="btn btn-dark btn-" id="reset"  type="reset">Reset</button>
     </div>
 </body>
-<script>
-    function add() {
-        $("#makeEditable").append("<tr><td><input type=\"text\" placeholder=\"Enter Qualification\" name=\"qualification\"></td><td><input type=\"text\" placeholder=\"Enter Degree\" name=\"degree\"></td><td><input type=\"text\" placeholder=\"Enter Discipline\" name=\"discipline\"></td><td><input type=\"text\" placeholder=\"Enter Institute\" name=\"institute\"></td><td><input type=\"text\" placeholder=\"Enter Board/University\" name=\"board\"></td><td><input type=\"text\" placeholder=\"Enter Date\" name=\"date\"></td><td><input type=\"text\" placeholder=\"Enter Division\" name=\"div\"></td><td><input type=\"text\" placeholder=\"Enter %age/CGPA\" name=\"CGPA\"></td></tr>");
-    }
-</script>
+
 </html>
