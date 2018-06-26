@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#Completed" ).datepicker({
+                format: "mm-yyyy",
+                viewMode: "months",
+                minViewMode: "months",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <form>
+        <div class="form-group row">
+            <label for="Name" class="col-md-2">Name</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="Name" placeholder="Enter Name">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="RNumber" class="col-md-2">Registration Number</label>
+            <div class="col-md-10">
+                <input type="text" id="RNumber" class="form-control" placeholder="Enter Registration Number of student">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Title" class="col-md-2">Title of Thesis</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="Title" placeholder="Enter Title of Thesis">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Completed" class="col-md-2">Completed On</label>
+            <div class="col-md-10">
+                <input class="form-control" type="text" id="Completed">
+            </div>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Whether there are Co-Supervisors</legend>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Yes" >
+                        <label class="form-check-label" for="Yes">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="No" >
+                        <label class="form-check-label" for="No">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
