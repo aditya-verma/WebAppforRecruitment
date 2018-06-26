@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reference(s)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+
+    <script src="../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js" ></script>
+
+</head>
+<body style="background-color: #f5f5f5;">
+<!------------This is header part------------->
+<header>
+    <nav class="navbar sticky-top navbar-light bg-light"  style="border-bottom-color: #000">
+        <div class="container" >
+            <div class="navbar-header" >
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid float-left" src="../Images/form-background.png"  style="margin-left: 5rem;max-width: 7%; height: auto">
+                    <img class="img-fluid " src="../Images/mnnit%20name.png"  style="margin-left: 3rem;max-width: 80%;height: auto">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" style="height: 10%">
+        <div class="container" >
+            <h1>Recruitment Portal</h1>
+            <div class="bg-dark rounded">
+                <h3   class="text-primary" style="color: #FFF;padding: 1%;">9.Reference(s)</h3>
+            </div>
+        </div>
+    </div>
+</header>
+<!------------header part ends here------------->
+
+<body style="background-color: #f5f5f5">
+    <form>
+        <label class="text" for="degree">
+            Degree
+        </label>
+             <select class="form-control" id="degree" required>
+        <table class="table table-responsive-xl table-bordered" id="makeEditable">
+        <thead>
+
+</thead>
+        <tr>
+            <td><input type="text" placeholder="NIL" name="degree"></td>
+           <label class="text" for="discipline">Discipline</label>
+                        <select class="form-control" id="discipline" required>
+                       <table class="table table-responsive-xl table-bordered" id="makeEditable"><tr>
+                       <td><input type="text" placeholder="NIL" name="discipline"></td>
+        </tr>
+    </table>
+     <div class="col-md-12 mb-3" style="margin: 0;text-align: center">
+            <button class="btn btn-dark btn-" id="reset"  type="reset">Reset</button>
+        </div>
+    </form>
+    <div class="col-md-12 " style="margin: 0;text-align: center">
+        <button class="btn btn-dark " id="but_add"  onclick="add()">Add New Row</button>
+    </div>
+    </body>
+    <script>
+        function add() {
+            $("#makeEditable").append("<tr><td><input type=\"text\" placeholder=\"Enter Qualification\" name=\"qualification\"></td><td><input type=\"text\" placeholder=\"Enter Degree\" name=\"degree\"></td><td><input type=\"text\" placeholder=\"Enter Discipline\" name=\"discipline\"></td><td><input type=\"text\" placeholder=\"Enter Institute\" name=\"institute\"></td><td><input type=\"text\" placeholder=\"Enter Board/University\" name=\"board\"></td><td><input type=\"text\" placeholder=\"Enter Date\" name=\"date\"></td><td><input type=\"text\" placeholder=\"Enter Division\" name=\"div\"></td><td><input type=\"text\" placeholder=\"Enter %age/CGPA\" name=\"CGPA\"></td></tr>");
+        }
+    </script>
+    </html>
