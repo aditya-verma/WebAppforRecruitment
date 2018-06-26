@@ -3,16 +3,25 @@
 <meta charset="UTF-8">
 <title>Present Employer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/bootstrap.min.css" >
-
-<script src="jquery/3.3.1/jquery.min.js"></script>
-<script src="jquery/popper.js/1.14.3/popper.min.js"></script>
-<script src="js/bootstrap.min.js" ></script>
-
-<script>
-  $(function () {
-      $('.datepicker').datepicker();
-  })
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link href="../css/datepicker.css" rel="stylesheet">
+<script src="../jquery/3.3.1/jquery.min.js"></script>
+<script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $( "#from" ).datepicker({
+            format: "dd-mm-yyyy",
+            viewMode: "months",
+            minViewMode: "date",
+            pickerPosition: "bottom-left"});
+        $( "#to" ).datepicker({
+            format: "dd-mm-yyyy",
+            viewMode: "months",
+            minViewMode: "date",
+            pickerPosition: "bottom-left"});
+    });
 </script>
 
 <style>
@@ -86,13 +95,13 @@
       <div class="col-sm-6">
         <div class="form-group">
           <label class="text-capitalize" for="from">From</label>
-          <input id="from" class="form-control" type="date" placeholder="From Date" required>
+          <input id="from" class="form-control" type="text" placeholder="From Date" required>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="form-group">
-          <label class="text-capitalize" for="to-date">To</label>
-          <input id="to-date" class="form-control" placeholder="To Date" required>
+          <label class="text-capitalize" for="to">To</label>
+          <input id="to" class="form-control" placeholder="To Date" required type="text">
         </div>
       </div>
     </div>
@@ -111,8 +120,12 @@
       </div>
       <div class="col-sm-6">
         <div class="form-group">
-          <label class="text-capitalize" for="agp-gp">AGP/GP</label>
-          <input id="agp-gp" class="form-control" placeholder="Enter AGP/GP" required>
+            <label class="text-capitalize" for="agp-gp">AGP/GP</label>
+            <select class="form-control" id="agp-gp" required >
+                <option value="" selected disabled>AGP/GP</option>
+                <option>AGP</option>
+                <option>GP</option>
+            </select>
         </div>
       </div>
     </div>
