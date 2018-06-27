@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Btech Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#Completed" ).datepicker({
+                format: "mm-yyyy",
+                viewMode: "months",
+                minViewMode: "months"});
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <form id="BTech_Project">
+        <div class="form-group row">
+            <label for="BTech_Project_Title" class="col-md-2">Title Of Project</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="BTech_Project_Title" placeholder="Enter Project Title">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="BTech_Project_Names" class="col-md-2">Name of Students</label>
+            <div class="col-md-10">
+                <input type="text" id="BTech_Project_Names" class="form-control" placeholder="Enter Names of student">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="BTech_Project_RNumber" class="col-md-2">Registration Numbers of Students</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="BTech_Project_RNumber" placeholder="Enter Registration Numbers">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="BTech_Project_Completed" class="col-md-2">Completed On</label>
+            <div class="col-md-10">
+                <input class="form-control" type="text" id="BTech_Project_Completed">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
