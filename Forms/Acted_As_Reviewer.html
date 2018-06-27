@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Intellectual Property Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(function() {
             $( "#date" ).datepicker({
@@ -25,55 +34,78 @@
     </style>
 </head>
 <body>
-    <form id="reviewer" action="#" style="width: 100%;padding-left: 30%;">
+<header>
+<nav class="navbar sticky-top navbar-light bg-light"  style="border-bottom-color: #000">
+    <div class="container" >
+        <div class="navbar-header" >
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid float-left" src="../Images/form-background.png" style="margin-left: 5rem;max-width: 7%; height: auto">
+                <img class="img-fluid " src="../Images/mnnit%20name.png" style="margin-left: 3rem;max-width: 80%;height: auto">
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron" style="height: 10%">
+    <div class="container" >
+        <h1>Intellectual Property Portal</h1>
+        <div class="bg-dark rcorners2 ">
+            <h3  style="color: #FFF;padding: 1%; ">Acted As A Reviewer:</h3>
+        </div>
+    </div>
+</div>
+</header>
+
+
+<div class="container"  >
+    <form id="Reviewer" action="#" style="width: 100%;padding-left: 30%;">
         <div class="row " style="margin-top: 5%">
             <div class="col-sm-3" >
                <p >Whether acted as reviewer for Conference/Journal </p>
             </div>
             <div class="col-sm-4">
                 <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="conference">
-                        <label class="form-check-label" for="conference">Conference</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Reviewer_Conference">
+                        <label class="form-check-label" for="Reviewer_Conference">Conference</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="journal">
-                    <label class="form-check-label" for="journal">Journal</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Reviewer_Journal">
+                    <label class="form-check-label" for="Reviewer_Journal">Journal</label>
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-3">
                 <div class="form-group" style="margin-top:3% ">
-                    <label for="name">Full Name of Conference/Journal</label>
+                    <label for="Reviewer_Name">Full Name of Conference/Journal</label>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group" >
-                    <input type="text" class="form-control" id="name"  placeholder="Enter Name">
+                    <input type="text" class="form-control" id="Reviewer_Name"  placeholder="Enter Name">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-3">
                 <div class="form-group" style=" margin-top:3% ">
-                    <label for="publisher">Publisher</label>
+                    <label for="Reviewer_Publisher">Publisher</label>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group" >
-                    <input type="text" class="form-control" id="publisher"  placeholder="Enter Publisher">
+                    <input type="text" class="form-control" id="Reviewer_Publisher"  placeholder="Enter Publisher">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-3">
                 <div class="form-group" style=" margin-top:3% ">
-                    <label for="date">Month/Year</label>
+                    <label for="Reviewer_Date">Month/Year</label>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group" >
-                    <input type="text" class="form-control" id="date"  placeholder="MM/YYYY">
+                    <input type="text" class="form-control" id="Reviewer_Date"  placeholder="MM/YYYY">
                 </div>
             </div>
         </div>
@@ -87,5 +119,6 @@
         </div>
 
     </form>
+</div>
 </body>
 </html>
