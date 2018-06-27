@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>International Confrences</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" >
+    <script src="../../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div class="container">
+    <form id="National_Confrences">
+        <div class="form-group text-uppercase">
+            <label for="National_Confrences_Author">Author(s)</label>
+            <input class="form-control" id="National_Confrences_Author" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="National_Confrences_paperTitle">Paper Title</label>
+            <input class="form-control" id="National_Confrences_paperTitle" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="National_Confrences_confrenceName">Confrence Name</label>
+            <input class="form-control" id="National_Confrences_confrenceName" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="National_Confrences_Held_At">Held At</label>
+            <input class="form-control" id="National_Confrences_Held_At" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="National_Confrences_Pages">Pages</label>
+            <input class="form-control" id="National_Confrences_Pages" placeholder="start page - end page" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="National_Confrences_Publisher">publisher</label>
+            <input class="form-control" id="National_Confrences_Publisher" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="National_Confrences_Month/Year">Month/Year</label>
+            <input class="form-control" id="National_Confrences_Month/Year" placeholder="MM/YYYY" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="National_Confrences_Co-authorFromDept">Wheather Co-authors are faculty from same Department</label>
+            <div class="row" id="National_Confrences_Co-authorFromDept">
+                <div class="col">
+                    <input id="National_Confrences_Co-authorFromDept_yes" name="inlineRadioOptions" type="radio">
+                    <label for="National_Confrences_Co-authorFromDept_yes" class="mr-3">Yes</label>
+                    <input id="National_Confrences_Co-authorFromDept_no" name="inlineRadioOptions" type="radio">
+                    <label for="National_Confrences_Co-authorFromDept_no">No</label>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

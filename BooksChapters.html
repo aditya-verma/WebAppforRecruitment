@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books/Chapters</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" >
+    <script src="../../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div class="container">
+    <form id="Books_Chapters">
+        <div class="form-group text-uppercase">
+            <label for="Books_Chapters_Author">Author(s)</label>
+            <input class="form-control" id="Books_Chapters_Author" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Books_Chapters_book">Book</label>
+            <input class="form-control" id="Books_Chapters_book" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Books_Chapters_BookChapter">Book Chapter</label>
+            <input class="form-control" id="Books_Chapters_BookChapter" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Books_Chapters_publisher">publisher</label>
+            <input class="form-control" id="Books_Chapters_publisher" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Books_Chapters_ISBN">ISBN</label>
+            <input class="form-control" id="Books_Chapters_ISBN" required>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Books_Chapters_Co-authorFromDept">Wheather Co-authors are faculty from same Department</label>
+            <div class="row" id="Books_Chapters_Co-authorFromDept">
+                <div class="col">
+                    <input id="Books_Chapters_Co-authorFromDept_yes" name="inlineRadioOptions" type="radio">
+                    <label for="Books_Chapters_Co-authorFromDept_yes" class="mr-3">Yes</label>
+                    <input id="Books_Chapters_Co-authorFromDept_no" name="inlineRadioOptions" type="radio">
+                    <label for="Books_Chapters_Co-authorFromDept_no">No</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group text-uppercase">
+            <label for="Books_Chapters_Month/Year">Published On</label>
+            <input class="form-control" id="Books_Chapters_Month/Year" placeholder="MM/YYYY" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
