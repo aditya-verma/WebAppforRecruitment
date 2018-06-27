@@ -34,12 +34,660 @@
 </header>
 <div class="container align-middle align-content-center align-items-center">
     <div class="row">
-        <div class="col-4">
+        <div class="col-sm-4">
             <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Personal Information</a>
-                <a class="list-group-item list-group-item-action " id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-                <a class="list-group-item list-group-item-action " id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-                <a class="list-group-item list-group-item-action " id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                <a class="list-group-item list-group-item-action active" id="list-PersonalInfo-list" data-toggle="list" href="#list-PersonalInfo" role="tab" aria-controls="">Personal Information</a>
+                <a class="list-group-item list-group-item-action " id="list-Publication-list" data-toggle="list" href="#list-Publication" role="tab" aria-controls="home">Publications</a>
+                <a class="list-group-item list-group-item-action " id="list-Patent-list" data-toggle="list" href="#list-Patent" role="tab" aria-controls="profile">Patent</a>
+                <a class="list-group-item list-group-item-action " id="list-PhDSupervision-list" data-toggle="list" href="#list-PhDSupervision" role="tab" aria-controls="messages">Ph.D Supervision</a>
+                <a class="list-group-item list-group-item-action " id="list-PGSupervision-list" data-toggle="list" href="#list-PGSupervision" role="tab" aria-controls="settings">PG Supervision</a>
+                <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list" data-toggle="list" href="#list-BTechProjectGuided" role="tab" aria-controls="settings">B.Tech Project Guided</a>
+                <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list" data-toggle="list" href="#list-ActedAsReviewer" role="tab" aria-controls="settings">Acted As A Reviewer</a>
+                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list" data-toggle="list" href="#list-ExpertInvitedLecture" role="tab" aria-controls="settings">Expert/Invited Lecture Delivered</a>
+                <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list" data-toggle="list" href="#list-ResearchProjectInvestigated" role="tab" aria-controls="settings">Research Project Investigated</a>
+                <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list" data-toggle="list" href="#list-AwardsHonourReceived" role="tab" aria-controls="settings">Award/Honour Recieved</a>
+                <a class="list-group-item list-group-item-action " id="list-EventAttended-list" data-toggle="list" href="#list-EventAttended" role="tab" aria-controls="settings">Event Attended</a>
+                <a class="list-group-item list-group-item-action " id="list-ExpertLectureOrganized-list" data-toggle="list" href="#list-ExpertLectureOrganized" role="tab" aria-controls="settings">Expert Lecture Organized</a>
+                <a class="list-group-item list-group-item-action " id="list-ConsultancyProvided-list" data-toggle="list" href="#list-ConsultancyProvided" role="tab" aria-controls="settings">Consultancy Provided</a>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-PersonalInfo" role="tabpanel" aria-labelledby="list-PersonalInfo-list">
+                    <form id="PersonalInformation" action="#" style="width: 100%;">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="text-uppercase" for="applicant_first_name">FIRST NAME</label>
+                                <input id="applicant_first_name" class="form-control" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="text-uppercase" for="applicant_last_name">LAST NAME</label>
+                                <input id="applicant_last_name" class="form-control" placeholder="" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-uppercase" for="postApplied">Post Applying for</label>
+                        <select class="form-control" id="postApplied" required>
+                            <option></option>
+                            <!---------Fill this using jsp------------>
+                        </select>
+                    </div>
+
+                    <div class="form-group" >
+                        <label class="text-uppercase" for="Specialization" >Specialization</label>
+                        <input id="Specialization" class="form-control" placeholder="">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group" >
+                                <label class="text-uppercase" for="email" >Email</label>
+                                <input id="email" class="form-control" type="email" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="text-uppercase" for="Gender">Gender</label>
+                                <select class="form-control" id="Gender" required>
+                                    <option></option>
+                                    <option>MALE</option>
+                                    <option>FEMALE</option>
+                                    <option>OTHERS</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="text-uppercase" for="Domicile">Domicile</label>
+                                <input id="Domicile" class="form-control" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="text-uppercase" for="Marital_Status">Marital Status</label>
+                                <select class="form-control" id="Marital_Status" required>
+                                    <option></option>
+                                    <option>SINGLE</option>
+                                    <option>MARRIED</option>
+                                    <option>DIVORCED</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="text-uppercase" for="Category">Category</label>
+                                <select class="form-control" id="Category" required>
+                                    <option></option>
+                                    <option>GENERAL</option>
+                                    <option>OBC</option>
+                                    <option>OBC-Creamy Layer</option>
+                                    <option>SC/ST</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="text-uppercase" for="Handicapped">Handicapped</label>
+                                <select class="form-control" id="Handicapped" required>
+                                    <option></option>
+                                    <option>Applicable</option>
+                                    <option>Not Applicable</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="text-uppercase" for="DateOfBirth">Date Of Birth</label>
+                                <input id="DateOfBirth" type="date" class="form-control" placeholder="" >
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="text-uppercase" for="Nationality">Nationality</label>
+                                <select class="form-control text-uppercase" id="Nationality" required>
+                                    <option value="IN">India</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AX">Åland Islands</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AS">American Samoa</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AI">Anguilla</option>
+                                    <option value="AQ">Antarctica</option>
+                                    <option value="AG">Antigua and Barbuda</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="AM">Armenia</option>
+                                    <option value="AW">Aruba</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="AT">Austria</option>
+                                    <option value="AZ">Azerbaijan</option>
+                                    <option value="BS">Bahamas</option>
+                                    <option value="BH">Bahrain</option>
+                                    <option value="BD">Bangladesh</option>
+                                    <option value="BB">Barbados</option>
+                                    <option value="BY">Belarus</option>
+                                    <option value="BE">Belgium</option>
+                                    <option value="BZ">Belize</option>
+                                    <option value="BJ">Benin</option>
+                                    <option value="BM">Bermuda</option>
+                                    <option value="BT">Bhutan</option>
+                                    <option value="BO">Bolivia, Plurinational State of</option>
+                                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                    <option value="BA">Bosnia and Herzegovina</option>
+                                    <option value="BW">Botswana</option>
+                                    <option value="BV">Bouvet Island</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="IO">British Indian Ocean Territory</option>
+                                    <option value="BN">Brunei Darussalam</option>
+                                    <option value="BG">Bulgaria</option>
+                                    <option value="BF">Burkina Faso</option>
+                                    <option value="BI">Burundi</option>
+                                    <option value="KH">Cambodia</option>
+                                    <option value="CM">Cameroon</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CV">Cape Verde</option>
+                                    <option value="KY">Cayman Islands</option>
+                                    <option value="CF">Central African Republic</option>
+                                    <option value="TD">Chad</option>
+                                    <option value="CL">Chile</option>
+                                    <option value="CN">China</option>
+                                    <option value="CX">Christmas Island</option>
+                                    <option value="CC">Cocos (Keeling) Islands</option>
+                                    <option value="CO">Colombia</option>
+                                    <option value="KM">Comoros</option>
+                                    <option value="CG">Congo</option>
+                                    <option value="CD">Congo, the Democratic Republic of the</option>
+                                    <option value="CK">Cook Islands</option>
+                                    <option value="CR">Costa Rica</option>
+                                    <option value="CI">Côte d'Ivoire</option>
+                                    <option value="HR">Croatia</option>
+                                    <option value="CU">Cuba</option>
+                                    <option value="CW">Curaçao</option>
+                                    <option value="CY">Cyprus</option>
+                                    <option value="CZ">Czech Republic</option>
+                                    <option value="DK">Denmark</option>
+                                    <option value="DJ">Djibouti</option>
+                                    <option value="DM">Dominica</option>
+                                    <option value="DO">Dominican Republic</option>
+                                    <option value="EC">Ecuador</option>
+                                    <option value="EG">Egypt</option>
+                                    <option value="SV">El Salvador</option>
+                                    <option value="GQ">Equatorial Guinea</option>
+                                    <option value="ER">Eritrea</option>
+                                    <option value="EE">Estonia</option>
+                                    <option value="ET">Ethiopia</option>
+                                    <option value="FK">Falkland Islands (Malvinas)</option>
+                                    <option value="FO">Faroe Islands</option>
+                                    <option value="FJ">Fiji</option>
+                                    <option value="FI">Finland</option>
+                                    <option value="FR">France</option>
+                                    <option value="GF">French Guiana</option>
+                                    <option value="PF">French Polynesia</option>
+                                    <option value="TF">French Southern Territories</option>
+                                    <option value="GA">Gabon</option>
+                                    <option value="GM">Gambia</option>
+                                    <option value="GE">Georgia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="GH">Ghana</option>
+                                    <option value="GI">Gibraltar</option>
+                                    <option value="GR">Greece</option>
+                                    <option value="GL">Greenland</option>
+                                    <option value="GD">Grenada</option>
+                                    <option value="GP">Guadeloupe</option>
+                                    <option value="GU">Guam</option>
+                                    <option value="GT">Guatemala</option>
+                                    <option value="GG">Guernsey</option>
+                                    <option value="GN">Guinea</option>
+                                    <option value="GW">Guinea-Bissau</option>
+                                    <option value="GY">Guyana</option>
+                                    <option value="HT">Haiti</option>
+                                    <option value="HM">Heard Island and McDonald Islands</option>
+                                    <option value="VA">Holy See (Vatican City State)</option>
+                                    <option value="HN">Honduras</option>
+                                    <option value="HK">Hong Kong</option>
+                                    <option value="HU">Hungary</option>
+                                    <option value="IS">Iceland</option>
+                                    <option value="ID">Indonesia</option>
+                                    <option value="IR">Iran, Islamic Republic of</option>
+                                    <option value="IQ">Iraq</option>
+                                    <option value="IE">Ireland</option>
+                                    <option value="IM">Isle of Man</option>
+                                    <option value="IL">Israel</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="JM">Jamaica</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="JE">Jersey</option>
+                                    <option value="JO">Jordan</option>
+                                    <option value="KZ">Kazakhstan</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="KI">Kiribati</option>
+                                    <option value="KP">Korea, Democratic People's Republic of</option>
+                                    <option value="KR">Korea, Republic of</option>
+                                    <option value="KW">Kuwait</option>
+                                    <option value="KG">Kyrgyzstan</option>
+                                    <option value="LA">Lao People's Democratic Republic</option>
+                                    <option value="LV">Latvia</option>
+                                    <option value="LB">Lebanon</option>
+                                    <option value="LS">Lesotho</option>
+                                    <option value="LR">Liberia</option>
+                                    <option value="LY">Libya</option>
+                                    <option value="LI">Liechtenstein</option>
+                                    <option value="LT">Lithuania</option>
+                                    <option value="LU">Luxembourg</option>
+                                    <option value="MO">Macao</option>
+                                    <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                                    <option value="MG">Madagascar</option>
+                                    <option value="MW">Malawi</option>
+                                    <option value="MY">Malaysia</option>
+                                    <option value="MV">Maldives</option>
+                                    <option value="ML">Mali</option>
+                                    <option value="MT">Malta</option>
+                                    <option value="MH">Marshall Islands</option>
+                                    <option value="MQ">Martinique</option>
+                                    <option value="MR">Mauritania</option>
+                                    <option value="MU">Mauritius</option>
+                                    <option value="YT">Mayotte</option>
+                                    <option value="MX">Mexico</option>
+                                    <option value="FM">Micronesia, Federated States of</option>
+                                    <option value="MD">Moldova, Republic of</option>
+                                    <option value="MC">Monaco</option>
+                                    <option value="MN">Mongolia</option>
+                                    <option value="ME">Montenegro</option>
+                                    <option value="MS">Montserrat</option>
+                                    <option value="MA">Morocco</option>
+                                    <option value="MZ">Mozambique</option>
+                                    <option value="MM">Myanmar</option>
+                                    <option value="NA">Namibia</option>
+                                    <option value="NR">Nauru</option>
+                                    <option value="NP">Nepal</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="NC">New Caledonia</option>
+                                    <option value="NZ">New Zealand</option>
+                                    <option value="NI">Nicaragua</option>
+                                    <option value="NE">Niger</option>
+                                    <option value="NG">Nigeria</option>
+                                    <option value="NU">Niue</option>
+                                    <option value="NF">Norfolk Island</option>
+                                    <option value="MP">Northern Mariana Islands</option>
+                                    <option value="NO">Norway</option>
+                                    <option value="OM">Oman</option>
+                                    <option value="PK">Pakistan</option>
+                                    <option value="PW">Palau</option>
+                                    <option value="PS">Palestinian Territory, Occupied</option>
+                                    <option value="PA">Panama</option>
+                                    <option value="PG">Papua New Guinea</option>
+                                    <option value="PY">Paraguay</option>
+                                    <option value="PE">Peru</option>
+                                    <option value="PH">Philippines</option>
+                                    <option value="PN">Pitcairn</option>
+                                    <option value="PL">Poland</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="PR">Puerto Rico</option>
+                                    <option value="QA">Qatar</option>
+                                    <option value="RE">Réunion</option>
+                                    <option value="RO">Romania</option>
+                                    <option value="RU">Russian Federation</option>
+                                    <option value="RW">Rwanda</option>
+                                    <option value="BL">Saint Barthélemy</option>
+                                    <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                                    <option value="KN">Saint Kitts and Nevis</option>
+                                    <option value="LC">Saint Lucia</option>
+                                    <option value="MF">Saint Martin (French part)</option>
+                                    <option value="PM">Saint Pierre and Miquelon</option>
+                                    <option value="VC">Saint Vincent and the Grenadines</option>
+                                    <option value="WS">Samoa</option>
+                                    <option value="SM">San Marino</option>
+                                    <option value="ST">Sao Tome and Principe</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="SN">Senegal</option>
+                                    <option value="RS">Serbia</option>
+                                    <option value="SC">Seychelles</option>
+                                    <option value="SL">Sierra Leone</option>
+                                    <option value="SG">Singapore</option>
+                                    <option value="SX">Sint Maarten (Dutch part)</option>
+                                    <option value="SK">Slovakia</option>
+                                    <option value="SI">Slovenia</option>
+                                    <option value="SB">Solomon Islands</option>
+                                    <option value="SO">Somalia</option>
+                                    <option value="ZA">South Africa</option>
+                                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                    <option value="SS">South Sudan</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="LK">Sri Lanka</option>
+                                    <option value="SD">Sudan</option>
+                                    <option value="SR">Suriname</option>
+                                    <option value="SJ">Svalbard and Jan Mayen</option>
+                                    <option value="SZ">Swaziland</option>
+                                    <option value="SE">Sweden</option>
+                                    <option value="CH">Switzerland</option>
+                                    <option value="SY">Syrian Arab Republic</option>
+                                    <option value="TW">Taiwan, Province of China</option>
+                                    <option value="TJ">Tajikistan</option>
+                                    <option value="TZ">Tanzania, United Republic of</option>
+                                    <option value="TH">Thailand</option>
+                                    <option value="TL">Timor-Leste</option>
+                                    <option value="TG">Togo</option>
+                                    <option value="TK">Tokelau</option>
+                                    <option value="TO">Tonga</option>
+                                    <option value="TT">Trinidad and Tobago</option>
+                                    <option value="TN">Tunisia</option>
+                                    <option value="TR">Turkey</option>
+                                    <option value="TM">Turkmenistan</option>
+                                    <option value="TC">Turks and Caicos Islands</option>
+                                    <option value="TV">Tuvalu</option>
+                                    <option value="UG">Uganda</option>
+                                    <option value="UA">Ukraine</option>
+                                    <option value="AE">United Arab Emirates</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="US">United States</option>
+                                    <option value="UM">United States Minor Outlying Islands</option>
+                                    <option value="UY">Uruguay</option>
+                                    <option value="UZ">Uzbekistan</option>
+                                    <option value="VU">Vanuatu</option>
+                                    <option value="VE">Venezuela, Bolivarian Republic of</option>
+                                    <option value="VN">Viet Nam</option>
+                                    <option value="VG">Virgin Islands, British</option>
+                                    <option value="VI">Virgin Islands, U.S.</option>
+                                    <option value="WF">Wallis and Futuna</option>
+                                    <option value="EH">Western Sahara</option>
+                                    <option value="YE">Yemen</option>
+                                    <option value="ZM">Zambia</option>
+                                    <option value="ZW">Zimbabwe</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-uppercase" for="Name_Father">Name Of Father</label>
+                        <input id="Name_Father" class="form-control" placeholder="" >
+                    </div>
+                    <div class="form-group">
+                        <label class="text-uppercase" for="Name_Mother">Name of Mother</label>
+                        <input id="Name_Mother" class="form-control" placeholder="" >
+                    </div>
+                    <div class="form-group">
+                        <label class="text-uppercase" for="ID">Identity Proof</label>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <select class="form-control" id="ID-type" placeholder="ID Type">
+                                    <option></option>
+                                    <option>Aadhar Number</option>
+                                    <option>Pan Card</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <input id="ID" class="form-control" placeholder="ID number" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-uppercase" for="Correspondence_Address">Correspondence Address</label>
+                        <input id="Correspondence_Address" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="filladdress" onclick="fillAddress()">
+                        <label class="form-check-label" for="filladdress" onclick="fillAddress()">Correspondence address same as permanent address</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-uppercase" for="Permanent_Address">Permanent Address</label>
+                        <input id="Permanent_Address" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-uppercase" for="Phone">Phone Number</label>
+                        <input id="Phone" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-uppercase" for="ApplyingPlace">Port/Place of Applying Form</label>
+                        <input id="ApplyingPlace" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="form-actions" style="margin: 0;background-color: transparent;text-align: center;">
+                        <button class="btn btn-lg btn-danger m-1" id="reset" type="reset">Reset</button>
+                        <button class="btn btn-lg btn-primary m-1" id="submit" type="submit">Save and Continue</button>
+                    </div>
+                </form>
+                </div>
+                <div class="tab-pane fade" id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="InternationalJournal-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">International Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="NationalJournal-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">National Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="InternationalNationalConference-tab" data-toggle="tab" href="#" role="tab" aria-controls="contact" aria-selected="false">International Conference</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="NationalConference-tab" data-toggle="tab" href="#NationalConferences" role="tab" aria-controls="NationalConferences" aria-selected="false">National Conference</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="BookChapter-tab" data-toggle="tab" href="#BookChapter" role="tab" aria-controls="BookChapter" aria-selected="false">Book/Book Chapter</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                        <div class="tab-pane fade" id="NationalConferences" role="tabpanel" aria-labelledby="NationalConference-tab">
+                            <form >
+                                <div class="form-group text-uppercase">
+                                    <label for="NationalConferencesAuthor">Author(s)</label>
+                                    <input class="form-control" id="NationalConferencesAuthor" required>
+                                </div>
+                                <div class="form-group text-uppercase">
+                                    <label for="NationalConferencesPaperTitle">Paper Title</label>
+                                    <input class="form-control" id="NationalConferencesPaperTitle" required>
+                                </div>
+                                <div class="form-group text-uppercase">
+                                    <label for="NationalConferencesConferenceName">Confrence Name</label>
+                                    <input class="form-control" id="NationalConferencesConferenceName" required>
+                                </div>
+                                <div class="form-group text-uppercase">
+                                    <label for="NationalConferencesHeldAt">Held At</label>
+                                    <input class="form-control" id="NationalConferencesHeldAt" required>
+                                </div>
+                                <div class="form-group text-uppercase">
+                                    <label for="NationalConferencesPages">Pages</label>
+                                    <input class="form-control" id="NationalConferencesPages" placeholder="start page - end page" required>
+                                </div>
+                                <div class="form-group text-uppercase">
+                                    <label for="NationalConferencesPublisher">publisher</label>
+                                    <input class="form-control" id="NationalConferencesPublisher" required>
+                                </div>
+                                <div class="form-group text-uppercase">
+                                    <label for="NationalConferencesMonth/Year">Month/Year</label>
+                                    <input class="form-control" id="NationalConferencesMonth/Year" placeholder="MM/YYYY" required>
+                                </div>
+                                <div class="form-group text-uppercase">
+                                    <label for="NationalConferencesCo-authorFromDept">Wheather Co-authors are faculty from same Department</label>
+                                    <div class="row" id="NationalConferencesCo-authorFromDept">
+                                        <div class="col">
+                                            <input id="NationalConferencesCo-authorFromDept_yes" name="inlineRadioOptions" type="radio">
+                                            <label for="NationalConferencesCo-authorFromDept_yes" class="mr-3">Yes</label>
+                                            <input id="NationalConferencesCo-authorFromDept_no" name="inlineRadioOptions" type="radio">
+                                            <label for="NationalConferencesCo-authorFromDept_no">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="BookChapter" role="tabpanel" aria-labelledby="contact-tab">
+                            <form>
+                            <div class="form-group text-uppercase">
+                                <label for="BookChapterAuthor">Author(s)</label>
+                                <input class="form-control" id="BookChapterAuthor" required>
+                            </div>
+                            <div class="form-group text-uppercase">
+                                <label for="BookChapterbook">Book</label>
+                                <input class="form-control" id="BookChapterbook" required>
+                            </div>
+                            <div class="form-group text-uppercase">
+                                <label for="BookChapterBookChapter">Book Chapter</label>
+                                <input class="form-control" id="BookChapterBookChapter" required>
+                            </div>
+                            <div class="form-group text-uppercase">
+                                <label for="BookChapterpublisher">publisher</label>
+                                <input class="form-control" id="BookChapterpublisher" required>
+                            </div>
+                            <div class="form-group text-uppercase">
+                                <label for="BookChapterISBN">ISBN</label>
+                                <input class="form-control" id="BookChapterISBN" required>
+                            </div>
+                            <div class="form-group text-uppercase">
+                                <label for="BookChapterCo-authorFromDept">Wheather Co-authors are faculty from same Department</label>
+                                <div class="row" id="BookChapterCo-authorFromDept">
+                                    <div class="col">
+                                        <input id="BookChapterCo-authorFromDept_yes" name="inlineRadioOptions" type="radio">
+                                        <label for="BookChapterCo-authorFromDept_yes" class="mr-3">Yes</label>
+                                        <input id="BookChapterCo-authorFromDept_no" name="inlineRadioOptions" type="radio">
+                                        <label for="BookChapterCo-authorFromDept_no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group text-uppercase">
+                                <label for="BookChapterMonth/Year">Published On</label>
+                                <input class="form-control" id="BookChapterMonth/Year" placeholder="MM/YYYY" required>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
+                    <form id="patent">
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="appliedOption" >
+                                        <label class="form-check-label" for="appliedOption">
+                                            Applied
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="grantedOption" >
+                                        <label class="form-check-label" for="grantedOption">
+                                            Granted
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group row">
+                            <label for="Date" class="col-md-2">Date</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control  col-md-10" id="Date" placeholder="DD/MM/YYYY">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Number" class="col-md-2">Number</label>
+                            <div class="col-sm-10">
+                                <input type="" class="form-control  col-md-10" id="Number" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Type" class="col-md-2">Type</label>
+                            <div class="col-sm-10">
+                                <input class="form-control  col-md-10" id="Type" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Description" class="col-md-2">Description</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="Description" placeholder="Write description here. "></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">
+                    <form id="PhDSupervisionForm">
+                        <div class="form-group row">
+                            <label for="Name" class="col-md-2">Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="Name" placeholder="Enter Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="RNumber" class="col-md-2">Registration Number</label>
+                            <div class="col-md-10">
+                                <input type="text" id="RNumber" class="form-control" placeholder="Enter Registration Number of student">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Title" class="col-md-2">Title of Thesis</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="Title" placeholder="Enter Title of Thesis">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Oral" class="col-md-2">Oral-Viva Date</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="Oral" placeholder="Enter Viva Date">
+                            </div>
+                        </div>
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-2 pt-0">Whether there are Co-Supervisors</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Yes" >
+                                        <label class="form-check-label" for="Yes">
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="No" >
+                                        <label class="form-check-label" for="No">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade" id="list-PGSupervision" role="tabpanel" aria-labelledby="list-PGDSupervision-list">
+
+                </div>
+                <div class="tab-pane fade" id="list-BTechProjectGuided" role="tabpanel" aria-labelledby="list-BTechProjectGuided-list">
+
+                </div>
+                <div class="tab-pane fade" id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">
+
+                </div>
+                <div class="tab-pane fade" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
+
+                </div>
+                <div class="tab-pane fade" id="list-ResearchProjectInvestigated" role="tabpanel" aria-labelledby="list-ResearchProjectInvestigated-list">
+
+                </div>
+                <div class="tab-pane fade" id="list-AwardsHonourReceived" role="tabpanel" aria-labelledby="list-AwardsHonourReceived-list">
+
+                </div>
+                <div class="tab-pane fade" id="list-EventAttended" role="tabpanel" aria-labelledby="list-EventAttended-list">
+
+                </div>
+                <div class="tab-pane fade" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
+
+                </div>
+                <div class="tab-pane fade" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
+
+                </div>
             </div>
         </div>
     </div>
