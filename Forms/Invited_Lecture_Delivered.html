@@ -12,7 +12,7 @@
     <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(function() {
-            $( "#date" ).datepicker({
+            $( "#Invited_Lecture_Date" ).datepicker({
                 format: "dd-mm-yyyy",
                 viewMode: "months",
                 minViewMode: "date",
@@ -59,7 +59,7 @@
 
 
 <div class="container" style="margin-left: 36%" >
-    <form id="Invited_Lecture" action="#"   >
+    <form id="Invited_Lecture" action="" method="post">
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-1" style="text-align: left">
                 <div class="form-group" style="margin-top:3% ">
@@ -68,7 +68,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group" >
-                    <input type="text" class="form-control" id="Invited_Lecture_Title"  placeholder="Enter Title">
+                    <input type="text" class="form-control" id="Invited_Lecture_Title" name="i1" placeholder="Enter Title">
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group" >
-                    <input class="form-control" type="text" id="Invited_Lecture_Date" placeholder="DD/MM/YYYY">
+                    <input class="form-control" type="text" id="Invited_Lecture_Date" name="i2" placeholder="DD/MM/YYYY">
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group" >
-                    <input type="text" class="form-control" id="Invited_Lecture_Inviter"  placeholder="Enter Inviter">
+                    <input type="text" class="form-control" id="Invited_Lecture_Inviter" name="i3" placeholder="Enter Inviter">
                 </div>
             </div>
         </div>
@@ -105,7 +105,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group" >
-                    <input type="text" class="form-control" id="Invited_Lecture_Event"  placeholder="Enter Event">
+                    <input type="text" class="form-control" id="Invited_Lecture_Event"  name="i4" placeholder="Enter Event">
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
 
             </div>
             <div class="col-sm-4">
-                <button type="button" class="btn btn-primary">Submit</button>
+                <button class="btn btn-lg btn-primary m-1" name="b1" id="add" type="submit">Add</button>
             </div>
         </div>
     </form>
