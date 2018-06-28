@@ -1,7 +1,6 @@
 <%@ page import="java.util.Properties" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.security.SecureRandom" %>
-<%@ page import="javafx.application.Application" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -98,7 +97,7 @@
             <h1 class="h3 mb-5 mt-1  font-weight-normal" style="color: #545353;">Recruitment Portal</h1>
         </div>
         <div class="form-label-group">
-            <input type="email" id="inputEmail" name="Email" class="form-control" placeholder="Email address" required="" autofocus="">
+            <input type="text" id="inputApplication" name="AppNumber" class="form-control" placeholder="Application Number" required="" autofocus="">
         </div>
         <div class="form-label-group">
              <input type="password" id="inputPassword" name="Password" class="form-control" placeholder="Password" required="">
@@ -131,7 +130,7 @@
                      */
                     Connection con=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
                     Statement stmt=con.createStatement();
-                    ResultSet rs=stmt.executeQuery("select * from USERS where email='"+request.getParameter("Email")+"' and Password='"+request.getParameter("Password")+"'");
+                    ResultSet rs=stmt.executeQuery("select * from USERS where ApplicationNumber='"+request.getParameter("AppNumber")+"' and Password='"+request.getParameter("Password")+"'");
                     if (!rs.next())
                     {
         %>
@@ -144,7 +143,7 @@
             <%
                 session.setAttribute("ApplicationNumber",rs.getString("ApplicationNumber"));
                 session.setAttribute("Password",rs.getString("Password"));
-                out.println(rs.getString(1)+"  "+rs.getString(2)+"  "+rs.getString(3)+"  "+rs.getString(4)+"  "+rs.getString(5));
+                response.sendRedirect("User Page.jsp");
             %>
         </div>
         <%            }

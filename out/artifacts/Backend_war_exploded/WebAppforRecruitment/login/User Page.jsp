@@ -1,3 +1,7 @@
+<%@ page import="java.util.Properties" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.security.SecureRandom" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +15,27 @@
     <script src="../js/bootstrap.min.js"></script>
 </head>
 <body>
+<%
+    String ApplicationNumber="";
+    String Password="";
+    String Email="";
+    String Name="";
+    String Phone ="";
+    try{
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+        ApplicationNumber = (String) session.getAttribute("ApplicationNumber");
+        Password = (String) session.getAttribute("Password");
+        Statement statement = connection.createStatement();
+        ResultSet rs = statement.executeQuery("SELECT * from USERS where ApplicationNumber='"+ApplicationNumber+"' and Password ='"+Password+"'");
+        if (rs.next()){
+            Email = rs.getString("Email");
+            Name = rs.getString("FirstName")+" "+rs.getString("LastName");
+        }
+        statement.close();
+        connection.close();
+    }catch (Exception e){}
+%>
 <header>
     <nav class="navbar sticky-top navbar-light bg-light" style="border-bottom-color: #000">
         <div class="container">
@@ -54,28 +79,28 @@ background-size:16px 16px;">
                 <li class="list-group-item">
                     <div class="row text-left">
                         <div class="col-md-6 text-uppercase font-weight-bold">name</div>
-                        <div class="col-md-6 text-uppercase font-italic" id="card-name">Value</div>
+                        <div class="col-md-6 font-italic" id="card-name"><%out.println(Name);%></div>
                     </div>
                 </li>
 
                 <li class="list-group-item">
                     <div class="row text-left">
                         <div class="col-md-6 text-uppercase font-weight-bold">Application number</div>
-                        <div class="col-md-6 text-uppercase font-italic" id="card-application-number">Value</div>
+                        <div class="col-md-6 font-italic" id="card-application-number"><%out.println(ApplicationNumber);%></div>
                     </div>
                 </li>
 
                 <li class="list-group-item">
                     <div class="row text-left">
                         <div class="col-md-6 text-uppercase font-weight-bold">Email</div>
-                        <div class="col-md-6 text-uppercase font-italic" id="card-email">Value</div>
+                        <div class="col-md-6 font-italic" id="card-email"><%out.println(Email);%></div>
                     </div>
                 </li>
 
                 <li class="list-group-item list-group-flush">
                     <div class="row text-left">
                         <div class="col-md-6 text-uppercase font-weight-bold">Phone</div>
-                        <div class="col-md-6 text-uppercase font-italic" id="card-phone">Value</div>
+                        <div class="col-md-6 font-italic" id="card-phone">Value</div>
                     </div>
                 </li>
             </ul>
