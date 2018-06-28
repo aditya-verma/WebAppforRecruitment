@@ -17,7 +17,6 @@
     properties.setProperty("useSSL", "false");
     properties.setProperty("autoReconnect", "true");
 
-
     final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     SecureRandom rnd = new SecureRandom();
     StringBuilder sb = new StringBuilder( 8 );
