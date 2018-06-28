@@ -1,3 +1,11 @@
+<%--
+Created by IntelliJ IDEA.
+User: ADITYA
+Date: 27 Jun 2018
+Time: 01:18 PM
+To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,15 +82,13 @@
                 </div>
                 <!--------------Publication-------------->
                 <div class="tab-pane fade" id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
-                    <%
-                    @include file="Forms/Publications.jsp"
-                    %>
+                    <%@include file="\WebAppforRecruitment\Forms\Publications.html"%>
                 </div>
                 <!--------------Patent-------------->
                 <div class="tab-pane fade" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
-                    <%
+                    <%--
                     @include file="Forms"
-                    %>
+                    --%>
                 </div>
                 <!--------------PhDSupervision-------------->
                 <div class="tab-pane fade" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">

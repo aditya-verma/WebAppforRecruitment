@@ -1,3 +1,7 @@
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.Properties" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,28 +24,33 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body" >
-                    <p>Please enter your Email-ID</p>
-                    <input type="text" name="newUserName" placeholder="Name" style="padding: 1rem;border-radius: 0.5rem;margin-bottom: 1rem" class="form-control" required autofocus>
-                    <input type="email" name="newUserEmail" placeholder="Email address" style="padding: 1rem;border-radius: 0.5rem;" class="form-control" required autofocus>
-                </div>
-                <div class="col-md-12 " style="margin-bottom: 0.75rem">
-                    <button class="btn btn-lg btn-primary" type="submit" style="margin:auto;display: flex;width: 50%;justify-content: center;">Submit</button>
+                <div class="modal-body">
+                <form >
+                    <div>
+                        <p>Please enter your Email-ID</p>
+                        <div class="row"><
+                        <input type="text" name="newUserName" placeholder="Name" style="padding: 1rem;border-radius: 0.5rem;margin-bottom: 1rem" class="form-control" required autofocus>
+                        <input type="email" name="newUserEmail" placeholder="Email address" style="padding: 1rem;border-radius: 0.5rem;" class="form-control" required autofocus>
+                    </div>
+                    <div class="col-md-12 " style="margin-bottom: 0.75rem">
+                        <button class="btn btn-lg btn-primary" type="submit" style="margin:auto;display: flex;width: 50%;justify-content: center;">Submit</button>
+                    </div>
+                </form>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid">
-    <form class="form-signin">
-        <img class="img-responsive col-12 mb-lg-5" style="margin-left: -1.5rem  "  src="../images/mnnit logo.png" alt="MNNIT_LOGO">
+    <form class="form-signin" method="post" action="dologin.jsp">
+        <img class="img-responsive col-12 mb-lg-5" style="margin-left: -1.5rem  "  src="../Images/mnnit logo.png" alt="MNNIT_LOGO">
         <div class="text-center">
             <h1 class="h3 mb-5 mt-1  font-weight-normal" style="color: #545353;">Recruitment Portal</h1>
         </div>
         <div class="form-label-group">
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <input type="email" id="inputEmail" name="Email" class="form-control" placeholder="Email address" required="" autofocus="">
         </div>
         <div class="form-label-group">
-             <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+             <input type="password" id="inputPassword" name="Password" class="form-control" placeholder="Password" required="">
         </div>
         <div class="checkbox mb-4">
             <label>
@@ -57,7 +66,6 @@
             </div>
         </div><br>
         <a href="#" class="col-12 page-link text-center" style="background-color: #f5f5f5;border: none;">Forgot Password</a>
-
     </form>
     <footer class="card-footer fixed-bottom text-center" style="background-color: #c4c4c4">
         <div class="container">
