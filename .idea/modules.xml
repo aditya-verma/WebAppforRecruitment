@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Backend.iml" filepath="$PROJECT_DIR$/Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebAppforRecruitment.iml" filepath="$PROJECT_DIR$/WebAppforRecruitment.iml" />
     </modules>
   </component>
 </project>

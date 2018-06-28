@@ -2,10 +2,10 @@
   <artifact type="exploded-war" name="Backend:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/Backend_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Backend/web/Web" />
+      <element id="javaee-facet-resources" facet="WebAppforRecruitment/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Backend" />
+          <element id="module-output" name="WebAppforRecruitment" />
         </element>
       </element>
     </root>
