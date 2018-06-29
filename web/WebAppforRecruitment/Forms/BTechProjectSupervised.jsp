@@ -3,22 +3,14 @@
 <html lang="en">
 <head>
     <title>Btech Project</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link href="../css/datepicker.css" rel="stylesheet">
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
-    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
-        $(function() {
-            $( "#Completed" ).datepicker({
-                format: "mm-yyyy",
-                viewMode: "months",
-                minViewMode: "months"});
-        });
-    </script>
+    $(function() {
+        $( "#BTech_Project_Completed" ).datepicker({
+            format: "mm-yyyy",
+            viewMode: "months",
+            minViewMode: "months"});
+    });
+</script>
 </head>
 <body>
 <div class="container">

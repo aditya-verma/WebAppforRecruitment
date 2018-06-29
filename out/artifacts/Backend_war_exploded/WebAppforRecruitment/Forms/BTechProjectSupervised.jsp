@@ -12,13 +12,13 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
-        $(function() {
-            $( "#Completed" ).datepicker({
-                format: "mm-yyyy",
-                viewMode: "months",
-                minViewMode: "months"});
-        });
-    </script>
+    $(function() {
+        $( "#BTech_Project_Completed" ).datepicker({
+            format: "mm-yyyy",
+            viewMode: "months",
+            minViewMode: "months"});
+    });
+</script>
 </head>
 <body>
 <div class="container">
