@@ -138,9 +138,7 @@
         <%
                     }
                     else{
-        %>
-        <div class="alert-success text-center">
-            <%
+
                 session.setAttribute("ApplicationNumber",rs.getString("ApplicationNumber"));
                 session.setAttribute("Password",rs.getString("Password"));
                 response.sendRedirect("User Page.jsp");
