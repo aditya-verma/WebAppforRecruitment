@@ -1,9 +1,6 @@
 <%@ page import="java.util.Properties" %>
 <%@ page import="java.sql.*" %>
-<<<<<<< HEAD
-=======
 <%@ page import="java.security.SecureRandom" %>
->>>>>>> 4fbdda8174a58ff82a512bb69b92b8801e471c1f
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,19 +15,6 @@
     <script src="../js/bootstrap.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
-    <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content" style="background-color: #f5f5f5;">
-                <div class="modal-header">
-                    <h5 class="modal-title">New User</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-=======
 <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <form method="post" action="" class="modal-content">
@@ -56,7 +40,6 @@
                 </div>
                 <div class="md-form mb-2">
                     <input type="text" name="orangeForm-phone" class="form-control validate" placeholder="Mobile Number" required>
->>>>>>> 4fbdda8174a58ff82a512bb69b92b8801e471c1f
                 </div>
             </div>
             <div class="modal-footer d-flex justify-content-center">
@@ -137,16 +120,6 @@
             if(request.getParameter("dologin")!=null){
                 try{
                     Class.forName("com.mysql.cj.jdbc.Driver");
-<<<<<<< HEAD
-                    Properties properties = new Properties();
-                    properties.setProperty("user", "root");
-                    properties.setProperty("password", "");
-                    properties.setProperty("useSSL", "false");
-                    properties.setProperty("autoReconnect", "true");
-                    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test",properties);
-                    Statement stmt=con.createStatement();
-                    ResultSet rs=stmt.executeQuery("select * from USERS where email='"+request.getParameter("Email")+"' and Password='"+request.getParameter("Password")+"'");
-=======
                     //Use properties if database and server are on same machine
                     /*
                     Properties properties = new Properties();
@@ -158,7 +131,6 @@
                     Connection con=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
                     Statement stmt=con.createStatement();
                     ResultSet rs=stmt.executeQuery("select * from USERS where ApplicationNumber='"+request.getParameter("AppNumber")+"' and Password='"+request.getParameter("Password")+"'");
->>>>>>> 4fbdda8174a58ff82a512bb69b92b8801e471c1f
                     if (!rs.next())
                     {
         %>
@@ -169,13 +141,9 @@
         %>
         <div class="alert-success text-center">
             <%
-<<<<<<< HEAD
-                out.println(rs.getString(1)+"  "+rs.getString(2)+"  "+rs.getString(3)+"  "+rs.getString(4)+"  "+rs.getString(5));
-=======
                 session.setAttribute("ApplicationNumber",rs.getString("ApplicationNumber"));
                 session.setAttribute("Password",rs.getString("Password"));
                 response.sendRedirect("User Page.jsp");
->>>>>>> 4fbdda8174a58ff82a512bb69b92b8801e471c1f
             %>
         </div>
         <%            }

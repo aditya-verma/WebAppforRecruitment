@@ -2,28 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Intellectual Property Portal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bootstrap.min.css" >
-
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
-    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js" ></script>
-
-    <style>
-        body {
-
-            background-color: #f5f5f5;
-        }
-        .rcorners2 {
-            border-radius: 20px;
-            border: 2px ;
-            height: 50px;
-            width: 101%;
-        }
-
-    </style>
 </head>
 <body>
 <header>

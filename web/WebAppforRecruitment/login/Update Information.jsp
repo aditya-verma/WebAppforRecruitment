@@ -82,45 +82,43 @@ To change this template use File | Settings | File Templates.
                 </div>
                 <!--------------Publication-------------->
                 <div class="tab-pane fade" id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
-                    <%@include file="\WebAppforRecruitment\Forms\Publications.html"%>
+                    <%@include file="/WebAppforRecruitment/Forms/Publications.jsp"%>
                 </div>
                 <!--------------Patent-------------->
                 <div class="tab-pane fade" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
-                    <%--
-                    @include file="Forms"
-                    --%>
+                    <%@include file="/WebAppforRecruitment/Forms/Patent.jsp"%>
                 </div>
                 <!--------------PhDSupervision-------------->
                 <div class="tab-pane fade" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">
-                    Phd Supervision
+                    <%--@include file="/WebAppforRecruitment/Forms/Ph.D Supervision.jsp"--%>
                 </div>
                 <!--------------PGSupervision-------------->
                 <div class="tab-pane fade" id="list-PGSupervision" role="tabpanel" aria-labelledby="list-PGSupervision-list">
-                    PG Supervision
+                    <%--@include file="/WebAppforRecruitment/Forms/PG Supervision.jsp"--%>
                 </div>
                 <!--------------Btech Project guided-------------->
                 <div class="tab-pane fade" id="list-BTechProjectGuided" role="tabpanel" aria-labelledby="list-BTechProjectGuided-list">
-                    Btech Project Guided
+                    <%--@include file="/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp"--%>
                 </div>
                 <!--------------Acted As Reviewer-------------->
                 <div class="tab-pane fade" id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">
-                    Acted As A Reviewer
+                    <%--@include file="/WebAppforRecruitment/Forms/Acted_As_Reviewer.jsp"--%>
                 </div>
                 <!--------------ExpertInvited Lecture-------------->
                 <div class="tab-pane fade" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
-                    Expert Invited Lecture
+                    <%--@include file="/WebAppforRecruitment/Forms/Invited_Lecture_Delivered.jsp"--%>
                 </div>
                 <!--------------Research Project Investigated-------------->
                 <div class="tab-pane fade" id="list-ResearchProjectInvestigated" role="tabpanel" aria-labelledby="list-ResearchProjectInvestigated-list">
-                    Research Project Investigated
+                    <%@include file="/WebAppforRecruitment/Forms/Research_Project_Investigated.jsp"%>
                 </div>
                 <!--------------Awards Honour Received-------------->
                 <div class="tab-pane fade" id="list-AwardsHonourReceived" role="tabpanel" aria-labelledby="list-AwardsHonourReceived-list">
-                    Awards Honour Received
+                    <%@include file="/WebAppforRecruitment/Forms/Award_Honour_Received.jsp"%>
                 </div>
                 <!--------------Event Attended-------------->
                 <div class="tab-pane fade" id="list-EventAttended" role="tabpanel" aria-labelledby="list-EventAttended-list">
-                    Event Attended
+                    <%--@include file="/WebAppforRecruitment/Forms/Event_Attended.jsp"--%>
                 </div>
                 <!--------------Expert Lecture Organized-------------->
                 <div class="tab-pane fade" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
