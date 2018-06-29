@@ -82,13 +82,12 @@ To change this template use File | Settings | File Templates.
                 </div>
                 <!--------------Publication-------------->
                 <div class="tab-pane fade" id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
-                    <%@include file="\WebAppforRecruitment\Forms\Publications.html"%>
+                    <%@include file="/WebAppforRecruitment/Forms/Publications.jsp"%>
                 </div>
                 <!--------------Patent-------------->
                 <div class="tab-pane fade" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
-                    <%--
-                    @include file="Forms"
-                    --%>
+
+                    <%@include file="/WebAppforRecruitment/Forms/Patent.jsp"%>
                 </div>
                 <!--------------PhDSupervision-------------->
                 <div class="tab-pane fade" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">

@@ -5,8 +5,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <%
+    if (session.getAttribute("ApplicationNumber")==null)
+    {
+        session.setAttribute("ApplicationNumber","");
+        session.setAttribute("Password","");
+        response.sendRedirect("login.jsp");
+    }
+    %>
     <meta charset="UTF-8">
-    <title>@USER</title>
+    <title><%out.println(session.getAttribute("ApplicationNumber"));%></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/backgrounds.css">
@@ -107,7 +115,7 @@ background-size:16px 16px;">
             </ul>
         </div>
         <div class="card-footer text-center">
-            <a href="Update%20Information.html" class="card-link">Update Information</a>
+            <a href="Update%20Information.jsp" class="card-link">Update Information</a>
         </div>
     </div>
 </div>
