@@ -142,7 +142,7 @@
                             Class.forName("com.mysql.jdbc.Driver");
                             con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
                             st=con.createStatement();
-                            String sql="insert into Invited_Lecture_Delivered values('A123','"+title+"','"+date+"','"+inviter+"','"+event+"')";
+                            String sql="insert into Invited_Lecture_Delivered values('2018PF000001','"+title+"','"+date+"','"+inviter+"','"+event+"')";
                             int res=st.executeUpdate(sql);
                             if(res!=0){%>
                 <button class="btn btn-lg btn-dark m-1" id="add" value="Insert" onclick="myfunc()" type="submit" name="b3">Add More</button>
