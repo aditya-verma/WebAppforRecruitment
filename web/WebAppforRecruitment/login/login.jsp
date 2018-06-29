@@ -77,7 +77,7 @@
                             for( int i = 0; i < 8; i++ )
                                 sb.append( AB.charAt( rnd.nextInt(AB.length()) ) );
                             String temp_pass = sb.toString();
-                            statement.executeUpdate("INSERT INTO USERS(ApplicationNumber,FirstName,LastName,Email,Password) VALUES ('"+ApplicationNum+"','"+fname+"','"+lname+"','"+email+"','"+temp_pass+"')");
+                            statement.executeUpdate("INSERT INTO USERS(ApplicationNumber,FirstName,LastName,Email,Password,Phone) VALUES ('"+ApplicationNum+"','"+fname+"','"+lname+"','"+email+"','"+temp_pass+"','"+phone+"')");
                         }
                         statement.close();
                         connection.close();

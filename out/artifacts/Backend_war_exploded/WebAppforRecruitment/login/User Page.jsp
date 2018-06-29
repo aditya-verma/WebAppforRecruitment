@@ -31,6 +31,7 @@
         if (rs.next()){
             Email = rs.getString("Email");
             Name = rs.getString("FirstName")+" "+rs.getString("LastName");
+            Phone = rs.getString("Phone");
         }
         statement.close();
         connection.close();
@@ -100,7 +101,7 @@ background-size:16px 16px;">
                 <li class="list-group-item list-group-flush">
                     <div class="row text-left">
                         <div class="col-md-6 text-uppercase font-weight-bold">Phone</div>
-                        <div class="col-md-6 font-italic" id="card-phone">Value</div>
+                        <div class="col-md-6 font-italic" id="card-phone"><%out.println(Phone);%></div>
                     </div>
                 </li>
             </ul>

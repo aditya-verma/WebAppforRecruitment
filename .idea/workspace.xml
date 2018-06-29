@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63425adc-0f12-42d7-85b2-e92f2ca0d66e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/User Page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,8 +23,8 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+            <state relative-caret-position="1342">
+              <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
               <folding>
                 <element signature="e#1090#1097#1#HTML" expanded="true" />
               </folding>
@@ -39,8 +35,8 @@
       <file leaf-file-name="User Page.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="102" column="44" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
+            <state relative-caret-position="-1068">
+              <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -89,8 +85,8 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/mysqlbean.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/Bean/msqlbean.java" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/register.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" />
       </list>
     </option>
   </component>
@@ -409,7 +405,7 @@
       <workItem from="1530121876541" duration="7521000" />
       <workItem from="1530161958317" duration="1479000" />
       <workItem from="1530165297748" duration="10173000" />
-      <workItem from="1530212890813" duration="13779000" />
+      <workItem from="1530212890813" duration="14489000" />
     </task>
     <task id="LOCAL-00001" summary="Added Login and New User Creation">
       <created>1530226905871</created>
@@ -422,7 +418,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33931000" />
+    <option name="totallyTimeSpent" value="34641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -447,9 +443,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3315734" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3315734" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16145833" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16145833" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
       <window_info id="Learn" order="6" />
@@ -706,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+        <state relative-caret-position="1342">
+          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
           <folding>
             <element signature="e#1090#1097#1#HTML" expanded="true" />
           </folding>
@@ -716,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="102" column="44" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
+        <state relative-caret-position="-1068">
+          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
         </state>
       </provider>
     </entry>
