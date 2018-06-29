@@ -1,34 +1,22 @@
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<ul class="nav nav-pills mb-3" id="Publication-tab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" id="InternationalJournal-tab" data-toggle="pill" href="#pills-InternationalJournal" role="tab" aria-controls="pills-InternationalJournal" aria-selected="true">International Journal</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link active" id="NationalJournal-tab" data-toggle="pill" href="#pills-NationalJournal" role="tab" aria-controls="pills-NationalJournal" aria-selected="false">National Journal</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" id="InternationalConferences-tab" data-toggle="pill" href="#pills-InternationalConferences" role="tab" aria-controls="pills-InternationalConferences" aria-selected="false">International Conferences</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" id="NationalConferences-tab" data-toggle="pill" href="#pills-NationalConferences" role="tab" aria-controls="pills-NationalConferences" aria-selected="false">National Conferences</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" id="BooksChapters-tab" data-toggle="pill" href="#pills-BooksChapters" role="tab" aria-controls="pills-BooksChapters" aria-selected="false">Books/Chapters</a>
-        </li>
-    </ul>
-    <div class="tab-content" >
-        <div class="tab-pane fade show active" id="pills-InternationalJournal" role="tabpanel" aria-labelledby="InternationalJournal-tab">International Conferences</div>
-        <div class="tab-pane fade" id="pills-NationalJournal" role="tabpanel" aria-labelledby="NationalJournal-tab">National Journal</div>
-        <div class="tab-pane fade" id="pills-InternationalConferences" role="tabpanel" aria-labelledby="InternationalConferences-tab">International Conferences</div>
-        <div class="tab-pane fade" id="pills-NationalConferences" role="tabpanel" aria-labelledby="NationalConferences-tab">National Conferences</div>
-        <div class="tab-pane fade" id="pills-BooksChapters" role="tabpanel" aria-labelledby="BooksChapters-tab">Books/Book Chapters</div>
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-InternationalJournal-tab" data-toggle="tab" href="#nav-InternationalJournal" role="tab" aria-controls="nav-InternationalJournal" aria-selected="true">International Journal</a>
+        <a class="nav-item nav-link" id="nav-NationalJournal-tab" data-toggle="tab" href="#nav-NationalJournal" role="tab" aria-controls="nav-NationalJournal" aria-selected="false">National Journal</a>
+        <a class="nav-item nav-link" id="nav-InternationalConference-tab" data-toggle="tab" href="#nav-InternationalConference" role="tab" aria-controls="nav-InternationalConference" aria-selected="false">International Conference</a>
+        <a class="nav-item nav-link" id="nav-NationalConference-tab" data-toggle="tab" href="#nav-NationalConference" role="tab" aria-controls="nav-NationalConference" aria-selected="false">National Conference</a>
+        <a class="nav-item nav-link" id="nav-BooksChapter-tab" data-toggle="tab" href="#nav-BooksChapter" role="tab" aria-controls="nav-BooksChapter" aria-selected="false">Books/Book Chapters</a>
     </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-InternationalJournal" role="tabpanel" aria-labelledby="nav-InternationalJournal-tab">International Journal</div>
+    <div class="tab-pane fade" id="nav-NationalJournal" role="tabpanel" aria-labelledby="nav-NationalJournal-tab">National Journal</div>
+    <div class="tab-pane fade" id="nav-InternationalConference" role="tabpanel" aria-labelledby="nav-InternationalConference-tab">International Conference</div>
+    <div class="tab-pane fade" id="nav-NationalConference" role="tabpanel" aria-labelledby="nav-NationalConference-tab">National Conference</div>
+    <div class="tab-pane fade" id="nav-BooksChapter" role="tabpanel" aria-labelledby="nav-BooksChapter-tab">Books and Chapter</div>
+</div>
 </body>
 </html>
