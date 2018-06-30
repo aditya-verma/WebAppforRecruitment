@@ -2,15 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>PG</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link href="../css/datepicker.css" rel="stylesheet">
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
-    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(function() {
             $( "#PG_Supervision_Completed" ).datepicker({
@@ -45,7 +36,7 @@
         <div class="form-group row">
             <label for="PG_Supervision_Completed" class="col-md-2">Completed On</label>
             <div class="col-md-10">
-                <input class="form-control" type="text" id="PG_Supervision_Completed" name="Completed_On">
+                <input class="form-control" type="text" id="PG_Supervision_Completed" name="Completed_On" placeholder="MM-YYYY">
             </div>
         </div>
         <fieldset class="form-group">
