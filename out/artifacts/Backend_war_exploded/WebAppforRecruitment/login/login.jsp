@@ -14,9 +14,6 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
-    <script type="text/javascript">
-
-    </script>
 </head>
 <body>
 <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -50,19 +47,6 @@
                 <button class="btn btn-primary" name="register-btn">Register</button>
             </div>
             <%
-<<<<<<< HEAD
-                if (request.getParameter("register-btn")!=null){
-                    try{
-                        Class.forName("com.mysql.cj.jdbc.Driver");
-                        Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
-                        Statement statement = connection.createStatement();
-                        String fname = request.getParameter("orangeForm-Fname");
-                        String lname = request.getParameter("orangeForm-Lname");
-                        String email = request.getParameter("orangeForm-email");
-                        String phone = request.getParameter("orangeForm-phone");
-                        if (!session.getAttribute("triedRegister").equals("yes"))
-                        {
-=======
                 if (session.getAttribute("triedRegister")!=null){
                     if (request.getParameter("register-btn")!=null){
                         try{
@@ -74,7 +58,6 @@
                             String email = request.getParameter("orangeForm-email");
                             String phone = request.getParameter("orangeForm-phone");
 
->>>>>>> b598c7b525083ec52f30bf15ecde020f3916dbbd
                             if ((!phone.startsWith("+91")&&phone.length()==10)||(phone.startsWith("+91")&&phone.length()==13))
                             {
                                 phone = "+91"+phone;
@@ -100,21 +83,6 @@
                             }
                             else{
                                 session.setAttribute("triedRegister","yes");
-<<<<<<< HEAD
-                                %><div class="alert-danger text-center">Check</div> <%
-                            }
-                        }
-                        else {
-
-                        }
-                        statement.close();
-                        connection.close();
-                    }
-                    catch (java.sql.SQLIntegrityConstraintViolationException e){
-                    }
-                    catch (Exception e){}
-                }
-=======
                                 %><div class="text-center alert-warning">Check your Phone Number!</div> <%
                             }
                             statement.close();
@@ -133,7 +101,6 @@
                 else{
                     %><script>$('#modalRegisterForm').modal('show');</script><%
                 }
->>>>>>> b598c7b525083ec52f30bf15ecde020f3916dbbd
             %>
         </form>
     </div>

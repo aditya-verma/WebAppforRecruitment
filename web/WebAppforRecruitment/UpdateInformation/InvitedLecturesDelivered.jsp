@@ -46,9 +46,9 @@
                 <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PG Supervision.jsp" role="tab">PG Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectSupervised.jsp" role="tab" >B.Tech Project Guided</a>
                 <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
-                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="ExpertInvitedLecture.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
+                <a class="list-group-item list-group-item-action active" id="list-ExpertInvitedLecture-list"  href="InvitedLecturesDelivered.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
                 <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list"  href="ResearchProjectInvestigated.jsp" role="tab" >Research Project Investigated</a>
-                <a class="list-group-item list-group-item-action active" id="list-AwardsHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
+                <a class="list-group-item list-group-item-action " id="list-AwardHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
                 <a class="list-group-item list-group-item-action " id="list-EventAttended-list"  href="EventAttended.jsp" role="tab" >Event Attended</a>
                 <a class="list-group-item list-group-item-action " id="list-ExpertLectureOrganized-list"  href="ExpertLectureOrganized.jsp" role="tab" >Expert Lecture Organized</a>
                 <a class="list-group-item list-group-item-action " id="list-ConsultancyProvided-list" href="ConsultancyProvided.jsp" role="tab" >Consultancy Provided</a>
@@ -73,7 +73,7 @@
                 </div>
                 <!--------------PGSupervision-------------->
                 <div class="tab-pane fade" id="list-PGSupervision" role="tabpanel" aria-labelledby="list-PGSupervision-list">
-                    <%@include file="/WebAppforRecruitment/Forms/PG Supervision.jsp"%>
+                    <%--@include file="/WebAppforRecruitment/Forms/PG Supervision.jsp"--%>
                 </div>
                 <!--------------Btech Project guided-------------->
                 <div class="tab-pane fade " id="list-BTechProjectGuided" role="tabpanel" aria-labelledby="list-BTechProjectGuided-list">
@@ -84,16 +84,16 @@
                     <%--@include file="/WebAppforRecruitment/Forms/ActedAsReviewer.jsp"--%>
                 </div>
                 <!--------------ExpertInvited Lecture-------------->
-                <div class="tab-pane fade" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
-                    <%--@include file="/WebAppforRecruitment/Forms/Invited_Lecture_Delivered.jsp"--%>
+                <div class="tab-pane fade show active" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
+                    <%@ include file="/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp"%>
                 </div>
                 <!--------------Research Project Investigated-------------->
                 <div class="tab-pane fade" id="list-ResearchProjectInvestigated" role="tabpanel" aria-labelledby="list-ResearchProjectInvestigated-list">
                     <%--@include file="/WebAppforRecruitment/Forms/ResearchProjectInvestigated.jsp"--%>
                 </div>
-                <!--------------Awards Honour Received-------------->
-                <div class="tab-pane fade show active" id="list-AwardsHonourReceived" role="tabpanel" aria-labelledby="list-AwardsHonourReceived-list">
-                    <%@include file="/WebAppforRecruitment/Forms/AwardHonourReceived.jsp"%>
+                <!--------------Award Honour Received-------------->
+                <div class="tab-pane fade " id="list-AwardHonourReceived" role="tabpanel" aria-labelledby="list-AwardHonourReceived-list">
+                    <%--@include file="/WebAppforRecruitment/Forms/AwardHonourReceived.jsp"--%>
                 </div>
                 <!--------------Event Attended-------------->
                 <div class="tab-pane fade" id="list-EventAttended" role="tabpanel" aria-labelledby="list-EventAttended-list">
