@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Personal Qualification</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bootstrap.min.css" >
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
-    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js" ></script>
     <script>
         $(document).ready(function(){
             $("#filladdress").on("click", function(){
@@ -23,29 +16,7 @@
 </head>
 <body style="background-color: #f5f5f5;">
 
-<header>
-    <nav class="navbar sticky-top navbar-light bg-light"  style="border-bottom-color: #000">
-        <div class="container" >
-            <div class="navbar-header" >
-                <a class="navbar-brand" href="#">
-                    <img class="img-fluid float-left" src="../Images/form-background.png"  style="margin-left: 5rem;max-width: 7%; height: auto">
-                    <img class="img-fluid " src="../Images/mnnit%20name.png"  style="margin-left: 3rem;max-width: 80%;height: auto">
-                </a>
-            </div>
-        </div>
-    </nav>
-    <div class="jumbotron" style="height: 10%">
-        <div class="container" >
-            <h1>Recruitment Portal</h1>
-            <div class="bg-dark rounded">
-                <h3   class="text-primary" style="color: #FFF;padding: 1%;">1. Personal Information</h3>
-            </div>
-        </div>
-    </div>
-</header>
-
 <div class="container ">
-
     <form id="PersonalInformation" action="#" style="width: 100%;">
         <div class="row">
             <div class="col-sm-6">
@@ -449,6 +420,5 @@
         </div>
     </form>
 </div>
-<div class="card-footer align-bottom mt-2" style="background-color: #c4c4c4"> <div class="container text-muted text-center rounded">This is footer</div> </div>
 </body>
 </html>
