@@ -35,42 +35,42 @@ To change this template use File | Settings | File Templates.
         <div class="container">
             <h1>Recruitment Portal</h1>
             <div class="bg-dark rounded">
-                <h3 class="text-primary" style="color: #FFF;padding: 1%;">Update Information</h3>
+                <h3 style="color: #FFF;padding: 1%;">Update Information</h3>
             </div>
         </div>
     </div>
 </header>
+
 <div class="container align-middle align-content-center align-items-center">
     <div class="row">
         <div class="col-sm-4">
             <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-PersonalInfo-list" data-toggle="list" href="#list-PersonalInfo" role="tab" aria-controls="Personal Information">Personal Information</a>
-                <a class="list-group-item list-group-item-action " id="list-Publication-list" data-toggle="list" href="#list-Publication" role="tab" aria-controls="Publication">Publications</a>
-                <a class="list-group-item list-group-item-action " id="list-Patent-list" data-toggle="list" href="#list-Patent" role="tab" aria-controls="Patent">Patent</a>
-                <a class="list-group-item list-group-item-action " id="list-PhDSupervision-list" data-toggle="list" href="#list-PhDSupervision" role="tab" aria-controls="PhD Supervision">Ph.D Supervision</a>
-                <a class="list-group-item list-group-item-action " id="list-PGSupervision-list" data-toggle="list" href="#list-PGSupervision" role="tab" aria-controls="PG Supervision">PG Supervision</a>
-                <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list" data-toggle="list" href="#list-BTechProjectGuided" role="tab" aria-controls="BTech Project">B.Tech Project Guided</a>
-                <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list" data-toggle="list" href="#list-ActedAsReviewer" role="tab" aria-controls="Reviewer">Acted As A Reviewer</a>
-                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list" data-toggle="list" href="#list-ExpertInvitedLecture" role="tab" aria-controls="Invited Lecture">Expert/Invited Lecture Delivered</a>
-                <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list" data-toggle="list" href="#list-ResearchProjectInvestigated" role="tab" aria-controls="Research Project Guided">Research Project Investigated</a>
-                <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list" data-toggle="list" href="#list-AwardsHonourReceived" role="tab" aria-controls="Awards and Honour">Award/Honour Received</a>
-                <a class="list-group-item list-group-item-action " id="list-EventAttended-list" data-toggle="list" href="#list-EventAttended" role="tab" aria-controls="Events Attended">Event Attended</a>
-                <a class="list-group-item list-group-item-action " id="list-ExpertLectureOrganized-list" data-toggle="list" href="#list-ExpertLectureOrganized" role="tab" aria-controls="Expert Lecture Organized">Expert Lecture Organized</a>
-                <a class="list-group-item list-group-item-action " id="list-ConsultancyProvided-list" data-toggle="list" href="#list-ConsultancyProvided" role="tab" aria-controls="Consultancy Provided">Consultancy Provided</a>
+                <a class="list-group-item list-group-item-action " id="list-PersonalInformation-list" href="PersonalInformation.jsp" role="tab" >Personal Information</a>
+                <a class="list-group-item list-group-item-action " id="list-Publication-list" href="Publications.jsp" role="tab" >Publications</a>
+                <a class="list-group-item list-group-item-action active" id="list-Patent-list" href="Patent.jsp" role="tab" >Patent</a>
+                <a class="list-group-item list-group-item-action " id="list-PhDSupervision-list" href="PhDSupervision.jsp" role="tab" >Ph.D Supervision</a>
+                <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PGSupervision.jsp" role="tab">PG Supervision</a>
+                <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectGuided.jsp" role="tab" >B.Tech Project Guided</a>
+                <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
+                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="ExpertInvitedLecture.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
+                <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list"  href="ResearchProjectInvestigated.jsp" role="tab" >Research Project Investigated</a>
+                <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
+                <a class="list-group-item list-group-item-action " id="list-EventAttended-list"  href="EventAttended.jsp" role="tab" >Event Attended</a>
+                <a class="list-group-item list-group-item-action " id="list-ExpertLectureOrganized-list"  href="ExpertLectureOrganized.jsp" role="tab" >Expert Lecture Organized</a>
+                <a class="list-group-item list-group-item-action " id="list-ConsultancyProvided-list" href="ConsultancyProvided.jsp" role="tab" >Consultancy Provided</a>
             </div>
         </div>
         <div class="col-sm-8">
             <div class="tab-content" id="nav-tabContent">
                 <!--------------Personal Information-------------->
-                <div class="tab-pane fade show active" id="list-PersonalInfo" role="tabpanel" aria-labelledby="list-PersonalInfo-list">
-                    <%@include file="/WebAppforRecruitment/Forms/PersonalInformation.jsp"%>
+                <div class="tab-pane fade" id="list-PersonalInfo" role="tabpanel" aria-labelledby="list-PersonalInfo-list">
                 </div>
                 <!--------------Publication-------------->
-                <div class="tab-pane fade" id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
-                    <%@include file="/WebAppforRecruitment/Forms/Publications.jsp"%>
+                <div class="tab-pane fade " id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
+                    <%--@include file="/WebAppforRecruitment/Forms/Publications.jsp"--%>
                 </div>
                 <!--------------Patent-------------->
-                <div class="tab-pane fade" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
+                <div class="tab-pane fade show active" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
                     <%@include file="/WebAppforRecruitment/Forms/Patent.jsp"%>
                 </div>
                 <!--------------PhDSupervision-------------->
@@ -95,7 +95,7 @@ To change this template use File | Settings | File Templates.
                 </div>
                 <!--------------Research Project Investigated-------------->
                 <div class="tab-pane fade" id="list-ResearchProjectInvestigated" role="tabpanel" aria-labelledby="list-ResearchProjectInvestigated-list">
-                    <%@include file="/WebAppforRecruitment/Forms/Research_Project_Investigated.jsp"%>
+                    <%--@include file="/WebAppforRecruitment/Forms/Research_Project_Investigated.jsp"--%>
                 </div>
                 <!--------------Awards Honour Received-------------->
                 <div class="tab-pane fade" id="list-AwardsHonourReceived" role="tabpanel" aria-labelledby="list-AwardsHonourReceived-list">

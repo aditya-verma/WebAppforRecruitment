@@ -18,7 +18,7 @@
     </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-PersonalInformation" role="tabpanel" aria-labelledby="nav-PersonalInformation-tab">Personal Information 1</div>
+    <div class="tab-pane fade show active" id="nav-PersonalInformation" role="tabpanel" aria-labelledby="nav-PersonalInformation-tab">1 </div>
     <div class="tab-pane fade" id="nav-PersonalInformation2" role="tabpanel" aria-labelledby="nav-PersonalInformation2-tab">Personal Information 2</div>
     <div class="tab-pane fade" id="nav-InternationalConference" role="tabpanel" aria-labelledby="nav-InternationalConference-tab">International Conference</div>
     <div class="tab-pane fade" id="nav-NationalConference" role="tabpanel" aria-labelledby="nav-NationalConference-tab">National Conference</div>

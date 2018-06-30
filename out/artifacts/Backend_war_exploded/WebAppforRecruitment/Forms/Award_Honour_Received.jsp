@@ -1,17 +1,8 @@
 <%@page import="java.sql.*"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Intellectual Property Portal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <<link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link href="../css/datepicker.css" rel="stylesheet">
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
-    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(function() {
             $( "#date" ).datepicker({
@@ -21,45 +12,9 @@
                 pickerPosition: "bottom-left"});
         });
     </script>
-
-    <style>
-        body {
-
-            background-color: #f5f5f5;
-        }
-        .rcorners2 {
-            border-radius: 20px;
-            border: 2px ;
-            height: 50px;
-            width: 101%;
-        }
-
-    </style>
-
 </head>
 <body>
 
-<header>
-    <nav class="navbar sticky-top navbar-light bg-light"  style="border-bottom-color: #000">
-        <div class="container" >
-            <div class="navbar-header" >
-                <a class="navbar-brand" href="#">
-                    <img class="img-fluid float-left" src="../Images/form-background.png" style="margin-left: 5rem;max-width: 7%; height: auto">
-                    <img class="img-fluid " src="../Images/mnnit%20name.png" style="margin-left: 3rem;max-width: 80%;height: auto">
-                </a>
-            </div>
-        </div>
-    </nav>
-    <div class="jumbotron" style="height: 10%">
-        <div class="container" >
-            <h1>Intellectual Property Portal</h1>
-            <div class="bg-dark rcorners2 ">
-                <h3  style="color: #FFF;padding: 1%; ">Awards/Acheivements:</h3>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="container">
     <form id="Awards_Received" action="" method="post" style="width: 100%;padding-left: 30%;">
         <div class="row " style="margin-top: 5%">
             <div class="col-sm-2" style="text-align: left">
@@ -87,7 +42,6 @@
         </div>
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-2">
-
             </div>
             <div class="col-sm-4">
                 <button class="btn btn-lg btn-success m-1" id="next" value="Insert" type="submit" name="b2">Submit</button>
@@ -125,11 +79,7 @@
                 }
             }
         %>
-
-
-
     </form>
-</div>
 
 </body>
 </html>
