@@ -1,22 +1,16 @@
-<%--
-Created by IntelliJ IDEA.
-User: ADITYA
-Date: 27 Jun 2018
-Time: 01:18 PM
-To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Update Information</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/datepicker.css">
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
 </head>
 <body>
 <header>
@@ -46,10 +40,10 @@ To change this template use File | Settings | File Templates.
     <div class="row">
         <div class="col-sm-4">
             <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-PersonalInformation-list" href="PersonalInformation.jsp" role="tab" >Personal Information</a>
+                <a class="list-group-item list-group-item-action " id="list-PersonalInformation-list" href="PersonalInformation.jsp" role="tab" >Personal Information</a>
                 <a class="list-group-item list-group-item-action " id="list-Publication-list" href="Publications.jsp" role="tab" >Publications</a>
                 <a class="list-group-item list-group-item-action " id="list-Patent-list" href="Patent.jsp" role="tab" >Patent</a>
-                <a class="list-group-item list-group-item-action " id="list-PhDSupervision-list" href="PhDSupervision.jsp" role="tab" >Ph.D Supervision</a>
+                <a class="list-group-item list-group-item-action active" id="list-PhDSupervision-list" href="PhDSupervision.jsp" role="tab" >Ph.D Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PG Supervision.jsp" role="tab">PG Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectSupervised.jsp" role="tab" >B.Tech Project Guided</a>
                 <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
@@ -64,28 +58,27 @@ To change this template use File | Settings | File Templates.
         <div class="col-sm-8">
             <div class="tab-content" id="nav-tabContent">
                 <!--------------Personal Information-------------->
-                <div class="tab-pane fade show active" id="list-PersonalInfo" role="tabpanel" aria-labelledby="list-PersonalInfo-list">
-                    <%@include file="/WebAppforRecruitment/Forms/PersonalInformation.jsp"%>
+                <div class="tab-pane fade" id="list-PersonalInfo" role="tabpanel" aria-labelledby="list-PersonalInfo-list">
                 </div>
                 <!--------------Publication-------------->
-                <div class="tab-pane fade" id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
+                <div class="tab-pane fade " id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
                     <%--@include file="/WebAppforRecruitment/Forms/Publications.jsp"--%>
                 </div>
                 <!--------------Patent-------------->
-                <div class="tab-pane fade" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
+                <div class="tab-pane fade " id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
                     <%--@include file="/WebAppforRecruitment/Forms/Patent.jsp"--%>
                 </div>
                 <!--------------PhDSupervision-------------->
-                <div class="tab-pane fade" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">
-                    <%--@include file="/WebAppforRecruitment/Forms/PhDSupervision.jsp"--%>
+                <div class="tab-pane fade show active" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">
+                    <%@include file="/WebAppforRecruitment/Forms/PhDSupervision.jsp"%>
                 </div>
                 <!--------------PGSupervision-------------->
-                <div class="tab-pane fade" id="list-PGSupervision" role="tabpanel" aria-labelledby="list-PGSupervision-list">
+                <div class="tab-pane fade " id="list-PGSupervision" role="tabpanel" aria-labelledby="list-PGSupervision-list">
                     <%--@include file="/WebAppforRecruitment/Forms/PG Supervision.jsp"--%>
                 </div>
                 <!--------------Btech Project guided-------------->
                 <div class="tab-pane fade" id="list-BTechProjectGuided" role="tabpanel" aria-labelledby="list-BTechProjectGuided-list">
-                    <%--@include file="/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp"--%>
+                    <!--@include file="/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp"-->
                 </div>
                 <!--------------Acted As Reviewer-------------->
                 <div class="tab-pane fade" id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">

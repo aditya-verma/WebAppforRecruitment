@@ -13,6 +13,7 @@ To change this template use File | Settings | File Templates.
     <title>Update Information</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/datepicker.css">
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -49,8 +50,8 @@ To change this template use File | Settings | File Templates.
                 <a class="list-group-item list-group-item-action " id="list-Publication-list" href="Publications.jsp" role="tab" >Publications</a>
                 <a class="list-group-item list-group-item-action " id="list-Patent-list" href="Patent.jsp" role="tab" >Patent</a>
                 <a class="list-group-item list-group-item-action " id="list-PhDSupervision-list" href="PhDSupervision.jsp" role="tab" >Ph.D Supervision</a>
-                <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PGSupervision.jsp" role="tab">PG Supervision</a>
-                <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectGuided.jsp" role="tab" >B.Tech Project Guided</a>
+                <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PG Supervision.jsp" role="tab">PG Supervision</a>
+                <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectSupervised.jsp" role="tab" >B.Tech Project Guided</a>
                 <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
                 <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="ExpertInvitedLecture.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
                 <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list"  href="ResearchProjectInvestigated.jsp" role="tab" >Research Project Investigated</a>
@@ -68,15 +69,15 @@ To change this template use File | Settings | File Templates.
                 </div>
                 <!--------------Publication-------------->
                 <div class="tab-pane fade" id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
-                    <%@include file="/WebAppforRecruitment/Forms/Publications.jsp"%>
+                    <%--@include file="/WebAppforRecruitment/Forms/Publications.jsp"--%>
                 </div>
                 <!--------------Patent-------------->
                 <div class="tab-pane fade" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
-                    <%@include file="/WebAppforRecruitment/Forms/Patent.jsp"%>
+                    <%--@include file="/WebAppforRecruitment/Forms/Patent.jsp"--%>
                 </div>
                 <!--------------PhDSupervision-------------->
                 <div class="tab-pane fade" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">
-                    <%@include file="/WebAppforRecruitment/Forms/Ph.D Supervision.jsp"%>
+                    <%--@include file="/WebAppforRecruitment/Forms/PhDSupervision.jsp"--%>
                 </div>
                 <!--------------PGSupervision-------------->
                 <div class="tab-pane fade" id="list-PGSupervision" role="tabpanel" aria-labelledby="list-PGSupervision-list">

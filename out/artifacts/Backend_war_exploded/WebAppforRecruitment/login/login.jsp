@@ -2,7 +2,7 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="java.security.SecureRandom" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:useBean id="obj" class="/WebAppforRecruitment/WEB-INF/classes/bean/Bean.mysqlbean.class"/>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
