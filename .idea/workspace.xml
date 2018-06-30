@@ -6,19 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63425adc-0f12-42d7-85b2-e92f2ca0d66e" name="Default" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/AwardHonourReceived.jsp" afterDir="false" />
+    <list default="true" id="ae41d8aa-e072-4949-a536-fccac79e0315" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/WEB-INF/classes/Bean/mysqlbean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/WEB-INF/classes/Bean/mysqlbean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/WEB-INF/classes/Bean/mysqlbean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/WEB-INF/classes/Bean/mysqlbean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" afterDir="false" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/10.AnyOtherInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/10.AnyOtherInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/3.EducationalQualification.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/3.EducationalQualification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/OtherAcademicQualification.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,166 +23,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-      <file leaf-file-name="ActedAsReviewer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-137">
-              <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-=======
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="132" column="10" lean-forward="true" selection-start-line="132" selection-start-column="10" selection-end-line="132" selection-end-column="10" />
-              <folding>
-                <element signature="e#1187#1194#1#HTML" expanded="true" />
-              </folding>
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="InvitedLecturesDelivered.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2124" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AwardHonourReceived.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/AwardHonourReceived.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="50" column="71" selection-start-line="50" selection-start-column="71" selection-end-line="50" selection-end-column="71" />
-=======
-      <file leaf-file-name="User Page.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1210">
-              <caret line="55" column="79" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Publications.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Publications.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1430">
-              <caret line="65" column="34" selection-end-line="125" selection-end-column="7" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonalInformation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Publications.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Award_Honour_Received.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Award_Honour_Received.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BTechProjectSupervised.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Jsp File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>contact</find>
-      <find>NationalJournal</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>InternationalConference</replace>
-      <replace>PersonalInformation2</replace>
-    </replaceStrings>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.html" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/Update Information.html" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.html" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/dologin.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/xyz.html" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/classes/mysqlbean.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/Bean/msqlbean.java" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/register.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Research_Project_Investigated.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Patent.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation1.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/Update Information.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Ph.D Supervision.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PhDSupervision.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PG Supervision.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Patent.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/BTechProjectSupervised.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Patent.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PG Supervision.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PhDSupervision.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Publications.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/AwardHonourReceived.jsp" />
-=======
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
-      </list>
-    </option>
-  </component>
-  <component name="JsBowerSettings">
-    <node-interpreter value="project" />
-    <bower-package value="" />
-    <bower.json value="" />
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
-  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -204,29 +45,15 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
-    <option name="x" value="-8" />
-    <option name="width" value="979" />
-    <option name="height" value="1046" />
-=======
-    <option name="x" value="199" />
-    <option name="y" value="173" />
-    <option name="width" value="974" />
+    <option name="x" value="-9" />
+    <option name="width" value="980" />
     <option name="height" value="1047" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-      <pane id="PackagesPane" />
-=======
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,33 +64,25 @@
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-=======
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
             </path>
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="web" type="462c0819:PsiDirectoryNode" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
             </path>
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
               <item name="Backend_war_exploded" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
             </path>
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
@@ -272,7 +91,6 @@
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
               <item name="Backend_war_exploded" type="462c0819:PsiDirectoryNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
             </path>
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
@@ -287,8 +105,6 @@
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-=======
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
             </path>
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
@@ -301,7 +117,7 @@
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="Forms" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
@@ -309,37 +125,32 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
               <item name="UpdateInformation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-=======
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/Backend_war_exploded" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Res/mysql-connector-java-8.0.11.jar!/" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ADITYA\Documents\GitHub\WebAppforRecruitment\web\WebAppforRecruitment\Forms" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ADITYA\Documents\GitHub\WebAppforRecruitment\out\artifacts\Backend_war_exploded\WEB-INF" />
-      <recent name="C:\Users\ADITYA\Desktop\Backend\web\WebAppforRecruitment\" />
+      <recent name="C:\Users\amrit\Desktop\Project_Web_App\Backend\WebAppforRecruitment\out\artifacts\Backend_war_exploded\WebAppforRecruitment\UpdateInformation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -354,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.PersonalInformation.jsp">
+  <component name="RunManager" selected="Tomcat Server.login.jsp">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -374,8 +185,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="PersonalInformation.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" />
-    <configuration name="login.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/WebAppforRecruitment/login/login.jsp" />
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -398,8 +207,8 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PersonalInformation.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.8" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" />
+    <configuration name="BTechProjectSupervised.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.8" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp" />
       <deployment>
         <artifact name="Backend:war exploded">
           <settings>
@@ -407,118 +216,12 @@
           </settings>
         </artifact>
       </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="PersonalInformation_jsp_WebAppforRecruitment" />
-      </server-settings>
+      <server-settings />
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50836" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Backend:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="login.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.8" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WebAppforRecruitment/login/login.jsp" />
-      <deployment>
-        <artifact name="Backend:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_jsp_(1)_WebAppforRecruitment" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50838" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -542,55 +245,21 @@
     </configuration>
     <configuration name="login.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.8" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WebAppforRecruitment/login/login.jsp" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <file path="$PROJECT_DIR$/out/artifacts/Backend_war_exploded">
+        <artifact name="Backend:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
-        </file>
+        </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_jsp_Backend" />
+        <option name="BASE_DIRECTORY_NAME" value="login_jsp_WebAppforRecruitment" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55100" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -607,23 +276,19 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Backend:war exploded" />
+        </option>
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.PersonalInformation.jsp" />
+      <item itemvalue="Tomcat Server.BTechProjectSupervised.jsp" />
       <item itemvalue="Tomcat Server.login.jsp" />
-      <item itemvalue="JavaScript Debug.login.jsp" />
-      <item itemvalue="Tomcat Server.PersonalInformation.jsp" />
-      <item itemvalue="Tomcat Server.login.jsp (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Tomcat Server.login.jsp (1)" />
-        <item itemvalue="Tomcat Server.PersonalInformation.jsp" />
         <item itemvalue="Tomcat Server.login.jsp" />
-        <item itemvalue="JavaScript Debug.login.jsp" />
-        <item itemvalue="JavaScript Debug.PersonalInformation.jsp" />
+        <item itemvalue="Tomcat Server.BTechProjectSupervised.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -632,160 +297,53 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="63425adc-0f12-42d7-85b2-e92f2ca0d66e" name="Default" comment="" />
-      <created>1530085732988</created>
+      <changelist id="ae41d8aa-e072-4949-a536-fccac79e0315" name="Default" comment="" />
+      <created>1530350533991</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1530085732988</updated>
-      <workItem from="1530085738509" duration="159000" />
-      <workItem from="1530120424295" duration="820000" />
-      <workItem from="1530121876541" duration="7521000" />
-      <workItem from="1530161958317" duration="1479000" />
-      <workItem from="1530165297748" duration="10173000" />
-      <workItem from="1530212890813" duration="23806000" />
-      <workItem from="1530349831087" duration="553000" />
+      <updated>1530350533991</updated>
+      <workItem from="1530350535474" duration="1202000" />
     </task>
-    <task id="LOCAL-00001" summary="Added Login and New User Creation">
-      <created>1530226905871</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1530226905871</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Update HTML">
-      <created>1530251207720</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1530251207720</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="53351000" />
+    <option name="totallyTimeSpent" value="1202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
-=======
-    <option name="totallyTimeSpent" value="46989000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32946146" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.3288835" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
+      <window_info id="UI Designer" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="3" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3313107" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16101208" />
-=======
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3315734" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16145833" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
-      <window_info id="Learn" order="6" />
-      <window_info id="EJB" order="9" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3315734" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16145833" />
-      <window_info id="Learn" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-<<<<<<< HEAD
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-=======
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32946146" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
+      <window_info anchor="bottom" id="Messages" weight="0.3288835" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3288835" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24956872" />
+      <window_info id="Web" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49971247" weight="0.3288835" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Learn" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32946146" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3315734" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info id="EJB" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16145833" />
-      <window_info id="Learn" order="6" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -793,306 +351,42 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Login and New User Creation" />
-    <MESSAGE value="Update HTML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update HTML" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand>
-      <path>
-        <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-        <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Publications.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="65" column="34" selection-end-line="125" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Publications2.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/WEB-INF/classes/Bean/mysqlbean.class">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" column="79" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
-        </state>
+        <state relative-caret-position="-1640" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#1187#1194#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="67" column="64" selection-start-line="67" selection-start-column="64" selection-end-line="67" selection-end-column="64" />
-          <folding>
-            <element signature="e#1187#1194#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/Patent.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/register.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/mysqlbean.java" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/dologin.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding>
-            <element signature="e#1187#1194#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/register.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/dologin.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/Update Information.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PG Supervision.html" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="e#1187#1194#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/register.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/dologin.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/Update Information.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="65" lean-forward="true" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/.idea/vcs.xml" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/xyz.html" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PG Supervision.html" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/dologin.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/mysqlbean.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/Bean/msqlbean.java" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WEB-INF/Bean/mysqlbean.class" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/register.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" column="79" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Research_Project_Investigated.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="31" column="9" selection-start-line="7" selection-start-column="4" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Award_Honour_Received.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/WebAppforRecruitment.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/6.TeachingExperience.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/Update Information.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
-=======
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Patent.jsp">
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/Update Information.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Ph.D Supervision.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Present_Employee.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2486">
-          <caret line="113" column="18" selection-start-line="113" selection-start-column="18" selection-end-line="113" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebAppforRecruitment.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/BTechProjectSupervised.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="82" column="129" selection-start-line="82" selection-start-column="129" selection-end-line="82" selection-end-column="129" />
-        </state>
+        <state relative-caret-position="-544" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1184" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/AwardHonourReceived.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="50" column="71" selection-start-line="50" selection-start-column="71" selection-end-line="50" selection-end-column="71" />
-        </state>
-      </provider>
-=======
-    <entry file="file://$PROJECT_DIR$/.idea/kotlinc.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Patent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-688" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/AwardHonourReceived.jsp">
       <provider selected="true" editor-type-id="text-editor" />
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-137">
-          <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-=======
-        <state relative-caret-position="446">
-          <caret line="132" column="10" lean-forward="true" selection-start-line="132" selection-start-column="10" selection-end-line="132" selection-end-column="10" />
-          <folding>
-            <element signature="e#1187#1194#1#HTML" expanded="true" />
-          </folding>
->>>>>>> 296538421698f0f69dd3abb755853d21975b2358
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2124" />
-      </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArquillianSettingsConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
@@ -1132,7 +426,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>9</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1144,19 +438,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>EJB|WebAppforRecruitment</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>9</last-edited>
+          <last-edited>WebAppforRecruitment</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
