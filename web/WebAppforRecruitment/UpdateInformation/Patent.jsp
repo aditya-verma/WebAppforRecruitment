@@ -47,7 +47,7 @@
                 <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PG Supervision.jsp" role="tab">PG Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectSupervised.jsp" role="tab" >B.Tech Project Guided</a>
                 <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
-                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="ExpertInvitedLecture.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
+                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="InvitedLecturesDelivered.jsp" role="tab" >Expert/Invited Lectures Delivered</a>
                 <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list"  href="ResearchProjectInvestigated.jsp" role="tab" >Research Project Investigated</a>
                 <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
                 <a class="list-group-item list-group-item-action " id="list-EventAttended-list"  href="EventAttended.jsp" role="tab" >Event Attended</a>
@@ -82,7 +82,7 @@
                 </div>
                 <!--------------Acted As Reviewer-------------->
                 <div class="tab-pane fade" id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">
-                    <%--@include file="/WebAppforRecruitment/Forms/Acted_As_Reviewer.jsp"--%>
+                    <%--@include file="/WebAppforRecruitment/Forms/ActedAsReviewer.jsp"--%>
                 </div>
                 <!--------------ExpertInvited Lecture-------------->
                 <div class="tab-pane fade" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
@@ -90,11 +90,11 @@
                 </div>
                 <!--------------Research Project Investigated-------------->
                 <div class="tab-pane fade" id="list-ResearchProjectInvestigated" role="tabpanel" aria-labelledby="list-ResearchProjectInvestigated-list">
-                    <%--@include file="/WebAppforRecruitment/Forms/Research_Project_Investigated.jsp"--%>
+                    <%--@include file="/WebAppforRecruitment/Forms/ResearchProjectInvestigated.jsp"--%>
                 </div>
                 <!--------------Awards Honour Received-------------->
                 <div class="tab-pane fade" id="list-AwardsHonourReceived" role="tabpanel" aria-labelledby="list-AwardsHonourReceived-list">
-                    <!--%@include file="/WebAppforRecruitment/Forms/Award_Honour_Received.jsp"%-->
+                    <!--%@include file="/WebAppforRecruitment/Forms/AwardHonourReceived.jsp"%-->
                 </div>
                 <!--------------Event Attended-------------->
                 <div class="tab-pane fade" id="list-EventAttended" role="tabpanel" aria-labelledby="list-EventAttended-list">
