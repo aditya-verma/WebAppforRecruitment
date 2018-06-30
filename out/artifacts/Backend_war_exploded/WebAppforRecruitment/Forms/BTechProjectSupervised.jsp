@@ -2,15 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Update Information</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/datepicker.css">
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
-    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/bootstrap-datepicker.js"></script>
+    <title>Btech Project</title>
     <script type="text/javascript">
     $(function() {
         $( "#BTech_Project_Completed" ).datepicker({
@@ -44,7 +36,7 @@
         <div class="form-group row">
             <label for="BTech_Project_Completed" class="col-md-2">Completed On</label>
             <div class="col-md-10">
-                <input class="form-control" type="text" id="BTech_Project_Completed" name="Completed_On" placeholder="MM-YYYY">
+                <input class="form-control" type="text" id="BTech_Project_Completed" name="Completed_On">
             </div>
         </div>
         <div class="row">

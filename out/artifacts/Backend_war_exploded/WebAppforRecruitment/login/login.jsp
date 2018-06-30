@@ -95,7 +95,7 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid mb-5 pb-5">
     <form class="form-signin" method="post" action="">
         <img class="img-responsive col-12 mb-lg-5" style="margin-left: -1.5rem  "  src="../Images/mnnit logo.png" alt="MNNIT_LOGO">
         <div class="text-center">
@@ -158,7 +158,7 @@
         %>
     </form>
 </div>
-<footer class="card-footer align-bottom text-center" style="background-color: #c4c4c4">
+<footer class="card-footer fixed-bottom text-center" style="background-color: #c4c4c4">
     <div class="container">
         <p class="mt-1 mb-1 text-muted text-center">© 2017-2018</p>
     </div>

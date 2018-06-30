@@ -2,20 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Update Information</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
-    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(function() {
             $( "#PhD_Supervision_Oral" ).datepicker({
                 format: "dd-mm-yyyy",
-                viewMode: "years",
-                minViewMode: "days"});
+                viewMode: "months",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
         });
     </script>
 </head>
@@ -43,7 +36,7 @@
         <div class="form-group row">
             <label for="PhD_Supervision_Oral" class="col-md-2">Oral-Viva Date</label>
             <div class="col-md-10">
-                <input type="text" class="form-control" id="PhD_Supervision_Oral" placeholder="DD-MM-YYYY" name="Date">
+                <input type="text" class="form-control" id="PhD_Supervision_Oral" placeholder="Enter Viva Date" name="Date">
             </div>
         </div>
         <fieldset class="form-group">

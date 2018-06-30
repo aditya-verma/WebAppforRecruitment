@@ -14,6 +14,9 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+
+    </script>
 </head>
 <body>
 <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -56,46 +59,52 @@
                         String lname = request.getParameter("orangeForm-Lname");
                         String email = request.getParameter("orangeForm-email");
                         String phone = request.getParameter("orangeForm-phone");
-                        if (!phone.startsWith("+91")&& phone.length()==10)
-                            phone = "+91"+phone;
-                        else if (phone.length()!=10 || phone.length()!=13){
-            %><div class="alert-danger"><%out.print("Invalid Phone number!");%></div> <%
-            }
-            int year =  Integer.parseInt(new java.text.SimpleDateFormat("yyyy").format(new java.util.Date()));
-            String post = "PF";
-            statement.executeUpdate("INSERT INTO TEMP_USER(Year,POST,Email,FirstName,LastName,Phone) VALUES ("+year+",'"+post+"','"+email+"','"+fname+"','"+lname+"','"+phone+"')");
-            ResultSet rs = statement.executeQuery("SELECT Serial from TEMP_USER where email='"+email+"' and phone='"+phone+"'");
-            String ApplicationNum="";
-            if (rs.next())
-            {
-                String temp = Integer.toString(rs.getInt("Serial"));
-                while (temp.length()<6)
-                    temp = "0"+temp;
-                ApplicationNum = Integer.toString(year)+post+temp;
-                final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-                SecureRandom rnd = new SecureRandom();
-                StringBuilder sb = new StringBuilder( 8 );
-                for( int i = 0; i < 8; i++ )
-                    sb.append( AB.charAt( rnd.nextInt(AB.length()) ) );
-                String temp_pass = sb.toString();
-                statement.executeUpdate("INSERT INTO USERS(ApplicationNumber,FirstName,LastName,Email,Password,Phone) VALUES ('"+ApplicationNum+"','"+fname+"','"+lname+"','"+email+"','"+temp_pass+"','"+phone+"')");
-            }
-            statement.close();
-            connection.close();
-        }
-        catch (java.sql.SQLIntegrityConstraintViolationException e){
-        %><div class="alert-danger mr-2 ml-2"><%out.println("Email already exits!");%></div> <%
-        }
-        catch (Exception e){
-        %><div class="alert-danger mr-2 ml-2"><%out.println(e);%></div> <%
+                        if (!session.getAttribute("triedRegister").equals("yes"))
+                        {
+                            if ((!phone.startsWith("+91")&&phone.length()==10)||(phone.startsWith("+91")&&phone.length()==13))
+                            {
+                                phone = "+91"+phone;
+                                int year =  Integer.parseInt(new java.text.SimpleDateFormat("yyyy").format(new java.util.Date()));
+                                String post = "PF";
+                                statement.executeUpdate("INSERT INTO TEMP_USER(Year,POST,Email,FirstName,LastName,Phone) VALUES ("+year+",'"+post+"','"+email+"','"+fname+"','"+lname+"','"+phone+"')");
+                                ResultSet rs = statement.executeQuery("SELECT Serial from TEMP_USER where email='"+email+"' and phone='"+phone+"'");
+                                String ApplicationNum="";
+                                if (rs.next())
+                                {
+                                    String temp = Integer.toString(rs.getInt("Serial"));
+                                    while (temp.length()<6)
+                                        temp = "0"+temp;
+                                    ApplicationNum = Integer.toString(year)+post+temp;
+                                    final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+                                    SecureRandom rnd = new SecureRandom();
+                                    StringBuilder sb = new StringBuilder( 8 );
+                                    for( int i = 0; i < 8; i++ )
+                                        sb.append( AB.charAt( rnd.nextInt(AB.length()) ) );
+                                    String temp_pass = sb.toString();
+                                    statement.executeUpdate("INSERT INTO USERS(ApplicationNumber,FirstName,LastName,Email,Password,Phone) VALUES ('"+ApplicationNum+"','"+fname+"','"+lname+"','"+email+"','"+temp_pass+"','"+phone+"')");
+                                }
+                            }
+                            else{
+                                session.setAttribute("triedRegister","yes");
+                                %><div class="alert-danger text-center">Check</div> <%
+                            }
+                        }
+                        else {
+
+                        }
+                        statement.close();
+                        connection.close();
+                    }
+                    catch (java.sql.SQLIntegrityConstraintViolationException e){
+                    }
+                    catch (Exception e){}
                 }
-            }
-        %>
+            %>
         </form>
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid mb-5 pb-5">
     <form class="form-signin" method="post" action="">
         <img class="img-responsive col-12 mb-lg-5" style="margin-left: -1.5rem  "  src="../Images/mnnit logo.png" alt="MNNIT_LOGO">
         <div class="text-center">
@@ -158,7 +167,7 @@
         %>
     </form>
 </div>
-<footer class="card-footer align-bottom text-center" style="background-color: #c4c4c4">
+<footer class="card-footer fixed-bottom text-center" style="background-color: #c4c4c4">
     <div class="container">
         <p class="mt-1 mb-1 text-muted text-center">© 2017-2018</p>
     </div>
