@@ -14,9 +14,6 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
-    <script type="text/javascript">
-
-    </script>
 </head>
 <body>
 <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -31,11 +28,11 @@
             <div class="modal-body mx-3">
                 <div class="md-form mb-2">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <input type="text" name="orangeForm-Fname" class="form-control validate" placeholder="FName" required>
+                        <div class="col-sm-6 mb-sm-2">
+                            <input type="text" name="orangeForm-Fname" class="form-control validate" placeholder="First Name" required>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" name="orangeForm-Lname" class="form-control validate" placeholder="LName" required>
+                            <input type="text" name="orangeForm-Lname" class="form-control validate" placeholder="Last Name" required>
                         </div>
                     </div>
                 </div>
@@ -50,17 +47,17 @@
                 <button class="btn btn-primary" name="register-btn">Register</button>
             </div>
             <%
-                if (request.getParameter("register-btn")!=null){
-                    try{
-                        Class.forName("com.mysql.cj.jdbc.Driver");
-                        Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
-                        Statement statement = connection.createStatement();
-                        String fname = request.getParameter("orangeForm-Fname");
-                        String lname = request.getParameter("orangeForm-Lname");
-                        String email = request.getParameter("orangeForm-email");
-                        String phone = request.getParameter("orangeForm-phone");
-                        if (!session.getAttribute("triedRegister").equals("yes"))
-                        {
+                if (session.getAttribute("triedRegister")!=null){
+                    if (request.getParameter("register-btn")!=null){
+                        try{
+                            Class.forName("com.mysql.cj.jdbc.Driver");
+                            Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+                            Statement statement = connection.createStatement();
+                            String fname = request.getParameter("orangeForm-Fname");
+                            String lname = request.getParameter("orangeForm-Lname");
+                            String email = request.getParameter("orangeForm-email");
+                            String phone = request.getParameter("orangeForm-phone");
+
                             if ((!phone.startsWith("+91")&&phone.length()==10)||(phone.startsWith("+91")&&phone.length()==13))
                             {
                                 phone = "+91"+phone;
@@ -86,18 +83,23 @@
                             }
                             else{
                                 session.setAttribute("triedRegister","yes");
-                                %><div class="alert-danger text-center">Check</div> <%
+                                %><div class="text-center alert-warning">Check your Phone Number!</div> <%
                             }
+                            statement.close();
+                            connection.close();
                         }
-                        else {
-
+                        catch (java.sql.SQLIntegrityConstraintViolationException e){
+                            session.setAttribute("triedRegister","yes");
+                            %><div class="text-center alert-warning">Email Id already registered!</div> <%
                         }
-                        statement.close();
-                        connection.close();
+                        catch (Exception e){
+                            session.setAttribute("triedRegister","yes");
+                            %><div class="alert-danger text-center"><%out.println(e);%></div> <%
+                        }
                     }
-                    catch (java.sql.SQLIntegrityConstraintViolationException e){
-                    }
-                    catch (Exception e){}
+                }
+                else{
+                    %><script>$('#modalRegisterForm').modal('show');</script><%
                 }
             %>
         </form>

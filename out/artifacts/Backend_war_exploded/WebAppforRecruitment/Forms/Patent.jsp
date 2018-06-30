@@ -38,7 +38,7 @@
         <div class="form-group row">
             <label for="Patent_Date" class="col-md-2">Date</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control  col-md-10" id="Patent_Date" placeholder="DD/MM/YYYY" name="Date">
+                <input type="text" class="form-control  col-md-10" id="Patent_Date" placeholder="DD-MM-YYYY" name="Date">
             </div>
         </div>
         <div class="form-group row">

@@ -36,7 +36,7 @@
         <div class="form-group row">
             <label for="PG_Supervision_Completed" class="col-md-2">Completed On</label>
             <div class="col-md-10">
-                <input class="form-control" type="text" id="PG_Supervision_Completed" name="Completed_On">
+                <input class="form-control" type="text" id="PG_Supervision_Completed" name="Completed_On" placeholder="MM-YYYY">
             </div>
         </div>
         <fieldset class="form-group">

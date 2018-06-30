@@ -28,11 +28,11 @@
             <div class="modal-body mx-3">
                 <div class="md-form mb-2">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <input type="text" name="orangeForm-Fname" class="form-control validate" placeholder="FName" required>
+                        <div class="col-sm-6 mb-sm-2">
+                            <input type="text" name="orangeForm-Fname" class="form-control validate" placeholder="First Name" required>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" name="orangeForm-Lname" class="form-control validate" placeholder="LName" required>
+                            <input type="text" name="orangeForm-Lname" class="form-control validate" placeholder="Last Name" required>
                         </div>
                     </div>
                 </div>
@@ -47,50 +47,61 @@
                 <button class="btn btn-primary" name="register-btn">Register</button>
             </div>
             <%
-                if (request.getParameter("register-btn")!=null){
-                    try{
-                        Class.forName("com.mysql.cj.jdbc.Driver");
-                        Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
-                        Statement statement = connection.createStatement();
-                        String fname = request.getParameter("orangeForm-Fname");
-                        String lname = request.getParameter("orangeForm-Lname");
-                        String email = request.getParameter("orangeForm-email");
-                        String phone = request.getParameter("orangeForm-phone");
-                        if (!phone.startsWith("+91")&& phone.length()==10)
-                            phone = "+91"+phone;
-                        else if (phone.length()!=10 || phone.length()!=13){
-            %><div class="alert-danger"><%out.print("Invalid Phone number!");%></div> <%
-            }
-            int year =  Integer.parseInt(new java.text.SimpleDateFormat("yyyy").format(new java.util.Date()));
-            String post = "PF";
-            statement.executeUpdate("INSERT INTO TEMP_USER(Year,POST,Email,FirstName,LastName,Phone) VALUES ("+year+",'"+post+"','"+email+"','"+fname+"','"+lname+"','"+phone+"')");
-            ResultSet rs = statement.executeQuery("SELECT Serial from TEMP_USER where email='"+email+"' and phone='"+phone+"'");
-            String ApplicationNum="";
-            if (rs.next())
-            {
-                String temp = Integer.toString(rs.getInt("Serial"));
-                while (temp.length()<6)
-                    temp = "0"+temp;
-                ApplicationNum = Integer.toString(year)+post+temp;
-                final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-                SecureRandom rnd = new SecureRandom();
-                StringBuilder sb = new StringBuilder( 8 );
-                for( int i = 0; i < 8; i++ )
-                    sb.append( AB.charAt( rnd.nextInt(AB.length()) ) );
-                String temp_pass = sb.toString();
-                statement.executeUpdate("INSERT INTO USERS(ApplicationNumber,FirstName,LastName,Email,Password,Phone) VALUES ('"+ApplicationNum+"','"+fname+"','"+lname+"','"+email+"','"+temp_pass+"','"+phone+"')");
-            }
-            statement.close();
-            connection.close();
-        }
-        catch (java.sql.SQLIntegrityConstraintViolationException e){
-        %><div class="alert-danger mr-2 ml-2"><%out.println("Email already exits!");%></div> <%
-        }
-        catch (Exception e){
-        %><div class="alert-danger mr-2 ml-2"><%out.println(e);%></div> <%
+                if (session.getAttribute("triedRegister")!=null){
+                    if (request.getParameter("register-btn")!=null){
+                        try{
+                            Class.forName("com.mysql.cj.jdbc.Driver");
+                            Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+                            Statement statement = connection.createStatement();
+                            String fname = request.getParameter("orangeForm-Fname");
+                            String lname = request.getParameter("orangeForm-Lname");
+                            String email = request.getParameter("orangeForm-email");
+                            String phone = request.getParameter("orangeForm-phone");
+
+                            if ((!phone.startsWith("+91")&&phone.length()==10)||(phone.startsWith("+91")&&phone.length()==13))
+                            {
+                                phone = "+91"+phone;
+                                int year =  Integer.parseInt(new java.text.SimpleDateFormat("yyyy").format(new java.util.Date()));
+                                String post = "PF";
+                                statement.executeUpdate("INSERT INTO TEMP_USER(Year,POST,Email,FirstName,LastName,Phone) VALUES ("+year+",'"+post+"','"+email+"','"+fname+"','"+lname+"','"+phone+"')");
+                                ResultSet rs = statement.executeQuery("SELECT Serial from TEMP_USER where email='"+email+"' and phone='"+phone+"'");
+                                String ApplicationNum="";
+                                if (rs.next())
+                                {
+                                    String temp = Integer.toString(rs.getInt("Serial"));
+                                    while (temp.length()<6)
+                                        temp = "0"+temp;
+                                    ApplicationNum = Integer.toString(year)+post+temp;
+                                    final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+                                    SecureRandom rnd = new SecureRandom();
+                                    StringBuilder sb = new StringBuilder( 8 );
+                                    for( int i = 0; i < 8; i++ )
+                                        sb.append( AB.charAt( rnd.nextInt(AB.length()) ) );
+                                    String temp_pass = sb.toString();
+                                    statement.executeUpdate("INSERT INTO USERS(ApplicationNumber,FirstName,LastName,Email,Password,Phone) VALUES ('"+ApplicationNum+"','"+fname+"','"+lname+"','"+email+"','"+temp_pass+"','"+phone+"')");
+                                }
+                            }
+                            else{
+                                session.setAttribute("triedRegister","yes");
+                                %><div class="text-center alert-warning">Check your Phone Number!</div> <%
+                            }
+                            statement.close();
+                            connection.close();
+                        }
+                        catch (java.sql.SQLIntegrityConstraintViolationException e){
+                            session.setAttribute("triedRegister","yes");
+                            %><div class="text-center alert-warning">Email Id already registered!</div> <%
+                        }
+                        catch (Exception e){
+                            session.setAttribute("triedRegister","yes");
+                            %><div class="alert-danger text-center"><%out.println(e);%></div> <%
+                        }
+                    }
                 }
-            }
-        %>
+                else{
+                    %><script>$('#modalRegisterForm').modal('show');</script><%
+                }
+            %>
         </form>
     </div>
 </div>
