@@ -47,7 +47,7 @@
                 <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PG Supervision.jsp" role="tab">PG Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectSupervised.jsp" role="tab" >B.Tech Project Guided</a>
                 <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
-                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="ExpertInvitedLecture.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
+                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="InvitedLecturesDelivered.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
                 <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list"  href="ResearchProjectInvestigated.jsp" role="tab" >Research Project Investigated</a>
                 <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
                 <a class="list-group-item list-group-item-action " id="list-EventAttended-list"  href="EventAttended.jsp" role="tab" >Event Attended</a>
