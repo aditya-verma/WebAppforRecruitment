@@ -35,41 +35,16 @@
     </style>
 </head>
 <body>
-<header>
-    <nav class="navbar sticky-top navbar-light bg-light"  style="border-bottom-color: #000">
-        <div class="container" >
-            <div class="navbar-header" >
-                <a class="navbar-brand" href="#">
-                    <img class="img-fluid float-left" src="../Images/form-background.png" style="margin-left: 5rem;max-width: 7%; height: auto">
-                    <img class="img-fluid " src="../Images/mnnit%20name.png" style="margin-left: 3rem;max-width: 80%;height: auto">
-                </a>
-            </div>
-        </div>
-    </nav>
-    <div class="jumbotron" style="height: 10%">
-        <div class="container" >
-            <h1>Intellectual Property Portal</h1>
-            <div class="bg-dark rcorners2 ">
-                <h3  style="color: #FFF;padding: 1%; ">Acted As A Reviewer:</h3>
-            </div>
-            <% if(request.getParameter("b1")!=null)
-            {%>
-            <div class="alert alert-success rcorners2" style="margin-top: 3%">
-                <strong>Record Inserted! </strong><b>ADD MORE</b> or press <b>Continue</b> to proceed.
-            </div>
-            <% }%>
-        </div>
-    </div>
-</header>
+
 
 
 <div class="container"  >
-    <form id="Reviewer" action="" style="width: 100%;padding-left: 30%;" method="post">
+    <form id="Reviewer" action="" style="width: 100%;" method="post">
         <div class="row " style="margin-top: 5%">
-            <div class="col-sm-3" >
+            <div class="col-sm-4" >
                 <p >Whether acted as reviewer for Conference/Journal </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio"value="Conference" name="Reviewer" id="Reviewer_Conference">
                     <label class="form-check-label" for="Reviewer_Conference">Conference</label>
@@ -81,42 +56,42 @@
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="form-group" style="margin-top:3% ">
                     <label for="Reviewer_Name">Full Name of Conference/Journal</label>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-group" >
                     <input type="text" class="form-control" id="Reviewer_Name" name="i1"  placeholder="Enter Name">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="form-group" style=" margin-top:3% ">
                     <label for="Reviewer_Publisher">Publisher</label>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-group" >
                     <input type="text" class="form-control" id="Reviewer_Publisher" name="i2"  placeholder="Enter Publisher">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="form-group" style=" margin-top:3% ">
                     <label for="Reviewer_Date">Month/Year</label>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-group" >
                     <input type="text" class="form-control" id="Reviewer_Date"   name="i3" placeholder="MM/YYYY">
                 </div>
             </div>
         </div>
-        <div class="row " style="margin-top: 2%">
+       <!-- <div class="row " style="margin-top: 2%">
             <div class="col-sm-3">
 
             </div>
@@ -124,7 +99,7 @@
                 <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="b1">ADD</button>
                 <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
 
-            <%
+            <%--
                     if(request.getParameter("b1")!=null)
                     {
                         Connection con=null;
@@ -155,8 +130,8 @@
             out.println(e.toString());
         }
     }
-%>
-
+--%>
+-->
     </form>
 </div>
 </body>
