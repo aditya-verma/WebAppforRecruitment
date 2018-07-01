@@ -41,6 +41,8 @@
             Name = rs.getString("FirstName")+" "+rs.getString("LastName");
             Phone = rs.getString("Phone");
         }
+        session.setAttribute("Name",Name);
+        session.setAttribute("Email",Email);
         statement.close();
         connection.close();
     }catch (Exception e){}
