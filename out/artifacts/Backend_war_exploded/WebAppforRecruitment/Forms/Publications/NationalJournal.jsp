@@ -26,13 +26,19 @@
             <label for="NationalJournal-Issue">Issue</label>
             <input class="form-control" id="NationalJournal-Issue" required>
         </div>
-        <div class="form-group text-uppercase">
-            <label for="NationalJournal-Pages">Pages</label>
-            <input class="form-control" id="NationalJournal-Pages" placeholder="start page - end page" required>
-        </div>
-        <div class="form-group text-uppercase">
-            <label for="NationalJournal-Month/Year">Month/Year</label>
-            <input class="form-control" id="NationalJournal-Month/Year" placeholder="MM/YYYY" required>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group text-uppercase">
+                    <label for="NationalJournal-Pages">Pages</label>
+                    <input class="form-control" id="NationalJournal-Pages" placeholder="start page - end page" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group text-uppercase">
+                    <label for="NationalJournal-Month/Year">Month/Year</label>
+                    <input class="form-control" id="NationalJournal-Month/Year" placeholder="MM/YYYY" required>
+                </div>
+            </div>
         </div>
         <div class="form-group text-uppercase">
             <label for="NationalJournal-Publisher">publisher</label>
@@ -42,25 +48,31 @@
             <label for="NationalJournal-ImpactFactor">Impact factor</label>
             <input class="form-control" id="NationalJournal-ImpactFactor" required>
         </div>
-        <div class="form-group text-uppercase">
-            <label for="NationalJournal-SCI">Wheather SCI</label>
-            <div class="row" id="NationalJournal-SCI">
-                <div class="col">
-                    <input id="NationalJournal-SCI_yes" name="inlineRadioOptions" type="radio">
-                    <label for="NationalJournal-SCI_yes" class="mr-3">Yes</label>
-                    <input id="NationalJournal-SCI_no" name="inlineRadioOptions" type="radio">
-                    <label for="NationalJournal-SCI_no">No</label>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group text-uppercase">
+                    <label for="NationalJournal-SCI">Wheather SCI</label>
+                    <div class="row" id="NationalJournal-SCI">
+                        <div class="col">
+                            <input id="NationalJournal-SCI_yes" name="inlineRadioOptions" type="radio">
+                            <label for="NationalJournal-SCI_yes" class="mr-3">Yes</label>
+                            <input id="NationalJournal-SCI_no" name="inlineRadioOptions" type="radio">
+                            <label for="NationalJournal-SCI_no">No</label>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="form-group text-uppercase">
-            <label for="NationalJournal-Scopus">Wheather Scopus</label>
-            <div class="row" id="NationalJournal-Scopus">
-                <div class="col">
-                    <input id="NationalJournal-Scopus_yes" name="inlineRadioOptions" type="radio">
-                    <label for="NationalJournal-Scopus_yes" class="mr-3">Yes</label>
-                    <input id="NationalJournal-Scopus_no" name="inlineRadioOptions" type="radio">
-                    <label for="NationalJournal-Scopus_no">No</label>
+            <div class="col-sm-6">
+                <div class="form-group text-uppercase">
+                    <label for="NationalJournal-Scopus">Wheather Scopus</label>
+                    <div class="row" id="NationalJournal-Scopus">
+                        <div class="col">
+                            <input id="NationalJournal-Scopus_yes" name="inlineRadioOptions" type="radio">
+                            <label for="NationalJournal-Scopus_yes" class="mr-3">Yes</label>
+                            <input id="NationalJournal-Scopus_no" name="inlineRadioOptions" type="radio">
+                            <label for="NationalJournal-Scopus_no">No</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@
 <head>
 </head>
 <body>
+<div class="container mt-2">
     <form id="InternationalJournal">
         <div class="form-group text-uppercase">
             <label for="InternationalJournal-Author">Author(s)</label>
@@ -25,13 +26,19 @@
             <label for="InternationalJournal-Issue">Issue</label>
             <input class="form-control" id="InternationalJournal-Issue" required>
         </div>
-        <div class="form-group text-uppercase">
-            <label for="InternationalJournal-Pages">Pages</label>
-            <input class="form-control" id="InternationalJournal-Pages" placeholder="start page - end page" required>
-        </div>
-        <div class="form-group text-uppercase">
-            <label for="InternationalJournal-Month/Year">Month/Year</label>
-            <input class="form-control" id="InternationalJournal-Month/Year" placeholder="MM/YYYY" required>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group text-uppercase">
+                    <label for="InternationalJournal-Pages">Pages</label>
+                    <input class="form-control" id="InternationalJournal-Pages" placeholder="start page - end page" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group text-uppercase">
+                    <label for="InternationalJournal-Month/Year">Month/Year</label>
+                    <input class="form-control" id="InternationalJournal-Month/Year" placeholder="MM/YYYY" required>
+                </div>
+            </div>
         </div>
         <div class="form-group text-uppercase">
             <label for="InternationalJournal-Publisher">publisher</label>
@@ -41,25 +48,31 @@
             <label for="InternationalJournal-ImpactFactor">Impact factor</label>
             <input class="form-control" id="InternationalJournal-ImpactFactor" required>
         </div>
-        <div class="form-group text-uppercase">
-            <label for="InternationalJournal-SCI">Wheather SCI</label>
-            <div class="row" id="InternationalJournal-SCI">
-                <div class="col">
-                    <input id="InternationalJournal-SCI_yes" name="inlineRadioOptions" type="radio">
-                    <label for="InternationalJournal-SCI_yes" class="mr-3">Yes</label>
-                    <input id="InternationalJournal-SCI_no" name="inlineRadioOptions" type="radio">
-                    <label for="InternationalJournal-SCI_no">No</label>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group text-uppercase">
+                    <label for="InternationalJournal-SCI">Wheather SCI</label>
+                    <div class="row" id="InternationalJournal-SCI">
+                        <div class="col">
+                            <input id="InternationalJournal-SCI_yes" name="inlineRadioOptions" type="radio">
+                            <label for="InternationalJournal-SCI_yes" class="mr-3">Yes</label>
+                            <input id="InternationalJournal-SCI_no" name="inlineRadioOptions" type="radio">
+                            <label for="InternationalJournal-SCI_no">No</label>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="form-group text-uppercase">
-            <label for="InternationalJournal-Scopus">Wheather Scopus</label>
-            <div class="row" id="InternationalJournal-Scopus">
-                <div class="col">
-                    <input id="InternationalJournal-Scopus_yes" name="inlineRadioOptions" type="radio">
-                    <label for="InternationalJournal-Scopus_yes" class="mr-3">Yes</label>
-                    <input id="InternationalJournal-Scopus_no" name="inlineRadioOptions" type="radio">
-                    <label for="InternationalJournal-Scopus_no">No</label>
+            <div class="col-md-6">
+                <div class="form-group text-uppercase">
+                    <label for="InternationalJournal-Scopus">Wheather Scopus</label>
+                    <div class="row" id="InternationalJournal-Scopus">
+                        <div class="col">
+                            <input id="InternationalJournal-Scopus_yes" name="inlineRadioOptions" type="radio">
+                            <label for="InternationalJournal-Scopus_yes" class="mr-3">Yes</label>
+                            <input id="InternationalJournal-Scopus_no" name="inlineRadioOptions" type="radio">
+                            <label for="InternationalJournal-Scopus_no">No</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,7 +87,10 @@
                 </div>
             </div>
         </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
+        <div class="row text-center">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
     </form>
+</div>
 </body>
 </html>

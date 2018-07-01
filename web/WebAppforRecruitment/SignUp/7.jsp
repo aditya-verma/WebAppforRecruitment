@@ -1,41 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Research Experience/Post Doctoral Research</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="../css/bootstrap.min.css" >
-
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
-    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js" ></script>
-
-</head>
 <body style="background-color: #f5f5f5;">
-<!------------This is header part------------->
-<header>
-    <nav class="navbar sticky-top navbar-light bg-light"  style="border-bottom-color: #000">
-        <div class="container" >
-            <div class="navbar-header" >
-                <a class="navbar-brand" href="#">
-                    <img class="img-fluid float-left" src="../Images/form-background.png"  style="margin-left: 5rem;max-width: 7%; height: auto">
-                    <img class="img-fluid " src="../Images/mnnit%20name.png"  style="margin-left: 3rem;max-width: 80%;height: auto">
-                </a>
-            </div>
-        </div>
-    </nav>
-    <div class="jumbotron" style="height: 10%">
-        <div class="container" >
-            <h1>Recruitment Portal</h1>
-            <div class="bg-dark rounded">
-                <h3   class="text-primary" style="color: #FFF;padding: 1%;">7.Research Experience/Post Doctoral Reseaech:</h3>
-            </div>
-        </div>
-    </div>
-</header>
-<!------------header part ends here------------->
-
 <div class="container ">
 
     <form id="Research Experience" action="#" style="width: 100%;">
@@ -92,10 +57,7 @@
         <div class="col-md-12 mb-3" style="margin: 0;text-align: center">
             <button class="btn btn-dark btn-" id="reset"  type="reset">Reset</button>
         </div>
-
-        <!----------This footer part-------------->
-        <div class="card-footer align-bottom text-center mt-2">
-            This is footer
-        </div>
+    </form>
+</div>
 </body>
 </html>
