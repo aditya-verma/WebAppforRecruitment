@@ -1,6 +1,13 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/backgrounds.css">
+    <script src="../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
             $("#filladdress").on("click", function(){
@@ -15,7 +22,6 @@
     </script>
 </head>
 <body style="background-color: #f5f5f5;">
-
 <div class="container ">
     <form id="PersonalInformation" action="#" style="width: 100%;">
         <div class="row">
@@ -48,13 +54,13 @@
             <div class="col-sm-6">
                 <div class="form-group" >
                     <label class="text-uppercase" for="email" >Email</label>
-                    <input id="email" class="form-control" type="email" placeholder="" required>
+                    <input id="Email" name="Email" class="form-control" type="email" placeholder="" required>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="Gender">Gender</label>
-                    <select class="form-control" id="Gender" required>
+                    <select class="form-control" name="Gender" id="Gender" required>
                         <option></option>
                         <option>MALE</option>
                         <option>FEMALE</option>
@@ -73,7 +79,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="Marital_Status">Marital Status</label>
-                    <select class="form-control" id="Marital_Status" required>
+                    <select class="form-control"  name="Marital_Status" id="Marital_Status" required>
                         <option></option>
                         <option>SINGLE</option>
                         <option>MARRIED</option>
@@ -86,7 +92,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="Category">Category</label>
-                    <select class="form-control" id="Category" required>
+                    <select class="form-control" name="Category" id="Category" required>
                         <option></option>
                         <option>GENERAL</option>
                         <option>OBC</option>

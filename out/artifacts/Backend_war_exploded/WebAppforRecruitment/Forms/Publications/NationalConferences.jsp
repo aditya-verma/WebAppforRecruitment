@@ -23,16 +23,22 @@
             <input class="form-control" id="NationalConferences-HeldAt" required>
         </div>
         <div class="form-group text-uppercase">
-            <label for="NationalConferences-Pages">Pages</label>
-            <input class="form-control" id="NationalConferences-Pages" placeholder="start page - end page" required>
-        </div>
-        <div class="form-group text-uppercase">
             <label for="NationalConferences-Publisher">publisher</label>
             <input class="form-control" id="NationalConferences-Publisher" required>
         </div>
-        <div class="form-group text-uppercase">
-            <label for="NationalConferences-Month/Year">Month/Year</label>
-            <input class="form-control" id="NationalConferences-Month/Year" placeholder="MM/YYYY" required>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group text-uppercase">
+                    <label for="NationalConferences-Pages">Pages</label>
+                    <input class="form-control" id="NationalConferences-Pages" placeholder="start page - end page" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group text-uppercase">
+                    <label for="NationalConferences-Month/Year">Month/Year</label>
+                    <input class="form-control" id="NationalConferences-Month/Year" placeholder="MM/YYYY" required>
+                </div>
+            </div>
         </div>
         <div class="form-group text-uppercase">
             <label for="NationalConferences-Co-authorFromDept">Wheather Co-authors are faculty from same Department</label>

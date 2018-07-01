@@ -47,7 +47,7 @@
                 <button class="btn btn-primary" name="register-btn">Register</button>
             </div>
             <%
-                if (session.getAttribute("triedRegister")!=null){
+
                     if (request.getParameter("register-btn")!=null){
                         try{
                             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -82,25 +82,21 @@
                                 }
                             }
                             else{
-                                session.setAttribute("triedRegister","yes");
-                                %><div class="text-center alert-warning">Check your Phone Number!</div> <%
+                                %><div class="text-center alert-warning">Check your Phone Number!</div><script>$('#modalRegisterForm').modal('show');</script><%
                             }
                             statement.close();
                             connection.close();
                         }
                         catch (java.sql.SQLIntegrityConstraintViolationException e){
-                            session.setAttribute("triedRegister","yes");
-                            %><div class="text-center alert-warning">Email Id already registered!</div> <%
+                            %><div class="text-center alert-warning">Email Id already registered!</div> <script>$('#modalRegisterForm').modal('show');</script><%
+                        }
+                        catch (com.mysql.cj.jdbc.exceptions.CommunicationsException e){
+                            %><div class="alert-danger text-center">Check Your Internet Connection!</div><script>$('#modalRegisterForm').modal('show');</script><%
                         }
                         catch (Exception e){
-                            session.setAttribute("triedRegister","yes");
-                            %><div class="alert-danger text-center"><%out.println(e);%></div> <%
+                            %><div class="alert-danger text-center"><%out.println(e);%></div> <script>$('#modalRegisterForm').modal('show');</script><%
                         }
                     }
-                }
-                else{
-                    %><script>$('#modalRegisterForm').modal('show');</script><%
-                }
             %>
         </form>
     </div>
@@ -120,7 +116,7 @@
         </div>
         <div class="checkbox mb-4">
             <label>
-                <input type="checkbox" value="remember-me"> Remember me
+                <input type="checkbox" name="checkbox-login" value="remember-me"> Remember me
             </label>
         </div>
         <div class="row" >
@@ -134,9 +130,9 @@
         <a href="#" class="col-12 page-link text-center" style="background-color: #f5f5f5;border: none;">Forgot Password</a>
         <%
             if(request.getParameter("dologin")!=null){
-                try{
-                    Class.forName("com.mysql.cj.jdbc.Driver");
-                    //Use properties if database and server are on same machine
+                    try{
+                        Class.forName("com.mysql.cj.jdbc.Driver");
+                        //Use properties if database and server are on same machine
                     /*
                     Properties properties = new Properties();
                     properties.setProperty("user","root");
@@ -144,25 +140,28 @@
                     properties.setProperty("useSSL","true");
                     properties.setProperty("autoReconnect","true");
                      */
-                    Connection con=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
-                    Statement stmt=con.createStatement();
-                    ResultSet rs=stmt.executeQuery("select * from USERS where ApplicationNumber='"+request.getParameter("AppNumber")+"' and Password='"+request.getParameter("Password")+"'");
-                    if (!rs.next())
-                    {
-        %>
-        <div class="alert-danger text-center">Invalid User Name or pasword</div>
-        <%
-            }
-            else{
-                session.setAttribute("ApplicationNumber",rs.getString("ApplicationNumber"));
-                session.setAttribute("Password",rs.getString("Password"));
-                response.sendRedirect("User Page.jsp");
-            }
-        }
-        catch (com.mysql.cj.jdbc.exceptions.CommunicationsException e){
-        %>
-        <div class="alert-danger text-center">Check Your Internet Connection!</div>
-        <%
+                        Connection con=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+                        Statement stmt=con.createStatement();
+                        ResultSet rs=stmt.executeQuery("select * from USERS where ApplicationNumber='"+request.getParameter("AppNumber")+"' and Password='"+request.getParameter("Password")+"'");
+                        if (rs.next())
+                        {
+                            session.setAttribute("ApplicationNumber",rs.getString("ApplicationNumber"));
+                            session.setAttribute("Password",rs.getString("Password"));
+                            if(request.getParameterValues("checkbox-login") == null)
+                            {
+                                session.setMaxInactiveInterval(-1);
+                            }
+                            else {
+                                session.setMaxInactiveInterval(60*60*24);
+                            }
+                            response.sendRedirect("User Page.jsp");
+                        }
+                        else{
+        %><div class="alert-danger text-center">Invalid User Name or Password</div><%
+                        }
+                }
+                catch (com.mysql.cj.jdbc.exceptions.CommunicationsException e){
+    %><div class="alert-danger text-center">Check Your Internet Connection!</div><%
                 }
                 catch(Exception e){ out.println(e);}
             }

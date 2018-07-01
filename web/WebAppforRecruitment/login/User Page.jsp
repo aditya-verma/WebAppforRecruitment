@@ -6,10 +6,11 @@
 <html lang="en">
 <head>
     <%
-    if (session.getAttribute("ApplicationNumber")==null)
+    if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="" || session.getAttribute("Password") == null || session.getAttribute("Password") == "")
     {
-        session.setAttribute("ApplicationNumber","");
-        session.setAttribute("Password","");
+        session.setAttribute("ApplicationNumber",null);
+        session.setAttribute("Password",null);
+        session.invalidate();
         response.sendRedirect("login.jsp");
     }
     %>

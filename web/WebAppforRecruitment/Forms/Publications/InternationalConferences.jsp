@@ -4,6 +4,7 @@
 <head>
 </head>
 <body>
+<div class="container">
     <form id="InternationalConferences">
         <div class="form-group text-uppercase">
             <label for="InternationalConferences-Author">Author(s)</label>
@@ -22,16 +23,22 @@
             <input class="form-control" id="InternationalConferences-HeldAt" required>
         </div>
         <div class="form-group text-uppercase">
-            <label for="InternationalConferences-Pages">Pages</label>
-            <input class="form-control" id="InternationalConferences-Pages" placeholder="start page - end page" required>
-        </div>
-        <div class="form-group text-uppercase">
             <label for="InternationalConferences-Publisher">publisher</label>
             <input class="form-control" id="InternationalConferences-Publisher" required>
         </div>
-        <div class="form-group text-uppercase">
-            <label for="InternationalConferences-Month/Year">Month/Year</label>
-            <input class="form-control" id="InternationalConferences-Month/Year" placeholder="MM/YYYY" required>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group text-uppercase">
+                    <label for="InternationalConferences-Pages">Pages</label>
+                    <input class="form-control" id="InternationalConferences-Pages" placeholder="start page - end page" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group text-uppercase">
+                    <label for="InternationalConferences-Month/Year">Month/Year</label>
+                    <input class="form-control" id="InternationalConferences-Month/Year" placeholder="MM/YYYY" required>
+                </div>
+            </div>
         </div>
         <div class="form-group text-uppercase">
             <label for="InternationalConferences-Co-AuthorFromDept">Wheather Co-authors are faculty from same Department</label>
@@ -46,5 +53,6 @@
         </div>
         <button class="btn btn-primary" type="submit">Submit</button>
     </form>
+</div>
 </body>
 </html>
