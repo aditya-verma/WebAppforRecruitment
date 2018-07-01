@@ -50,7 +50,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
-                    <img class="img-fluid float-left" src="../Images/form-background.png"
+                    <img class="img-fluid float-left d-sm-none d-md-block" src="../Images/form-background.png"
                          style="margin-left: 5rem;max-width: 7%; height: auto">
                     <img class="img-fluid " src="../Images/mnnit%20name.png"
                          style="margin-left: 3rem;max-width: 80%;height: auto">
@@ -115,7 +115,7 @@ background-size:16px 16px;">
             </ul>
         </div>
         <div class="card-footer text-center">
-            <a href="Update%20Information.jsp" class="card-link">Update Information</a>
+            <a href="../UpdateInformation/PersonalInformation.jsp" class="card-link">Update Information</a>
         </div>
     </div>
 </div>

@@ -3,11 +3,19 @@
 <html lang="en">
 <head>
     <title>Patent</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(function() {
-            $( "#Patent_Date" ).datepicker({
+            $( "#Date" ).datepicker({
                 format: "dd-mm-yyyy",
-                viewMode: "months",
+                viewMode: "days",
                 minViewMode: "days",
                 pickerPosition: "bottom-left"});
         });
@@ -38,7 +46,7 @@
         <div class="form-group row">
             <label for="Patent_Date" class="col-md-2">Date</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control  col-md-10" id="Patent_Date" placeholder="DD-MM-YYYY" name="Date">
+                <input type="text" class="form-control  col-md-10" id="Patent_Date" placeholder="DD/MM/YYYY" name="Date">
             </div>
         </div>
         <div class="form-group row">
@@ -71,16 +79,16 @@
                 Statement st;
                 ResultSet rs;
                 String radio = request.getParameter("inlineRadioOptions");
-                String date=(request.getParameter("Date"));
-                String number =request.getParameter("Number");
-                String type=request.getParameter("Type");
-                String description =request.getParameter("Description");
+                String project_title=(request.getParameter("Date"));
+                String students =request.getParameter("Number");
+                String registration_numbers=request.getParameter("Type");
+                String completed_on =request.getParameter("Description");
                 try{
                     Class.forName("com.mysql.jdbc.Driver");
                     con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
                     // con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summer","root","");
                     st=con.createStatement();
-                    String sql="insert into Patent values('"+((String) session.getAttribute("ApplicationNumber"))+"','"+radio+"','"+date+"','"+number+"','"+type+"','"+description+"')";
+                    String sql="insert into BTech_Project_Supervised values('"+((String) session.getAttribute("ApplicationNumber"))+"','"+project_title+"','"+students+"','"+registration_numbers+"','"+completed_on+"')";
                     int res=st.executeUpdate(sql);
                     if(res!=0)
                         out.println("Record Inserted");
