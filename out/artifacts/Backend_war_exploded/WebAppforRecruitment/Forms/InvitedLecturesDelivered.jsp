@@ -28,12 +28,7 @@
 
             background-color: #f5f5f5;
         }
-        .rcorners2 {
-            border-radius: 20px;
-            border: 2px ;
-            height: 50px;
-            width: 101%;
-        }
+
 
     </style>
 </head>
@@ -94,7 +89,7 @@
             </div>
         </div>
 
-      <!--  <div class="row " style="margin-top: 2%">
+        <div class="row " style="margin-top: 2%">
             <div class="col-sm-1">
 
             </div>
@@ -103,7 +98,7 @@
                 <button class="btn btn-lg btn-success m-1" id="next" value="Insert" type="submit" name="b2">Continue</button>
 
 
-                <--%
+                <%
                     if(request.getParameter("b1")!=null)
                     {
                         Connection con=null;
@@ -124,7 +119,7 @@
                 <button class="btn btn-lg btn-dark m-1" id="add" value="Insert" onclick="myfunc()" type="submit" name="b3">Add More</button>
             </div>
         </div>
-        <--%
+        <%
                     }
                     else
                         out.println("Record Not Inserted");
@@ -133,7 +128,7 @@
                     out.println(e.toString());
                 }
             }
-        %-->
+        %>
     </form>
 </div>
 
