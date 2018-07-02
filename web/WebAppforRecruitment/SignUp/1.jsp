@@ -1,6 +1,36 @@
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.DriverManager" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
+<%
+    if (session.getAttribute("ApplicationNumber")==null ||session.getAttribute("ApplicationNumber")=="")
+    {
+        response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
+    }
+    String fname ="";
+    String lname ="";
+    String phone ="";
+    String email ="";
+    Connection connection = null;
+    Statement stmt = null;
+    try{
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","","");
+        ResultSet resultSet1;
+        stmt = connection.createStatement();
+        resultSet1 = stmt.executeQuery("SELECT * FROM users WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        if (resultSet1.next())
+        {
+            fname = resultSet1.getString("FirstName");
+            lname = resultSet1.getString("LastName");
+            email = resultSet1.getString("Email");
+            phone = resultSet1.getString("Phone");
+        }
+
+%>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -22,19 +52,19 @@
     </script>
 </head>
 <body style="background-color: #f5f5f5;">
-<div class="container ">
-    <form id="PersonalInformation" action="#" style="width: 100%;">
+<div class="container">
+    <form id="PersonalInformation" method="post" action="" style="width: 100%;">
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="applicant_first_name">FIRST NAME</label>
-                    <input id="applicant_first_name" class="form-control" placeholder="" required>
+                    <input id="applicant_first_name" class="form-control" placeholder="" required value="<%out.println(fname);%>">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="applicant_last_name">LAST NAME</label>
-                    <input id="applicant_last_name" class="form-control" placeholder="" required>
+                    <input id="applicant_last_name" class="form-control" placeholder="" required value="<%out.println(lname);%>">
                 </div>
             </div>
         </div>
@@ -42,19 +72,21 @@
             <label class="text-uppercase" for="postApplied">Post Applying for</label>
             <select class="form-control" id="postApplied" required>
                 <option></option>
+                <option>Professor</option>
+
                 <!---------Fill this using jsp------------>
             </select>
         </div>
 
         <div class="form-group" >
             <label class="text-uppercase" for="Specialization" >Specialization</label>
-            <input id="Specialization" class="form-control" placeholder="">
+            <input id="Specialization" name="Specialization" class="form-control" placeholder="">
         </div>
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group" >
                     <label class="text-uppercase" for="email" >Email</label>
-                    <input id="Email" name="Email" class="form-control" type="email" placeholder="" required>
+                    <input id="Email" name="Email" class="form-control" type="email" placeholder="" required value="<%out.println(email);%>">
                 </div>
             </div>
             <div class="col-sm-6">
@@ -104,7 +136,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="Handicapped">Handicapped</label>
-                    <select class="form-control" id="Handicapped" required>
+                    <select class="form-control" id="Handicapped" name="Handicapped" required>
                         <option></option>
                         <option>Applicable</option>
                         <option>Not Applicable</option>
@@ -117,13 +149,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="DateOfBirth">Date Of Birth</label>
-                    <input id="DateOfBirth" type="date" class="form-control" placeholder="" >
+                    <input id="DateOfBirth" name="DateOfBirth" type="date" class="form-control" placeholder="" >
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="Nationality">Nationality</label>
-                    <select class="form-control text-uppercase" id="Nationality" required>
+                    <select class="form-control text-uppercase" id="Nationality" name="Nationality" required>
                         <option value="IN">India</option>
                         <option value="AF">Afghanistan</option>
                         <option value="AX">Åland Islands</option>
@@ -379,30 +411,30 @@
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Name_Father">Name Of Father</label>
-            <input id="Name_Father" class="form-control" placeholder="" >
+            <input id="Name_Father" name="NameOfFather" class="form-control" placeholder="" >
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Name_Mother">Name of Mother</label>
-            <input id="Name_Mother" class="form-control" placeholder="" >
+            <input id="Name_Mother" name="NameOfMother" class="form-control" placeholder="" >
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="ID">Identity Proof</label>
             <div class="row">
                 <div class="col-sm-6">
-                    <select class="form-control" id="ID-type" placeholder="ID Type">
+                    <select class="form-control" name="IdentityProofType" id="ID-type" placeholder="ID Type">
                         <option></option>
                         <option>Aadhar Number</option>
                         <option>Pan Card</option>
                     </select>
                 </div>
                 <div class="col-sm-6">
-                    <input id="ID" class="form-control" placeholder="ID number" required>
+                    <input id="ID" class="form-control" name="IdentityProofNumber" placeholder="ID number" required>
                 </div>
             </div>
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Correspondence_Address">Correspondence Address</label>
-            <input id="Correspondence_Address" class="form-control" placeholder="" required>
+            <input id="Correspondence_Address" name="CorrespondenceAddress" class="form-control" placeholder="" required>
         </div>
         <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="filladdress" onclick="fillAddress()">
@@ -410,20 +442,79 @@
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Permanent_Address">Permanent Address</label>
-            <input id="Permanent_Address" class="form-control" placeholder="" required>
+            <input id="Permanent_Address" name="PermanentAddress" class="form-control" placeholder="" required>
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Phone">Phone Number</label>
-            <input id="Phone" class="form-control" placeholder="" required>
+            <input id="Phone" class="form-control" placeholder="" required value="<%out.println(phone);%>">
         </div>
         <div class="form-group">
-            <label class="text-uppercase" for="ApplyingPlace">Port/Place of Applying Form</label>
-            <input id="ApplyingPlace" class="form-control" placeholder="" required>
+            <label class="text-uppercase" for="PlaceOfApplying">Port/Place of Applying Form</label>
+            <input id="PlaceOfApplying" name="PlaceOfApplying" class="form-control" placeholder="" required>
         </div>
         <div class="form-actions" style="margin: 0;background-color: transparent;text-align: center;">
             <button class="btn btn-lg btn-danger m-1" id="reset" type="reset">Reset</button>
-        <button class="btn btn-lg btn-primary m-1" id="submit" type="submit">Save and Continue</button>
+        <button class="btn btn-lg btn-primary m-1" name="submitPersonalInfo1" type="submit">Save and Continue</button>
         </div>
+        <%
+                if (request.getParameter("submitPersonalInfo1")!= null)
+                {
+                    String Specialization = request.getParameter("Specialization");
+                    String Marital_Status = request.getParameter("Marital_Status");
+                    String Gender = request.getParameter("Gender");
+                    String Domicile =request.getParameter("Domicile;");
+                    String Category = request.getParameter("Category");
+                    String Handicapped = request.getParameter("Handicapped");
+                    String DateOfBirthDateOfBirth = request.getParameter("DateOfBirthDateOfBirth");
+                    String Nationality = request.getParameter("Nationality");
+                    String NameOfFather = request.getParameter("NameOfFather");
+                    String NameOfMother = request.getParameter("NameOfMother");
+                    String id = request.getParameter("IdentityProofType")+""+request.getParameter("IdentityProofNumber");
+                    String CorrespondenceAddress = request.getParameter("CorrespondenceAddress");
+                    String PermanentAddress = request.getParameter("PermanentAddress");
+                    String PlaceOfApplying = request.getParameter("PlaceOfApplying");
+                    ResultSet resultSet = stmt.executeQuery("SELECT * FROM personal_information WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+                    if (resultSet!=null)
+                    {
+                        stmt.executeUpdate("UPDATE Personal_Information SET Specialization = '"+Specialization+
+                                "', MaritalStatus = '"+Marital_Status+
+                                "', Gender = '"+Gender+
+                                "', Domicile = '"+Domicile+
+                                "', Category = '"+Category+
+                                "', PhysicallyHandicapped = '"+Handicapped+
+                                "', DateOfBirth = '"+DateOfBirthDateOfBirth+
+                                "', Nationality = '"+Nationality+
+                                "', NameOfFather = '"+NameOfFather+
+                                "', NameOfMother = '"+NameOfMother+
+                                "', IdentityProof = '"+id+
+                                "', CorrespondenceAddress = '"+CorrespondenceAddress+
+                                "', PermanentAddress = '"+PermanentAddress+
+                                "', PlaceOfApplying = '"+PlaceOfApplying+
+                                "' WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+                    }
+                    else {
+                        stmt.executeUpdate("INSERT INTO Personal_Information(ApplicationNumber,Specialization," +
+                                "MaritalStatus,Gender," +
+                                "Domicile,Category,PhysicallyHandicapped," +
+                                "DateOfBirth,Nationality,NameOfFather,NameOfMother," +
+                                "IdentityProof,CorrespondenceAddress,PermanentAddress,PlaceOfApplying)" +
+                                "VALUES ('"+session.getAttribute("ApplicationNumber")+"','"+Specialization+"','"+Marital_Status+
+                                "','"+request.getParameter("Gender")+"','"+request.getParameter("Domicile")+"','"+Category+
+                                "','"+Handicapped+"','"+request.getParameter("DateOfBirthDateOfBirth")+"','"+request.getParameter("Nationality")+
+                                "','"+request.getParameter("NameOfFather")+"','"+request.getParameter("NameOfMother")+
+                                "','"+request.getParameter("IdentityProofType")+""+request.getParameter("IdentityProofNumber")+
+                                "','"+request.getParameter("CorrespondenceAddress")+"','"+request.getParameter("PermanentAddress")+
+                                "','"+request.getParameter("PlaceOfApplying")+"')");
+                    }
+                }
+            connection.close();
+            stmt.close();
+            }
+            catch (Exception e){%><div class="alert-warning text-center"><% out.print(e);%></div> <%}
+            finally {
+
+            }
+        %>
     </form>
 </div>
 </body>

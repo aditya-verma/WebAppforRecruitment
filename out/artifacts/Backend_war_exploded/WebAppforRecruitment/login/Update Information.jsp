@@ -169,12 +169,12 @@ To change this template use File | Settings | File Templates.
                 </div>
                 <!--------------Acted As Reviewer-------------->
                 <div class="tab-pane fade cont" id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">
-                    <%@ include file="/WebAppforRecruitment/Forms/Acted_As_Reviewer.jsp" %>
+                    <%@ include file="/WebAppforRecruitment/Forms/ActedAsReviewer.jsp" %>
                     <button type="button" id="change7" class="btn btn-primary ">Continue</button>
                 </div>
                 <!--------------ExpertInvited Lecture-------------->
                 <div class="tab-pane fade cont" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
-                    <%@ include file="/WebAppforRecruitment/Forms/Invited_Lectures_Delivered.jsp" %>
+                    <%@ include file="/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp" %>
                     <button type="button" id="change8" class="btn btn-primary ">Continue</button>
                 </div>
                 <!--------------Research Project Investigated-------------->
