@@ -18,10 +18,10 @@
     Statement stmt = null;
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","","");
+        connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
         ResultSet resultSet1;
         stmt = connection.createStatement();
-        resultSet1 = stmt.executeQuery("SELECT * FROM users WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        resultSet1 = stmt.executeQuery("SELECT * FROM USERS WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
         if (resultSet1.next())
         {
             fname = resultSet1.getString("FirstName");
@@ -469,12 +469,13 @@
                     String Nationality = request.getParameter("Nationality");
                     String NameOfFather = request.getParameter("NameOfFather");
                     String NameOfMother = request.getParameter("NameOfMother");
-                    String id = request.getParameter("IdentityProofType")+""+request.getParameter("IdentityProofNumber");
+                    String idType = request.getParameter("IdentityProofType");
+                    String idNumber = request.getParameter("IdentityProofNumber");
                     String CorrespondenceAddress = request.getParameter("CorrespondenceAddress");
                     String PermanentAddress = request.getParameter("PermanentAddress");
                     String PlaceOfApplying = request.getParameter("PlaceOfApplying");
-                    ResultSet resultSet = stmt.executeQuery("SELECT * FROM personal_information WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
-                    if (resultSet!=null)
+                    ResultSet resultSet = stmt.executeQuery("SELECT * FROM Personal_Information WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+                    if (resultSet.next() || resultSet != null)
                     {
                         stmt.executeUpdate("UPDATE Personal_Information SET Specialization = '"+Specialization+
                                 "', MaritalStatus = '"+Marital_Status+
@@ -486,26 +487,32 @@
                                 "', Nationality = '"+Nationality+
                                 "', NameOfFather = '"+NameOfFather+
                                 "', NameOfMother = '"+NameOfMother+
-                                "', IdentityProof = '"+id+
+                                "', IdentityProofType = '"+idType+
+                                "', IdentityProofNumber = '"+idNumber+
                                 "', CorrespondenceAddress = '"+CorrespondenceAddress+
                                 "', PermanentAddress = '"+PermanentAddress+
                                 "', PlaceOfApplying = '"+PlaceOfApplying+
                                 "' WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
                     }
-                    else {
-                        stmt.executeUpdate("INSERT INTO Personal_Information(ApplicationNumber,Specialization," +
+                        int i = stmt.executeUpdate("INSERT INTO Personal_Information(ApplicationNumber,Specialization," +
                                 "MaritalStatus,Gender," +
                                 "Domicile,Category,PhysicallyHandicapped," +
                                 "DateOfBirth,Nationality,NameOfFather,NameOfMother," +
-                                "IdentityProof,CorrespondenceAddress,PermanentAddress,PlaceOfApplying)" +
+                                "IdentityProofType,IdentityProofNumber,CorrespondenceAddress,PermanentAddress,PlaceOfApplying)" +
                                 "VALUES ('"+session.getAttribute("ApplicationNumber")+"','"+Specialization+"','"+Marital_Status+
-                                "','"+request.getParameter("Gender")+"','"+request.getParameter("Domicile")+"','"+Category+
-                                "','"+Handicapped+"','"+request.getParameter("DateOfBirthDateOfBirth")+"','"+request.getParameter("Nationality")+
-                                "','"+request.getParameter("NameOfFather")+"','"+request.getParameter("NameOfMother")+
-                                "','"+request.getParameter("IdentityProofType")+""+request.getParameter("IdentityProofNumber")+
-                                "','"+request.getParameter("CorrespondenceAddress")+"','"+request.getParameter("PermanentAddress")+
-                                "','"+request.getParameter("PlaceOfApplying")+"')");
-                    }
+                                "','"+Gender+"','"+Domicile+"','"+Category+
+                                "','"+Handicapped+"','"+DateOfBirthDateOfBirth+"','"+Nationality+
+                                "','"+NameOfFather+"','"+NameOfMother+
+                                "','"+idType+"','"+idNumber+"','"+CorrespondenceAddress+"','"+PermanentAddress+
+                                "','"+PlaceOfApplying+"')");
+                        if (i>0)
+                        {
+                            %><div class="text-center alert-success"><%out.print(i);%>Record Inserted</div> <%
+                        }
+                        else if (i<=0){
+    %><div class="text-center alert-danger">Record not Inserted<%out.print(i);%></div> <%
+                        }
+
                 }
             connection.close();
             stmt.close();
