@@ -57,7 +57,7 @@
         con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
         // con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summer","root","");
         st=con.createStatement();
-        String sql="select * from Personal_Information where ApplicationNumber='"+(session.getAttribute("ApplicationNumber"))+"'";
+        String sql="select * from Personal_Information where ApplicationNumber='2018PF000003'";
         rs=st.executeQuery(sql);
         rs.next();
 %>
@@ -476,7 +476,7 @@
         <h4 id="list-item-2">Educational Details(PhD)</h4>
                 <%
                     try{
-                        String sql="select * from Educational_Qualification_PhD where Application_Number='"+(session.getAttribute("ApplicationNumber"))+"'";
+                        String sql="select * from Educational_Qualification_PhD where Application_Number='2018PF000003'";
                         rs=st.executeQuery(sql);
                 %>
                 <form class="table-responsive" id="Educational_Details(PhD)" action="" method="post">
@@ -498,28 +498,16 @@
                                 <td><%=rs.getString(3)%></td>
                                 <td><%=rs.getString(4)%></td>
                                 <td><%=rs.getString(5)%></td>
-                                <td><button class="btn" type="button" onclick="edit_function(this)"><i class="fa fa-edit"></i></button></td>
-                                <td><button class="btn" type="button" onclick="delete_function(this)"><i class="fa fa-trash-alt"></i></button></td>
+                                <td><a href="Educational_Qualification_Update.jsp?id=2018PF000003&title=<%=rs.getString(3)%>" name="edit"><i class="fa fa-edit"></i></a></td>
+                                <td><a href="Educational_Qualification_Delete.jsp?id=2018PF000003&title=<%=rs.getString(3)%>" name="delete"><i class="fa fa-trash-alt"></i></a></td>
                             </tr>
                             <%}%>
                         </tbody>
                     </tr>
                 </table>
-                    <script type="text/javascript">
-                        function edit_function(a){
-                            var date = document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[3].textContent;
-                            for(var i=0;i<4;i++)
-                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[i].innerHTML="<input class =\"form-control\" type=\"text\" name=\"eqp\"+i required>";
-                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[5].innerHTML="";
-                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[4].innerHTML="<button class=\"btn\" type=\"submit\ name=\"submit\"><i class=\"fa fa-check\"></i></button>";
-                        }
-                        function delete_function(a) {
-                            var i = a.parentNode.parentNode.rowIndex;
-                            document.getElementById("PhD_Qual").deleteRow(i);
-                        }
-                    </script>
             </form>
                 <%
+                        con.close();
                     }
                     catch (Exception e){
                         out.print(e.toString());
