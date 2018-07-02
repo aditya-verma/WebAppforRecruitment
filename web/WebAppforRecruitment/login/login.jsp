@@ -51,7 +51,7 @@
                     if (request.getParameter("register-btn")!=null){
                         try{
                             Class.forName("com.mysql.cj.jdbc.Driver");
-                            Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+                            Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
                             Statement statement = connection.createStatement();
                             String fname = request.getParameter("orangeForm-Fname");
                             String lname = request.getParameter("orangeForm-Lname");
@@ -140,7 +140,7 @@
                     properties.setProperty("useSSL","true");
                     properties.setProperty("autoReconnect","true");
                      */
-                        Connection con=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+                        Connection con=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
                         Statement stmt=con.createStatement();
                         ResultSet rs=stmt.executeQuery("select * from USERS where ApplicationNumber='"+request.getParameter("AppNumber")+"' and Password='"+request.getParameter("Password")+"'");
                         if (rs.next())

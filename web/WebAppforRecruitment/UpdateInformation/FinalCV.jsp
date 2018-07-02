@@ -54,10 +54,10 @@
     ResultSet rs=null;
     try{
         Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
         // con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summer","root","");
         st=con.createStatement();
-        String sql="select * from Personal_Information where ApplicationNumber='"+(session.getAttribute("ApplicationNumber"))+"'";
+        String sql="select * from Personal_Information where ApplicationNumber='2018PF000004'";
         rs=st.executeQuery(sql);
         rs.next();
 %>
@@ -473,7 +473,7 @@
             %>
             <!--Includ Jsp File after updation of Personal Information jsp-->
         </form>
-        <h4 id="list-item-2">Educational_Details(PhD)</h4>
+        <h4 id="list-item-2">Educational Details(PhD)</h4>
                 <%
                     try{
                         String sql="select * from Educational_Qualification_PhD where Application_Number='"+(session.getAttribute("ApplicationNumber"))+"'";
@@ -507,17 +507,14 @@
                 </table>
                     <script type="text/javascript">
                         function edit_function(a){
-                            for(var i=0;i<4;i++)
-                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[i].innerHTML="<input class =\"form-control\" type=\"text\" required>";
+                           for(var i=0;i<4;i++)
+                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[i].innerHTML="<input class =\"form-control\" type=\"text\" name=\"eqp\"+i required>";
                             document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[5].innerHTML="";
-                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[4].innerHTML="<button class=\"btn\" type=\"submit\"><i class=\"fa fa-check\"></i></button>";
+                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[4].innerHTML="<button class=\"btn\" type=\"submit\ name=\"submit\"><i class=\"fa fa-check\"></i></button>";
                         }
                         function delete_function(a) {
                             var i = a.parentNode.parentNode.rowIndex;
                             document.getElementById("PhD_Qual").deleteRow(i);
-                            <%
-
-                            %>
                         }
                     </script>
             </form>
