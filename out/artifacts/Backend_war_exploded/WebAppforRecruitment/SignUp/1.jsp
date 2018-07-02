@@ -494,25 +494,24 @@
                                 "', PlaceOfApplying = '"+PlaceOfApplying+
                                 "' WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
                     }
-                        int i = stmt.executeUpdate("INSERT INTO Personal_Information(ApplicationNumber,Specialization," +
-                                "MaritalStatus,Gender," +
-                                "Domicile,Category,PhysicallyHandicapped," +
-                                "DateOfBirth,Nationality,NameOfFather,NameOfMother," +
-                                "IdentityProofType,IdentityProofNumber,CorrespondenceAddress,PermanentAddress,PlaceOfApplying)" +
-                                "VALUES ('"+session.getAttribute("ApplicationNumber")+"','"+Specialization+"','"+Marital_Status+
-                                "','"+Gender+"','"+Domicile+"','"+Category+
-                                "','"+Handicapped+"','"+DateOfBirthDateOfBirth+"','"+Nationality+
-                                "','"+NameOfFather+"','"+NameOfMother+
-                                "','"+idType+"','"+idNumber+"','"+CorrespondenceAddress+"','"+PermanentAddress+
-                                "','"+PlaceOfApplying+"')");
-                        if (i>0)
-                        {
-                            %><div class="text-center alert-success"><%out.print(i);%>Record Inserted</div> <%
+                    int i = stmt.executeUpdate("INSERT INTO Personal_Information(ApplicationNumber,Specialization," +
+                            "MaritalStatus,Gender," +
+                            "Domicile,Category,PhysicallyHandicapped," +
+                            "DateOfBirth,Nationality,NameOfFather,NameOfMother," +
+                            "IdentityProofType,IdentityProofNumber,CorrespondenceAddress,PermanentAddress,PlaceOfApplying)" +
+                            "VALUES ('"+session.getAttribute("ApplicationNumber")+"','"+Specialization+"','"+Marital_Status+
+                            "','"+Gender+"','"+Domicile+"','"+Category+
+                            "','"+Handicapped+"','"+DateOfBirthDateOfBirth+"','"+Nationality+
+                            "','"+NameOfFather+"','"+NameOfMother+
+                            "','"+idType+"','"+idNumber+"','"+CorrespondenceAddress+"','"+PermanentAddress+
+                            "','"+PlaceOfApplying+"')");
+                    if (i>0)
+                    {
+        %><div class="text-center alert-success">Record Inserted</div> <%
+                    }
+                    else if (i<=0){
+        %><div class="text-center alert-danger">Record not Inserted</div> <%
                         }
-                        else if (i<=0){
-    %><div class="text-center alert-danger">Record not Inserted<%out.print(i);%></div> <%
-                        }
-
                 }
             connection.close();
             stmt.close();
