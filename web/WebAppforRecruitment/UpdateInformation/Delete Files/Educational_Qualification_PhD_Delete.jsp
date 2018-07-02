@@ -18,7 +18,7 @@
         String sql="delete from Educational_Qualification_PhD where Application_Number='"+id+"' and Title='"+request.getParameter("title")+"'";
         int res=st.executeUpdate(sql);
         if(res!=0)
-            response.sendRedirect("FinalCV.jsp");
+            response.sendRedirect("../FinalCV.jsp");
         else
             out.println("Record Not Deleted");
     }catch(Exception e)

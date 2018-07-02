@@ -12,11 +12,11 @@
     <title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link href="../css/floating-labels.css" rel="stylesheet">
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
-    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link href="../../css/floating-labels.css" rel="stylesheet">
+    <script src="../../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../../js/bootstrap.js"></script>
     <script type="text/javascript">
         $(window).on('load',function(){
             $('#myModal').modal('show');
@@ -75,7 +75,7 @@
             sql="update Educational_Qualification_PhD set Status='"+status+"', Title='"+title+"',Institute='"+inst+"', Date='"+date+"' where Application_Number='"+id+"' and Title='"+title+"'";
             int res=st.executeUpdate(sql);
             if(res!=0)
-                response.sendRedirect("FinalCV.jsp");
+                response.sendRedirect("../FinalCV.jsp");
             else
                 out.println("No Record Updated");
         }

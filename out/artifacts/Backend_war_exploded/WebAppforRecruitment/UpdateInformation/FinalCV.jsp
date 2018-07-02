@@ -66,8 +66,8 @@
         <div class="col-md-3">
             <div id="list-example" class="list-group">
         <a class="list-group-item list-group-item-action" href="#list-item-1">Personal Information</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">Educational_Details(PhD)</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Educational Details(PhD)</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Educational Details</a>
         <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
     </div>
         </div>
@@ -480,7 +480,7 @@
                         rs=st.executeQuery(sql);
                 %>
                 <form class="table-responsive" id="Educational_Details(PhD)" action="" method="post">
-                <table class=" table  table-bordered" id="PhD_Qual">
+                <table class=" table  table-bordered" >
                         <thead class="table-dark" >
                             <tr>
                             <th scope="col">Status</th>
@@ -498,14 +498,60 @@
                                 <td><%=rs.getString(3)%></td>
                                 <td><%=rs.getString(4)%></td>
                                 <td><%=rs.getString(5)%></td>
-                                <td><a href="Educational_Qualification_Update.jsp?id=2018PF000003&title=<%=rs.getString(3)%>" name="edit"><i class="fa fa-edit"></i></a></td>
-                                <td><a href="Educational_Qualification_Delete.jsp?id=2018PF000003&title=<%=rs.getString(3)%>" name="delete"><i class="fa fa-trash-alt"></i></a></td>
+                                <td><a href="Update%20Files/Educational_Qualification_PhD_Update.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-edit"></i></a></td>
+                                <td><a href="Delete%20Files/Educational_Qualification_PhD_Delete.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-trash-alt"></i></a></td>
                             </tr>
                             <%}%>
                         </tbody>
-                    </tr>
                 </table>
             </form>
+                <%
+                    }
+                    catch (Exception e){
+                        out.print(e.toString());
+                    }
+                    rs=null;
+                %>
+        <h4 id="list-item-3">Educational Details</h4>
+                <%
+                    try{
+                        String sql="select * from Educational_Qualification where ApplicationNumber='2018PF000003'";
+                        rs=st.executeQuery(sql);
+                %>
+                <form class="table-responsive-sm" id="Educational_Details" action="" method="post">
+                    <table class=" table  table-bordered" >
+                        <thead class="table-dark" >
+                        <tr>
+                            <th scope="col">Qualification</th>
+                            <th scope="col">Degree</th>
+                            <th scope="col">Discipline</th>
+                            <th scope="col">Institute</th>
+                            <th scope="col">Board/Univ</th>
+                            <th scope="col">Date of Passing</th>
+                            <th scope="col">Division</th>
+                            <th scope="col">%age/CGPA</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <%while(rs.next()){%>
+                        <tr>
+                            <td><%=rs.getString(2)%></td>
+                            <td><%=rs.getString(3)%></td>
+                            <td><%=rs.getString(4)%></td>
+                            <td><%=rs.getString(5)%></td>
+                            <td><%=rs.getString(6)%></td>
+                            <td><%=rs.getString(7)%></td>
+                            <td><%=rs.getString(8)%></td>
+                            <td><%=rs.getString(9)%></td>
+                            <td><a href="Update%20Files/Educational_Qualification_Update.jsp?id=2018PF000003&date=<%=rs.getString(7)%>" >Edit</a></td>
+                            <td><a href="Delete%20Files/Educational_Qualification_Delete.jsp?id=2018PF000003&date=<%=rs.getString(7)%>" ><i class="fa fa-trash"></i></a></td>
+                        </tr>
+                        <%}%>
+                        </tbody>
+                    </table>
+                </form>
                 <%
                         con.close();
                     }
@@ -514,8 +560,6 @@
                     }
                     rs=null;
                 %>
-        <h4 id="list-item-3">Item 3</h4>
-        <p>...</p>
         <h4 id="list-item-4">Item 4</h4>
         <p>...</p>
     </div>
