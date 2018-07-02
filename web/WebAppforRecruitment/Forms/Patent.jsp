@@ -12,6 +12,14 @@
                 pickerPosition: "bottom-left"});
         });
     </script>
+
+        <style>
+            body {
+                background-color: #f5f5f5;
+            }
+
+        </style>
+
 </head>
 <body>
 <div class="container">

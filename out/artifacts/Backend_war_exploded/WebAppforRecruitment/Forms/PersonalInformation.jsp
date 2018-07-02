@@ -27,6 +27,14 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+
+        <style>
+            body {
+                background-color: #f5f5f5;
+            }
+
+        </style>
+
 </head>
 <body>
 <nav>

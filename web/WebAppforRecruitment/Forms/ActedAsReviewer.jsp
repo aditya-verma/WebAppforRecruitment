@@ -87,10 +87,10 @@
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
 
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-8">
                 <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="b1">ADD</button>
                 <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
 
