@@ -18,38 +18,46 @@
                 minViewMode: "days"});
         });
     </script>
+
+        <style>
+            body {
+                background-color: #f5f5f5;
+            }
+
+        </style>
+
 </head>
 <body>
 <div class="container">
     <form id="PhD_Supervision">
         <div class="form-group row">
-            <label for="PhD_Supervision_Name" class="col-md-2">Name</label>
-            <div class="col-md-10">
+            <label for="PhD_Supervision_Name" class="col-md-4">Name</label>
+            <div class="col-md-8">
                 <input type="text" class="form-control" id="PhD_Supervision_Name" placeholder="Enter Name" name="Name">
             </div>
         </div>
         <div class="form-group row">
-            <label for="PhD_Supervision_RNumber" class="col-md-2">Registration Number</label>
-            <div class="col-md-10">
+            <label for="PhD_Supervision_RNumber" class="col-md-4">Registration Number</label>
+            <div class="col-md-8">
                 <input type="text" id="PhD_Supervision_RNumber" class="form-control" placeholder="Enter Registration Number of student" name="Registration_Number">
             </div>
         </div>
         <div class="form-group row">
-            <label for="PhD_Supervision_Title" class="col-md-2">Title of Thesis</label>
-            <div class="col-md-10">
+            <label for="PhD_Supervision_Title" class="col-md-4">Title of Thesis</label>
+            <div class="col-md-8">
                 <input type="text" class="form-control" id="PhD_Supervision_Title" placeholder="Enter Title of Thesis" name="Title">
             </div>
         </div>
         <div class="form-group row">
-            <label for="PhD_Supervision_Oral" class="col-md-2">Oral-Viva Date</label>
-            <div class="col-md-10">
+            <label for="PhD_Supervision_Oral" class="col-md-4">Oral-Viva Date</label>
+            <div class="col-md-8">
                 <input type="text" class="form-control" id="PhD_Supervision_Oral" placeholder="DD-MM-YYYY" name="Date">
             </div>
         </div>
         <fieldset class="form-group">
             <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Whether there are Co-Supervisors</legend>
-                <div class="col-sm-10">
+                <legend class="col-form-label col-sm-4 pt-0">Whether there are Co-Supervisors</legend>
+                <div class="col-sm-8">
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="PhD_Supervision_Yes" value="Yes">
                         <label class="form-check-label" for="PhD_Supervision_Yes">
@@ -66,8 +74,11 @@
             </div>
         </fieldset>
         <div class="row">
-            <div class="col-sm-2" style="display:flex;margin: auto;">
-                <button class="btn btn-lg btn-primary btn-block m-1" id="next" value="Insert" type="submit" name="b1" >Submit</button>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-md-8">
+                <button class="btn btn-lg btn-primary m-1" id="next" value="Insert" type="submit" name="b1">Submit</button>
             </div>
         </div>
         <%

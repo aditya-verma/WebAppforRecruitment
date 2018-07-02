@@ -2,42 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+
+    <style>
+        body {
+
+            background-color: #f5f5f5;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <nav class="navbar sticky-top navbar-light bg-light"  style="border-bottom-color: #000">
-        <div class="container" >
-            <div class="navbar-header" >
-                <a class="navbar-brand" href="#">
-                    <img class="img-fluid float-left" src="../Images/form-background.png" style="margin-left: 5rem;max-width: 7%; height: auto">
-                    <img class="img-fluid " src="../Images/mnnit%20name.png" style="margin-left: 3rem;max-width: 80%;height: auto">
-                </a>
-            </div>
-        </div>
-    </nav>
-    <div class="jumbotron" style="height: 10%">
-        <div class="container" >
-            <h1>Intellectual Property Portal</h1>
-            <div class="bg-dark rcorners2 ">
-                <h3  style="color: #FFF;padding: 1%; ">Research Projects Completed/Ongoing:</h3>
-            </div>
-            <% if(request.getParameter("b1")!=null)
-            {%>
-            <div class="alert alert-success rcorners2" style="margin-top: 3%">
-                <strong>Record Inserted! </strong><b>ADD MORE</b> or press <b>Continue</b> to proceed.
-            </div>
-            <% }%>
-        </div>
-    </div>
-</header>
+
+
 
 <div class="container">
-    <form id="Project_Investigated" action="" method="post" style="width: 100%;padding-left: 30%;">
+    <form id="Project_Investigated" action="" method="post" style="width: 100%;">
         <div class="row " style="margin-top: 5%">
-            <div class="col-sm-2" >
+            <div class="col-sm-4" >
                 <p >Role</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="Role" value="PI" id="Project_Investigated_Pi">
                     <label class="form-check-label" for="Project_Investigated_Pi">PI</label>
@@ -49,46 +40,46 @@
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-2" style="text-align: left">
+            <div class="col-sm-4" style="text-align: left">
                 <div class="form-group" >
                     <label for="Project_Investigated_P_Title">Title</label>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-group" >
                     <input type="text" class="form-control" name="i1" id="Project_Investigated_P_Title"  placeholder="Enter Title">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-2" style="text-align: left">
+            <div class="col-sm-4" style="text-align: left">
                 <div class="form-group" style="margin-top:3% ">
                     <label for="Project_Investigated_Funding_Agency">Funding Agency</label>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-group" >
                     <input type="text" class="form-control" name="i2" id="Project_Investigated_Funding_Agency"  placeholder="Enter Funding Agency">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-2" style="text-align: left">
+            <div class="col-sm-4" style="text-align: left">
                 <div class="form-group" style="margin-top:3% ">
                     <label for="Project_Investigated_Amount">Amount</label>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-group" >
                     <input type="text" class="form-control" name="i3" id="Project_Investigated_Amount"  placeholder="Enter Amount">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-2" >
+            <div class="col-sm-4" >
                 <p >Status</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" value="Completed" name="Status" id="Project_Investigated_Complete">
                     <label class="form-check-label" for="Project_Investigated_Complete">Complete</label>
@@ -100,12 +91,11 @@
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-2">
+            <div class="col-sm-4">
 
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-8">
                 <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="b1">ADD</button>
-                <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
 
 
                 <%

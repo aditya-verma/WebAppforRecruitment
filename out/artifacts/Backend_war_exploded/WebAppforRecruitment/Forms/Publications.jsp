@@ -7,6 +7,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<head>
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+    </style>
+</head>
 <body>
 <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">

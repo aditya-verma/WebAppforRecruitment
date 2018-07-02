@@ -25,12 +25,7 @@
 
             background-color: #f5f5f5;
         }
-        .rcorners2 {
-            border-radius: 20px;
-            border: 2px ;
-            height: 50px;
-            width: 101%;
-        }
+
 
     </style>
 </head>
@@ -91,15 +86,15 @@
                 </div>
             </div>
         </div>
-       <!-- <div class="row " style="margin-top: 2%">
-            <div class="col-sm-3">
+        <div class="row " style="margin-top: 2%">
+            <div class="col-sm-4">
 
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-8">
                 <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="b1">ADD</button>
                 <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
 
-            <%--
+            <%
                     if(request.getParameter("b1")!=null)
                     {
                         Connection con=null;
@@ -130,8 +125,8 @@
             out.println(e.toString());
         }
     }
---%>
--->
+%>
+
     </form>
 </div>
 </body>

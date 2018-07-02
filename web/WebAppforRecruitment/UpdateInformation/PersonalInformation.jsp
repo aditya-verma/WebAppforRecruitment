@@ -10,6 +10,14 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('#change1').click(function(e){
+                e.preventDefault();
+                $('#mytabs a[href="Publications.jsp"]').tab('show');
+            })
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -46,8 +54,8 @@
                 <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PG Supervision.jsp" role="tab">PG Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectSupervised.jsp" role="tab" >B.Tech Project Guided</a>
                 <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
-                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="ExpertInvitedLecture.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
-                <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list"  href="ResearchProjectInvestigated.jsp" role="tab" >Research Project Investigated</a>
+                <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="InvitedLecturesDelivered.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
+                <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list"  href="ResearchProjectsInvestigated.jsp" role="tab" >Research Project Investigated</a>
                 <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
                 <a class="list-group-item list-group-item-action " id="list-EventAttended-list"  href="EventAttended.jsp" role="tab" >Event Attended</a>
                 <a class="list-group-item list-group-item-action " id="list-ExpertLectureOrganized-list"  href="ExpertLectureOrganized.jsp" role="tab" >Expert Lecture Organized</a>
@@ -59,6 +67,7 @@
                 <!--------------Personal Information-------------->
                 <div class="tab-pane fade show active" id="list-PersonalInfo" role="tabpanel" aria-labelledby="list-PersonalInfo-list">
                     <%@include file="/WebAppforRecruitment/Forms/PersonalInformation.jsp"%>
+                   <!-- <button class="btn btn-success" onclick="window.location.href='/WebAppforRecruitment/UpdateInformation/Publications.jsp'">Continue</button> -->
                 </div>
                 <!--------------Publication-------------->
                 <div class="tab-pane fade " id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
@@ -90,7 +99,7 @@
                 </div>
                 <!--------------Research Project Investigated-------------->
                 <div class="tab-pane fade" id="list-ResearchProjectInvestigated" role="tabpanel" aria-labelledby="list-ResearchProjectInvestigated-list">
-                    <%--@include file="/WebAppforRecruitment/Forms/ResearchProjectInvestigated.jsp"--%>
+                    <%--@include file="/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp"--%>
                 </div>
                 <!--------------Awards Honour Received-------------->
                 <div class="tab-pane fade" id="list-AwardsHonourReceived" role="tabpanel" aria-labelledby="list-AwardsHonourReceived-list">
