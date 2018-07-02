@@ -3,47 +3,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <link href="../css/datepicker.css" rel="stylesheet">
     <script type="text/javascript">
         $(function() {
-            $( "#date" ).datepicker({
+            $( "#Awards_Received_Date" ).datepicker({
                 format: "dd-mm-yyyy",
                 viewMode: "months",
                 minViewMode: "date",
                 pickerPosition: "bottom-left"});
         });
     </script>
+
+        <style>
+            body {
+                background-color: #f5f5f5;
+            }
+
+        </style>
+
 </head>
 <body>
 
-    <form id="Awards_Received" action="" method="post" style="width: 100%;padding-left: 30%;">
+    <form id="Awards_Received" action="" method="post" style="width: 100%;">
         <div class="row " style="margin-top: 5%">
-            <div class="col-sm-2" style="text-align: left">
+            <div class="col-sm-4" style="text-align: left">
                 <div class="form-group" >
-                    <label for="Awards_Received_Description">Description</label>
+                    <label >Description</label>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-group" >
-                    <input type="text" class="form-control" id="Awards_Received_Description" name="i1"  placeholder="Enter Description">
+                    <textarea type="text" class="form-control" id="event"  name="i4" placeholder="Write Event Description "></textarea>
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-2" style="text-align: left">
+            <div class="col-sm-4" style="text-align: left">
                 <div class="form-group" >
                     <label for="Awards_Received_Date">Received on</label>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-group" >
                     <input type="text" class="form-control" name="i2" id="Awards_Received_Date"  placeholder="DD/MM/YYYY">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
-            <div class="col-sm-2">
-            </div>
             <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
                 <button class="btn btn-lg btn-success m-1" id="next" value="Insert" type="submit" name="b2">Submit</button>
             </div>
         </div>

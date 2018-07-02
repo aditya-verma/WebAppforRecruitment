@@ -27,12 +27,7 @@
     </script>
 
     <style>
-        .rcorners2 {
-            border-radius: 20px;
-            border: 2px ;
-            height: 50px;
-            width: 101%;
-        }
+
         body {
 
             background-color: #f5f5f5;
@@ -47,31 +42,7 @@
 
 
 
-    <nav class="navbar sticky-top navbar-light bg-light"  style="border-bottom-color: #000">
-        <div class="container" >
-            <div class="navbar-header" >
-                <a class="navbar-brand" href="#">
-                    <img class="img-fluid float-left" src="../Images/form-background.png"  style="margin-left: 5rem;max-width: 7%; height: auto">
-                    <img class="img-fluid " src="../Images/mnnit name.png"  style="margin-left: 3rem;max-width: 80%;height: auto">
-                </a>
-            </div>
-        </div>
-    </nav>
-    <div class="jumbotron" style="height: 10%">
-        <div class="container" >
-            <h1>Recruitment Portal</h1>
-            <div class="bg-dark rcorners2 ">
-                <h3  style="color: #FFF;padding: 1%; ">5. Present Employer:</h3>
-            </div>
-            <% if(request.getParameter("b1")!=null)
-            {%>
-            <div class="alert alert-success rcorners2" style="margin-top: 3%">
-                <strong>Record Inserted! </strong><b>RESET</b> or press <b>Save And Continue</b>.
-            </div>
-            <% }%>
-        </div>
-    </div>
-</header>
+
 
 
 
