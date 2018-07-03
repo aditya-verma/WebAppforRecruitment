@@ -32,7 +32,7 @@
     String Phone ="";
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sql12244587","root","");
         ApplicationNumber = (String) session.getAttribute("ApplicationNumber");
         Password = (String) session.getAttribute("Password");
         Statement statement = connection.createStatement();
