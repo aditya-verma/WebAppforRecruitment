@@ -1,4 +1,5 @@
 <%@page import="java.sql.*"%>
+<%@ page import="com.mysql.cj.Session" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,9 +112,9 @@
                         String status=request.getParameter("Status");
                         try{
                             Class.forName("com.mysql.jdbc.Driver");
-                            con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+                            con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
                             st=con.createStatement();
-                            String sql="insert into Research_Project_Investigated values('A123','"+role+"','"+title+"','"+fundingAgency+"',"+amount+",'"+status+"')";
+                            String sql="insert into Research_Project_Investigated values('"+session.getAttribute("ApplicationNumber")+"','"+role+"','"+title+"','"+fundingAgency+"',"+amount+",'"+status+"')";
                             int res=st.executeUpdate(sql);
                             if(res!=0){
                 %>
