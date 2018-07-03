@@ -54,10 +54,10 @@
     ResultSet rs=null;
     try{
         Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
         // con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summer","root","");
         st=con.createStatement();
-        String sql="select * from Personal_Information where ApplicationNumber='"+(session.getAttribute("ApplicationNumber"))+"'";
+        String sql="select * from Personal_Information where ApplicationNumber='2018PF000003'";
         rs=st.executeQuery(sql);
         rs.next();
 %>
@@ -66,8 +66,8 @@
         <div class="col-md-3">
             <div id="list-example" class="list-group">
         <a class="list-group-item list-group-item-action" href="#list-item-1">Personal Information</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">Educational_Details(PhD)</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Educational Details(PhD)</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Educational Details</a>
         <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
     </div>
         </div>
@@ -473,14 +473,14 @@
             %>
             <!--Includ Jsp File after updation of Personal Information jsp-->
         </form>
-        <h4 id="list-item-2">Educational_Details(PhD)</h4>
+        <h4 id="list-item-2">Educational Details(PhD)</h4>
                 <%
                     try{
-                        String sql="select * from Educational_Qualification_PhD where Application_Number='"+(session.getAttribute("ApplicationNumber"))+"'";
+                        String sql="select * from Educational_Qualification_PhD where Application_Number='2018PF000003'";
                         rs=st.executeQuery(sql);
                 %>
                 <form class="table-responsive" id="Educational_Details(PhD)" action="" method="post">
-                <table class=" table  table-bordered" id="PhD_Qual">
+                <table class=" table  table-bordered" >
                         <thead class="table-dark" >
                             <tr>
                             <th scope="col">Status</th>
@@ -498,28 +498,12 @@
                                 <td><%=rs.getString(3)%></td>
                                 <td><%=rs.getString(4)%></td>
                                 <td><%=rs.getString(5)%></td>
-                                <td><button class="btn" type="button" onclick="edit_function(this)"><i class="fa fa-edit"></i></button></td>
-                                <td><button class="btn" type="button" onclick="delete_function(this)"><i class="fa fa-trash-alt"></i></button></td>
+                                <td><a href="Update%20Files/Educational_Qualification_PhD_Update.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-edit"></i></a></td>
+                                <td><a href="Delete%20Files/Educational_Qualification_PhD_Delete.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-trash-alt"></i></a></td>
                             </tr>
                             <%}%>
                         </tbody>
-                    </tr>
                 </table>
-                    <script type="text/javascript">
-                        function edit_function(a){
-                            for(var i=0;i<4;i++)
-                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[i].innerHTML="<input class =\"form-control\" type=\"text\" required>";
-                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[5].innerHTML="";
-                            document.getElementById("PhD_Qual").rows[a.parentNode.parentNode.rowIndex].cells[4].innerHTML="<button class=\"btn\" type=\"submit\"><i class=\"fa fa-check\"></i></button>";
-                        }
-                        function delete_function(a) {
-                            var i = a.parentNode.parentNode.rowIndex;
-                            document.getElementById("PhD_Qual").deleteRow(i);
-                            <%
-
-                            %>
-                        }
-                    </script>
             </form>
                 <%
                     }
@@ -528,8 +512,54 @@
                     }
                     rs=null;
                 %>
-        <h4 id="list-item-3">Item 3</h4>
-        <p>...</p>
+        <h4 id="list-item-3">Educational Details</h4>
+                <%
+                    try{
+                        String sql="select * from Educational_Qualification where ApplicationNumber='2018PF000003'";
+                        rs=st.executeQuery(sql);
+                %>
+                <form class="table-responsive-sm" id="Educational_Details" action="" method="post">
+                    <table class=" table  table-bordered" >
+                        <thead class="table-dark" >
+                        <tr>
+                            <th scope="col">Qualification</th>
+                            <th scope="col">Degree</th>
+                            <th scope="col">Discipline</th>
+                            <th scope="col">Institute</th>
+                            <th scope="col">Board/Univ</th>
+                            <th scope="col">Date of Passing</th>
+                            <th scope="col">Division</th>
+                            <th scope="col">%age/CGPA</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <%while(rs.next()){%>
+                        <tr>
+                            <td><%=rs.getString(2)%></td>
+                            <td><%=rs.getString(3)%></td>
+                            <td><%=rs.getString(4)%></td>
+                            <td><%=rs.getString(5)%></td>
+                            <td><%=rs.getString(6)%></td>
+                            <td><%=rs.getString(7)%></td>
+                            <td><%=rs.getString(8)%></td>
+                            <td><%=rs.getString(9)%></td>
+                            <td><a href="Update%20Files/Educational_Qualification_Update.jsp?id=2018PF000003&date=<%=rs.getString(7)%>" >Edit</a></td>
+                            <td><a href="Delete%20Files/Educational_Qualification_Delete.jsp?id=2018PF000003&date=<%=rs.getString(7)%>" ><i class="fa fa-trash"></i></a></td>
+                        </tr>
+                        <%}%>
+                        </tbody>
+                    </table>
+                </form>
+                <%
+                        con.close();
+                    }
+                    catch (Exception e){
+                        out.print(e.toString());
+                    }
+                    rs=null;
+                %>
         <h4 id="list-item-4">Item 4</h4>
         <p>...</p>
     </div>
