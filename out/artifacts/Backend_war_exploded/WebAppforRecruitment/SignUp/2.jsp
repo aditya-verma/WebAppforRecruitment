@@ -9,9 +9,15 @@
         <td><input type="date" placeholder="Enter Date of Award" name="date"></td>
     </tr>
     </table>
-    <div class="col-md-12 mb-3" style="margin: 0;text-align: center">
-        <button class="btn btn-dark btn-" id="reset"  type="reset">Reset</button>
+    <div class="row" style="text-align: center;">
+    <div class="col-sm-6" style="margin: 0;">
+        <button class="btn btn-dark " id="reset"  type="reset">Reset</button>
     </div>
+    <div class="col-sm-6" style="margin: 0;">
+        <button class="btn btn-primary" name="submit-phd">Save</button>
+    </div>
+    </div>
+
 </form>
     <div class="col-md-12 " style="margin: 0;text-align: center">
         <button class="btn btn-dark " id="btn-addPhdInfo"  onclick="addPhDInfo()">Add New Row</button>
