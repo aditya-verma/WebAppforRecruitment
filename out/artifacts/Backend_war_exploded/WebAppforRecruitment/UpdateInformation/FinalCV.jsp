@@ -55,9 +55,8 @@
     try{
         Class.forName("com.mysql.jdbc.Driver");
         con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
-        // con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summer","root","");
         st=con.createStatement();
-        String sql="select * from Personal_Information where ApplicationNumber='2018PF000003'";
+        String sql="select * from Personal_Information where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
         rs=st.executeQuery(sql);
         rs.next();
 %>
@@ -476,7 +475,7 @@
         <h4 id="list-item-2">Educational Details(PhD)</h4>
                 <%
                     try{
-                        String sql="select * from Educational_Qualification_PhD where Application_Number='2018PF000003'";
+                        String sql="select * from Educational_Qualification_PhD where Application_Number='"+session.getAttribute("ApplicationNumber")+"'";
                         rs=st.executeQuery(sql);
                 %>
                 <form class="table-responsive" id="Educational_Details(PhD)" action="" method="post">
@@ -515,7 +514,7 @@
         <h4 id="list-item-3">Educational Details</h4>
                 <%
                     try{
-                        String sql="select * from Educational_Qualification where ApplicationNumber='2018PF000003'";
+                        String sql="select * from Educational_Qualification where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
                         rs=st.executeQuery(sql);
                 %>
                 <form class="table-responsive-sm" id="Educational_Details" action="" method="post">

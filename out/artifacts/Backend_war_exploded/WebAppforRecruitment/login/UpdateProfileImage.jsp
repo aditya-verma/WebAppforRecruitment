@@ -16,6 +16,15 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <%
+        if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="" || session.getAttribute("Password") == null || session.getAttribute("Password") == "")
+        {
+            session.setAttribute("ApplicationNumber",null);
+            session.setAttribute("Password",null);
+            session.invalidate();
+            response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
+        }
+    %>
     <style>
         /* layout.css Style */
         .upload-drop-zone {
