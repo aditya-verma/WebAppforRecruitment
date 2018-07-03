@@ -19,7 +19,7 @@
         <input class="form-control" id="BookChapter-BookChapter" required>
     </div>
     <div class="form-group text-uppercase">
-        <label for="BookChapter-Publisher">publisher</label>
+        <label for="BookChapter-Publisher">Publisher</label>
         <input class="form-control" id="BookChapter-Publisher" required>
     </div>
     <div class="form-group text-uppercase">
@@ -41,7 +41,9 @@
         <label for="BookChapter-Month/Year">Published On</label>
         <input class="form-control" id="BookChapter-Month/Year" placeholder="MM/YYYY" required>
     </div>
-    <button class="btn btn-primary" type="submit">Submit</button>
+    <div class="form-action" style="margin: 0;background-color: transparent;text-align: center;">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
 </form>
 </div>
 </body>

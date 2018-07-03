@@ -34,7 +34,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-group" >
-                    <textarea type="text" class="form-control" id="event"  name="i4" placeholder="Write Event Description "></textarea>
+                    <textarea type="text" class="form-control" id="event"  name="i1" placeholder="Write Event Description "></textarea>
                 </div>
             </div>
         </div>
@@ -63,21 +63,15 @@
                 Connection con=null;
                 Statement st;
                 ResultSet rs;
-                String org =(request.getParameter("i1"));
-                String pos =request.getParameter("i2");
-                String type=request.getParameter("i3");
-                String from =request.getParameter("i4");
-                String to=request.getParameter("i5");
-                String payinband=request.getParameter("i6");
-                String agp=request.getParameter("i7");
-                int basicpay =Integer.parseInt(request.getParameter("i8"));
-                String nature=request.getParameter("i9");
+                String des =(request.getParameter("i1"));
+                String date =request.getParameter("i2");
+
                 try{
                     Class.forName("com.mysql.jdbc.Driver");
-                    con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+                    con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
                     // con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summer","root","");
                     st=con.createStatement();
-                    String sql="insert into Present_Employee values('A123','"+org+"','"+pos+"','"+type+"','"+from+"','"+to+"','"+payinband+"','"+agp+"',"+basicpay+",'"+nature+"')";
+                    String sql="insert into Award_Honour_Received values('"+((String) session.getAttribute("ApplicationNumber"))+"','"+des+"','"+date+"')";
                     int res=st.executeUpdate(sql);
                     if(res!=0)
                         out.println("Record Inserted");
