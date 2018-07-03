@@ -145,7 +145,7 @@
                 String nature=request.getParameter("i9");
                 try{
                     Class.forName("com.mysql.jdbc.Driver");
-                    con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+                    con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
                     // con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summer","root","");
                     st=con.createStatement();
                     String sql="insert into Present_Employee values('A123','"+org+"','"+pos+"','"+type+"','"+from+"','"+to+"','"+payinband+"','"+agp+"',"+basicpay+",'"+nature+"')";

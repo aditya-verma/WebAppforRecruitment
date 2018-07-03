@@ -111,7 +111,7 @@
 
                         try{
                             Class.forName("com.mysql.jdbc.Driver");
-                            con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12244587","sql12244587","MnEsSVNIke");
+                            con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
                             st=con.createStatement();
                             String sql="insert into Invited_Lecture_Delivered values('2018PF000001','"+title+"','"+date+"','"+inviter+"','"+event+"')";
                             int res=st.executeUpdate(sql);

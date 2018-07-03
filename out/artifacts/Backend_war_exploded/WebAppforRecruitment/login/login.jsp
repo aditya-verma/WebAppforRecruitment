@@ -144,11 +144,11 @@
                     properties.setProperty("useSSL","true");
                     properties.setProperty("autoReconnect","true");
                      */
-<<<<<<< HEAD
+
                         Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sql12244587","root","");
-=======
+
                         Connection con=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
->>>>>>> 54575990f44b9f1ff434ae0a1a5ff1ee0eecc222
+
                         Statement stmt=con.createStatement();
                         ResultSet rs=stmt.executeQuery("select * from USERS where ApplicationNumber='"+request.getParameter("AppNumber")+"' and Password='"+request.getParameter("Password")+"'");
                         if (rs.next())
