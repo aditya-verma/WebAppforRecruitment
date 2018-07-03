@@ -18,7 +18,7 @@
         String sql="delete from Educational_Qualification where ApplicationNumber='"+id+"' and DateOfPassing='"+request.getParameter("date")+"'";
         int res=st.executeUpdate(sql);
         if(res!=0)
-            response.sendRedirect("../FinalCV.jsp");
+            response.sendRedirect("/WebAppforRecruitment/UpdateInformation/FinalCV.jsp");
         else
             out.println("Record Not Deleted");
     }catch(Exception e)

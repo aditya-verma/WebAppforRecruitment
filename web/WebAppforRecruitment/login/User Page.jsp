@@ -11,7 +11,7 @@
         session.setAttribute("ApplicationNumber",null);
         session.setAttribute("Password",null);
         session.invalidate();
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
     }
     %>
     <meta charset="UTF-8">
@@ -32,7 +32,7 @@
     String Phone ="";
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sql12244587","root","");
+        Connection connection=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
         ApplicationNumber = (String) session.getAttribute("ApplicationNumber");
         Password = (String) session.getAttribute("Password");
         Statement statement = connection.createStatement();
@@ -84,7 +84,7 @@ background-size:16px 16px;">
             <img class=" img-thumbnail " src="../Images/form-background.png" height="400px" width="300px" alt="User Image">
         </div>
         <div class="card-body text-center">
-            <a class="card-link" href="#" id="showApplicationLink">Show Application</a>
+            <a class="card-link" href="../UpdateInformation/FinalCV.jsp" id="showApplicationLink">Show Application</a>
         </div>
         <div class="card-body text-center p-1">
             <ul class="list-group list-group-flush border col">
@@ -125,7 +125,11 @@ background-size:16px 16px;">
 
 
 <div class="card-footer align-bottom mt-2" style="background-color: #c4c4c4">
-    <div class="container text-muted text-center rounded">This is footer</div>
+    <div class="container text-muted text-center rounded">
+        <form method="post" action="../logout.jsp">
+            <button class="btn btn-danger btn-sm" name="logout">Logout</button>
+        </form>
+    </div>
 </div>
 
 </body>
