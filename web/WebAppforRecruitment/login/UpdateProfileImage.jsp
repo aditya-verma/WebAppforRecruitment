@@ -85,11 +85,19 @@
         <div class="container">
             <h1>Recruitment Portal</h1>
             <div class="bg-dark rounded p-2">
-                <h3 class="text-primary text-uppercase" style="color: #FFF;">Welcome to recruitment portal of mnnit Allahabad</h3>
+                <h3 class="text-primary text-uppercase" style="color: #FFF;">Update Profile Image</h3>
             </div>
         </div>
     </div>
 </header>
+<div class="container">
+    <form action = "UploadFile.jsp" method = "post"
+          enctype = "multipart/form-data">
+        <input type = "file" name = "file" size = "5000" />
+        <br />
+        <input type = "submit" value = "Upload File" />
+    </form>
+</div>
 <div class="container"> <br />
     <div class="row">
         <div class="col-md-12">

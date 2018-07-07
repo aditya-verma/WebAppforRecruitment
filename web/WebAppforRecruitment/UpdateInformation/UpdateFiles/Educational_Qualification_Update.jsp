@@ -66,7 +66,7 @@
 </div>
 <%
     if(request.getParameter("close")!=null){
-        response.sendRedirect("FinalCV.jsp");
+        response.sendRedirect("/WebAppforRecruitment/UpdateInformation/FinalCV.jsp");
     }
     if(request.getParameter("b1")!=null)
     {

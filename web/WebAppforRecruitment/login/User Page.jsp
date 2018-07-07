@@ -8,9 +8,6 @@
     <%
     if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="" || session.getAttribute("Password") == null || session.getAttribute("Password") == "")
     {
-        session.setAttribute("ApplicationNumber",null);
-        session.setAttribute("Password",null);
-        session.invalidate();
         response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
     }
     %>

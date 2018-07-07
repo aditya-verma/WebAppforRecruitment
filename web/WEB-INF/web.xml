@@ -4,11 +4,14 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <error-page>
-        <error-code>500</error-code>
-        <location>/WebAppforRecruitment/errors/error500.jsp</location>
-    </error-page>
-    <error-page>
         <error-code>404</error-code>
         <location>/WebAppforRecruitment/errors/error404.jsp</location>
     </error-page>
+    <context-param>
+        <description>Location to store uploaded file</description>
+        <param-name>file-upload</param-name>
+        <param-value>
+            D:\WebApp\data\
+        </param-value>
+    </context-param>
 </web-app>

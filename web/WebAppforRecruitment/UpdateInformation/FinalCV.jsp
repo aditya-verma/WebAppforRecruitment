@@ -9,6 +9,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <%if (session.getAttribute("ApplicationNumber")== null || session.getAttribute("ApplicationNumber")=="")
+    {
+        response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
+    }%>
     <title>CV</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -497,8 +501,8 @@
                                 <td><%=rs.getString(3)%></td>
                                 <td><%=rs.getString(4)%></td>
                                 <td><%=rs.getString(5)%></td>
-                                <td><a href="Update%20Files/Educational_Qualification_PhD_Update.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-edit"></i></a></td>
-                                <td><a href="Delete%20Files/Educational_Qualification_PhD_Delete.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-trash-alt"></i></a></td>
+                                <td><a href="UpdateFiles/Educational_Qualification_PhD_Update.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-edit"></i></a></td>
+                                <td><a href="DeleteFiles/Educational_Qualification_PhD_Delete.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-trash-alt"></i></a></td>
                             </tr>
                             <%}%>
                         </tbody>
@@ -544,8 +548,8 @@
                             <td><%=rs.getString(7)%></td>
                             <td><%=rs.getString(8)%></td>
                             <td><%=rs.getString(9)%></td>
-                            <td><a href="Update%20Files/Educational_Qualification_Update.jsp?id=2018PF000003&date=<%=rs.getString(7)%>" >Edit</a></td>
-                            <td><a href="Delete%20Files/Educational_Qualification_Delete.jsp?id=2018PF000003&date=<%=rs.getString(7)%>" ><i class="fa fa-trash"></i></a></td>
+                            <td><a href="/WebAppforRecruitment/UpdateInformation/UpdateFiles/Educational_Qualification_Update.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(7)%>"><i class="fa fa-edit">edit</i></a></td>
+                            <td><a href="DeleteFiles/Educational_Qualification_Delete.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(7)%>"><i class="fa fa-trash-alt"></i></a></td>
                         </tr>
                         <%}%>
                         </tbody>

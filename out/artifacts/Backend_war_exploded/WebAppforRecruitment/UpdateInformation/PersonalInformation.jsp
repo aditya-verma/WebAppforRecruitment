@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Update Information</title>
+    <%if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="" || session.getAttribute("Password") == null || session.getAttribute("Password") == "")
+    {
+    session.invalidate();
+    response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
+    }%>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/datepicker.css">
