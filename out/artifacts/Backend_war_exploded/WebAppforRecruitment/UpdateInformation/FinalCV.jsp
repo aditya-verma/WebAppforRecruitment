@@ -8,6 +8,7 @@
 <%@page import="java.sql.*"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+
 <head>
     <%if (session.getAttribute("ApplicationNumber")== null || session.getAttribute("ApplicationNumber")=="")
     {
@@ -23,6 +24,11 @@
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <style>
+        body {
+
+            background-color: #f5f5f5;
+        }
+
     .rcorners2 {
         border-radius: 20px;
         border: 2px ;
@@ -65,14 +71,16 @@
         rs.next();
 %>
 <div class="container">
-    <div class="row">
-        <div class="col-md-3">
+    <div class="row ">
+        <div class="col-md-3 ">
+            <div class="container sticky-top " style="padding-top: 10%">
             <div id="list-example" class="list-group">
-        <a class="list-group-item list-group-item-action" href="#list-item-1">Personal Information</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">Educational Details(PhD)</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3">Educational Details</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-    </div>
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Personal Information</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Educational Details(PhD)</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Educational Details</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            </div>
+        </div>
         </div>
         <div class="col-md-7">
             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
