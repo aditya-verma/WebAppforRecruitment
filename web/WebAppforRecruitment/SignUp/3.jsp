@@ -16,13 +16,13 @@
             <td><input type="text" placeholder="Enter Discipline" name="Discipline"></td>
             <td><input type="text" placeholder="Enter Institute" name="Institute"></td>
             <td><input type="text" placeholder="Enter Board/University" name="Board"></td>
-            <td><input type="text" placeholder="Enter Date" name="Date"></td>
+            <td><input type="date" placeholder="Enter Date" name="Date"></td>
             <td><input type="text" placeholder="Enter Division" name="Division"></td>
             <td><input type="text" placeholder="Enter %age/CGPA" name="Percentage"></td>
         </tr>
     </table>
     <div class="col-md-12 mb-3" style="margin: 0;text-align: center">
-        <button class="btn btn-primary"  type="submit">Reset</button>
+        <button class="btn btn-primary"  type="submit">Submit</button>
         <button class="btn btn-dark " id="reset"  type="reset">Reset</button>
     </div>
 </form>
