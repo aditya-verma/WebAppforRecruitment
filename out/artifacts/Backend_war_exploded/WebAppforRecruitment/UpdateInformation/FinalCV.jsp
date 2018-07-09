@@ -81,6 +81,7 @@
                 <a class="list-group-item list-group-item-action" href="#list-item-4">Other Academic Qualification</a>
                 <a class="list-group-item list-group-item-action" href="#list-item-5">Present Employer</a>
                 <a class="list-group-item list-group-item-action" href="#list-item-6">Teaching Experience</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-7">Research Experience/Post Doctoral Research</a>
             </div>
         </div>
         </div>
@@ -732,6 +733,51 @@
                                 <td><%=rs.getString(8)%></td>
                                 <td><a href="UpdateFiles/Teaching_Experience_Update.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&position=<%=rs.getString(3)%>&date=<%=rs.getString(4)%>"><i class="fa fa-edit"></i></a></td>
                                 <td><a href="DeleteFiles/Teaching_Experience_Delete.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&position=<%=rs.getString(3)%>&date=<%=rs.getString(4)%>"><i class="fa fa-trash-alt"></i></a></td>
+                            </tr>
+                            <%}%>
+                            </tbody>
+                        </table>
+                    </form>
+                    <%
+                        }
+                        catch (Exception e){
+                            out.print(e.toString());
+                        }
+                        rs=null;
+                    %><hr>
+                <h4 id="list-item-7">Research Experience/Post Doctoral Research</h4>
+                    <%
+                        try{
+                            String sql="select * from Research_Experience where Application_Number='"+session.getAttribute("ApplicationNumber")+"'";
+                            rs=st.executeQuery(sql);
+                    %>
+                    <form class="table-responsive" action="" method="post">
+                        <table class=" table  table-bordered" >
+                            <thead class="table-dark" >
+                            <tr>
+                                <th scope="col">Organisation</th>
+                                <th scope="col">Position Held</th>
+                                <th scope="col">From</th>
+                                <th scope="col">To</th>
+                                <th scope="col">Salary/Fellowship/Stipend</th>
+                                <th scope="col">Nature of Work</th>
+                                <th scope="col">Tenure</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <%while(rs.next()){%>
+                            <tr>
+                                <td><%=rs.getString(2)%></td>
+                                <td><%=rs.getString(3)%></td>
+                                <td><%=rs.getString(4)%></td>
+                                <td><%=rs.getString(5)%></td>
+                                <td><%=rs.getString(6)%></td>
+                                <td><%=rs.getString(7)%></td>
+                                <td><%=rs.getString(8)%></td>
+                                <td><a href="UpdateFiles/Research_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&date=<%=rs.getString(4)%>"><i class="fa fa-edit"></i></a></td>
+                                <td><a href="DeleteFiles/Research_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&date=<%=rs.getString(4)%>"><i class="fa fa-trash-alt"></i></a></td>
                             </tr>
                             <%}%>
                             </tbody>
