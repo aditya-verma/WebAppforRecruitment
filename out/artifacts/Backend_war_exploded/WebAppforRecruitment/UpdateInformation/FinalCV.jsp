@@ -71,14 +71,14 @@
         rs.next();
 %>
 <div class="container">
-    <div class="row ">
-        <div class="col-md-3 ">
-            <div class="container sticky-top " style="padding-top: 10%">
+    <div class="row " >
+        <div class="col-md-3">
+            <div class="container sticky-top" style="padding-top: 10%">
             <div id="list-example" class="list-group">
                 <a class="list-group-item list-group-item-action" href="#list-item-1">Personal Information</a>
                 <a class="list-group-item list-group-item-action" href="#list-item-2">Educational Details(PhD)</a>
                 <a class="list-group-item list-group-item-action" href="#list-item-3">Educational Details</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Other Academic Qualification</a>
             </div>
         </div>
         </div>
@@ -483,7 +483,7 @@
                 rs=null;
             %>
             <!--Includ Jsp File after updation of Personal Information jsp-->
-        </form>
+        </form><hr>
         <h4 id="list-item-2">Educational Details(PhD)</h4>
                 <%
                     try{
@@ -522,14 +522,14 @@
                         out.print(e.toString());
                     }
                     rs=null;
-                %>
+                %><hr>
         <h4 id="list-item-3">Educational Details</h4>
                 <%
                     try{
                         String sql="select * from Educational_Qualification where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
                         rs=st.executeQuery(sql);
                 %>
-                <form class="table-responsive-sm" id="Educational_Details" action="" method="post">
+                <form class="table-responsive" id="Educational_Details" action="" method="post">
                     <table class=" table  table-bordered" >
                         <thead class="table-dark" >
                         <tr>
@@ -556,8 +556,57 @@
                             <td><%=rs.getString(7)%></td>
                             <td><%=rs.getString(8)%></td>
                             <td><%=rs.getString(9)%></td>
-                            <td><a href="/WebAppforRecruitment/UpdateInformation/UpdateFiles/Educational_Qualification_Update.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(7)%>"><i class="fa fa-edit">edit</i></a></td>
+                            <td><a href="UpdateFiles/Educational_Qualification_Update.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(7)%>"><i class="fa fa-edit"></i></a></td>
                             <td><a href="DeleteFiles/Educational_Qualification_Delete.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(7)%>"><i class="fa fa-trash-alt"></i></a></td>
+                        </tr>
+                        <%}%>
+                        </tbody>
+                    </table>
+                </form>
+                <%
+                    }
+                    catch (Exception e){
+                        out.print(e.toString());
+                    }
+                    rs=null;
+                %><hr>
+        <h4 id="list-item-4">Other Academic Qualification</h4>
+                <%
+                    try{
+                        String sql="select * from Other_Academic_Qualification where Application_Number='"+session.getAttribute("ApplicationNumber")+"'";
+                        rs=st.executeQuery(sql);
+                %>
+                <form class="table-responsive" action="" method="post">
+                    <table class=" table  table-bordered" >
+                        <thead class="table-dark" >
+                        <tr>
+                            <th scope="col">Degree</th>
+                            <th scope="col">Discipline</th>
+                            <th scope="col">Institute</th>
+                            <th scope="col">Board/Univ</th>
+                            <th scope="col">Marks/CGPA</th>
+                            <th scope="col">Max. Marks/CGPA</th>
+                            <th scope="col">%age Marks/CGPA</th>
+                            <th scope="col">Division</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <%while(rs.next()){%>
+                        <tr>
+                            <td><%=rs.getString(2)%></td>
+                            <td><%=rs.getString(3)%></td>
+                            <td><%=rs.getString(4)%></td>
+                            <td><%=rs.getString(5)%></td>
+                            <td><%=rs.getString(6)%></td>
+                            <td><%=rs.getString(7)%></td>
+                            <td><%=rs.getString(8)%></td>
+                            <td><%=rs.getString(9)%></td>
+                            <td><%=rs.getString(10)%></td>
+                            <td><a href="UpdateFiles/Other_Academic_Qualification_Update.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(10)%>"><i class="fa fa-edit"></i></a></td>
+                            <td><a href="DeleteFiles/Other_Academic_Qualification_Delete.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(10)%>"><i class="fa fa-trash-alt"></i></a></td>
                         </tr>
                         <%}%>
                         </tbody>
@@ -570,9 +619,7 @@
                         out.print(e.toString());
                     }
                     rs=null;
-                %>
-        <h4 id="list-item-4">Item 4</h4>
-        <p>...</p>
+                %><hr>
     </div>
         </div>
         <div class="col-md-2">
