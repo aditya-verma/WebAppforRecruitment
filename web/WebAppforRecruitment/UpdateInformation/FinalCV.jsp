@@ -702,22 +702,20 @@
                 <h4 id="list-item-6">Teaching Experience</h4>
                     <%
                         try{
-                            String sql="select * from Other_Academic_Qualification where Application_Number='"+session.getAttribute("ApplicationNumber")+"'";
+                            String sql="select * from Teaching_Experience where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
                             rs=st.executeQuery(sql);
                     %>
                     <form class="table-responsive" action="" method="post">
                         <table class=" table  table-bordered" >
                             <thead class="table-dark" >
                             <tr>
-                                <th scope="col">Degree</th>
-                                <th scope="col">Discipline</th>
-                                <th scope="col">Institute</th>
-                                <th scope="col">Board/Univ</th>
-                                <th scope="col">Marks/CGPA</th>
-                                <th scope="col">Max. Marks/CGPA</th>
-                                <th scope="col">%age Marks/CGPA</th>
-                                <th scope="col">Division</th>
-                                <th scope="col">Year</th>
+                                <th scope="col">Organisation</th>
+                                <th scope="col">Position Held</th>
+                                <th scope="col">From</th>
+                                <th scope="col">To</th>
+                                <th scope="col">Pay Scale with AGP</th>
+                                <th scope="col">Type of Employer</th>
+                                <th scope="col">Tenure</th>
                                 <th scope="col">Edit</th>
                                 <th scope="col">Delete</th>
                             </tr>
@@ -732,10 +730,8 @@
                                 <td><%=rs.getString(6)%></td>
                                 <td><%=rs.getString(7)%></td>
                                 <td><%=rs.getString(8)%></td>
-                                <td><%=rs.getString(9)%></td>
-                                <td><%=rs.getString(10)%></td>
-                                <td><a href="UpdateFiles/Other_Academic_Qualification_Update.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(10)%>"><i class="fa fa-edit"></i></a></td>
-                                <td><a href="DeleteFiles/Other_Academic_Qualification_Delete.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(10)%>"><i class="fa fa-trash-alt"></i></a></td>
+                                <td><a href="UpdateFiles/Teaching_Experience_Update.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&position=<%=rs.getString(3)%>&date=<%=rs.getString(4)%>"><i class="fa fa-edit"></i></a></td>
+                                <td><a href="DeleteFiles/Teaching_Experience_Delete.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&position=<%=rs.getString(3)%>&date=<%=rs.getString(4)%>"><i class="fa fa-trash-alt"></i></a></td>
                             </tr>
                             <%}%>
                             </tbody>
