@@ -7,8 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fef3e3a-7775-42e3-9435-2ba28fc52ac0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/DeleteFiles/Research_Experience.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/DeleteFiles/Research_Experience.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/FinalCV.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/FinalCV.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/UpdateFiles/Research_Experience.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/UpdateFiles/Research_Experience.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/DeleteFiles/Research_Experience.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/DeleteFiles/Research_Experience.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Research_Experience.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Research_Experience.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +26,8 @@
       <file leaf-file-name="FinalCV.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="761" column="73" selection-start-line="761" selection-start-column="73" selection-end-line="761" selection-end-column="73" />
+            <state relative-caret-position="337">
+              <caret line="753" column="74" selection-start-line="753" selection-start-column="74" selection-end-line="753" selection-end-column="74" />
               <folding>
                 <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
                 <element signature="n#head#0;n#html#0;n#!!top" />
@@ -52,6 +56,7 @@
                 <element signature="n#form#5;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="e#47745#47994#0#JSP" />
                 <element signature="e#48081#48336#0#JSP" />
+                <element signature="n#form#6;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="e#50478#50727#0#JSP" />
               </folding>
             </state>
@@ -97,6 +102,8 @@
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/DeleteFiles/Teaching_Experience_Delete.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Teaching_Experience_Update.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/DeleteFiles/Research_Experience.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Research_Experience.jsp" />
       </list>
     </option>
   </component>
@@ -158,6 +165,22 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
               <item name="UpdateInformation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
+              <item name="UpdateInformation" type="462c0819:PsiDirectoryNode" />
+              <item name="DeleteFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
+              <item name="UpdateInformation" type="462c0819:PsiDirectoryNode" />
+              <item name="UpdateFiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
@@ -345,7 +368,7 @@
       <workItem from="1530896856067" duration="3457000" />
       <workItem from="1530968201192" duration="135000" />
       <workItem from="1530968369128" duration="3595000" />
-      <workItem from="1531112490129" duration="16057000" />
+      <workItem from="1531112490129" duration="17095000" />
     </task>
     <task id="LOCAL-00001" summary="Added Login and New User Creation">
       <created>1530226905871</created>
@@ -365,7 +388,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38039000" />
+    <option name="totallyTimeSpent" value="39077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
@@ -470,12 +493,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/casnkl.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/9.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -748,24 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Teaching_Experience_Update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="76" column="109" lean-forward="true" selection-start-line="76" selection-start-column="109" selection-end-line="76" selection-end-column="109" />
-          <folding>
-            <element signature="e#807#1353#0#JSP" />
-            <element signature="e#4389#4486#0#JSP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/DeleteFiles/Teaching_Experience_Delete.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="248" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="248" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Patent.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -784,10 +783,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/DeleteFiles/Teaching_Experience_Delete.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="27" column="2" lean-forward="true" selection-start-line="7" selection-end-line="27" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Teaching_Experience_Update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="116" column="5" lean-forward="true" selection-start-line="7" selection-end-line="118" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/DeleteFiles/Research_Experience.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Research_Experience.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="74" column="108" selection-start-line="74" selection-start-column="108" selection-end-line="74" selection-end-column="108" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1646#2262#0#JSP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="761" column="73" selection-start-line="761" selection-start-column="73" selection-end-line="761" selection-end-column="73" />
+        <state relative-caret-position="337">
+          <caret line="753" column="74" selection-start-line="753" selection-start-column="74" selection-end-line="753" selection-end-column="74" />
           <folding>
             <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
             <element signature="n#head#0;n#html#0;n#!!top" />
@@ -816,6 +847,7 @@
             <element signature="n#form#5;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="e#47745#47994#0#JSP" />
             <element signature="e#48081#48336#0#JSP" />
+            <element signature="n#form#6;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="e#50478#50727#0#JSP" />
           </folding>
         </state>

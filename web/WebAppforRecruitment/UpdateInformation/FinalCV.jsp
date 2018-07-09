@@ -776,8 +776,8 @@
                                 <td><%=rs.getString(6)%></td>
                                 <td><%=rs.getString(7)%></td>
                                 <td><%=rs.getString(8)%></td>
-                                <td><a href="UpdateFiles/Research_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&date=<%=rs.getString(4)%>"><i class="fa fa-edit"></i></a></td>
-                                <td><a href="DeleteFiles/Research_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&date=<%=rs.getString(4)%>"><i class="fa fa-trash-alt"></i></a></td>
+                                <td><a href="UpdateFiles/Research_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(4)%>"><i class="fa fa-edit"></i></a></td>
+                                <td><a href="DeleteFiles/Research_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&date=<%=rs.getString(4)%>"><i class="fa fa-trash-alt"></i></a></td>
                             </tr>
                             <%}%>
                             </tbody>
