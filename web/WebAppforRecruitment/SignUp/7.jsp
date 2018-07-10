@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <body style="background-color: #f5f5f5;">
+<link href="../css/datepicker.css" rel="stylesheet">
+<script src="../js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $( "#From7" ).datepicker({
+            format: "dd-mm-yyyy",
+            viewMode: "months",
+            minViewMode: "days",
+            pickerPosition: "bottom-left"});
+
+        $( "#To7" ).datepicker({
+            format: "dd-mm-yyyy",
+            viewMode: "months",
+            minViewMode: "days",
+            pickerPosition: "bottom-left"});
+    });
+</script>
 <div class="container ">
 
     <form id="Research Experience" action="#" style="width: 100%;">
@@ -21,14 +38,14 @@
           <div class="row">
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label class="text" for="From"><b>C)</b>From:</label>
-                             <input id="From" type="date" class="form-control" placeholder="" >
+                             <label class="text" for="From7"><b>C)</b>From:</label>
+                             <input id="From7" type="text" class="form-control" placeholder="" >
                          </div>
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label class="text" for="To"><b>D)</b>To:</label>
-                             <input id="To" type="date" class="form-control" placeholder="" >
+                             <label class="text" for="To7"><b>D)</b>To:</label>
+                             <input id="To7" type="text" class="form-control" placeholder="" >
                          </div>
                      </div>
          		</div>

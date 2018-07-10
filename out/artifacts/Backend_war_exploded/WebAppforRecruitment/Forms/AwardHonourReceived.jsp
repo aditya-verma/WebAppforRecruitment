@@ -5,6 +5,10 @@
 <head>
     <script src="../js/bootstrap-datepicker.js"></script>
     <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script type="text/javascript">
         $(function() {
             $( "#Awards_Received_Date" ).datepicker({

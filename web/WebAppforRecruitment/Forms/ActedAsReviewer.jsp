@@ -6,10 +6,10 @@
     <title>Intellectual Property Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link href="../css/datepicker.css" rel="stylesheet">
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <link href="../css/datepicker.css" rel="stylesheet">
     <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(function() {

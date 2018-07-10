@@ -4,6 +4,7 @@
 <%@ page import="java.sql.DriverManager" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
+
 <html lang="en">
 <%
     if (session.getAttribute("ApplicationNumber")==null ||session.getAttribute("ApplicationNumber")=="")
@@ -38,6 +39,17 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#DateOfBirth" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
     <script>
         $(document).ready(function(){
             $("#filladdress").on("click", function(){
@@ -149,7 +161,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="DateOfBirth">Date Of Birth</label>
-                    <input id="DateOfBirth" name="DateOfBirth" type="date" class="form-control" placeholder="" >
+                    <input type="text" class="form-control" id="DateOfBirth" name="DateOfBirth" placeholder="dd-mm-yyyy">
                 </div>
             </div>
             <div class="col-sm-6">

@@ -715,6 +715,7 @@
                     }
                     rs=null;
                 %><hr>
+
                 <h4 id="list-item-6">Teaching Experience</h4>
                     <%
                         try{

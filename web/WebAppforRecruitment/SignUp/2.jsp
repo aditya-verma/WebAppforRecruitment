@@ -28,4 +28,4 @@
         $("#PhDInformation-table").append("<tr><td><input type=\"text\" placeholder=\"Enter Status\" name=\"status\"></td><td><input type=\"text\" placeholder=\"Enter Title\" name=\"title\"></td><td><input type=\"text\" placeholder=\"Enter Institute/University\" name=\"institute\"></td><td><input type=\"date\" placeholder=\"Enter Date of Award\" name=\"date\"></td>></td></tr>");
     }
 </script>
-</body>
+
