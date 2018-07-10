@@ -11,7 +11,7 @@
         <description>Location to store uploaded file</description>
         <param-name>file-upload</param-name>
         <param-value>
-            D:\WebApp\data\
+            d:\WebApp\data\
         </param-value>
     </context-param>
 </web-app>
