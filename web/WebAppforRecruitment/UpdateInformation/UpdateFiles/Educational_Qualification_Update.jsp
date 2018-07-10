@@ -13,15 +13,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link href="../../css/floating-labels.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/datepicker.css">
     <script src="../../jquery/3.3.1/jquery.min.js"></script>
     <script src="../../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(window).on('load',function(){
             $('#myModal').modal('show');
+
+            $( "#Date" ).datepicker({
+                format: "yyyy-mm-dd",
+                viewMode: "months",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+            container: '#myModal modal-body'
+
+
         });
     </script>
+    <style>
+        .datepicker {
+            z-index: 1151 !important; /* has to be larger than 1050 */
+        }
+    </style>
 </head>
 <%
     String id=request.getParameter("id");
@@ -46,13 +61,21 @@
             </div>
             <div class="modal-body">
                 <form method="post" action="">
+                    <label class="text">Qualification</label>
                     <input class="form-control" type="text" value="<%=rs.getString(2)%>" name="Qualification"/><br>
+                    <label class="text">Degree</label>
                     <input class="form-control" type="text" value="<%=rs.getString(3)%>" name="Degree"/><br>
+                    <label class="text">Discipline</label>
                     <input class="form-control" type="text" value="<%=rs.getString(4)%>" name="Discipline"/><br>
+                    <label class="text">Institute</label>
                     <input class="form-control" type="text" value="<%=rs.getString(5)%>" name="Institute"/><br>
+                    <label class="text">Board or University</label>
                     <input class="form-control" type="text" value="<%=rs.getString(6)%>" name="BoardOrUniv"/><br>
-                    <input class="form-control" type="text" value="<%=rs.getString(7)%>" name="DateOfPassing"/><br>
+                    <label class="text">Date of Passing</label>
+                    <input class="form-control" type="text" id="Date" value="<%=rs.getString(7)%>" name="DateOfPassing"/><br>
+                    <label class="text">Division</label>
                     <input class="form-control" type="text" value="<%=rs.getString(8)%>" name="Division"/><br>
+                    <label class="text">Percentage</label>
                     <input class="form-control" type="text" value="<%=rs.getString(9)%>" name="Percentage"/><br>
                     <button class="btn btn-dark" type="submit" value="Update" name="b1">Save changes</button>
                     <button type="submit" class="btn btn-outline-dark" name="close">Cancel</button>

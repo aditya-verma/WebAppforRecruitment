@@ -1,27 +1,34 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: amrit
-  Date: 09-07-2018
-  Time: 10:51
-  To change this template use File | Settings | File Templates.
---%>
 <%@page import="java.sql.*"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Update</title>
+    <title>Other Academic Qualification</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link href="../../css/floating-labels.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/datepicker.css">
     <script src="../../jquery/3.3.1/jquery.min.js"></script>
     <script src="../../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(window).on('load',function(){
             $('#myModal').modal('show');
+
+            $( "#Year" ).datepicker({
+                format: "yyyy-mm-dd",
+                viewMode: "years",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+            container: '#myModal modal-body'
         });
+
     </script>
+    <style>
+        .datepicker {
+            z-index: 1151 !important; /* has to be larger than 1050 */
+        }
+    </style>
 </head>
 <%
     String id=request.getParameter("id");
@@ -37,7 +44,7 @@
         rs=st.executeQuery(sql);
         rs.next();
 %>
-<body>
+<body >
 <div class="modal " id="myModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -46,15 +53,24 @@
             </div>
             <div class="modal-body">
                 <form method="post" action="">
+                    <label class="text">Degree</label>
                     <input class="form-control" type="text" value="<%=rs.getString(2)%>" name="Degree"/><br>
+                    <label class="text">Discipline</label>
                     <input class="form-control" type="text" value="<%=rs.getString(3)%>" name="Discipline"/><br>
+                    <label class="text">Institute</label>
                     <input class="form-control" type="text" value="<%=rs.getString(4)%>" name="Institute"/><br>
+                    <label class="text">Board or University</label>
                     <input class="form-control" type="text" value="<%=rs.getString(5)%>" name="BoardOrUniv"/><br>
+                    <label class="text">Marks/CGPA</label>
                     <input class="form-control" type="text" value="<%=rs.getString(6)%>" name="Marks/CGPA"/><br>
+                    <label class="text">Year</label>
+                    <input class="form-control" type="text" id="Year" value="<%=rs.getString(10)%>" name="Year"/><br>
+                    <label class="text">Max Marks/CGPA</label>
                     <input class="form-control" type="text" value="<%=rs.getString(7)%>" name="Max Marks/CGPA"/><br>
+                    <label class="text">Percentage Marks/CGPA</label>
                     <input class="form-control" type="text" value="<%=rs.getString(8)%>" name="Percentage Marks/CGPA"/><br>
+                    <label class="text">Division</label>
                     <input class="form-control" type="text" value="<%=rs.getString(9)%>" name="Division"/><br>
-                    <input class="form-control" type="text" value="<%=rs.getString(10)%>" name="Year"/><br>
                     <button class="btn btn-dark" type="submit" value="Update" name="b1">Save changes</button>
                     <button type="submit" class="btn btn-outline-dark" name="close">Cancel</button>
                 </form>
