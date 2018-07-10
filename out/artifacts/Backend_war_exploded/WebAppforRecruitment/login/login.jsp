@@ -1,4 +1,4 @@
-<%@ page import="java.util.Properties" %>
+<%@ page import="java.io.*" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.security.SecureRandom" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -14,6 +14,24 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <%!
+        String str[] = new String[5];
+        String Host = "";
+        String databaseUser="";
+        String databasePassword="";
+    %>
+    <%
+        FileReader in = new FileReader("D:\\Database.txt");
+        BufferedReader br = new BufferedReader(in);
+        for (int i=0;i<5;i++)
+        {
+            str[i]=br.readLine();
+        }
+        in.close();
+        Host= "jdbc:mysql://"+str[0]+":"+str[1]+"/"+str[2];
+        databaseUser = str[3];
+        databasePassword = str[4];
+    %>
 </head>
 <body>
 <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -51,7 +69,7 @@
                     if (request.getParameter("register-btn")!=null){
                         try{
                             Class.forName("com.mysql.cj.jdbc.Driver");
-                            Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+                            Connection connection = DriverManager.getConnection(Host,databaseUser,databasePassword);
                             Statement statement = connection.createStatement();
                             String fname = request.getParameter("orangeForm-Fname");
                             String lname = request.getParameter("orangeForm-Lname");
@@ -140,13 +158,15 @@
                     properties.setProperty("useSSL","true");
                     properties.setProperty("autoReconnect","true");
                      */
-                        Connection con=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+                        Connection con=DriverManager.getConnection(Host,databaseUser,databasePassword);
                         Statement stmt=con.createStatement();
                         ResultSet rs=stmt.executeQuery("select * from USERS where ApplicationNumber='"+request.getParameter("AppNumber")+"' and Password='"+request.getParameter("Password")+"'");
                         if (rs.next())
                         {
                             session.setAttribute("ApplicationNumber",rs.getString("ApplicationNumber"));
-                            session.setAttribute("Password",rs.getString("Password"));
+                            session.setAttribute("DatabaseHost",Host);
+                            session.setAttribute("DatabaseUser",databaseUser);
+                            session.setAttribute("DatabasePassword",databasePassword);
                             if(request.getParameterValues("checkbox-login") == null)
                             {
                                 session.setMaxInactiveInterval(-1);

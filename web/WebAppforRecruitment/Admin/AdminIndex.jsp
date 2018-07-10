@@ -43,12 +43,12 @@
     <div class="row custom-control-inline">
         <div class="col">
             <a href="ApplicantList.jsp">
-            <div class="card p-2 mb-2" style="width: 15rem;">
-                <img class="card-img-top" src="../Images/Applicants.svg" alt="Card image cap">
-                <div class="card-body text-center">
-                    <p class="card-text">List of Applicants</p>
+                <div class="card p-2 mb-2" style="width: 15rem;">
+                    <img class="card-img-top" src="../Images/Applicants.svg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <p class="card-text">List of Applicants</p>
+                    </div>
                 </div>
-            </div>
             </a>
         </div>
         <div class="col">
@@ -100,12 +100,14 @@
             </div>
         </div>
         <div class="col">
-            <div class="card p-2 mb-2" style="width: 15rem;">
-                <img class="card-img-top" src="../Images/Calculate-Credit-Points.svg" alt="Card image cap">
-                <div class="card-body text-center">
-                    <p class="card-text">Calculate Credit Points</p>
+            <a href="AdvancedSetup.jsp">
+                <div class="card p-2 mb-2" style="width: 15rem;">
+                    <img class="card-img-top" src="../Images/AdvancedSettings.png" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <p class="card-text">Advanced Setup</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>
