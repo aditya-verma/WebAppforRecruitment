@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Update</title>
+    <title>Research Experience/Post Doctoral Research</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
@@ -21,16 +21,14 @@
     <script type="text/javascript">
         $(window).on('load',function(){
             $('#myModal').modal('show');
-        });
-        $('#myModal').on('shown.bs.modal',function() {
+
             $( "#Teaching_From_Date" ).datepicker({
                 format: "yyyy-mm-dd",
                 viewMode: "months",
                 minViewMode: "days",
                 pickerPosition: "bottom-left"});
             container: '#myModal modal-body'
-        });
-        $('#myModal').on('shown.bs.modal',function() {
+
             $( "#Teaching_To_Date" ).datepicker({
                 format: "yyyy-mm-dd",
                 viewMode: "months",
@@ -67,12 +65,19 @@
             </div>
             <div class="modal-body">
                 <form method="post" action="">
+                    <label class="text">Organisation</label>
                     <input class="form-control" type="text" value="<%=rs.getString(2)%>" name="Organisation"/><br>
+                    <label class="text">Position Held</label>
                     <input class="form-control" type="text" value="<%=rs.getString(3)%>" name="Position Held"/><br>
+                    <label class="text">From</label>
                     <input class="form-control" type="text" value="<%=rs.getString(4)%>" name="From" id="Teaching_From_Date"/><br>
+                    <label class="text">To</label>
                     <input class="form-control" type="text" value="<%=rs.getString(5)%>" name="To" id="Teaching_To_Date"/><br>
+                    <label class="text">Salary</label>
                     <input class="form-control" type="text" value="<%=rs.getString(6)%>" name="Salary"/><br>
+                    <label class="text">Nature Of Work</label>
                     <input class="form-control" type="text" value="<%=rs.getString(7)%>" name="Nature Of Work"/><br>
+                    <label class="text">Tenure</label>
                     <input class="form-control" type="text" value="<%=rs.getString(8)%>" name="Tenure"/><br>
                     <button class="btn btn-dark" type="submit" value="Update" name="b1">Save changes</button>
                     <button type="submit" class="btn btn-outline-dark" name="close">Cancel</button>

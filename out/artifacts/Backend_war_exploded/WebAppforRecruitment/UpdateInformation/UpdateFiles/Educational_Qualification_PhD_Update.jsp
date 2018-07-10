@@ -9,19 +9,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title>
+    <title>Educational Details(PhD)</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link href="../../css/floating-labels.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/datepicker.css">
     <script src="../../jquery/3.3.1/jquery.min.js"></script>
     <script src="../../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         $(window).on('load',function(){
             $('#myModal').modal('show');
+
+            $( "#Date" ).datepicker({
+                format: "yyyy-mm-dd",
+                viewMode: "months",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+            container: '#myModal modal-body'
+
+
         });
     </script>
+    <style>
+        .datepicker {
+            z-index: 1151 !important; /* has to be larger than 1050 */
+        }
+    </style>
 </head>
 <%
     String id=request.getParameter("id");
@@ -46,10 +61,14 @@
             </div>
             <div class="modal-body">
                 <form method="post" action="">
+                    <label class="text">Status</label>
                     <input class="form-control" type="text" value="<%=rs.getString(2)%>" name="Status" /><br>
+                    <label class="text">Title</label>
                     <input class="form-control" type="text" value="<%=rs.getString(3)%>" name="Title" /><br>
+                    <label class="text">Institute</label>
                     <input class="form-control" type="text" value="<%=rs.getString(4)%>" name="Institute" /><br>
-                    <input class="form-control" type="text" value="<%=rs.getString(5)%>" name="Date" /><br>
+                    <label class="text">Date</label>
+                    <input class="form-control" type="text" id="Date" value="<%=rs.getString(5)%>" name="Date" /><br>
                     <button class="btn btn-dark" type="submit" value="Update" name="b1">Save changes</button>
                     <button type="submit" class="btn btn-outline-dark" name="close">Cancel</button>
                 </form>

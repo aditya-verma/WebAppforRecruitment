@@ -18,11 +18,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/datepicker.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/datepicker.css" rel="stylesheet">
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#from" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "date",
+                pickerPosition: "bottom-left"});
+            $( "#to" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "date",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
     <style>
         body {
 
@@ -654,13 +669,13 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label class="text" for="From"><b>D)</b>From:</label>
-                                <input id="From" type="date" class="form-control" placeholder="" required value="<%=rs.getString(5)%>">
+                                <input id="from" type="text" class="form-control" placeholder="" required value="<%=rs.getString(5)%>">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label class="text" for="To"><b>E)</b>To:</label>
-                                <input id="To" type="date" class="form-control" placeholder="" required value='<%=rs.getString(6)%>'>
+                                <input id="to" type="text" class="form-control" placeholder="" required value='<%=rs.getString(6)%>'>
                             </div>
                         </div>
                     </div>
@@ -700,6 +715,7 @@
                     }
                     rs=null;
                 %><hr>
+
                 <h4 id="list-item-6">Teaching Experience</h4>
                     <%
                         try{
@@ -712,8 +728,8 @@
                             <tr>
                                 <th scope="col">Organisation</th>
                                 <th scope="col">Position Held</th>
-                                <th scope="col">From</th>
-                                <th scope="col">To</th>
+                                <th scope="col" >From</th>
+                                <th scope="col" >To</th>
                                 <th scope="col">Pay Scale with AGP</th>
                                 <th scope="col">Type of Employer</th>
                                 <th scope="col">Tenure</th>
@@ -724,9 +740,9 @@
                             <tbody>
                             <%while(rs.next()){%>
                             <tr>
-                                <td><%=rs.getString(2)%></td>
+                                <td ><%=rs.getString(2)%></td>
                                 <td><%=rs.getString(3)%></td>
-                                <td><%=rs.getString(4)%></td>
+                                <td ><%=rs.getString(4)%></td>
                                 <td><%=rs.getString(5)%></td>
                                 <td><%=rs.getString(6)%></td>
                                 <td><%=rs.getString(7)%></td>
