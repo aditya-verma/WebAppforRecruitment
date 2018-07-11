@@ -16,9 +16,9 @@
     <script src="../js/bootstrap.js"></script>
     <%!
         String str[] = new String[5];
-        String Host = "";
-        String databaseUser="";
-        String databasePassword="";
+        String Host = "sql12.freemysqlhosting.net";
+        String databaseUser="sql12245685";
+        String databasePassword="fpStvI5rK8";
     %>
     <%
         FileReader in = new FileReader("D:\\Database.txt");
