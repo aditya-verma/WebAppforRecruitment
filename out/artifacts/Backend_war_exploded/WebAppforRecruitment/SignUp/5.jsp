@@ -2,6 +2,23 @@
 <html lang="en">
 
 <body style="background-color: #f5f5f5;">
+<link href="../css/datepicker.css" rel="stylesheet">
+<script src="../js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $( "#From" ).datepicker({
+            format: "dd-mm-yyyy",
+            viewMode: "months",
+            minViewMode: "days",
+            pickerPosition: "bottom-left"});
+
+        $( "#To" ).datepicker({
+            format: "dd-mm-yyyy",
+            viewMode: "months",
+            minViewMode: "days",
+            pickerPosition: "bottom-left"});
+    });
+</script>
 
 <div class="container ">
     <form id="PresentEmployer" >
@@ -29,13 +46,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="From"><b>D)</b>From:</label>
-                    <input id="From" type="date" class="form-control" placeholder="" required>
+                    <input id="From" type="text" class="form-control" placeholder="" required>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="To"><b>E)</b>To:</label>
-                    <input id="To" type="date" class="form-control" placeholder="" required>
+                    <input id="To" type="text" class="form-control" placeholder="" required>
                 </div>
             </div>
         </div>
