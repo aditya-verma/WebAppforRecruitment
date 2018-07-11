@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Advanced Setup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/backgrounds.css">
@@ -50,7 +50,7 @@
 <div class="container">
     <div class="row custom-control-inline">
         <div class="col">
-            <div class="card p-2 mb-2" style="width: 20rem;">
+            <div class="card p-2 mb-2" style="width: 20rem; height: 22rem;">
                 <div class="card-body">
                     <h5 class="card-title">Add/Update Database Server</h5>
                     <form action="">
@@ -69,7 +69,7 @@
                         <div class="row m-1">
                             <input type="text" class="form-control" placeholder="Password" name="DatabasePassword" value="<%=str[4]%>" required>
                         </div>
-                        <div class="container text-center m-auto">
+                        <div class="container text-center mt-3">
                             <button type="submit" class="btn btn-primary" name="CreateDatabaseEntry" value="Create Database Entry">Create Database Entry</button>
                         </div>
                         <%
@@ -100,6 +100,37 @@
                             }
                         %>
                     </form>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card p-2 mb-2" style="width: 20rem; height: 22rem;">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-5">Start/Stop Recruitment</h5>
+
+                        <div class="row text-center mt-5 mb-5">
+                            <form action="" style="width: 100%;">
+                                <div class="container text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg" name="StartRecruiting">Start Recruiting</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row text-center mt-5 mb-5">
+                            <form action="" style="width: 100%;">
+                                <div class="container text-center">
+                                    <button type="submit" class="btn btn-danger btn-lg" name="StopRecruiting">Stop Recruiting</button>
+                                </div>
+                            </form>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card p-2 mb-2" style="width: 20rem; height: 22rem;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Create Database Tables</h5>
+                    <img class="card-img-bottom" src="../Images/CreateDatabase.png" alt="Card image cap">
                 </div>
             </div>
         </div>

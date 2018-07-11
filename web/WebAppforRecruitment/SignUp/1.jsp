@@ -18,7 +18,7 @@
     Statement stmt = null;
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        connection =DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+        Connection con = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
         ResultSet resultSet1;
         stmt = connection.createStatement();
         resultSet1 = stmt.executeQuery("SELECT * FROM USERS WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");

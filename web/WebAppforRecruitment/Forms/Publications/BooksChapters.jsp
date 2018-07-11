@@ -56,7 +56,7 @@
                     String BookChapterMonthYear = request.getParameter("BookChapter-Month/Year");
                     String IntConCoAuthorFromDept = request.getParameter("InternationalConferences-Co-AuthorFromDept");
                     Class.forName("com.mysql.cj.jdbc.Driver");
-                    Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+                    Connection connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
                     Statement stmt = connection.createStatement();
                     int i = stmt.executeUpdate("INSERT INTO Books_BookChapters(ApplicationNumber,Authors,Book,BookChapters,Publisher,ISBN,MonthYear,CoAuthorFromDept) VALUES ('" +
                             session.getAttribute("ApplicationNumber")+"','" +

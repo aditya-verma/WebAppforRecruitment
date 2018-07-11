@@ -36,7 +36,7 @@
     ResultSet rs;
     try {
         Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685", "sql12245685", "fpStvI5rK8");
+        con = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
         st = con.createStatement();
         if (request.getParameter("b1") != null) {
             String qualification = (request.getParameter("Qualification"));

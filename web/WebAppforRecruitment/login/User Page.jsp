@@ -37,7 +37,7 @@
     String path ="../Images/UserImages/user.png";
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection connection=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+        Connection connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
         ApplicationNumber = (String) session.getAttribute("ApplicationNumber");
         Password = (String) session.getAttribute("Password");
         Statement statement = connection.createStatement();
