@@ -22,7 +22,7 @@
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <%
-        if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="" || session.getAttribute("Password") == null || session.getAttribute("Password") == "")
+        if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="")
         {
             session.invalidate();
             response.sendRedirect("/WebAppforRecruitment/login/login.jsp");

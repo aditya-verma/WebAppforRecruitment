@@ -12,14 +12,18 @@
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <%
-        FileReader in = new FileReader("D:\\Database.txt");
-        BufferedReader br = new BufferedReader(in);
         String str[] = new String[5];
-        for (int i=0;i<5;i++)
-        {
-            str[i]=br.readLine();
+        try {
+
+            FileReader in = new FileReader("D:\\Database.txt");
+            BufferedReader br = new BufferedReader(in);
+            for (int i=0;i<5;i++)
+            {
+                str[i]=br.readLine();
+            }
+            in.close();
         }
-        in.close();
+        catch (FileNotFoundException e){}
     %>
 </head>
 <body>

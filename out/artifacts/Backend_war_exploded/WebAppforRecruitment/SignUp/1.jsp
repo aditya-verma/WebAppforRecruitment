@@ -15,22 +15,46 @@
     String lname ="";
     String phone ="";
     String email ="";
+    String Specialization="";
+    String Marital_Status = "";
+    String Gender = "";
+    String Domicile ="";
+    String Category = "";
+    String Handicapped = "";
+    String DateOfBirth = "";
+    String Nationality = "";
+    String NameOfFather = "";
+    String NameOfMother = "";
+    String idType = "";
+    String idNumber = "";
+    String CorrespondenceAddress = "";
+    String PermanentAddress = "";
+    String PlaceOfApplying = "";
     Connection connection = null;
     Statement stmt = null;
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
-        ResultSet resultSet1;
+        connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+        ResultSet rs;
         stmt = connection.createStatement();
-        resultSet1 = stmt.executeQuery("SELECT * FROM USERS WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
-        if (resultSet1.next())
+        rs = stmt.executeQuery("SELECT * FROM USERS WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        if (rs.next())
         {
-            fname = resultSet1.getString("FirstName");
-            lname = resultSet1.getString("LastName");
-            email = resultSet1.getString("Email");
-            phone = resultSet1.getString("Phone");
+            fname = rs.getString("FirstName");
+            lname = rs.getString("LastName");
+            email = rs.getString("Email");
+            phone = rs.getString("Phone");
         }
-
+        rs = stmt.executeQuery("SELECT * FROM Personal_Information WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        if (rs.next())
+        {
+            Specialization = rs.getString("Specialization");
+            Gender = rs.getString("Gender");
+            Domicile = rs.getString("Domicile");
+            CorrespondenceAddress = rs.getString("CorrespondenceAddress");
+            PermanentAddress = rs.getString("PermanentAddress");
+            DateOfBirth = rs.getString("DateOfBirth");
+        }
 %>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,7 +116,7 @@
 
         <div class="form-group" >
             <label class="text-uppercase" for="Specialization" >Specialization</label>
-            <input id="Specialization" name="Specialization" class="form-control" placeholder="">
+            <input id="Specialization" name="Specialization" class="form-control" placeholder="Specialization" value="<%out.println(Specialization);%>">
         </div>
         <div class="row">
             <div class="col-sm-6">
@@ -105,10 +129,10 @@
                 <div class="form-group">
                     <label class="text-uppercase" for="Gender">Gender</label>
                     <select class="form-control" name="Gender" id="Gender" required>
-                        <option></option>
-                        <option>MALE</option>
-                        <option>FEMALE</option>
-                        <option>OTHERS</option>
+                        <option value="" <%if (Gender.equalsIgnoreCase("")){%>selected<%}%>></option>
+                        <option value="MALE" <%if (Gender.equalsIgnoreCase("Male")){%>selected<%}%>>MALE</option>
+                        <option value="FEMALE"<%if (Gender.equalsIgnoreCase("Female")){%>selected<%}%>>FEMALE</option>
+                        <option value="OTHERS" <%if (Gender.equalsIgnoreCase("Others")){%>selected<%}%>>OTHERS</option>
                     </select>
                 </div>
             </div>
@@ -117,7 +141,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="Domicile">Domicile</label>
-                    <input id="Domicile" class="form-control" placeholder="" required>
+                    <input id="Domicile" class="form-control" placeholder="" required value="<%out.println(Domicile);%>">
                 </div>
             </div>
             <div class="col-sm-6">
@@ -161,7 +185,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="DateOfBirth">Date Of Birth</label>
-                    <input type="text" class="form-control" id="DateOfBirth" name="DateOfBirth" placeholder="dd-mm-yyyy">
+                    <input type="text" class="form-control" id="DateOfBirth" name="DateOfBirth" placeholder="dd-mm-yyyy" value="<%out.println(DateOfBirth);%>">
                 </div>
             </div>
             <div class="col-sm-6">
@@ -446,7 +470,7 @@
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Correspondence_Address">Correspondence Address</label>
-            <input id="Correspondence_Address" name="CorrespondenceAddress" class="form-control" placeholder="" required>
+            <input id="Correspondence_Address" name="CorrespondenceAddress" class="form-control" placeholder="" required value="<%out.println(CorrespondenceAddress);%>">
         </div>
         <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="filladdress" onclick="fillAddress()">
@@ -454,7 +478,7 @@
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Permanent_Address">Permanent Address</label>
-            <input id="Permanent_Address" name="PermanentAddress" class="form-control" placeholder="" required>
+            <input id="Permanent_Address" name="PermanentAddress" class="form-control" placeholder="" required value="<%out.println(PermanentAddress);%>">
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Phone">Phone Number</label>
@@ -471,21 +495,21 @@
         <%
                 if (request.getParameter("submitPersonalInfo1")!= null)
                 {
-                    String Specialization = request.getParameter("Specialization");
-                    String Marital_Status = request.getParameter("Marital_Status");
-                    String Gender = request.getParameter("Gender");
-                    String Domicile =request.getParameter("Domicile;");
-                    String Category = request.getParameter("Category");
-                    String Handicapped = request.getParameter("Handicapped");
-                    String DateOfBirthDateOfBirth = request.getParameter("DateOfBirthDateOfBirth");
-                    String Nationality = request.getParameter("Nationality");
-                    String NameOfFather = request.getParameter("NameOfFather");
-                    String NameOfMother = request.getParameter("NameOfMother");
-                    String idType = request.getParameter("IdentityProofType");
-                    String idNumber = request.getParameter("IdentityProofNumber");
-                    String CorrespondenceAddress = request.getParameter("CorrespondenceAddress");
-                    String PermanentAddress = request.getParameter("PermanentAddress");
-                    String PlaceOfApplying = request.getParameter("PlaceOfApplying");
+                    Specialization = request.getParameter("Specialization");
+                    Marital_Status = request.getParameter("Marital_Status");
+                    Gender = request.getParameter("Gender");
+                    Domicile =request.getParameter("Domicile;");
+                    Category = request.getParameter("Category");
+                    Handicapped = request.getParameter("Handicapped");
+                    DateOfBirth = request.getParameter("DateOfBirthDateOfBirth");
+                    Nationality = request.getParameter("Nationality");
+                    NameOfFather = request.getParameter("NameOfFather");
+                    NameOfMother = request.getParameter("NameOfMother");
+                    idType = request.getParameter("IdentityProofType");
+                    idNumber = request.getParameter("IdentityProofNumber");
+                    CorrespondenceAddress = request.getParameter("CorrespondenceAddress");
+                    PermanentAddress = request.getParameter("PermanentAddress");
+                    PlaceOfApplying = request.getParameter("PlaceOfApplying");
                     ResultSet resultSet = stmt.executeQuery("SELECT * FROM Personal_Information WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
                     if (resultSet.next() || resultSet != null)
                     {
@@ -495,7 +519,7 @@
                                 "', Domicile = '"+Domicile+
                                 "', Category = '"+Category+
                                 "', PhysicallyHandicapped = '"+Handicapped+
-                                "', DateOfBirth = '"+DateOfBirthDateOfBirth+
+                                "', DateOfBirth = '"+DateOfBirth+
                                 "', Nationality = '"+Nationality+
                                 "', NameOfFather = '"+NameOfFather+
                                 "', NameOfMother = '"+NameOfMother+
@@ -513,7 +537,7 @@
                             "IdentityProofType,IdentityProofNumber,CorrespondenceAddress,PermanentAddress,PlaceOfApplying)" +
                             "VALUES ('"+session.getAttribute("ApplicationNumber")+"','"+Specialization+"','"+Marital_Status+
                             "','"+Gender+"','"+Domicile+"','"+Category+
-                            "','"+Handicapped+"','"+DateOfBirthDateOfBirth+"','"+Nationality+
+                            "','"+Handicapped+"','"+DateOfBirth+"','"+Nationality+
                             "','"+NameOfFather+"','"+NameOfMother+
                             "','"+idType+"','"+idNumber+"','"+CorrespondenceAddress+"','"+PermanentAddress+
                             "','"+PlaceOfApplying+"')");

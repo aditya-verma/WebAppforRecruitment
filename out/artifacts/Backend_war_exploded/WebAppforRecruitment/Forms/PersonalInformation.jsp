@@ -7,14 +7,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String ApplicationNumber = "";
-    if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")==""){
-        session.invalidate();
-        response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
-    }
-    else
+    if (session.getAttribute("ApplicationNumber")=="" || session.getAttribute("ApplicationNumber")==null)
     {
-        ApplicationNumber = session.getAttribute("ApplicationNumber").toString();
+        response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
     }
 %>
 <html>

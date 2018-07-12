@@ -1,5 +1,6 @@
 <%@ page import="java.io.*" %>
 <%@ page import="java.sql.*" %>
+<%@ page session="true" %>
 <%@ page import="java.security.SecureRandom" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
@@ -21,16 +22,20 @@
         String databasePassword="";
     %>
     <%
-        FileReader in = new FileReader("D:\\Database.txt");
-        BufferedReader br = new BufferedReader(in);
-        for (int i=0;i<5;i++)
-        {
-            str[i]=br.readLine();
+        try {
+
+            FileReader in = new FileReader("D:\\Database.txt");
+            BufferedReader br = new BufferedReader(in);
+            for (int i=0;i<5;i++)
+            {
+                str[i]=br.readLine();
+            }
+            in.close();
+            Host= "jdbc:mysql://"+str[0]+":"+str[1]+"/"+str[2];
+            databaseUser = str[3];
+            databasePassword = str[4];
         }
-        in.close();
-        Host= "jdbc:mysql://"+str[0]+":"+str[1]+"/"+str[2];
-        databaseUser = str[3];
-        databasePassword = str[4];
+        catch (FileNotFoundException e){}
     %>
 </head>
 <body>

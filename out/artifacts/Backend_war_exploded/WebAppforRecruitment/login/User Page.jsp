@@ -1,12 +1,10 @@
-<%@ page import="java.util.Properties" %>
 <%@ page import="java.sql.*" %>
-<%@ page import="java.security.SecureRandom" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <%
-    if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="" || session.getAttribute("Password") == null || session.getAttribute("Password") == "")
+    if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="")
     {
         response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
     }
@@ -37,11 +35,10 @@
     String path ="../Images/UserImages/user.png";
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+        Connection connection = DriverManager.getConnection(session.getAttribute("DatabaseHost").toString(),session.getAttribute("DatabaseUser").toString(),session.getAttribute("DatabasePassword").toString());
         ApplicationNumber = (String) session.getAttribute("ApplicationNumber");
-        Password = (String) session.getAttribute("Password");
         Statement statement = connection.createStatement();
-        ResultSet rs = statement.executeQuery("SELECT * from USERS where ApplicationNumber='"+ApplicationNumber+"' and Password ='"+Password+"'");
+        ResultSet rs = statement.executeQuery("SELECT * from USERS where ApplicationNumber='"+ApplicationNumber+"'");
         if (rs.next()){
             Email = rs.getString("Email");
             Name = rs.getString("FirstName")+" "+rs.getString("LastName");
@@ -54,8 +51,6 @@
             if (str!=null||str!="")
                 path = "../Images/UserImages/"+str;
         }
-        session.setAttribute("Name",Name);
-        session.setAttribute("Email",Email);
         statement.close();
         connection.close();
     }catch (Exception e){}
