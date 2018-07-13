@@ -37,14 +37,45 @@
 
 </head>
 <body>
+<%
+    if (session.getAttribute("ApplicationNumber")==null ||session.getAttribute("ApplicationNumber")=="")
+    {
+        response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
+    }
+    String organisation ="";
+    String position ="";
+    String type_of_emp ="";
+    String from ="";
+    String to="";
+    String pay_in_band = "";
+    String agp_gp = "";
+    String basic_pay ="";
+    String  nature_of_work = "";
 
-<header>
+    Connection connection = null;
+    Statement stmt = null;
+    try{
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+        ResultSet rs;
+        stmt = connection.createStatement();
+        rs = stmt.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        if (rs.next())
+        {
+            organisation = rs.getString(2);
+            position = rs.getString(3);
+            type_of_emp = rs.getString(4);
+            from = rs.getString(5);
+            to = rs.getString(6);
+            pay_in_band = rs.getString(7);
+            agp_gp = rs.getString(8);
+            basic_pay = rs.getString(9);
+            nature_of_work = rs.getString(10);
 
 
+        }
 
-
-
-
+%>
 
 <div class="container">
     <form id="PresentEmployer" action="" method="post" style="width: 100%">
