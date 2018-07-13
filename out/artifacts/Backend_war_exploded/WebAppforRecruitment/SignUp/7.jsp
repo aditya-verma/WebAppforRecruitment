@@ -24,13 +24,13 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text" for="organisation_name"><b>A)</b>Organisation:</label>
+                    <label class="text" for="organisation_name">Organisation:</label>
                     <input id="organisation_name" class="form-control" placeholder="">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text" for="position"><b>B)</b>Position:</label>
+                    <label class="text" for="position">Position:</label>
                     <input id="position" class="form-control" placeholder="">
                 </div>
             </div>
@@ -38,13 +38,13 @@
           <div class="row">
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label class="text" for="From7"><b>C)</b>From:</label>
+                             <label class="text" for="From7">From:</label>
                              <input id="From7" type="text" class="form-control" placeholder="" >
                          </div>
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label class="text" for="To7"><b>D)</b>To:</label>
+                             <label class="text" for="To7">To:</label>
                              <input id="To7" type="text" class="form-control" placeholder="" >
                          </div>
                      </div>
@@ -52,7 +52,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="form-group">
-                    <label class="text" for="sal"><b>E)</b>Salary/Fellowship/Stipend:</label>
+                    <label class="text" for="sal">Salary/Fellowship/Stipend:</label>
                     <input id="sal" type="text" class="form-control" placeholder="" >
                 </div>
             </div>
@@ -60,13 +60,13 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text" for="work"><b>F)</b>Nature of Work:</label>
+                    <label class="text" for="work">Nature of Work:</label>
                     <input id="work" class="form-control" placeholder="">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text" for="tenure"><b>G)</b>Tenure:</label>
+                    <label class="text" for="tenure">Tenure:</label>
                     <input id="tenure" class="form-control" placeholder="">
                 </div>
             </div>

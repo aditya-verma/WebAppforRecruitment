@@ -5,10 +5,10 @@
   Time: 22:58
   To change this template use File | Settings | File Templates.
 --%>
+<!DOCTYPE html>
 <%@page import="java.sql.*"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
 <head>
     <%if (session.getAttribute("ApplicationNumber")== null || session.getAttribute("ApplicationNumber")=="")
     {
@@ -74,6 +74,8 @@
     </div>
 </header>
 <%
+    String path ="../Images/UserImages/user.png";
+    String Email="",Name="";
     Connection con=null;
     Statement st=null;
     ResultSet rs=null;
@@ -81,12 +83,27 @@
         Class.forName("com.mysql.jdbc.Driver");
         con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
         st=con.createStatement();
+        ResultSet rs1 = st.executeQuery("SELECT * from Personal_Information where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        if (rs1.next()){
+            String str =rs1.getString("ImageLocation");
+            str.trim();
+            if (str!=null||str!="")
+                path = "../Images/UserImages/"+str;
+        }
+    }
+    catch (Exception e){}
+    try{
+        rs=st.executeQuery("SELECT * from USERS where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        if (rs.next()){
+          Email = rs.getString("Email");
+          Name = rs.getString("FirstName")+" "+rs.getString("LastName");
+        };
         String sql="select * from Personal_Information where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
         rs=st.executeQuery(sql);
         rs.next();
 %>
 <div class="container">
-    <div class="row " >
+    <div class="row" >
         <div class="col-md-3">
             <div class="container sticky-top" style="padding-top: 10%">
             <div id="list-example" class="list-group">
@@ -97,18 +114,21 @@
                 <a class="list-group-item list-group-item-action" href="#list-item-5">Present Employer</a>
                 <a class="list-group-item list-group-item-action" href="#list-item-6">Teaching Experience</a>
                 <a class="list-group-item list-group-item-action" href="#list-item-7">Research Experience/Post Doctoral Research</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-8">Industrial Experience</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-9">References</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-10">Any Other Information</a>
             </div>
         </div>
         </div>
         <div class="col-md-7">
-            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <div data-spy="scroll" data-target="#list-example" data-offset="0" style="position:relative;height: 25%;overflow-y: scroll">
                 <h4 id="list-item-1">Personal Information</h4>
-                    <form id="PersonalInformation" action="#" style="width: 100%;">
+                    <form action="#" style="width: 100%;">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label class="text-uppercase" for="applicant_first_name">NAME</label>
-                                <input id="applicant_first_name" class="form-control" placeholder="" value="<%=session.getAttribute("Name")%>" required name="Personal_Information_First_Name">
+                                <input id="applicant_first_name" class="form-control" placeholder="" value="<%=Name%>" required name="Personal_Information_First_Name">
                             </div>
                         </div>
                     </div>
@@ -128,7 +148,7 @@
                         <div class="col-sm-6">
                             <div class="form-group" >
                                 <label class="text-uppercase" for="email" >Email</label>
-                                <input id="email" class="form-control" type="email" placeholder="" required name="Personal_Information_Email" value="<%=session.getAttribute("Email")%>">
+                                <input id="email" class="form-control" type="email" placeholder="" required name="Personal_Information_Email" value="<%=Email%>">
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -529,15 +549,12 @@
                                 else
                                     out.print("No Record Updated");
                             }
-                        %>
-                        <%
                             }catch(Exception e)
                             {
                                 out.println(e.toString());
                             }
                             rs=null;
                         %>
-                    <!--Includ Jsp File after updation of Personal Information jsp-->
                 </form><hr>
                 <h4 id="list-item-2">Educational Details(PhD)</h4>
                     <%
@@ -752,7 +769,6 @@
                     }
                     rs=null;
                 %><hr>
-
                 <h4 id="list-item-6">Teaching Experience</h4>
                     <%
                         try{
@@ -837,6 +853,71 @@
                         </table>
                     </form>
                     <%
+                        }
+                        catch (Exception e){
+                            out.print(e.toString());
+                        }
+                        rs=null;
+                    %><hr>
+                <h4 id="list-item-8">Industrial Experience</h4>
+                    <%
+                        try{
+                            String sql="select * from Industrial_Experience where Application_Number='"+session.getAttribute("ApplicationNumber")+"'";
+                            rs=st.executeQuery(sql);
+                    %>
+                    <form class="table-responsive" action="" method="post">
+                        <table class=" table  table-bordered" >
+                            <thead class="table-dark" >
+                            <tr>
+                                <th scope="col">Organisation</th>
+                                <th scope="col">Position Held</th>
+                                <th scope="col">From</th>
+                                <th scope="col">To</th>
+                                <th scope="col">Pay Scale with AGP</th>
+                                <th scope="col">Type of Employer</th>
+                                <th scope="col">Nature Of Work</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <%while(rs.next()){%>
+                            <tr>
+                                <td><%=rs.getString(2)%></td>
+                                <td><%=rs.getString(3)%></td>
+                                <td><%=rs.getString(4)%></td>
+                                <td><%=rs.getString(5)%></td>
+                                <td><%=rs.getString(6)%></td>
+                                <td><%=rs.getString(7)%></td>
+                                <td><%=rs.getString(8)%></td>
+                                <td><a href="UpdateFiles/Industrial_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&position=<%=rs.getString(3)%>&date=<%=rs.getString(4)%>"><i class="fa fa-edit"></i></a></td>
+                                <td><a href="DeleteFiles/Industrial_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&position=<%=rs.getString(3)%>&date=<%=rs.getString(4)%>"><i class="fa fa-trash-alt"></i></a></td>
+                            </tr>
+                            <%}%>
+                            </tbody>
+                        </table>
+                    </form>
+                    <%
+                        }
+                        catch (Exception e){
+                            out.print(e.toString());
+                        }
+                        rs=null;
+                    %><hr>
+                <h4 id="list-item-9">References</h4>
+                <hr>
+                <h4 id="list-item-10">Any Other Information</h4>
+                    <%
+                        try{
+                            String sql="select * from Any_Other_Information where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
+                            rs=st.executeQuery(sql);
+                            rs.next();
+                    %>
+                    <form class="table-responsive" action="" method="post">
+                        <label class="col-form-label" for="Information">Information</label>
+                        <input class="form-control" id="Information" value="<%=rs.getString(2)%>" name="Any_Other_Information">
+                    </form>
+                    <%
                             con.close();
                         }
                         catch (Exception e){
@@ -844,10 +925,12 @@
                         }
                         rs=null;
                     %><hr>
-            </div>
+            </div pos>
         </div>
         <div class="col-md-2">
-            <img  class="img-thumbnail" src="../Images/form-background.png" <%--=rs.getString(17)--%> alt="Photo.jpg">
+            <div class="sticky-top" style="padding-top: 15%">
+            <img  class="img-fluid" src="<%=path%>"  alt="Photo.jpg" >
+            </div>
         </div>
     </div>
 </div>
