@@ -106,11 +106,11 @@
                 <div class="form-group">
                     <label class="text-capitalize" for="pay-band">Pay In Pay Band</label>
                     <select class="form-control" id="pay-band" name="i6" required>
-                        <option value="" selected disabled>Select Pay Band</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                        <option>Option 4</option>
+                        <option value="" <%if (pay_in_band.equalsIgnoreCase("")){%>selected<%}%>>Select Pay Band</option>
+                        <option value="Option1" <%if (pay_in_band.equalsIgnoreCase("Option1")){%>selected<%}%>>Option 1</option>
+                        <option value="Option2" <%if (pay_in_band.equalsIgnoreCase("Option2")){%>selected<%}%>>Option 2</option>
+                        <option value="Option3" <%if (pay_in_band.equalsIgnoreCase("Option3")){%>selected<%}%>>Option 3</option>
+                        <option value="Option4" <%if (pay_in_band.equalsIgnoreCase("Option4")){%>selected<%}%>>Option 4</option>
                     </select>
                 </div>
             </div>
@@ -118,9 +118,9 @@
                 <div class="form-group">
                     <label class="text-capitalize" for="agp-gp">AGP/GP</label>
                     <select class="form-control" id="agp-gp" name="i7" required >
-                        <option value="" selected disabled>AGP/GP</option>
-                        <option>AGP</option>
-                        <option>GP</option>
+                        <option value="" <%if (agp_gp.equalsIgnoreCase("")){%>selected<%}%>>AGP/GP</option>
+                        <option value="AGP" <%if (agp_gp.equalsIgnoreCase("AGP")){%>selected<%}%>>AGP</option>
+                        <option value="GP" <%if (agp_gp.equalsIgnoreCase("GP")){%>selected<%}%>>GP</option>
                     </select>
                 </div>
             </div>
@@ -159,7 +159,7 @@
                 ResultSet resultSet = s.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
                 if (resultSet.next() || resultSet != null)
                 {
-                    s.executeUpdate("UPDATE Personal_Information SET Organisation = '"+organisation+
+                    s.executeUpdate("UPDATE Present_Employee SET Organisation = '"+organisation+
                             "', PositionHold = '"+position+
                             "', TypeOfEmp = '"+type_of_emp+
                             "', FromDate = '"+from+
