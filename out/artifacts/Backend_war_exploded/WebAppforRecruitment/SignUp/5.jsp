@@ -97,7 +97,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-capitalize" for="To8">To</label>
-                    <input id="To8" class="form-control" placeholder="" required type="text" name="i5" value="<%out.println(to);%>">
+                    <input id="To8" class="form-control" placeholder="From To" required type="text" name="i5" value="<%out.println(to);%>">
                 </div>
             </div>
         </div>
@@ -169,6 +169,7 @@
                             "', BasicPay = '"+basic_pay+
                             "', NatureOfWork = '"+nature_of_work+
                             "' WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+                    return ;
                 }
 
                 String sql = "insert into Present_Employee values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + organisation + "','" + position + "','" + type_of_emp + "','" + from + "','" + to + "','" + pay_in_band + "','" + agp_gp + "'," + basic_pay + ",'" + nature_of_work + "')";
@@ -179,7 +180,8 @@
     else {
     %><div class="text-center alert-danger">Record not Inserted</div><%
             }
-        }
+
+            }
         c.close();
         s.close();
     }
