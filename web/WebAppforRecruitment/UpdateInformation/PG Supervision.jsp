@@ -4,6 +4,13 @@
 <head>
     <title>Update Information</title>
     <meta charset="UTF-8">
+    <%
+        if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="")
+        {
+            RequestDispatcher dd = request.getRequestDispatcher("/WebAppforRecruitment/login/login.jsp");
+            dd.forward(request, response);
+        }
+    %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/datepicker.css">

@@ -10,11 +10,6 @@
 
 <html lang="en">
 <%
-
-    if (session.getAttribute("ApplicationNumber")==null ||session.getAttribute("ApplicationNumber")=="")
-    {
-        response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
-    }
     String countryList[] = new String[198];
     String postname="";
     try {

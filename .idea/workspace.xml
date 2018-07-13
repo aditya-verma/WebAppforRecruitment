@@ -10,20 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fef3e3a-7775-42e3-9435-2ba28fc52ac0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/java-json.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/getPosts.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppforRecruitment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppforRecruitment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/AddVacancies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/AddVacancies.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/AdvancedSetup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/AdvancedSetup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Images/SearchApplicant.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Images/SearchApplicant.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AddVacancies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AddVacancies.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AdvancedSetup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AdvancedSetup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Images/SearchApplicant.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Images/SearchApplicant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/5.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,11 +47,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="1.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+            <state relative-caret-position="198">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonalInformation.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User Page.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -120,7 +130,6 @@
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/NationalConferences.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/NationalJournal.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/UpdateProfileImage.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/resources/hello.java" />
@@ -130,6 +139,7 @@
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AddVacancies.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" />
       </list>
     </option>
   </component>
@@ -215,6 +225,13 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
               <item name="SignUp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
+              <item name="UpdateInformation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
@@ -449,7 +466,7 @@
       <workItem from="1531424484469" duration="601000" />
       <workItem from="1531485663737" duration="18233000" />
       <workItem from="1531518026273" duration="17000" />
-      <workItem from="1531518120088" duration="4016000" />
+      <workItem from="1531518120088" duration="4972000" />
     </task>
     <task id="LOCAL-00001" summary="Added Login and New User Creation">
       <created>1530226905871</created>
@@ -469,11 +486,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108099000" />
+    <option name="totallyTimeSpent" value="109055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -760,13 +776,6 @@
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PG Supervision.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/UpdateProfileImage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -792,13 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="89" column="45" lean-forward="true" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="38" column="79" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
         </state>
       </provider>
     </entry>
@@ -886,10 +888,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        <state relative-caret-position="198">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>

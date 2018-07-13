@@ -42,7 +42,8 @@
             String basic_pay ="";
             String  nature_of_work = "";
 
-            try{Connection present_emp_connection = null;
+            try{
+                Connection present_emp_connection = null;
                 Statement present_emp_stmt = null;
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 present_emp_connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
