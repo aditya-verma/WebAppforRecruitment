@@ -14,7 +14,6 @@
     <%
         String str[] = new String[5];
         try {
-            FileReader f =new FileReader(new File());
             FileReader in = new FileReader("D:\\Database.txt");
             BufferedReader br = new BufferedReader(in);
             for (int i=0;i<5;i++)

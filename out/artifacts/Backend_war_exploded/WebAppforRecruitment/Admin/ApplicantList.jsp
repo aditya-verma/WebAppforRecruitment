@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Applicant List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
@@ -35,9 +35,9 @@
     </nav>
     <div class="jumbotron" style="height: 5%;">
         <div class="container">
-            <h1>Recruitment Portal</h1>
+            <h1>Administrator Pannel</h1>
             <div class="rounded" style="background: #343a40;">
-                <h3 class="text-primary text-uppercase" style="color: #FFF;padding: 1%;">Administrator Pannel</h3>
+                <h3 class="text-primary text-uppercase" style="color: #FFF;padding: 1%;">Applicants List</h3>
             </div>
         </div>
     </div>

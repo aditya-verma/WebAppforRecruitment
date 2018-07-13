@@ -97,7 +97,7 @@
             <div class="card p-2 mb-2" style="width: 15rem;">
                 <img class="card-img-top" src="../Images/SearchApplicant.png" alt="Card image cap">
                 <div class="card-body text-center">
-                    <p class="card-text">Search Applicantt</p>
+                    <p class="card-text">Search Applicant</p>
                 </div>
             </div>
         </div>
