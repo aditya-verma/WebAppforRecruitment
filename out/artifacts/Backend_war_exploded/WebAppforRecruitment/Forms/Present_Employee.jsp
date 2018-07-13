@@ -54,14 +54,13 @@
 
     Connection connection = null;
     Statement stmt = null;
-    try{
+    try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+        connection = DriverManager.getConnection((String) session.getAttribute("DatabaseHost"), (String) session.getAttribute("DatabaseUser"), (String) session.getAttribute("DatabasePassword"));
         ResultSet rs;
         stmt = connection.createStatement();
-        rs = stmt.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
-        if (rs.next())
-        {
+        rs = stmt.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='" + session.getAttribute("ApplicationNumber") + "'");
+        if (rs.next()) {
             organisation = rs.getString(2);
             position = rs.getString(3);
             type_of_emp = rs.getString(4);
@@ -74,6 +73,7 @@
 
 
         }
+    }catch (Exception e){out.println(e);}
 
 %>
 
@@ -168,8 +168,8 @@
                 String org =(request.getParameter("i1"));
                 String pos =request.getParameter("i2");
                 String type=request.getParameter("i3");
-                String from =request.getParameter("i4");
-                String to=request.getParameter("i5");
+                from =request.getParameter("i4");
+                to=request.getParameter("i5");
                 String payinband=request.getParameter("i6");
                 String agp=request.getParameter("i7");
                 int basicpay =Integer.parseInt(request.getParameter("i8"));
@@ -179,7 +179,7 @@
                     con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
                     // con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summer","root","");
                     st=con.createStatement();
-                    String sql="insert into Present_Employee values('"+((String) session.getAttribute("ApplicationNumber"))+"','"+org+"','"+pos+"','"+type+"','"+from+"','"+to+"','"+payinband+"','"+agp+"',"+basicpay+",'"+nature+"')";
+                    String sql="insert into Present_Employee values('"+session.getAttribute("ApplicationNumber")+"','"+org+"','"+pos+"','"+type+"','"+from+"','"+to+"','"+payinband+"','"+agp+"',"+basicpay+",'"+nature+"')";
                     int res=st.executeUpdate(sql);
                     if(res!=0)
                         out.println("Record Inserted");
@@ -189,6 +189,7 @@
                 {
                     out.println(e.toString());
                 }
+                con.close();
             }
         %>
     </form>
