@@ -75,9 +75,14 @@
 </header>
 <%
     String path ="../Images/UserImages/user.png";
+    String Email="",Name="";
     Connection con=null;
     Statement st=null;
+    ResultSet rs=null;
     try{
+        Class.forName("com.mysql.jdbc.Driver");
+        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+        st=con.createStatement();
         ResultSet rs1 = st.executeQuery("SELECT * from Personal_Information where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
         if (rs1.next()){
             String str =rs1.getString("ImageLocation");
@@ -87,11 +92,12 @@
         }
     }
     catch (Exception e){}
-    ResultSet rs=null;
     try{
-        Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
-        st=con.createStatement();
+        rs=st.executeQuery("SELECT * from USERS where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        if (rs.next()){
+          Email = rs.getString("Email");
+          Name = rs.getString("FirstName")+" "+rs.getString("LastName");
+        };
         String sql="select * from Personal_Information where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
         rs=st.executeQuery(sql);
         rs.next();
@@ -122,7 +128,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label class="text-uppercase" for="applicant_first_name">NAME</label>
-                                <input id="applicant_first_name" class="form-control" placeholder="" value="<%=session.getAttribute("Name")%>" required name="Personal_Information_First_Name">
+                                <input id="applicant_first_name" class="form-control" placeholder="" value="<%=Name%>" required name="Personal_Information_First_Name">
                             </div>
                         </div>
                     </div>
@@ -142,7 +148,7 @@
                         <div class="col-sm-6">
                             <div class="form-group" >
                                 <label class="text-uppercase" for="email" >Email</label>
-                                <input id="email" class="form-control" type="email" placeholder="" required name="Personal_Information_Email" value="<%=session.getAttribute("Email")%>">
+                                <input id="email" class="form-control" type="email" placeholder="" required name="Personal_Information_Email" value="<%=Email%>">
                             </div>
                         </div>
                         <div class="col-sm-6">
