@@ -2,6 +2,8 @@
 <%@ page import="java.sql.*" %>
 <%@ page session="true" %>
 <%@ page import="java.security.SecureRandom" %>
+<%@ page import="org.json.JSONObject" %>
+<%@ page import="org.json.JSONException" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -17,11 +19,33 @@
     <script src="../js/bootstrap.js"></script>
     <%!
         String str[] = new String[5];
+        String postname[];
+        String postcode[];
         String Host = "";
         String databaseUser="";
         String databasePassword="";
     %>
     <%
+        try {
+            String poststr="";
+            String postc="";
+            File dir = new File("D:\\Post\\");
+            for (File file : dir.listFiles()) {
+                FileReader fileReader = new FileReader(file);
+                BufferedReader br = new BufferedReader(fileReader);
+                String str = br.readLine();
+                JSONObject jsonObject = new JSONObject(str);
+                poststr+= jsonObject.getString("name")+">";
+                postc+=jsonObject.getString("post")+">";
+                poststr.substring(0,poststr.length()-1);
+                postc.substring(0,postc.length()-1);
+                br.close();
+            }
+            postname = poststr.split(">");
+            postcode = postc.split(">");
+        }
+        catch (JSONException e){out.println("Json Exception occured");}
+        catch (Exception e){}
         try {
 
             FileReader in = new FileReader("D:\\Database.txt");
@@ -60,6 +84,16 @@
                     </div>
                 </div>
                 <div class="md-form mb-2">
+                    <select class="form-control" name="orangeForm-post" id="postApplied" required>
+                        <option value="" selected disabled>Select Post Applying for</option>
+                        <%
+                            for (int i = 0; i < postname.length; i++) {
+                                %><option><%out.println(postname[i]);%></option> <%
+                            }
+                        %>
+                    </select>
+                </div>
+                <div class="md-form mb-2">
                     <input type="email" name="orangeForm-email" class="form-control validate" placeholder="Email" required>
                 </div>
                 <div class="md-form mb-2">
@@ -85,7 +119,12 @@
                             {
                                 phone = "+91"+phone;
                                 int year =  Integer.parseInt(new java.text.SimpleDateFormat("yyyy").format(new java.util.Date()));
-                                String post = "PF";
+                                String post = "";
+                                for (int i=0; i<postname.length; i++) {
+                                    if (postname[i].equalsIgnoreCase(request.getParameter("orangeForm-post"))){
+                                        post=postcode[i];
+                                    }
+                                }
                                 statement.executeUpdate("INSERT INTO TEMP_USER(Year,POST,Email,FirstName,LastName,Phone) VALUES ("+year+",'"+post+"','"+email+"','"+fname+"','"+lname+"','"+phone+"')");
                                 ResultSet rs = statement.executeQuery("SELECT Serial from TEMP_USER where email='"+email+"' and phone='"+phone+"'");
                                 String ApplicationNum="";

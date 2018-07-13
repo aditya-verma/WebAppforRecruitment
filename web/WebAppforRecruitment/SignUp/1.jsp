@@ -1,16 +1,51 @@
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.Statement" %>
+<%@ page import="java.io.*" %>
 <%@ page import="java.sql.DriverManager" %>
+<%@ page import="org.json.JSONObject" %>
+<%@ page import="org.json.JSONException" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 
 <html lang="en">
 <%
+
     if (session.getAttribute("ApplicationNumber")==null ||session.getAttribute("ApplicationNumber")=="")
     {
         response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
     }
+    String countryList[] = new String[198];
+    String postname="";
+    try {
+        String poststr="";
+        String postc="";
+        File dir = new File("D:\\Post\\");
+        for (File file : dir.listFiles()) {
+            FileReader fileReader = new FileReader(file);
+            BufferedReader br = new BufferedReader(fileReader);
+            String str = br.readLine();
+            JSONObject jsonObject = new JSONObject(str);
+            postc=jsonObject.getString("post").trim();
+            if (session.getAttribute("ApplicationNumber").toString().contains(postc)){
+                postname = jsonObject.getString("name").trim();
+            }
+            br.close();
+        }
+    }
+    catch (FileNotFoundException e){}
+    catch (JSONException e){}
+    catch (Exception e){}
+    try {
+        FileReader in = new FileReader("C:\\Users\\ADITYA\\Documents\\GitHub\\WebAppforRecruitment\\web\\WebAppforRecruitment\\resources\\CountryList.txt");
+        BufferedReader br = new BufferedReader(in);
+        for (int i = 0; i < 198; i++) {
+            countryList[i]=br.readLine().trim();
+        }
+        in.close();
+    }
+    catch (FileNotFoundException e){}
+
     String fname ="";
     String lname ="";
     String phone ="";
@@ -54,7 +89,17 @@
             CorrespondenceAddress = rs.getString("CorrespondenceAddress");
             PermanentAddress = rs.getString("PermanentAddress");
             DateOfBirth = rs.getString("DateOfBirth");
+            Marital_Status = rs.getString("MaritalStatus");
+            Handicapped = rs.getString("PhysicallyHandicapped");
+            NameOfFather = rs.getString("NameOfFather");
+            NameOfMother = rs.getString("NameOfMother");
+            idType =rs.getString("IdentityProofType");
+            idNumber =rs.getString("IdentityProofNumber");
+            PlaceOfApplying = rs.getString("PlaceOfApplying");
+            Category = rs.getString("Category");
         }
+        connection.close();
+        stmt.close();
 %>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,12 +151,7 @@
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="postApplied">Post Applying for</label>
-            <select class="form-control" id="postApplied" required>
-                <option></option>
-                <option>Professor</option>
-
-                <!---------Fill this using jsp------------>
-            </select>
+            <input type="text" class="form-control" id="postApplied"  disabled value="<%=postname%>">
         </div>
 
         <div class="form-group" >
@@ -141,17 +181,17 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="Domicile">Domicile</label>
-                    <input id="Domicile" class="form-control" placeholder="" required value="<%out.println(Domicile);%>">
+                    <input id="Domicile" class="form-control" name="Domicile" placeholder="" required value="<%out.println(Domicile);%>">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="Marital_Status">Marital Status</label>
                     <select class="form-control"  name="Marital_Status" id="Marital_Status" required>
-                        <option></option>
-                        <option>SINGLE</option>
-                        <option>MARRIED</option>
-                        <option>DIVORCED</option>
+                        <option <%if (Marital_Status.equalsIgnoreCase("")){%>selected<%}%>></option>
+                        <option <%if (Marital_Status.equalsIgnoreCase("Single")){%>selected<%}%>>SINGLE</option>
+                        <option <%if (Marital_Status.equalsIgnoreCase("Married")){%>selected<%}%>>MARRIED</option>
+                        <option <%if (Marital_Status.equalsIgnoreCase("Divorced")){%>selected<%}%>>DIVORCED</option>
                     </select>
                 </div>
             </div>
@@ -161,11 +201,11 @@
                 <div class="form-group">
                     <label class="text-uppercase" for="Category">Category</label>
                     <select class="form-control" name="Category" id="Category" required>
-                        <option></option>
-                        <option>GENERAL</option>
-                        <option>OBC</option>
-                        <option>OBC-Creamy Layer</option>
-                        <option>SC/ST</option>
+                        <option <%if (Category.equalsIgnoreCase("")){%>selected<%}%>></option>
+                        <option <%if (Category.equalsIgnoreCase("General")){%>selected<%}%>>GENERAL</option>
+                        <option <%if (Category.equalsIgnoreCase("OBC-Non Creamy Layer")){%>selected<%}%>>OBC-Non Creamy Layer</option>
+                        <option <%if (Category.equalsIgnoreCase("OBC-Creamy Layer")){%>selected<%}%>>OBC-Creamy Layer</option>
+                        <option <%if (Category.equalsIgnoreCase("SC/ST")){%>selected<%}%>>SC/ST</option>
                     </select>
                 </div>
             </div>
@@ -173,9 +213,9 @@
                 <div class="form-group">
                     <label class="text-uppercase" for="Handicapped">Handicapped</label>
                     <select class="form-control" id="Handicapped" name="Handicapped" required>
-                        <option></option>
-                        <option>Applicable</option>
-                        <option>Not Applicable</option>
+                        <option <%if (Handicapped.equalsIgnoreCase("")){%>selected<%}%>></option>
+                        <option <%if (Handicapped.equalsIgnoreCase("Applicable")){%>selected<%}%>>Applicable</option>
+                        <option <%if (Handicapped.equalsIgnoreCase("Not Applicable")){%>selected<%}%>>Not Applicable</option>
                     </select>
                 </div>
             </div>
@@ -191,280 +231,36 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="Nationality">Nationality</label>
-                    <select class="form-control text-uppercase" id="Nationality" name="Nationality" required>
-                        <option value="IN">India</option>
-                        <option value="AF">Afghanistan</option>
-                        <option value="AX">Åland Islands</option>
-                        <option value="AL">Albania</option>
-                        <option value="DZ">Algeria</option>
-                        <option value="AS">American Samoa</option>
-                        <option value="AD">Andorra</option>
-                        <option value="AO">Angola</option>
-                        <option value="AI">Anguilla</option>
-                        <option value="AQ">Antarctica</option>
-                        <option value="AG">Antigua and Barbuda</option>
-                        <option value="AR">Argentina</option>
-                        <option value="AM">Armenia</option>
-                        <option value="AW">Aruba</option>
-                        <option value="AU">Australia</option>
-                        <option value="AT">Austria</option>
-                        <option value="AZ">Azerbaijan</option>
-                        <option value="BS">Bahamas</option>
-                        <option value="BH">Bahrain</option>
-                        <option value="BD">Bangladesh</option>
-                        <option value="BB">Barbados</option>
-                        <option value="BY">Belarus</option>
-                        <option value="BE">Belgium</option>
-                        <option value="BZ">Belize</option>
-                        <option value="BJ">Benin</option>
-                        <option value="BM">Bermuda</option>
-                        <option value="BT">Bhutan</option>
-                        <option value="BO">Bolivia, Plurinational State of</option>
-                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
-                        <option value="BA">Bosnia and Herzegovina</option>
-                        <option value="BW">Botswana</option>
-                        <option value="BV">Bouvet Island</option>
-                        <option value="BR">Brazil</option>
-                        <option value="IO">British Indian Ocean Territory</option>
-                        <option value="BN">Brunei Darussalam</option>
-                        <option value="BG">Bulgaria</option>
-                        <option value="BF">Burkina Faso</option>
-                        <option value="BI">Burundi</option>
-                        <option value="KH">Cambodia</option>
-                        <option value="CM">Cameroon</option>
-                        <option value="CA">Canada</option>
-                        <option value="CV">Cape Verde</option>
-                        <option value="KY">Cayman Islands</option>
-                        <option value="CF">Central African Republic</option>
-                        <option value="TD">Chad</option>
-                        <option value="CL">Chile</option>
-                        <option value="CN">China</option>
-                        <option value="CX">Christmas Island</option>
-                        <option value="CC">Cocos (Keeling) Islands</option>
-                        <option value="CO">Colombia</option>
-                        <option value="KM">Comoros</option>
-                        <option value="CG">Congo</option>
-                        <option value="CD">Congo, the Democratic Republic of the</option>
-                        <option value="CK">Cook Islands</option>
-                        <option value="CR">Costa Rica</option>
-                        <option value="CI">Côte d'Ivoire</option>
-                        <option value="HR">Croatia</option>
-                        <option value="CU">Cuba</option>
-                        <option value="CW">Curaçao</option>
-                        <option value="CY">Cyprus</option>
-                        <option value="CZ">Czech Republic</option>
-                        <option value="DK">Denmark</option>
-                        <option value="DJ">Djibouti</option>
-                        <option value="DM">Dominica</option>
-                        <option value="DO">Dominican Republic</option>
-                        <option value="EC">Ecuador</option>
-                        <option value="EG">Egypt</option>
-                        <option value="SV">El Salvador</option>
-                        <option value="GQ">Equatorial Guinea</option>
-                        <option value="ER">Eritrea</option>
-                        <option value="EE">Estonia</option>
-                        <option value="ET">Ethiopia</option>
-                        <option value="FK">Falkland Islands (Malvinas)</option>
-                        <option value="FO">Faroe Islands</option>
-                        <option value="FJ">Fiji</option>
-                        <option value="FI">Finland</option>
-                        <option value="FR">France</option>
-                        <option value="GF">French Guiana</option>
-                        <option value="PF">French Polynesia</option>
-                        <option value="TF">French Southern Territories</option>
-                        <option value="GA">Gabon</option>
-                        <option value="GM">Gambia</option>
-                        <option value="GE">Georgia</option>
-                        <option value="DE">Germany</option>
-                        <option value="GH">Ghana</option>
-                        <option value="GI">Gibraltar</option>
-                        <option value="GR">Greece</option>
-                        <option value="GL">Greenland</option>
-                        <option value="GD">Grenada</option>
-                        <option value="GP">Guadeloupe</option>
-                        <option value="GU">Guam</option>
-                        <option value="GT">Guatemala</option>
-                        <option value="GG">Guernsey</option>
-                        <option value="GN">Guinea</option>
-                        <option value="GW">Guinea-Bissau</option>
-                        <option value="GY">Guyana</option>
-                        <option value="HT">Haiti</option>
-                        <option value="HM">Heard Island and McDonald Islands</option>
-                        <option value="VA">Holy See (Vatican City State)</option>
-                        <option value="HN">Honduras</option>
-                        <option value="HK">Hong Kong</option>
-                        <option value="HU">Hungary</option>
-                        <option value="IS">Iceland</option>
-                        <option value="ID">Indonesia</option>
-                        <option value="IR">Iran, Islamic Republic of</option>
-                        <option value="IQ">Iraq</option>
-                        <option value="IE">Ireland</option>
-                        <option value="IM">Isle of Man</option>
-                        <option value="IL">Israel</option>
-                        <option value="IT">Italy</option>
-                        <option value="JM">Jamaica</option>
-                        <option value="JP">Japan</option>
-                        <option value="JE">Jersey</option>
-                        <option value="JO">Jordan</option>
-                        <option value="KZ">Kazakhstan</option>
-                        <option value="KE">Kenya</option>
-                        <option value="KI">Kiribati</option>
-                        <option value="KP">Korea, Democratic People's Republic of</option>
-                        <option value="KR">Korea, Republic of</option>
-                        <option value="KW">Kuwait</option>
-                        <option value="KG">Kyrgyzstan</option>
-                        <option value="LA">Lao People's Democratic Republic</option>
-                        <option value="LV">Latvia</option>
-                        <option value="LB">Lebanon</option>
-                        <option value="LS">Lesotho</option>
-                        <option value="LR">Liberia</option>
-                        <option value="LY">Libya</option>
-                        <option value="LI">Liechtenstein</option>
-                        <option value="LT">Lithuania</option>
-                        <option value="LU">Luxembourg</option>
-                        <option value="MO">Macao</option>
-                        <option value="MK">Macedonia, the former Yugoslav Republic of</option>
-                        <option value="MG">Madagascar</option>
-                        <option value="MW">Malawi</option>
-                        <option value="MY">Malaysia</option>
-                        <option value="MV">Maldives</option>
-                        <option value="ML">Mali</option>
-                        <option value="MT">Malta</option>
-                        <option value="MH">Marshall Islands</option>
-                        <option value="MQ">Martinique</option>
-                        <option value="MR">Mauritania</option>
-                        <option value="MU">Mauritius</option>
-                        <option value="YT">Mayotte</option>
-                        <option value="MX">Mexico</option>
-                        <option value="FM">Micronesia, Federated States of</option>
-                        <option value="MD">Moldova, Republic of</option>
-                        <option value="MC">Monaco</option>
-                        <option value="MN">Mongolia</option>
-                        <option value="ME">Montenegro</option>
-                        <option value="MS">Montserrat</option>
-                        <option value="MA">Morocco</option>
-                        <option value="MZ">Mozambique</option>
-                        <option value="MM">Myanmar</option>
-                        <option value="NA">Namibia</option>
-                        <option value="NR">Nauru</option>
-                        <option value="NP">Nepal</option>
-                        <option value="NL">Netherlands</option>
-                        <option value="NC">New Caledonia</option>
-                        <option value="NZ">New Zealand</option>
-                        <option value="NI">Nicaragua</option>
-                        <option value="NE">Niger</option>
-                        <option value="NG">Nigeria</option>
-                        <option value="NU">Niue</option>
-                        <option value="NF">Norfolk Island</option>
-                        <option value="MP">Northern Mariana Islands</option>
-                        <option value="NO">Norway</option>
-                        <option value="OM">Oman</option>
-                        <option value="PK">Pakistan</option>
-                        <option value="PW">Palau</option>
-                        <option value="PS">Palestinian Territory, Occupied</option>
-                        <option value="PA">Panama</option>
-                        <option value="PG">Papua New Guinea</option>
-                        <option value="PY">Paraguay</option>
-                        <option value="PE">Peru</option>
-                        <option value="PH">Philippines</option>
-                        <option value="PN">Pitcairn</option>
-                        <option value="PL">Poland</option>
-                        <option value="PT">Portugal</option>
-                        <option value="PR">Puerto Rico</option>
-                        <option value="QA">Qatar</option>
-                        <option value="RE">Réunion</option>
-                        <option value="RO">Romania</option>
-                        <option value="RU">Russian Federation</option>
-                        <option value="RW">Rwanda</option>
-                        <option value="BL">Saint Barthélemy</option>
-                        <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
-                        <option value="KN">Saint Kitts and Nevis</option>
-                        <option value="LC">Saint Lucia</option>
-                        <option value="MF">Saint Martin (French part)</option>
-                        <option value="PM">Saint Pierre and Miquelon</option>
-                        <option value="VC">Saint Vincent and the Grenadines</option>
-                        <option value="WS">Samoa</option>
-                        <option value="SM">San Marino</option>
-                        <option value="ST">Sao Tome and Principe</option>
-                        <option value="SA">Saudi Arabia</option>
-                        <option value="SN">Senegal</option>
-                        <option value="RS">Serbia</option>
-                        <option value="SC">Seychelles</option>
-                        <option value="SL">Sierra Leone</option>
-                        <option value="SG">Singapore</option>
-                        <option value="SX">Sint Maarten (Dutch part)</option>
-                        <option value="SK">Slovakia</option>
-                        <option value="SI">Slovenia</option>
-                        <option value="SB">Solomon Islands</option>
-                        <option value="SO">Somalia</option>
-                        <option value="ZA">South Africa</option>
-                        <option value="GS">South Georgia and the South Sandwich Islands</option>
-                        <option value="SS">South Sudan</option>
-                        <option value="ES">Spain</option>
-                        <option value="LK">Sri Lanka</option>
-                        <option value="SD">Sudan</option>
-                        <option value="SR">Suriname</option>
-                        <option value="SJ">Svalbard and Jan Mayen</option>
-                        <option value="SZ">Swaziland</option>
-                        <option value="SE">Sweden</option>
-                        <option value="CH">Switzerland</option>
-                        <option value="SY">Syrian Arab Republic</option>
-                        <option value="TW">Taiwan, Province of China</option>
-                        <option value="TJ">Tajikistan</option>
-                        <option value="TZ">Tanzania, United Republic of</option>
-                        <option value="TH">Thailand</option>
-                        <option value="TL">Timor-Leste</option>
-                        <option value="TG">Togo</option>
-                        <option value="TK">Tokelau</option>
-                        <option value="TO">Tonga</option>
-                        <option value="TT">Trinidad and Tobago</option>
-                        <option value="TN">Tunisia</option>
-                        <option value="TR">Turkey</option>
-                        <option value="TM">Turkmenistan</option>
-                        <option value="TC">Turks and Caicos Islands</option>
-                        <option value="TV">Tuvalu</option>
-                        <option value="UG">Uganda</option>
-                        <option value="UA">Ukraine</option>
-                        <option value="AE">United Arab Emirates</option>
-                        <option value="GB">United Kingdom</option>
-                        <option value="US">United States</option>
-                        <option value="UM">United States Minor Outlying Islands</option>
-                        <option value="UY">Uruguay</option>
-                        <option value="UZ">Uzbekistan</option>
-                        <option value="VU">Vanuatu</option>
-                        <option value="VE">Venezuela, Bolivarian Republic of</option>
-                        <option value="VN">Viet Nam</option>
-                        <option value="VG">Virgin Islands, British</option>
-                        <option value="VI">Virgin Islands, U.S.</option>
-                        <option value="WF">Wallis and Futuna</option>
-                        <option value="EH">Western Sahara</option>
-                        <option value="YE">Yemen</option>
-                        <option value="ZM">Zambia</option>
-                        <option value="ZW">Zimbabwe</option>
+                    <select class="form-control" id="Nationality" name="Nationality" required>
+                        <%
+                            for (int i = 0; i < 198; i++) {
+                                %><option <%if (Nationality.equalsIgnoreCase(countryList[i])){%>selected<%}%>><%out.println(countryList[i]);%></option> <%
+                            }
+                        %>
                     </select>
                 </div>
             </div>
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Name_Father">Name Of Father</label>
-            <input id="Name_Father" name="NameOfFather" class="form-control" placeholder="" >
+            <input id="Name_Father" name="NameOfFather" class="form-control" placeholder="" value="<%out.println(NameOfFather);%>">
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Name_Mother">Name of Mother</label>
-            <input id="Name_Mother" name="NameOfMother" class="form-control" placeholder="" >
+            <input id="Name_Mother" name="NameOfMother" class="form-control" placeholder="" value="<%out.println(NameOfMother);%>" >
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="ID">Identity Proof</label>
             <div class="row">
                 <div class="col-sm-6">
                     <select class="form-control" name="IdentityProofType" id="ID-type" placeholder="ID Type">
-                        <option></option>
-                        <option>Aadhar Number</option>
-                        <option>Pan Card</option>
+                        <option <%if (idType.equalsIgnoreCase("")){%>selected<%}%>></option>
+                        <option <%if (idType.equalsIgnoreCase("Aadhar Number")){%>selected<%}%>>Aadhar Number</option>
+                        <option <%if (idType.equalsIgnoreCase("Pan Card")){%>selected<%}%>>Pan Card</option>
                     </select>
                 </div>
                 <div class="col-sm-6">
-                    <input id="ID" class="form-control" name="IdentityProofNumber" placeholder="ID number" required>
+                    <input id="ID" class="form-control" name="IdentityProofNumber" placeholder="ID number" required value="<%out.println(idNumber);%>">
                 </div>
             </div>
         </div>
@@ -486,7 +282,7 @@
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="PlaceOfApplying">Port/Place of Applying Form</label>
-            <input id="PlaceOfApplying" name="PlaceOfApplying" class="form-control" placeholder="" required>
+            <input id="PlaceOfApplying" name="PlaceOfApplying" class="form-control" placeholder="" required value="<%out.println(PlaceOfApplying);%>">
         </div>
         <div class="form-actions" style="margin: 0;background-color: transparent;text-align: center;">
             <button class="btn btn-lg btn-danger m-1" id="reset" type="reset">Reset</button>
@@ -498,10 +294,10 @@
                     Specialization = request.getParameter("Specialization");
                     Marital_Status = request.getParameter("Marital_Status");
                     Gender = request.getParameter("Gender");
-                    Domicile =request.getParameter("Domicile;");
+                    Domicile =request.getParameter("Domicile");
                     Category = request.getParameter("Category");
                     Handicapped = request.getParameter("Handicapped");
-                    DateOfBirth = request.getParameter("DateOfBirthDateOfBirth");
+                    DateOfBirth = request.getParameter("DateOfBirth");
                     Nationality = request.getParameter("Nationality");
                     NameOfFather = request.getParameter("NameOfFather");
                     NameOfMother = request.getParameter("NameOfMother");
@@ -510,8 +306,11 @@
                     CorrespondenceAddress = request.getParameter("CorrespondenceAddress");
                     PermanentAddress = request.getParameter("PermanentAddress");
                     PlaceOfApplying = request.getParameter("PlaceOfApplying");
+                    connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+                    stmt = connection.createStatement();
                     ResultSet resultSet = stmt.executeQuery("SELECT * FROM Personal_Information WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
-                    if (resultSet.next() || resultSet != null)
+                    int i=0;
+                    if (resultSet.next())
                     {
                         stmt.executeUpdate("UPDATE Personal_Information SET Specialization = '"+Specialization+
                                 "', MaritalStatus = '"+Marital_Status+
@@ -529,18 +328,20 @@
                                 "', PermanentAddress = '"+PermanentAddress+
                                 "', PlaceOfApplying = '"+PlaceOfApplying+
                                 "' WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+                    }else {
+                        i = stmt.executeUpdate("INSERT INTO Personal_Information(ApplicationNumber,Specialization," +
+                                "MaritalStatus,Gender," +
+                                "Domicile,Category,PhysicallyHandicapped," +
+                                "DateOfBirth,Nationality,NameOfFather,NameOfMother," +
+                                "IdentityProofType,IdentityProofNumber,CorrespondenceAddress,PermanentAddress,PlaceOfApplying)" +
+                                "VALUES ('" + session.getAttribute("ApplicationNumber") + "','" + Specialization + "','" + Marital_Status +
+                                "','" + Gender + "','" + Domicile + "','" + Category +
+                                "','" + Handicapped + "','" + DateOfBirth + "','" + Nationality +
+                                "','" + NameOfFather + "','" + NameOfMother +
+                                "','" + idType + "','" + idNumber + "','" + CorrespondenceAddress + "','" + PermanentAddress +
+                                "','" + PlaceOfApplying + "')");
                     }
-                    int i = stmt.executeUpdate("INSERT INTO Personal_Information(ApplicationNumber,Specialization," +
-                            "MaritalStatus,Gender," +
-                            "Domicile,Category,PhysicallyHandicapped," +
-                            "DateOfBirth,Nationality,NameOfFather,NameOfMother," +
-                            "IdentityProofType,IdentityProofNumber,CorrespondenceAddress,PermanentAddress,PlaceOfApplying)" +
-                            "VALUES ('"+session.getAttribute("ApplicationNumber")+"','"+Specialization+"','"+Marital_Status+
-                            "','"+Gender+"','"+Domicile+"','"+Category+
-                            "','"+Handicapped+"','"+DateOfBirth+"','"+Nationality+
-                            "','"+NameOfFather+"','"+NameOfMother+
-                            "','"+idType+"','"+idNumber+"','"+CorrespondenceAddress+"','"+PermanentAddress+
-                            "','"+PlaceOfApplying+"')");
+                    connection.close();
                     if (i>0)
                     {
         %><div class="text-center alert-success">Record Inserted</div> <%
@@ -549,7 +350,7 @@
         %><div class="text-center alert-danger">Record not Inserted</div> <%
                         }
                 }
-            connection.close();
+
             stmt.close();
             }
             catch (Exception e){%><div class="alert-warning text-center"><% out.print(e);%></div> <%}
