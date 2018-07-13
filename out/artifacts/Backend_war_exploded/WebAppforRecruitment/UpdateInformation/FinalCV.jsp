@@ -103,7 +103,7 @@
         rs.next();
 %>
 <div class="container">
-    <div class="row " >
+    <div class="row" >
         <div class="col-md-3">
             <div class="container sticky-top" style="padding-top: 10%">
             <div id="list-example" class="list-group">
@@ -121,7 +121,7 @@
         </div>
         </div>
         <div class="col-md-7">
-            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="position:relative;">
+            <div data-spy="scroll" data-target="#list-example" data-offset="0" style="position:relative;height: 25%;overflow-y: scroll">
                 <h4 id="list-item-1">Personal Information</h4>
                     <form action="#" style="width: 100%;">
                     <div class="row">
