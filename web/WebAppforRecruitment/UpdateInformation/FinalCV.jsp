@@ -102,9 +102,9 @@
         rs=st.executeQuery(sql);
         rs.next();
 %>
-<div class="container">
+<div class="container-fluid">
     <div class="row " >
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="container sticky-top" style="padding-top: 10%">
             <div id="list-example" class="list-group">
                 <a class="list-group-item list-group-item-action" href="#list-item-1">Personal Information</a>
@@ -933,7 +933,7 @@
         </div>
         <div class="col-md-2">
             <div class="sticky-top" style="padding-top: 15%">
-            <img  class="img-thumbnail" src="<%=path%>"  alt="Photo.jpg" >
+            <img  class="img-fluid" src="<%=path%>"  alt="Photo.jpg" >
             </div>
         </div>
     </div>
