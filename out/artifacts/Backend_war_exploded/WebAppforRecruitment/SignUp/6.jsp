@@ -60,13 +60,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="organisation_name">Organisation</label>
-                    <input id="organisation_name" class="form-control" name="i1" placeholder=""  value="<%out.println(teaching_exp_organisation);%>">
+                    <input id="organisation_name" class="form-control" name="i10" placeholder=""  value="<%out.println(teaching_exp_organisation);%>">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="position">Position</label>
-                    <input id="position" class="form-control" placeholder="" name="i2" value="<%out.println(teaching_exp_position);%>">
+                    <input id="position" class="form-control" placeholder="" name="i11" value="<%out.println(teaching_exp_position);%>">
                 </div>
             </div>
         </div>
@@ -74,13 +74,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="From6">From</label>
-                    <input type="text" class="form-control" id="From6" name="i3" placeholder="" value="<%out.println(teaching_exp_from);%>">
+                    <input type="text" class="form-control" id="From6" name="i12" placeholder="" value="<%out.println(teaching_exp_from);%>">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="To6">To</label>
-                    <input type="text" class="form-control" id="To6" name="i4" placeholder="" value="<%out.println(teaching_exp_to);%>">
+                    <input type="text" class="form-control" id="To6" name="i13" placeholder="" value="<%out.println(teaching_exp_to);%>">
                 </div>
             </div>
         </div>
@@ -88,13 +88,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="pay_scale">Pay Scale with AGP</label>
-                    <input id="pay_scale" class="form-control" name="i5" placeholder=""value="<%out.println(teaching_exp_pay_scale);%>">
+                    <input id="pay_scale" class="form-control" name="i14" placeholder=""value="<%out.println(teaching_exp_pay_scale);%>">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="type_of_employee">Type of Employee</label>
-                    <input id="type_of_employee" class="form-control" name="i6" placeholder="" value="<%out.println(teaching_exp_type_of_emp);%>">
+                    <input id="type_of_employee" class="form-control" name="i15" placeholder="" value="<%out.println(teaching_exp_type_of_emp);%>">
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="tenure">Tenure</label>
-                    <input id="tenure" class="form-control" name="i7" placeholder="" value="<%out.println(teaching_exp_tenure);%>">
+                    <input id="tenure" class="form-control" name="i16" placeholder="" value="<%out.println(teaching_exp_tenure);%>">
                 </div>
             </div>
         </div>
@@ -112,13 +112,13 @@
         </div>
         <%
             if(request.getParameter("b1")!=null) {
-                teaching_exp_organisation = (request.getParameter("i1"));
-                teaching_exp_position = request.getParameter("i2");
-                teaching_exp_from = request.getParameter("i3");
-                teaching_exp_to = request.getParameter("i4");
-                teaching_exp_pay_scale = request.getParameter("i5");
-                teaching_exp_type_of_emp = request.getParameter("i6");
-                teaching_exp_tenure = request.getParameter("i7");
+                teaching_exp_organisation = (request.getParameter("i10"));
+                teaching_exp_position = request.getParameter("i11");
+                teaching_exp_from = request.getParameter("i12");
+                teaching_exp_to = request.getParameter("i13");
+                teaching_exp_pay_scale = request.getParameter("i14");
+                teaching_exp_type_of_emp = request.getParameter("i15");
+                teaching_exp_tenure = request.getParameter("i16");
                 ResultSet resultSet = teaching_exp_stmt.executeQuery("SELECT * FROM Teaching_Experience WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
                 if (resultSet.next() || resultSet != null)
                 {

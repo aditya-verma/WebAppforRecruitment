@@ -42,24 +42,25 @@
             String basic_pay ="";
             String  nature_of_work = "";
 
-            try{Connection c = null;
-                Statement s = null;
+            try{
+                Connection present_emp_connection = null;
+                Statement present_emp_stmt = null;
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                c = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
-                ResultSet res;
-                s = c.createStatement();
-                res = s.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
-                if (res.next())
+                present_emp_connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+                ResultSet present_emp_res;
+                present_emp_stmt = present_emp_connection.createStatement();
+                present_emp_res = present_emp_stmt.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+                if (present_emp_res.next())
                 {
-                    organisation = res.getString(2);
-                    position = res.getString(3);
-                    type_of_emp = res.getString(4);
-                    from = res.getString(5);
-                    to = res.getString(6);
-                    pay_in_band = res.getString(7);
-                    agp_gp = res.getString(8);
-                    basic_pay = res.getString(9);
-                    nature_of_work = res.getString(10);
+                    organisation = present_emp_res.getString(2);
+                    position = present_emp_res.getString(3);
+                    type_of_emp = present_emp_res.getString(4);
+                    from = present_emp_res.getString(5);
+                    to = present_emp_res.getString(6);
+                    pay_in_band = present_emp_res.getString(7);
+                    agp_gp = present_emp_res.getString(8);
+                    basic_pay = present_emp_res.getString(9);
+                    nature_of_work = present_emp_res.getString(10);
 
 
                 }
@@ -156,10 +157,10 @@
                 agp_gp = request.getParameter("i7");
                 basic_pay = request.getParameter("i8");
                 nature_of_work = request.getParameter("i9");
-                ResultSet resultSet = s.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
-                if (resultSet.next() || resultSet != null)
+                ResultSet present_emp_resultSet = present_emp_stmt.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+                if (present_emp_resultSet.next() || present_emp_resultSet != null)
                 {
-                    s.executeUpdate("UPDATE Present_Employee SET Organisation = '"+organisation+
+                    present_emp_stmt.executeUpdate("UPDATE Present_Employee SET Organisation = '"+organisation+
                             "', PositionHold = '"+position+
                             "', TypeOfEmp = '"+type_of_emp+
                             "', FromDate = '"+from+
@@ -173,7 +174,7 @@
                 }
 
                 String sql = "insert into Present_Employee values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + organisation + "','" + position + "','" + type_of_emp + "','" + from + "','" + to + "','" + pay_in_band + "','" + agp_gp + "'," + basic_pay + ",'" + nature_of_work + "')";
-                int se = s.executeUpdate(sql);
+                int se = present_emp_stmt.executeUpdate(sql);
                 if (se != 0){
         %><div class="text-center alert-success">Record Inserted</div> <%
     }
@@ -182,8 +183,8 @@
             }
 
             }
-        c.close();
-        s.close();
+        present_emp_connection.close();
+        present_emp_stmt.close();
     }
     catch(Exception e)
     {
