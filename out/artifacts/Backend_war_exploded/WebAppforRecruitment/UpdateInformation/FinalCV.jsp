@@ -18,11 +18,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/datepicker.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/datepicker.css" rel="stylesheet">
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#from" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "date",
+                pickerPosition: "bottom-left"});
+            $( "#to" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "date",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
     <style>
         body {
 
@@ -459,7 +474,7 @@
                                 </select>
                             </div>
                             <div class="col-sm-6">
-                                <input id="ID" class="form-control" placeholder="ID number" required name="Personal_Information_ID_Photo" value="<%="xxxxxxx-xxxxxx-xxx"%>">
+                                <input id="ID" class="form-control" placeholder="ID number" required name="Personal_Information_ID_Number" value="<%="xxxxxxx-xxxxxx-xxx"%>">
                                 <!--ADD ID NUMBER COLUMN IN PERSONAL INFORMATION TABLE-->
                             </div>
                         </div>
@@ -481,13 +496,50 @@
                         <label class="text-uppercase" for="ApplyingPlace">Port/Place of Applying Form</label>
                         <input id="ApplyingPlace" class="form-control" placeholder="" required name="Personal_Information_Port" value="<%=rs.getString(16)%>">
                     </div>
-                    <%
-                        }catch(Exception e)
-                        {
-                            out.println(e.toString());
-                        }
-                        rs=null;
-                    %>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" name="Update">Update</button>
+                        </div>
+                        <%
+
+                            if(request.getParameter("UPDATE")!=null)
+                            {
+
+                                String fname,post,specialization,email,gender,domicile,marital_st,category,handicapped,dob,country,father,mother,identity,identity_no,photo,co_address,pr_address,phone,port;
+                                fname=request.getParameter("Personal_Information_First_Name");
+                                post=request.getParameter("Personal_Information_Post");
+                                specialization=request.getParameter("Personal_Information_Specialization");
+                                email=request.getParameter("Personal_Information_Email");
+                                gender=request.getParameter("Personal_Information_Gender");
+                                domicile=request.getParameter("Personal_Information_Domicile");
+                                marital_st=request.getParameter("Personal_Information_Marital_Status");
+                                category=request.getParameter("Personal_Information_Category");
+                                handicapped=request.getParameter("Personal_Information_Handicapped");
+                                dob=request.getParameter("Personal_Information_DOB");
+                                country=request.getParameter("Personal_Information_Country");
+                                father=request.getParameter("Personal_Information_Father");
+                                mother=request.getParameter("Personal_Information_Mother");
+                                identity=request.getParameter("Personal_Information_ID_Proof");
+                                identity_no=request.getParameter("Personal_Information_ID_Number");
+                               // photo=request.getParameter("Personal_Information_ID_Photo");
+                                co_address=request.getParameter("Personal_Information_Correspondance_Address");
+                                pr_address=request.getParameter("Personal_Information_Permanent_Address");
+                                phone=request.getParameter("Personal_Information_Phone_Number");
+                                port=request.getParameter("Personal_Information_Port");
+                                String sqli="update Personal_Information set Specialization='"+specialization+"',MaritalStatus= '"+marital_st+"',Gender='"+gender+"',Domicile ='"+domicile+"', Category='"+category+"',PhysicallyHandicapped ='"+handicapped+"', DateOfBirth='"+dob+"',Nationality ='"+country+"',NameOfFather='"+father+"',NameOfMother='"+mother+"',IdentityProofType='"+identity+"',IdentityProofNumber='"+identity_no+"',CorrespondenceAddress = '"+co_address+"',PermanentAddress='"+pr_address+"',PlaceOfApplying ='"+port+" where Application_Number='"+session.getAttribute("ApplicationNumber")+"'";
+                                 int rsa = st.executeUpdate(sqli);
+                                if(rsa!=0)
+                                    out.print("Update");
+                                else
+                                    out.print("No Record Updated");
+                            }
+                        %>
+                        <%
+                            }catch(Exception e)
+                            {
+                                out.println(e.toString());
+                            }
+                            rs=null;
+                        %>
                     <!--Includ Jsp File after updation of Personal Information jsp-->
                 </form><hr>
                 <h4 id="list-item-2">Educational Details(PhD)</h4>
@@ -657,13 +709,13 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label class="text" for="From"><b>D)</b>From:</label>
-                                <input id="From" type="date" class="form-control" placeholder="" required value="<%=rs.getString(5)%>">
+                                <input id="from" type="text" class="form-control" placeholder="" required value="<%=rs.getString(5)%>">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label class="text" for="To"><b>E)</b>To:</label>
-                                <input id="To" type="date" class="form-control" placeholder="" required value='<%=rs.getString(6)%>'>
+                                <input id="to" type="text" class="form-control" placeholder="" required value='<%=rs.getString(6)%>'>
                             </div>
                         </div>
                     </div>
@@ -703,6 +755,7 @@
                     }
                     rs=null;
                 %><hr>
+
                 <h4 id="list-item-6">Teaching Experience</h4>
                     <%
                         try{
@@ -715,8 +768,8 @@
                             <tr>
                                 <th scope="col">Organisation</th>
                                 <th scope="col">Position Held</th>
-                                <th scope="col">From</th>
-                                <th scope="col">To</th>
+                                <th scope="col" >From</th>
+                                <th scope="col" >To</th>
                                 <th scope="col">Pay Scale with AGP</th>
                                 <th scope="col">Type of Employer</th>
                                 <th scope="col">Tenure</th>
@@ -727,9 +780,9 @@
                             <tbody>
                             <%while(rs.next()){%>
                             <tr>
-                                <td><%=rs.getString(2)%></td>
+                                <td ><%=rs.getString(2)%></td>
                                 <td><%=rs.getString(3)%></td>
-                                <td><%=rs.getString(4)%></td>
+                                <td ><%=rs.getString(4)%></td>
                                 <td><%=rs.getString(5)%></td>
                                 <td><%=rs.getString(6)%></td>
                                 <td><%=rs.getString(7)%></td>

@@ -1,3 +1,8 @@
+<%@ page import="java.io.*" %>
+<%@ page import="org.apache.commons.fileupload.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="org.apache.commons.fileupload.disk.DiskFileItemFactory" %>
+<%@ page import="org.apache.commons.fileupload.servlet.ServletFileUpload" %>
 <%--
   Created by IntelliJ IDEA.
   User: ADITYA
@@ -17,33 +22,15 @@
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <%
-        if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="" || session.getAttribute("Password") == null || session.getAttribute("Password") == "")
+        if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="")
         {
-            session.setAttribute("ApplicationNumber",null);
-            session.setAttribute("Password",null);
             session.invalidate();
             response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
         }
     %>
     <style>
         /* layout.css Style */
-        .upload-drop-zone {
-            height: 200px;
-            border-width: 2px;
-            margin-bottom: 20px;
-        }
-        /* skin.css Style*/
-        .upload-drop-zone {
-            color: #ccc;
-            border-style: dashed;
-            border-color: #ccc;
-            line-height: 200px;
-            text-align: center
-        }
-        .upload-drop-zone.drop {
-            color: #222;
-            border-color: #222;
-        }
+
         .image-preview-input {
             position: relative;
             overflow: hidden;
@@ -66,6 +53,27 @@
             margin-left:2px;
         }
     </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('input[type="file"]').change(function(e){
+                var fileName = e.target.files[0].name;
+                $("#previewName").val(fileName);
+            });
+        });
+        $(document).ready(function() {
+            var holder = document.getElementById('drop-zone');
+            holder.ondragover = function () { this.className = ''; return false; };
+            holder.ondrop = function (e) {
+                e.preventDefault();
+                var file = e.dataTransfer.files[0];
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                }
+                reader.readAsDataURL(file);
+            };
+        });
+
+    </script>
 </head>
 <body>
 <header>
@@ -90,49 +98,39 @@
         </div>
     </div>
 </header>
-<div class="container">
-    <form action = "UploadFile.jsp" method = "post"
-          enctype = "multipart/form-data">
-        <input type = "file" name = "file" size = "5000" />
-        <br />
-        <input type = "submit" value = "Upload File" />
-    </form>
-</div>
-<div class="container"> <br />
+
+<div class="container mb-5"> <br />
     <div class="row">
-        <div class="col-md-12">
+        <form class="col-md-12" action = "upload.jsp" method = "post" enctype = "multipart/form-data">
             <div class="panel panel-default">
-                <div class="panel-heading"><strong>Upload files</strong> <small> </small></div>
+                <div class="panel-heading"><strong>Upload Image</strong></div>
+                <br>
                 <div class="panel-body">
                     <div class="input-group image-preview">
-                        <input placeholder="" type="text" class="form-control image-preview-filename" disabled="disabled">
-                        <!-- don't give a name === doesn't send on POST/GET -->
+                        <input placeholder="" type="text" id="previewName" class="form-control image-preview-filename mr-1" disabled="disabled">
                         <span class="input-group-btn">
-						<!-- image-preview-clear button -->
-						<button type="button" class="btn btn-default image-preview-clear" style="display:none;"> <span class="glyphicon glyphicon-remove"></span> Clear </button>
                             <!-- image-preview-input -->
-						<div class="btn btn-default image-preview-input"> <span class="glyphicon glyphicon-folder-open"></span> <span class="image-preview-input-title">Browse</span>
-							<input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/>
-                            <!-- rename it -->
+						<div class="btn btn-default image-preview-input">
+                            <span class="glyphicon glyphicon-folder-open"></span>
+                            <span class="image-preview-input-title">Browse</span>
+							<input type="file" name="uploadImg"/>
 						</div>
-						<button type="button" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-upload"></i> </span>Upload</button>
-						</span> </div>
-                    <!-- /input-group image-preview [TO HERE]-->
-                    <br />
-                    <!-- Drop Zone -->
-                    <div class="upload-drop-zone" id="drop-zone"> Or drag and drop files here </div>
-                    <br />
-                    <!-- Progress Bar -->
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <span class="sr-only">60% Complete</span> </div>
+						<button type="submit" class="btn btn-labeled btn-primary" name="uploadImg">
+                            <span class="btn-label">
+                                <i class="glyphicon glyphicon-upload"></i> Upload
+                            </span>
+                        </button>
+						</span>
                     </div>
-                    <br />
+                    <!-- /input-group image-preview [TO HERE]-->
+
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>
-<div class="card-footer align-bottom fixed-bottom mt-2" style="background-color: #c4c4c4">
+
+<div class="card-footer align-bottom fixed-bottom mt-5" style="background-color: #c4c4c4">
     <div class="container text-muted text-center rounded">This is footer</div>
 </div>
 </body>

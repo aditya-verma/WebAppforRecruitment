@@ -1,12 +1,10 @@
-<%@ page import="java.util.Properties" %>
 <%@ page import="java.sql.*" %>
-<%@ page import="java.security.SecureRandom" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <%
-    if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="" || session.getAttribute("Password") == null || session.getAttribute("Password") == "")
+    if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="")
     {
         response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
     }
@@ -19,6 +17,13 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function userImagefun() {
+            $(document).ready(function(){
+                document.getElementById("userImage").setAttribute("src","../Images/UserImages/user.png");
+            });
+        }
+    </script>
 </head>
 <body>
 <%
@@ -27,20 +32,25 @@
     String Email="";
     String Name="";
     String Phone ="";
+    String path ="../Images/UserImages/user.png";
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection connection=DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+        Connection connection = DriverManager.getConnection(session.getAttribute("DatabaseHost").toString(),session.getAttribute("DatabaseUser").toString(),session.getAttribute("DatabasePassword").toString());
         ApplicationNumber = (String) session.getAttribute("ApplicationNumber");
-        Password = (String) session.getAttribute("Password");
         Statement statement = connection.createStatement();
-        ResultSet rs = statement.executeQuery("SELECT * from USERS where ApplicationNumber='"+ApplicationNumber+"' and Password ='"+Password+"'");
+        ResultSet rs = statement.executeQuery("SELECT * from USERS where ApplicationNumber='"+ApplicationNumber+"'");
         if (rs.next()){
             Email = rs.getString("Email");
             Name = rs.getString("FirstName")+" "+rs.getString("LastName");
             Phone = rs.getString("Phone");
         }
-        session.setAttribute("Name",Name);
-        session.setAttribute("Email",Email);
+        ResultSet rs1 = statement.executeQuery("SELECT * from Personal_Information where ApplicationNumber='"+ApplicationNumber+"'");
+        if (rs1.next()){
+            String str =rs1.getString("ImageLocation");
+            str.trim();
+            if (str!=null||str!="")
+                path = "../Images/UserImages/"+str;
+        }
         statement.close();
         connection.close();
     }catch (Exception e){}
@@ -78,10 +88,17 @@ radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
 radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
 background-color:#282828;
 background-size:16px 16px;">
-            <img class=" img-thumbnail " src="../Images/form-background.png" height="400px" width="300px" alt="User Image">
+                <img class="img-thumbnail" id="userImage" src="<%=path%>" onerror="userImagefun()" height="350px" width="300px">
         </div>
         <div class="card-body text-center">
-            <a class="card-link" href="../UpdateInformation/FinalCV.jsp" id="showApplicationLink">Show Application</a>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a class="card-link" href="../UpdateInformation/FinalCV.jsp" id="showApplicationLink">Show Application</a>
+                </div>
+                <div class="col-sm-6">
+                    <a class="card-link" href="UpdateProfileImage.jsp" id="UpdateProfileImageLink">Update Image</a>
+                </div>
+            </div>
         </div>
         <div class="card-body text-center p-1">
             <ul class="list-group list-group-flush border col">

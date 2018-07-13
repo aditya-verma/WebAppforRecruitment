@@ -7,14 +7,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String ApplicationNumber = "";
-    if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")==""){
-        session.invalidate();
-        response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
-    }
-    else
+    if (session.getAttribute("ApplicationNumber")=="" || session.getAttribute("ApplicationNumber")==null)
     {
-        ApplicationNumber = session.getAttribute("ApplicationNumber").toString();
+        response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
     }
 %>
 <html>
@@ -24,9 +19,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/datepicker.css">
-    <script src="../jquery/3.3.1/jquery.min.js"></script>
+        <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+
 
         <style>
             body {
