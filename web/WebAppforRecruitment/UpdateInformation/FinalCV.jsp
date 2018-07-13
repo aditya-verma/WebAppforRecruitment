@@ -82,6 +82,9 @@
                 <a class="list-group-item list-group-item-action" href="#list-item-5">Present Employer</a>
                 <a class="list-group-item list-group-item-action" href="#list-item-6">Teaching Experience</a>
                 <a class="list-group-item list-group-item-action" href="#list-item-7">Research Experience/Post Doctoral Research</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-8">Industrial Experience</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-9">References</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-10">Any Other Information</a>
             </div>
         </div>
         </div>
@@ -782,6 +785,71 @@
                             <%}%>
                             </tbody>
                         </table>
+                    </form>
+                    <%
+                        }
+                        catch (Exception e){
+                            out.print(e.toString());
+                        }
+                        rs=null;
+                    %><hr>
+                <h4 id="list-item-8">Industrial Experience</h4>
+                    <%
+                        try{
+                            String sql="select * from Industrial_Experience where Application_Number='"+session.getAttribute("ApplicationNumber")+"'";
+                            rs=st.executeQuery(sql);
+                    %>
+                    <form class="table-responsive" action="" method="post">
+                        <table class=" table  table-bordered" >
+                            <thead class="table-dark" >
+                            <tr>
+                                <th scope="col">Organisation</th>
+                                <th scope="col">Position Held</th>
+                                <th scope="col">From</th>
+                                <th scope="col">To</th>
+                                <th scope="col">Pay Scale with AGP</th>
+                                <th scope="col">Type of Employer</th>
+                                <th scope="col">Nature Of Work</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <%while(rs.next()){%>
+                            <tr>
+                                <td><%=rs.getString(2)%></td>
+                                <td><%=rs.getString(3)%></td>
+                                <td><%=rs.getString(4)%></td>
+                                <td><%=rs.getString(5)%></td>
+                                <td><%=rs.getString(6)%></td>
+                                <td><%=rs.getString(7)%></td>
+                                <td><%=rs.getString(8)%></td>
+                                <td><a href="UpdateFiles/Industrial_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&position=<%=rs.getString(3)%>&date=<%=rs.getString(4)%>"><i class="fa fa-edit"></i></a></td>
+                                <td><a href="DeleteFiles/Industrial_Experience.jsp?id=<%=session.getAttribute("ApplicationNumber")%>&organisation=<%=rs.getString(2)%>&position=<%=rs.getString(3)%>&date=<%=rs.getString(4)%>"><i class="fa fa-trash-alt"></i></a></td>
+                            </tr>
+                            <%}%>
+                            </tbody>
+                        </table>
+                    </form>
+                    <%
+                        }
+                        catch (Exception e){
+                            out.print(e.toString());
+                        }
+                        rs=null;
+                    %><hr>
+                <h4 id="list-item-9">References</h4>
+                <hr>
+                <h4 id="list-item-10">Any Other Information</h4>
+                    <%
+                        try{
+                            String sql="select * from Any_Other_Information where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
+                            rs=st.executeQuery(sql);
+                            rs.next();
+                    %>
+                    <form class="table-responsive" action="" method="post">
+                        <label class="col-form-label" for="Information">Information</label>
+                        <input class="form-control" id="Information" value="<%=rs.getString(2)%>" name="Any_Other_Information">
                     </form>
                     <%
                             con.close();
