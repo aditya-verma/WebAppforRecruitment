@@ -42,7 +42,7 @@
 <div class="container align-middle">
     <div class="row custom-control-inline">
         <div class="col">
-            <a href="ApplicantList.jsp">
+            <a href="ApplicantList.jsp" class="focus">
                 <div class="card p-2 mb-2" style="width: 15rem;">
                     <img class="card-img-top" src="../Images/Applicants.svg" alt="Card image cap">
                     <div class="card-body text-center">
@@ -76,12 +76,14 @@
             </div>
         </div>
         <div class="col">
-            <div class="card p-2 mb-2" style="width: 15rem;">
-                <img class="card-img-top" src="../Images/AddJobs.svg" alt="Card image cap">
-                <div class="card-body text-center">
-                    <p class="card-text">Add Vacancies</p>
+            <a href="AddVacancies.jsp" class="focus">
+                <div class="card p-2 mb-2" style="width: 15rem;">
+                    <img class="card-img-top" src="../Images/AddJobs.svg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <p class="card-text">Add/Update Vacancies</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="col">
             <div class="card p-2 mb-2" style="width: 15rem;">
