@@ -932,7 +932,9 @@
             </div>
         </div>
         <div class="col-md-2">
-            <img  class="img-thumbnail" src="<%=path%>" onerror="userImagefun()" alt="Photo.jpg">
+            <div class="sticky-top" style="padding-top: 15%">
+            <img  class="img-thumbnail" src="<%=path%>"  alt="Photo.jpg" >
+            </div>
         </div>
     </div>
 </div>
