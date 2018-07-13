@@ -74,8 +74,19 @@
     </div>
 </header>
 <%
+    String path ="../Images/UserImages/user.png";
     Connection con=null;
     Statement st=null;
+    try{
+        ResultSet rs1 = st.executeQuery("SELECT * from Personal_Information where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        if (rs1.next()){
+            String str =rs1.getString("ImageLocation");
+            str.trim();
+            if (str!=null||str!="")
+                path = "../Images/UserImages/"+str;
+        }
+    }
+    catch (Exception e){}
     ResultSet rs=null;
     try{
         Class.forName("com.mysql.jdbc.Driver");
@@ -915,7 +926,7 @@
             </div>
         </div>
         <div class="col-md-2">
-            <img  class="img-thumbnail" src="../Images/form-background.png" <%--=rs.getString(17)--%> alt="Photo.jpg">
+            <img  class="img-thumbnail" src="<%=path%>" onerror="userImagefun()" alt="Photo.jpg">
         </div>
     </div>
 </div>
