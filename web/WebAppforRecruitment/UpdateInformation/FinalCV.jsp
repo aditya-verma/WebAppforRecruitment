@@ -5,10 +5,10 @@
   Time: 22:58
   To change this template use File | Settings | File Templates.
 --%>
+<!DOCTYPE html>
 <%@page import="java.sql.*"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
 <head>
     <%if (session.getAttribute("ApplicationNumber")== null || session.getAttribute("ApplicationNumber")=="")
     {
@@ -102,9 +102,9 @@
         rs=st.executeQuery(sql);
         rs.next();
 %>
-<div class="container-fluid">
+<div class="container">
     <div class="row " >
-        <div class="col-md-2">
+        <div class="col-md-3">
             <div class="container sticky-top" style="padding-top: 10%">
             <div id="list-example" class="list-group">
                 <a class="list-group-item list-group-item-action" href="#list-item-1">Personal Information</a>
@@ -121,9 +121,9 @@
         </div>
         </div>
         <div class="col-md-7">
-            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="position:relative;">
                 <h4 id="list-item-1">Personal Information</h4>
-                    <form id="PersonalInformation" action="#" style="width: 100%;">
+                    <form action="#" style="width: 100%;">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -549,15 +549,12 @@
                                 else
                                     out.print("No Record Updated");
                             }
-                        %>
-                        <%
                             }catch(Exception e)
                             {
                                 out.println(e.toString());
                             }
                             rs=null;
                         %>
-                    <!--Includ Jsp File after updation of Personal Information jsp-->
                 </form><hr>
                 <h4 id="list-item-2">Educational Details(PhD)</h4>
                     <%
@@ -772,7 +769,6 @@
                     }
                     rs=null;
                 %><hr>
-
                 <h4 id="list-item-6">Teaching Experience</h4>
                     <%
                         try{
@@ -929,7 +925,7 @@
                         }
                         rs=null;
                     %><hr>
-            </div>
+            </div pos>
         </div>
         <div class="col-md-2">
             <div class="sticky-top" style="padding-top: 15%">
