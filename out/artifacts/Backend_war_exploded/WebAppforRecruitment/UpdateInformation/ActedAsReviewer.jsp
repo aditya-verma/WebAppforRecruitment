@@ -80,7 +80,7 @@
                 </div>
                 <!--------------PGSupervision-------------->
                 <div class="tab-pane fade" id="list-PGSupervision" role="tabpanel" aria-labelledby="list-PGSupervision-list">
-                    <%@include file="/WebAppforRecruitment/Forms/PG Supervision.jsp"%>
+                    <%--@include file="/WebAppforRecruitment/Forms/PG Supervision.jsp"--%>
                 </div>
                 <!--------------Btech Project guided-------------->
                 <div class="tab-pane fade " id="list-BTechProjectGuided" role="tabpanel" aria-labelledby="list-BTechProjectGuided-list">

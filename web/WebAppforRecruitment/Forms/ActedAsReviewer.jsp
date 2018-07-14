@@ -30,9 +30,6 @@
     </style>
 </head>
 <body>
-
-
-
 <div class="container"  >
     <form id="Reviewer" action="" style="width: 100%;" method="post">
         <div class="row " style="margin-top: 5%">
