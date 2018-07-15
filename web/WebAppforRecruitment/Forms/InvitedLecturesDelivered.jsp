@@ -39,7 +39,7 @@
 
 <div class="container"  >
     <form id="invited_lecture" action="" method="POST"   >
-        <div class="row " style="margin-top: 5%">
+        <div class="row " >
             <div class="col-sm-4" style="text-align: left">
                 <div class="form-group" style="margin-top:3% ">
                     <label for="title">Title of Lecture</label>

@@ -1,8 +1,13 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Lenovo
+  Date: 7/15/2018
+  Time: 1:48 AM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Update Information</title>
     <%
         if (session.getAttribute("ApplicationNumber")==null || session.getAttribute("ApplicationNumber")=="")
@@ -32,7 +37,7 @@
             </div>
         </div>
     </nav>
-    <div class="jumbotron" style="height: 10%">
+    <div class="jumbotron" >
         <div class="container">
             <h1>Recruitment Portal</h1>
             <div class="bg-dark rounded">
@@ -41,7 +46,6 @@
         </div>
     </div>
 </header>
-
 <div class="container align-middle align-content-center align-items-center">
     <div class="row">
         <div class="col-sm-4">
@@ -52,12 +56,12 @@
                 <a class="list-group-item list-group-item-action " id="list-PhDSupervision-list" href="PhDSupervision.jsp" role="tab" >Ph.D Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PG Supervision.jsp" role="tab">PG Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectSupervised.jsp" role="tab" >B.Tech Project Guided</a>
-                <a class="list-group-item list-group-item-action active" id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
+                <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
                 <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="InvitedLecturesDelivered.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
                 <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list"  href="ResearchProjectsInvestigated.jsp" role="tab" >Research Project Investigated</a>
                 <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
                 <a class="list-group-item list-group-item-action " id="list-EventAttended-list"  href="EventAttended.jsp" role="tab" >Event Attended</a>
-                <a class="list-group-item list-group-item-action " id="list-ExpertLectureOrganized-list"  href="ExpertLectureOrganized.jsp" role="tab" >Expert Lecture Organized</a>
+                <a class="list-group-item list-group-item-action active" id="list-ExpertLectureOrganized-list"  href="ExpertLectureOrganized.jsp" role="tab" >Expert Lecture Organized</a>
                 <a class="list-group-item list-group-item-action " id="list-ConsultancyProvided-list" href="ConsultancyProvided.jsp" role="tab" >Consultancy Provided</a>
             </div>
         </div>
@@ -87,8 +91,8 @@
                     <%--@include file="/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp"--%>
                 </div>
                 <!--------------Acted As Reviewer-------------->
-                <div class="tab-pane fade show active" id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">
-                    <%@include file="/WebAppforRecruitment/Forms/ActedAsReviewer.jsp"%>
+                <div class="tab-pane fade " id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">
+                    <%--@include file="/WebAppforRecruitment/Forms/ActedAsReviewer.jsp"--%>
                 </div>
                 <!--------------ExpertInvited Lecture-------------->
                 <div class="tab-pane fade" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
@@ -103,12 +107,12 @@
                     <!--%@include file="/WebAppforRecruitment/Forms/AwardHonourReceived.jsp"%-->
                 </div>
                 <!--------------Event Attended-------------->
-                <div class="tab-pane fade" id="list-EventAttended" role="tabpanel" aria-labelledby="list-EventAttended-list">
-                    <%--@include file="/WebAppforRecruitment/Forms/Event_Attended.jsp"--%>
+                <div class="tab-pane fade " id="list-EventAttended" role="tabpanel" aria-labelledby="list-EventAttended-list">
+                    <%--@include file="/WebAppforRecruitment/Forms/EventAttended.jsp"--%>
                 </div>
                 <!--------------Expert Lecture Organized-------------->
-                <div class="tab-pane fade" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
-
+                <div class="tab-pane fade show active" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
+                    <%@include file="/WebAppforRecruitment/Forms/ExpertLectureOrganized.jsp"%>
                 </div>
                 <!--------------Consultancy Provided-------------->
                 <div class="tab-pane fade" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
@@ -122,6 +126,5 @@
 <div class="card-footer align-bottom mt-2" style="background-color: #c4c4c4">
     <div class="container text-muted text-center rounded">This is footer</div>
 </div>
-
 </body>
 </html>

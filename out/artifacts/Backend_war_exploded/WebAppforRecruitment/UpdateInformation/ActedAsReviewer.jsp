@@ -108,7 +108,7 @@
                 </div>
                 <!--------------Expert Lecture Organized-------------->
                 <div class="tab-pane fade" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
-                    Expert Lecture Organized
+
                 </div>
                 <!--------------Consultancy Provided-------------->
                 <div class="tab-pane fade" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">

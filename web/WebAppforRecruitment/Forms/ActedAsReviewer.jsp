@@ -32,7 +32,7 @@
 <body>
 <div class="container"  >
     <form id="Reviewer" action="" style="width: 100%;" method="post">
-        <div class="row " style="margin-top: 5%">
+        <div class="row " >
             <div class="col-sm-4" >
                 <p >Whether acted as reviewer for Conference/Journal </p>
             </div>

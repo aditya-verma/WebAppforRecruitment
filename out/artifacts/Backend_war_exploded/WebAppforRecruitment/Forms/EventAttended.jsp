@@ -42,7 +42,7 @@
 <body>
 <div class="container">
     <form id="EventAttended" action="" method="post">
-        <div class="row " style="margin-top: 5%">
+        <div class="row " >
             <div class="col-sm-3" >
                 <p >Type</p>
             </div>
@@ -109,7 +109,7 @@
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-3">
                 <div class="form-group" style=" margin-top:3% ">
-                    <label for="Event_Attended_To">Placeuration(To)</label>
+                    <label for="Event_Attended_To">Duration(To)</label>
                 </div>
             </div>
             <div class="col-sm-8">
