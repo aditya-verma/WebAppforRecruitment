@@ -1,6 +1,3 @@
-<%@ page import="java.util.Properties" %>
-<%@ page import="java.sql.*" %>
-<%@ page import="java.security.SecureRandom" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
