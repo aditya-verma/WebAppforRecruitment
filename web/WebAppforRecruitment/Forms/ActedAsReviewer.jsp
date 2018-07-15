@@ -30,12 +30,9 @@
     </style>
 </head>
 <body>
-
-
-
 <div class="container"  >
-    <form id="Reviewer" action="" style="width: 100%;" method="post">
-        <div class="row " style="margin-top: 5%">
+    <form id="Reviewer" action=""  method="post">
+        <div class="row " >
             <div class="col-sm-4" >
                 <p >Whether acted as reviewer for Conference/Journal </p>
             </div>
@@ -91,9 +88,10 @@
 
             </div>
             <div class="col-sm-8">
-                <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="b1">ADD</button>
+                <button class="btn btn-lg btn-primary m-1" id="add" value="Insert" type="submit" name="b1">ADD</button>
                 <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
-
+            </div>
+           </div>
             <%
                     if(request.getParameter("b1")!=null)
                     {
@@ -112,17 +110,15 @@
                             String sql="insert into Acted_As_Reviewer values('"+((String) session.getAttribute("ApplicationNumber"))+"','"+Reviewer+"','"+name+"','"+publisher+"','"+date+"')";
                             int res=st.executeUpdate(sql);
                             if(res!=0){
-                %>
-        <button class="btn btn-lg btn-dark m-1" id="add" onclick="myfunc()" type="submit" name="b3">Add More</button>
-</div>
-</div>
-<%
+                %><div class="text-center alert-success">Record Inserted</div><%
             } else{
-                out.println("Record Not Inserted");
+                %><div class="text-center alert-danger">Record not Inserted</div><%
             }
+            con.close();
+            st.close();
         }catch(Exception e)
         {
-            out.println(e.toString());
+            %><div class="alert-warning text-center"><% out.print(e);%></div> <%
         }
     }
 %>

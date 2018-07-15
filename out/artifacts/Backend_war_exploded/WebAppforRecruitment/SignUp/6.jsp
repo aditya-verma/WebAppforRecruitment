@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="java.sql.*"%>
 <html lang="en">
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/backgrounds.css">
