@@ -44,6 +44,7 @@
             postname = poststr.split(">");
             postcode = postc.split(">");
         }
+        catch (FileNotFoundException e){}
         catch (JSONException e){out.println("Json Exception occured");}
         catch (Exception e){}
         try {
