@@ -15,7 +15,7 @@
         Class.forName("com.mysql.jdbc.Driver");
         con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
         st=con.createStatement();
-        String sql="delete from Educational_Qualification_PhD where Application_Number='"+id+"' and Title='"+request.getParameter("title")+"'";
+        String sql="delete from Educational_Qualification_PhD where ApplicationNumber='"+id+"' and Title='"+request.getParameter("title")+"'";
         int res=st.executeUpdate(sql);
         if(res!=0)
             response.sendRedirect("/WebAppforRecruitment/UpdateInformation/FinalCV.jsp");

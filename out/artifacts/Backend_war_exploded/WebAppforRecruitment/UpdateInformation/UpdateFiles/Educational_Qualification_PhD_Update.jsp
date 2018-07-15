@@ -48,7 +48,7 @@
         Class.forName("com.mysql.jdbc.Driver");
         con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
         st=con.createStatement();
-        String sql="select * from Educational_Qualification_PhD where Application_Number='"+id+"' and Title='"+title+"'";
+        String sql="select * from Educational_Qualification_PhD where ApplicationNumber='"+id+"' and Title='"+title+"'";
         rs=st.executeQuery(sql);
         rs.next();
 %>
@@ -91,7 +91,7 @@
             title2=request.getParameter("Title");
             inst=(request.getParameter("Institute"));
             date=request.getParameter("Date");
-            sql="update Educational_Qualification_PhD set Status='"+status+"', Title='"+title+"',Institute='"+inst+"', Date='"+date+"' where Application_Number='"+id+"' and Title='"+title+"'";
+            sql="update Educational_Qualification_PhD set Status='"+status+"', Title='"+title+"',Institute='"+inst+"', Date='"+date+"' where ApplicationNumber='"+id+"' and Title='"+title+"'";
             int res=st.executeUpdate(sql);
             if(res!=0)
                 response.sendRedirect("../FinalCV.jsp");

@@ -559,7 +559,7 @@
                 <h4 id="list-item-2">Educational Details(PhD)</h4>
                     <%
                             try{
-                                String sql="select * from Educational_Qualification_PhD where Application_Number='"+session.getAttribute("ApplicationNumber")+"'";
+                                String sql="select * from Educational_Qualification_PhD where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
                                 rs=st.executeQuery(sql);
                         %>
                     <form class="table-responsive" id="Educational_Details(PhD)" action="" method="post">
