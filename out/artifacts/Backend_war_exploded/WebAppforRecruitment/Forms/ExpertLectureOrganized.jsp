@@ -1,5 +1,5 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page import="java.sql.*"%>
 <html>
 <head>
     <title>Intellectual Property Portal</title>
@@ -24,6 +24,17 @@
                 pickerPosition: "bottom-left"});
         });
     </script>
+    <script>
+        $(function() {
+            $('input[name="Organised_Type"]').on('click', function() {
+                if ($(this).val() == 'Others') {
+                    $('#textbox').show();
+                }
+                else {
+                    $('#textbox').hide();}
+            });
+        });
+    </script>
     <style>
         body {
 
@@ -32,32 +43,41 @@
     </style>
 </head>
 <body>
+<div class="container">
 <form id="EventOrganised" action="" method="post">
+        <%
+            if (session.getAttribute("ApplicationNumber")==null ||session.getAttribute("ApplicationNumber")=="")
+            {
+                response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
+            }
+        %>
     <div class="row ">
         <div class="col-sm-3" >
             <p >Type</p>
         </div>
         <div class="col-sm-8">
             <div class="form-check ">
-                <input class="form-check-input" type="radio" value="Conference" name="Organised" id="Organised_Int_Conference">
+                <input class="form-check-input" type="radio" value="International Conference" name="Organised_Type" id="Organised_Int_Conference">
                 <label class="form-check-label" for="Organised_Int_Conference"> International Conference</label>
             </div>
             <div class="form-check ">
-                <input class="form-check-input" type="radio" value="Journal" name="Organised" id="Organised_Nat_Conference">
+                <input class="form-check-input" type="radio" value="National Conference" name="Organised_Type" id="Organised_Nat_Conference">
                 <label class="form-check-label" for="Organised_Nat_Conference">National Conference</label>
             </div>
             <div class="form-check ">
-                <input class="form-check-input" type="radio" value="Journal" name="Organised" id="Organised_Workshop">
+                <input class="form-check-input" type="radio" value="Workshop" name="Organised_Type" id="Organised_Workshop">
                 <label class="form-check-label" for="Organised_Workshop">Workshop</label>
             </div>
             <div class="form-check ">
-                <input class="form-check-input" type="radio" value="Journal" name="Organised" id="Organised_Faculty_Development">
+                <input class="form-check-input" type="radio" value="Faculty Development Program" name="Organised_Type" id="Organised_Faculty_Development">
                 <label class="form-check-label" for="Organised_Faculty_Development">Faculty Development Program</label>
             </div>
             <div class="form-check ">
-                <input class="form-check-input" type="radio" value="Journal" name="Organised" id="Organised_Others">
+                <input class="form-check-input" type="radio" value="Others" name="Organised_Type" id="Organised_Others">
                 <label class="form-check-label" for="Organised_Others">Others</label>
-                <input type="text" class="form-control" id="Reviewer_Name" name="Organised"  placeholder="Please Specify">
+                <div id="textbox" style="display: none">
+                    <input type="text" class="form-control" id="Attended_Specification"  name="Organised_Specification" placeholder="Please Specify" >
+                </div>
             </div>
         </div>
     </div>
@@ -69,7 +89,7 @@
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_Name" name=""  placeholder="">
+                <input type="text" class="form-control" id="Event_Organised_Name" name="Organised_Name"  placeholder="">
             </div>
         </div>
     </div>
@@ -81,7 +101,7 @@
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_Place" name=""  placeholder="">
+                <input type="text" class="form-control" id="Event_Organised_Place" name="Organised_Place"  placeholder="">
             </div>
         </div>
     </div>
@@ -93,7 +113,7 @@
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_From" name=""  placeholder="From">
+                <input type="text" class="form-control" id="Event_Organised_From" name="Organised_From"  placeholder="From">
             </div>
         </div>
     </div>
@@ -105,7 +125,7 @@
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_To" name=""  placeholder="To">
+                <input type="text" class="form-control" id="Event_Organised_To" name="Organised_To"  placeholder="To">
             </div>
         </div>
     </div>
@@ -117,7 +137,7 @@
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_Funding" name=""  placeholder="">
+                <input type="text" class="form-control" id="Event_Organised_Funding" name="Organised_Agency"  placeholder="">
             </div>
         </div>
     </div>
@@ -129,7 +149,7 @@
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_Budget" name=""  placeholder="In Lakhs">
+                <input type="text" class="form-control" id="Event_Organised_Budget" name="Organised_Budget"  placeholder="In Lakhs">
             </div>
         </div>
     </div>
@@ -141,10 +161,56 @@
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_Participants" name=""  placeholder="">
+                <input type="text" class="form-control" id="Event_Organised_Participants" name="Organised_Participants"  placeholder="">
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-8">
+            <button class="btn btn-lg btn-primary m-1" id="add" value="Insert" type="submit" name="b1">ADD</button>
+            <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
+        </div>
+    </div>
+    <%
+        if(request.getParameter("b1")!=null) {
+            String Type = (request.getParameter("Organised_Type"));
+            String Specification = (request.getParameter("Organised_Specification"));
+            String Name = request.getParameter("Organised_Name");
+            String Place= request.getParameter("Organised_Place");
+            String From = request.getParameter("Organised_From");
+            String To = request.getParameter("Organised_To");
+            String Agency = request.getParameter("Organised_Agency");
+            String Budget = request.getParameter("Organised_Budget");
+            String Participants = request.getParameter("Organised_Participants");
+            Connection connection = null;
+            Statement stmt = null;
+            try{
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+                stmt = connection.createStatement();
+                String sql = "insert into ExpertLectureOrganised values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + Type + "','"+Specification+"','" +Name + "','"+Place+"','" + From + "','" + To + "','" + Agency+ "','" +Budget+"','"+Participants+ "')";
+                int se = stmt.executeUpdate(sql);
+                if (se != 0){
+    %><div class="text-center alert-success">Record Inserted</div> <%
+}
+else {
+%><div class="text-center alert-danger">Record not Inserted</div><%
+    }
+    connection.close();
+    stmt.close();
+}
+
+
+catch(Exception e)
+{
+%><div class="alert-warning text-center"><% out.print(e);%></div> <%
+        }
+    }
+%>
 </form>
+</div>
 </body>
 </html>

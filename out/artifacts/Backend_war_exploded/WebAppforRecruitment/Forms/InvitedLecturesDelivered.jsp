@@ -88,10 +88,8 @@
                 </div>
             </div>
         </div>
-
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-1">
-
             </div>
             <div class="col-sm-6">
                 <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="b1">Add</button>
