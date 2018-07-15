@@ -279,7 +279,7 @@
         </div>
         <div class="form-actions" style="margin: 0;background-color: transparent;text-align: center;">
             <button class="btn btn-lg btn-danger m-1" id="reset" type="reset">Reset</button>
-        <button class="btn btn-lg btn-primary m-1" name="submitPersonalInfo1" type="submit">Save and Continue</button>
+        <button class="btn btn-lg btn-primary m-1" name="submitPersonalInfo1" type="submit">Save</button>
         </div>
         <%
                 if (request.getParameter("submitPersonalInfo1")!= null)

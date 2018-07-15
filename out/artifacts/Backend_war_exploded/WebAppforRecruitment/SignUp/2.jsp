@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-<body style="background-color: #f5f5f5;">
-<!------------This is header part------------->
-<form>
-    <table class="table table-responsive-xl table-bordered" id="PhDInformation-table"><tr>
-        <td><input type="text" placeholder="Enter Status" name="status"></td>
-        <td><input type="text" placeholder="Enter Title" name="title"></td>
-        <td><input type="text" placeholder="Enter Institute/University" name="institute"></td>
-        <td><input type="date" placeholder="Enter Date of Award" name="date"></td>
-    </tr>
-    </table>
-    <div class="row" style="text-align: center;">
-    <div class="col-sm-6" style="margin: 0;">
-        <button class="btn btn-dark " id="reset"  type="reset">Reset</button>
+<body>
+<form class="text-center mt-2 mb-5">
+    <label class="label"><strong>Ph.D Details</strong></label>
+    <div class="form-row form-group">
+        <div class="col-sm-6 mb-3">
+            <input class="form-control" type="text" placeholder="Enter Status" name="status">
+        </div>
+        <div class="col-sm-6">
+            <input class="form-control" type="text" placeholder="Enter Title" name="title">
+        </div>
     </div>
-    <div class="col-sm-6" style="margin: 0;">
+    <div class="form-row form-group">
+        <div class="col-sm-6 mb-3">
+            <input class="form-control" type="text" placeholder="Enter Institute/University" name="institute">
+        </div>
+        <div class="col-sm-6">
+            <input class="form-control" type="date" placeholder="Enter Date of Award" name="date">
+        </div>
+    </div>
+    <div class="container text-center">
+        <button class="btn btn-dark " id="reset"  type="reset">Reset</button>
         <button class="btn btn-primary" name="submit-phd">Save</button>
     </div>
-    </div>
-
 </form>
-    <div class="col-md-12 " style="margin: 0;text-align: center">
-        <button class="btn btn-dark " id="btn-addPhdInfo"  onclick="addPhDInfo()">Add New Row</button>
-    </div>
 </body>
-<script>
-    function addPhDInfo() {
-        $("#PhDInformation-table").append("<tr><td><input type=\"text\" placeholder=\"Enter Status\" name=\"status\"></td><td><input type=\"text\" placeholder=\"Enter Title\" name=\"title\"></td><td><input type=\"text\" placeholder=\"Enter Institute/University\" name=\"institute\"></td><td><input type=\"date\" placeholder=\"Enter Date of Award\" name=\"date\"></td>></td></tr>");
-    }
-</script>
-
