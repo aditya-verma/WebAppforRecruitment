@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page import="java.sql.*"%>
 <html>
 <head>
     <title>Intellectual Property Portal</title>
@@ -50,35 +51,6 @@
     });
     </script>
 <body>
-<<<<<<< HEAD
-<div class="container">
-    <form id="EventAttended" action="" method="post">
-        <div class="row " >
-            <div class="col-sm-3" >
-                <p >Type</p>
-            </div>
-            <div class="col-sm-8">
-                <div class="form-check ">
-                    <input class="form-check-input" type="radio" value="Conference" name="Attended" id="Attended_Int_Conference">
-                    <label class="form-check-label" for="Attended_Int_Conference"> International Conference</label>
-                </div>
-                <div class="form-check ">
-                    <input class="form-check-input" type="radio" value="Journal" name="Attended" id="Attended_Nat_Conference">
-                    <label class="form-check-label" for="Attended_Nat_Conference">National Conference</label>
-                </div>
-                <div class="form-check ">
-                    <input class="form-check-input" type="radio" value="Journal" name="Attended" id="Attended_Workshop">
-                    <label class="form-check-label" for="Attended_Workshop">Workshop</label>
-                </div>
-                <div class="form-check ">
-                    <input class="form-check-input" type="radio" value="Journal" name="Attended" id="Attended_Faculty_Development">
-                    <label class="form-check-label" for="Attended_Faculty_Development">Faculty Development Program</label>
-                </div>
-                <div class="form-check ">
-                    <input class="form-check-input" type="radio" value="Journal" name="Attended" id="Attended_Others">
-                    <label class="form-check-label" for="Attended_Others">Others</label>
-                    <input type="text" class="form-control" id="Reviewer_Name" name="Attended"  placeholder="Please Specify">
-=======
    <div class="container">
         <form id="EventAttended" action="" method="post">
             <%
@@ -125,91 +97,52 @@
                     <div class="form-group" >
                         <input type="text" class="form-control" id="Event_Attended_Name" name="Attended_Name"  placeholder="">
                     </div>
->>>>>>> parent of 02756fa... Revert "Update The Khiladi"
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
                     <p>Place</p>
                 </div>
-<<<<<<< HEAD
-            </div>
-            <div class="col-sm-8">
-                <div class="form-group" >
-                    <input type="text" class="form-control" id="Event_Attended_Name" name=""  placeholder="">
-=======
                 <div class="col-sm-8">
                     <div class="form-group" >
                         <input type="text" class="form-control" id="Event_Attended_Place" name="Attended_Place"  placeholder="">
                     </div>
->>>>>>> parent of 02756fa... Revert "Update The Khiladi"
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
                         <p>Duration</p>
                 </div>
-<<<<<<< HEAD
-            </div>
-            <div class="col-sm-8">
-                <div class="form-group" >
-                    <input type="text" class="form-control" id="Event_Attended_Place" name=""  placeholder="">
-=======
                 <div class="col-sm-8">
                     <div class="form-group" >
                         <input type="text" class="form-control" id="Event_Attended_From" name="Attended_From"  placeholder="From">
                     </div>
->>>>>>> parent of 02756fa... Revert "Update The Khiladi"
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
                     <p>Duration</p>
                 </div>
-<<<<<<< HEAD
-            </div>
-            <div class="col-sm-8">
-                <div class="form-group" >
-                    <input type="text" class="form-control" id="Event_Attended_From" name=""  placeholder="From">
-=======
                 <div class="col-sm-8">
                     <div class="form-group" >
                         <input type="text" class="form-control" id="Event_Attended_To" name="Attended_To"  placeholder="To">
                     </div>
->>>>>>> parent of 02756fa... Revert "Update The Khiladi"
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
                     <p>Funding Agency</p>
                 </div>
-<<<<<<< HEAD
-            </div>
-            <div class="col-sm-8">
-                <div class="form-group" >
-                    <input type="text" class="form-control" id="Event_Attended_To" name=""  placeholder="To">
-=======
                 <div class="col-sm-8">
                     <div class="form-group" >
                         <input type="text" class="form-control" id="Event_Attended_Funding" name="Attended_Agency"  placeholder="">
                     </div>
->>>>>>> parent of 02756fa... Revert "Update The Khiladi"
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
 
                 </div>
-<<<<<<< HEAD
-            </div>
-            <div class="col-sm-8">
-                <div class="form-group" >
-                    <input type="text" class="form-control" id="Event_Attended_Funding" name=""  placeholder="">
-                </div>
-            </div>
-        </div>
-    </form>
-=======
                 <div class="col-sm-8">
                     <button class="btn btn-lg btn-primary m-1" id="add" value="Insert" type="submit" name="b1">ADD</button>
                     <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
@@ -250,7 +183,6 @@
         }
     %>
  </form>
->>>>>>> parent of 02756fa... Revert "Update The Khiladi"
 </div>
 </body>
 </html>

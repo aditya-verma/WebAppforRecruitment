@@ -8,7 +8,7 @@
             <input type="text" class="form-control" value="Post Graduation" disabled>
         </div>
         <div class="col-sm-4">
-            <input type="text" class="form-control" placeholder="Enter Degree" name="PGDegree">
+            <input type="text" class="form-control" placeholder="Enter Degree" name="PGDegree" value="<%%>">
         </div>
         <div class="col-sm-4">
             <input type="text" class="form-control" placeholder="Enter Discipline" name="PGDiscipline">
@@ -274,6 +274,7 @@
             }
         }
         con.close();
+        st.close();
     }
     catch (com.mysql.cj.jdbc.exceptions.CommunicationsException e){
 %><div class="alert-danger text-center">Check Your Internet Connection!</div><%
