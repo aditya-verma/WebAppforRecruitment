@@ -581,8 +581,8 @@
                                         <td><%=rs.getString(3)%></td>
                                         <td><%=rs.getString(4)%></td>
                                         <td><%=rs.getString(5)%></td>
-                                        <td><a href="UpdateFiles/Educational_Qualification_PhD_Update.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-edit"></i></a></td>
-                                        <td><a href="DeleteFiles/Educational_Qualification_PhD_Delete.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-trash-alt"></i></a></td>
+                                        <td><a href="UpdateFiles/Educational_Qualification_PhD_Update.jsp?id=2018PF000003&date=<%=rs.getString(5)%>"><i class="fa fa-edit"></i></a></td>
+                                        <td><a href="DeleteFiles/Educational_Qualification_PhD_Delete.jsp?id=2018PF000003&date=<%=rs.getString(5)%>"><i class="fa fa-trash-alt"></i></a></td>
                                     </tr>
                                     <%}%>
                                 </tbody>
