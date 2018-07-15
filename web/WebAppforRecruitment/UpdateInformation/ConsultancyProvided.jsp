@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-</header>
+    </header>
 <div class="container align-middle align-content-center align-items-center">
     <div class="row">
         <div class="col-sm-4">
@@ -57,13 +57,13 @@
                 <a class="list-group-item list-group-item-action " id="list-PhDSupervision-list" href="PhDSupervision.jsp" role="tab" >Ph.D Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-PGSupervision-list"  href="PG Supervision.jsp" role="tab">PG Supervision</a>
                 <a class="list-group-item list-group-item-action " id="list-BTechProjectGuided-list"  href="BTechProjectSupervised.jsp" role="tab" >B.Tech Project Guided</a>
-                <a class="list-group-item list-group-item-action active" id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
+                <a class="list-group-item list-group-item-action " id="list-ActedAsReviewer-list"  href="ActedAsReviewer.jsp" role="tab" >Acted As A Reviewer</a>
                 <a class="list-group-item list-group-item-action " id="list-ExpertInvitedLecture-list"  href="InvitedLecturesDelivered.jsp" role="tab" >Expert/Invited Lecture Delivered</a>
                 <a class="list-group-item list-group-item-action " id="list-ResearchProjectInvestigated-list"  href="ResearchProjectsInvestigated.jsp" role="tab" >Research Project Investigated</a>
                 <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
                 <a class="list-group-item list-group-item-action " id="list-EventAttended-list"  href="EventAttended.jsp" role="tab" >Event Attended</a>
                 <a class="list-group-item list-group-item-action " id="list-ExpertLectureOrganized-list"  href="ExpertLectureOrganized.jsp" role="tab" >Expert Lecture Organized</a>
-                <a class="list-group-item list-group-item-action  " id="list-ConsultancyProvided-list" href="ConsultancyProvided.jsp" role="tab" >Consultancy Provided</a>
+                <a class="list-group-item list-group-item-action  active" id="list-ConsultancyProvided-list" href="ConsultancyProvided.jsp" role="tab" >Consultancy Provided</a>
             </div>
         </div>
         <div class="col-sm-8">
@@ -92,8 +92,8 @@
                     <%--@include file="/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp"--%>
                 </div>
                 <!--------------Acted As Reviewer-------------->
-                <div class="tab-pane fade show active" id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">
-                    <%@include file="/WebAppforRecruitment/Forms/ActedAsReviewer.jsp"%>
+                <div class="tab-pane fade" id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">
+                    <%--@include file="/WebAppforRecruitment/Forms/ActedAsReviewer.jsp"--%>
                 </div>
                 <!--------------ExpertInvited Lecture-------------->
                 <div class="tab-pane fade" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
@@ -116,8 +116,8 @@
                     <%--@include file="/WebAppforRecruitment/Forms/Event_Attended.jsp"--%>
                 </div>
                 <!--------------Consultancy Provided-------------->
-                <div class="tab-pane fade " id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
-                    <%--@include file="/WebAppforRecruitment/Forms/ConsultancyProvided.jsp"--%>
+                <div class="tab-pane fade show active" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
+                    <%@include file="/WebAppforRecruitment/Forms/ConsultancyProvided.jsp"%>
                 </div>
             </div>
         </div>

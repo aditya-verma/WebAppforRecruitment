@@ -88,24 +88,24 @@
     <div class="row " style="margin-top: 2%">
         <div class="col-sm-3">
             <div class="form-group" style=" margin-top:3% ">
-                <label for="Event_Organised_From">Duration(From)</label>
+                <label for="Event_Organised_From">Duration</label>
             </div>
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_From" name=""  placeholder="DD-MM-YYYY">
+                <input type="text" class="form-control" id="Event_Organised_From" name=""  placeholder="From">
             </div>
         </div>
     </div>
     <div class="row " style="margin-top: 2%">
         <div class="col-sm-3">
             <div class="form-group" style=" margin-top:3% ">
-                <label for="Event_Organised_To">Duration(To)</label>
+                <label for="Event_Organised_To">Duration</label>
             </div>
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_To" name=""  placeholder="DD-MM-YYYY">
+                <input type="text" class="form-control" id="Event_Organised_To" name=""  placeholder="To">
             </div>
         </div>
     </div>
@@ -124,12 +124,12 @@
     <div class="row " style="margin-top: 2%">
         <div class="col-sm-3">
             <div class="form-group" style=" margin-top:3% ">
-                <label for="Event_Organised_Budget">Budget(in lakhs)</label>
+                <label for="Event_Organised_Budget">Budget</label>
             </div>
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text" class="form-control" id="Event_Organised_Budget" name=""  placeholder="">
+                <input type="text" class="form-control" id="Event_Organised_Budget" name=""  placeholder="In Lakhs">
             </div>
         </div>
     </div>
