@@ -65,7 +65,7 @@
                 </div>
                 <div class="col-sm-8">
                     <div class="form-check ">
-                        <input class="form-check-input" type="radio" value="International Conference" name="Attended_Type" id="Attended_Int_Conference">
+                        <input class="form-check-input" type="radio" value="International Conference" name="Attended_Type" id="Attended_Int_Conference" checked>
                         <label class="form-check-label" for="Attended_Int_Conference"> International Conference</label>
                     </div>
                     <div class="form-check ">
