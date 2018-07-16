@@ -60,13 +60,11 @@
     String CorrespondenceAddress = "";
     String PermanentAddress = "";
     String PlaceOfApplying = "";
-    Connection connection = null;
-    Statement stmt = null;
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+        Connection connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
         ResultSet rs;
-        stmt = connection.createStatement();
+        Statement stmt = connection.createStatement();
         rs = stmt.executeQuery("SELECT * FROM USERS WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
         if (rs.next())
         {
@@ -281,7 +279,7 @@
         </div>
         <div class="form-actions" style="margin: 0;background-color: transparent;text-align: center;">
             <button class="btn btn-lg btn-danger m-1" id="reset" type="reset">Reset</button>
-        <button class="btn btn-lg btn-primary m-1" name="submitPersonalInfo1" type="submit">Save and Continue</button>
+        <button class="btn btn-lg btn-primary m-1" name="submitPersonalInfo1" type="submit">Save</button>
         </div>
         <%
                 if (request.getParameter("submitPersonalInfo1")!= null)
@@ -354,6 +352,5 @@
             }
         %>
     </form>
-</div>
-</body>
+</div></body>
 </html>

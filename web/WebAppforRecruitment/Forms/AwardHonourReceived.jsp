@@ -30,7 +30,7 @@
 <body>
 
     <form id="Awards_Received" action="" method="post" style="width: 100%;">
-        <div class="row " style="margin-top: 5%">
+        <div class="row " >
             <div class="col-sm-4" style="text-align: left">
                 <div class="form-group" >
                     <label >Description</label>

@@ -1,6 +1,12 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Lenovo
+  Date: 7/15/2018
+  Time: 2:36 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Update Information</title>
@@ -32,7 +38,7 @@
             </div>
         </div>
     </nav>
-    <div class="jumbotron" style="height: 10%">
+    <div class="jumbotron" >
         <div class="container">
             <h1>Recruitment Portal</h1>
             <div class="bg-dark rounded">
@@ -41,7 +47,6 @@
         </div>
     </div>
 </header>
-
 <div class="container align-middle align-content-center align-items-center">
     <div class="row">
         <div class="col-sm-4">
@@ -58,7 +63,7 @@
                 <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
                 <a class="list-group-item list-group-item-action " id="list-EventAttended-list"  href="EventAttended.jsp" role="tab" >Event Attended</a>
                 <a class="list-group-item list-group-item-action " id="list-ExpertLectureOrganized-list"  href="ExpertLectureOrganized.jsp" role="tab" >Expert Lecture Organized</a>
-                <a class="list-group-item list-group-item-action " id="list-ConsultancyProvided-list" href="ConsultancyProvided.jsp" role="tab" >Consultancy Provided</a>
+                <a class="list-group-item list-group-item-action  " id="list-ConsultancyProvided-list" href="ConsultancyProvided.jsp" role="tab" >Consultancy Provided</a>
             </div>
         </div>
         <div class="col-sm-8">
@@ -80,7 +85,7 @@
                 </div>
                 <!--------------PGSupervision-------------->
                 <div class="tab-pane fade" id="list-PGSupervision" role="tabpanel" aria-labelledby="list-PGSupervision-list">
-                    <%@include file="/WebAppforRecruitment/Forms/PG Supervision.jsp"%>
+                    <%--@include file="/WebAppforRecruitment/Forms/PG Supervision.jsp"--%>
                 </div>
                 <!--------------Btech Project guided-------------->
                 <div class="tab-pane fade " id="list-BTechProjectGuided" role="tabpanel" aria-labelledby="list-BTechProjectGuided-list">
@@ -108,11 +113,11 @@
                 </div>
                 <!--------------Expert Lecture Organized-------------->
                 <div class="tab-pane fade" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
-                    Expert Lecture Organized
+                    <%--@include file="/WebAppforRecruitment/Forms/Event_Attended.jsp"--%>
                 </div>
                 <!--------------Consultancy Provided-------------->
-                <div class="tab-pane fade" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
-                    Consultancy Provided
+                <div class="tab-pane fade " id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
+                    <%--@include file="/WebAppforRecruitment/Forms/ConsultancyProvided.jsp"--%>
                 </div>
             </div>
         </div>
@@ -122,6 +127,5 @@
 <div class="card-footer align-bottom mt-2" style="background-color: #c4c4c4">
     <div class="container text-muted text-center rounded">This is footer</div>
 </div>
-
 </body>
 </html>

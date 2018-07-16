@@ -1,6 +1,12 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Lenovo
+  Date: 7/15/2018
+  Time: 2:36 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Update Information</title>
@@ -17,14 +23,6 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script>
-        $(function() {
-            $('#change1').click(function(e){
-                e.preventDefault();
-                $('#mytabs a[href="Publications.jsp"]').tab('show');
-            })
-        });
-    </script>
 </head>
 <body>
 <header>
@@ -40,7 +38,7 @@
             </div>
         </div>
     </nav>
-    <div class="jumbotron" style="height: 10%">
+    <div class="jumbotron" >
         <div class="container">
             <h1>Recruitment Portal</h1>
             <div class="bg-dark rounded">
@@ -48,13 +46,12 @@
             </div>
         </div>
     </div>
-</header>
-
+    </header>
 <div class="container align-middle align-content-center align-items-center">
     <div class="row">
-        <div class="col-sm-4 ">
-            <div class="list-group sticky-top" style="padding-top: 3%" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-PersonalInfo-list" href="PersonalInformation.jsp" role="tab" >Personal Information</a>
+        <div class="col-sm-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action " id="list-PersonalInformation-list" href="PersonalInformation.jsp" role="tab" >Personal Information</a>
                 <a class="list-group-item list-group-item-action " id="list-Publication-list" href="Publications.jsp" role="tab" >Publications</a>
                 <a class="list-group-item list-group-item-action " id="list-Patent-list" href="Patent.jsp" role="tab" >Patent</a>
                 <a class="list-group-item list-group-item-action " id="list-PhDSupervision-list" href="PhDSupervision.jsp" role="tab" >Ph.D Supervision</a>
@@ -66,22 +63,20 @@
                 <a class="list-group-item list-group-item-action " id="list-AwardsHonourReceived-list"  href="AwardsHonourReceived.jsp" role="tab" >Award/Honour Received</a>
                 <a class="list-group-item list-group-item-action " id="list-EventAttended-list"  href="EventAttended.jsp" role="tab" >Event Attended</a>
                 <a class="list-group-item list-group-item-action " id="list-ExpertLectureOrganized-list"  href="ExpertLectureOrganized.jsp" role="tab" >Expert Lecture Organized</a>
-                <a class="list-group-item list-group-item-action " id="list-ConsultancyProvided-list" href="ConsultancyProvided.jsp" role="tab" >Consultancy Provided</a>
+                <a class="list-group-item list-group-item-action  active" id="list-ConsultancyProvided-list" href="ConsultancyProvided.jsp" role="tab" >Consultancy Provided</a>
             </div>
         </div>
         <div class="col-sm-8">
             <div class="tab-content" id="nav-tabContent">
                 <!--------------Personal Information-------------->
-                <div class="tab-pane fade show active" id="list-PersonalInfo" role="tabpanel" aria-labelledby="list-PersonalInfo-list">
-                    <%@include file="/WebAppforRecruitment/Forms/PersonalInformation.jsp"%>
-                   <!-- <button class="btn btn-success" onclick="window.location.href='/WebAppforRecruitment/UpdateInformation/Publications.jsp'">Continue</button> -->
+                <div class="tab-pane fade" id="list-PersonalInfo" role="tabpanel" aria-labelledby="list-PersonalInfo-list">
                 </div>
                 <!--------------Publication-------------->
                 <div class="tab-pane fade " id="list-Publication" role="tabpanel" aria-labelledby="list-Publication-list">
                     <%--@include file="/WebAppforRecruitment/Forms/Publications.jsp"--%>
                 </div>
                 <!--------------Patent-------------->
-                <div class="tab-pane fade" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
+                <div class="tab-pane fade " id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
                     <%--@include file="/WebAppforRecruitment/Forms/Patent.jsp"--%>
                 </div>
                 <!--------------PhDSupervision-------------->
@@ -93,7 +88,7 @@
                     <%--@include file="/WebAppforRecruitment/Forms/PG Supervision.jsp"--%>
                 </div>
                 <!--------------Btech Project guided-------------->
-                <div class="tab-pane fade" id="list-BTechProjectGuided" role="tabpanel" aria-labelledby="list-BTechProjectGuided-list">
+                <div class="tab-pane fade " id="list-BTechProjectGuided" role="tabpanel" aria-labelledby="list-BTechProjectGuided-list">
                     <%--@include file="/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp"--%>
                 </div>
                 <!--------------Acted As Reviewer-------------->
@@ -110,7 +105,7 @@
                 </div>
                 <!--------------Awards Honour Received-------------->
                 <div class="tab-pane fade" id="list-AwardsHonourReceived" role="tabpanel" aria-labelledby="list-AwardsHonourReceived-list">
-                    <%--@include file="/WebAppforRecruitment/Forms/AwardHonourReceived.jsp"--%>
+                    <!--%@include file="/WebAppforRecruitment/Forms/AwardHonourReceived.jsp"%-->
                 </div>
                 <!--------------Event Attended-------------->
                 <div class="tab-pane fade" id="list-EventAttended" role="tabpanel" aria-labelledby="list-EventAttended-list">
@@ -118,11 +113,11 @@
                 </div>
                 <!--------------Expert Lecture Organized-------------->
                 <div class="tab-pane fade" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
-                    Expert Lecture Organized
+                    <%--@include file="/WebAppforRecruitment/Forms/Event_Attended.jsp"--%>
                 </div>
                 <!--------------Consultancy Provided-------------->
-                <div class="tab-pane fade" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
-                    Consultancy Provided
+                <div class="tab-pane fade show active" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
+                    <%@include file="/WebAppforRecruitment/Forms/ConsultancyProvided.jsp"%>
                 </div>
             </div>
         </div>
@@ -132,6 +127,5 @@
 <div class="card-footer align-bottom mt-2" style="background-color: #c4c4c4">
     <div class="container text-muted text-center rounded">This is footer</div>
 </div>
-
 </body>
 </html>

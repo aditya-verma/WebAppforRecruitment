@@ -39,7 +39,7 @@
 
 <div class="container"  >
     <form id="invited_lecture" action="" method="POST"   >
-        <div class="row " style="margin-top: 5%">
+        <div class="row " >
             <div class="col-sm-4" style="text-align: left">
                 <div class="form-group" style="margin-top:3% ">
                     <label for="title">Title of Lecture</label>
@@ -88,16 +88,14 @@
                 </div>
             </div>
         </div>
-
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-1">
-
             </div>
             <div class="col-sm-6">
                 <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="b1">Add</button>
                 <button class="btn btn-lg btn-success m-1" id="next" value="Insert" type="submit" name="b2">Continue</button>
-
-
+            </div>
+        </div>
                 <%
                     if(request.getParameter("b1")!=null)
                     {
@@ -113,19 +111,19 @@
                             Class.forName("com.mysql.jdbc.Driver");
                             con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
                             st=con.createStatement();
-                            String sql="insert into Invited_Lecture_Delivered values('"+((String) session.getAttribute("ApplicationNumber"))+"','"+title+"','"+date+"','"+inviter+"','"+event+"')";
+                            String sql="insert into Invited_Lectures_Delivered values('"+((String) session.getAttribute("ApplicationNumber"))+"','"+title+"','"+date+"','"+inviter+"','"+event+"')";
                             int res=st.executeUpdate(sql);
-                            if(res!=0){%>
-                <button class="btn btn-lg btn-dark m-1" id="add" value="Insert" onclick="myfunc()" type="submit" name="b3">Add More</button>
-            </div>
-        </div>
-        <%
+                            if(res!=0){
+                              %><div class="text-center alert-success">Record Inserted</div><%
                     }
-                    else
-                        out.println("Record Not Inserted");
+                    else{
+                       %><div class="text-center alert-danger">Record not Inserted</div><%
+                        }
+                       con.close();
+                       st.close();
                 }catch(Exception e)
                 {
-                    out.println(e.toString());
+                    %><div class="alert-warning text-center"><% out.print(e);%></div> <%
                 }
             }
         %>

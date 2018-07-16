@@ -34,7 +34,7 @@
 </head>
 <body>
 <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <div class="nav nav-tabs" style="padding-top: 1%;" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="nav-PersonalInformation-tab" data-toggle="tab" href="#nav-PersonalInformation" role="tab" aria-controls="nav-PersonalInformation" aria-selected="true">Personal Information</a>
         <a class="nav-item nav-link" id="nav-EducationalInformationPhd-tab" data-toggle="tab" href="#nav-EducationalInformationPhd" role="tab" aria-controls="nav-EducationalInformationPhd" aria-selected="false">Educational Information(Ph.D)</a>
         <a class="nav-item nav-link" id="nav-EducationalInformation-tab" data-toggle="tab" href="#nav-EducationalInformation" role="tab" aria-controls="nav-EducationalInformation" aria-selected="false">Educational Information</a>
