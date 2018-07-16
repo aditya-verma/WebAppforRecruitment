@@ -49,16 +49,24 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="text" for="Teaching_Experience_type_of_employee">Type of Employee</label>
+                    <input id="Teaching_Experience_type_of_employee" class="form-control" name="i15" placeholder="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="From6">From</label>
-                    <input type="text" class="form-control" id="From6" name="i12" placeholder="" >
+                    <input type="text" class="form-control" id="From6" name="i12" placeholder="DD-MM-YYYY" >
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="To6">To</label>
-                    <input type="text" class="form-control" id="To6" name="i13" placeholder="" >
+                    <input type="text" class="form-control" id="To6" name="i13" placeholder="DD-MM-YYYY" >
                 </div>
             </div>
         </div>
@@ -71,21 +79,13 @@
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text" for="Teaching_Experience_type_of_employee">Type of Employee</label>
-                    <input id="Teaching_Experience_type_of_employee" class="form-control" name="i15" placeholder="">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label class="text-uppercase" for="Teaching_Experience_tenure">Tenure</label>
+                    <label class="text" for="Teaching_Experience_tenure">Tenure</label>
                     <input id="Teaching_Experience_tenure" class="form-control" name="i16" placeholder="" >
                 </div>
             </div>
         </div>
-        <div class="col-md-12 mb-3" style="margin: 0;text-align: center">
-            <button class="btn btn-sm btn-primary m-1" value="Insert" type="submit" name="Teaching_Experience_b1">ADD</button>
+        <div class="form-actions" style="margin: 4%;background-color: transparent;text-align: center;">
+            <button class="btn btn-lg btn-primary m-1" value="Insert" type="submit" name="Teaching_Experience_b1">ADD</button>
         </div>
         <%
             if(request.getParameter("Teaching_Experience_b1")!=null) {

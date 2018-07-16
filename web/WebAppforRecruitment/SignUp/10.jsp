@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="form-group">
-                    <label class="text" for="information">Information:</label>
+                    <label class="text" for="information">Information</label>
                     <input id="information" class="form-control" placeholder="">
                 </div>
             </div>
