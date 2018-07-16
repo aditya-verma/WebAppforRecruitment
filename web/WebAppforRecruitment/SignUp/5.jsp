@@ -32,15 +32,15 @@
             {
                 response.sendRedirect("/WebAppforRecruitment/login/login.jsp");
             }
-            String organisation ="";
-            String position ="";
-            String type_of_emp ="";
-            String from ="";
-            String to="";
-            String pay_in_band = "";
-            String agp_gp = "";
-            String basic_pay ="";
-            String  nature_of_work = "";
+            String present_emplyee_organisation ="";
+            String present_emplyee_position ="";
+            String present_emplyee_type_of_emp ="";
+            String present_emplyee_from ="";
+            String present_emplyee_to="";
+            String present_emplyee_pay_in_band = "";
+            String present_emplyee_agp_gp = "";
+            String present_emplyee_basic_pay ="";
+            String present_emplyee_nature_of_work = "";
 
             try{
                 Connection present_emp_connection = null;
@@ -52,15 +52,15 @@
                 present_emp_res = present_emp_stmt.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
                 if (present_emp_res.next())
                 {
-                    organisation = present_emp_res.getString(2);
-                    position = present_emp_res.getString(3);
-                    type_of_emp = present_emp_res.getString(4);
-                    from = present_emp_res.getString(5);
-                    to = present_emp_res.getString(6);
-                    pay_in_band = present_emp_res.getString(7);
-                    agp_gp = present_emp_res.getString(8);
-                    basic_pay = present_emp_res.getString(9);
-                    nature_of_work = present_emp_res.getString(10);
+                    present_emplyee_organisation = present_emp_res.getString(2);
+                    present_emplyee_position = present_emp_res.getString(3);
+                    present_emplyee_type_of_emp = present_emp_res.getString(4);
+                    present_emplyee_from = present_emp_res.getString(5);
+                    present_emplyee_to = present_emp_res.getString(6);
+                    present_emplyee_pay_in_band = present_emp_res.getString(7);
+                    present_emplyee_agp_gp = present_emp_res.getString(8);
+                    present_emplyee_basic_pay = present_emp_res.getString(9);
+                    present_emplyee_nature_of_work = present_emp_res.getString(10);
 
 
                 }
@@ -69,22 +69,22 @@
         <div class="row " style="margin-top: 5%">
             <div class="col-sm-12">
                 <div class="form-group">
-                    <label class="text-capitalize" for="applicant_oragnisation">Organisation</label>
-                    <input id="applicant_oragnisation" class="form-control" placeholder="Enter Organisation" name="i1" required value="<%out.println(organisation);%>">
+                    <label class="text-capitalize" for="present_employee_applicant_oragnisation">Organisation</label>
+                    <input id="present_employee_applicant_oragnisation" class="form-control" placeholder="Enter Organisation" name="i1" required value="<%out.println(present_emplyee_organisation);%>">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text-capitalize" for="position-held">Position held</label>
-                    <input id="position-held" class="form-control" placeholder="Enter Position" name="i2" required value="<%out.println(position);%>">
+                    <label class="text-capitalize" for="present_employee_position-held">Position held</label>
+                    <input id="present_employee_position-held" class="form-control" placeholder="Enter Position" name="i2" required value="<%out.println(present_emplyee_position);%>">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text-capitalize" for="type-of-employee">Type of employee</label>
-                    <input id="type-of-employee" class="form-control" placeholder="Enter Type"  name="i3"required value="<%out.println(type_of_emp);%>">
+                    <label class="text-capitalize" for="present_employee_type-of-employee">Type of employee</label>
+                    <input id="present_employee_type-of-employee" class="form-control" placeholder="Enter Type"  name="i3"required value="<%out.println(present_emplyee_type_of_emp);%>">
                 </div>
             </div>
         </div>
@@ -92,36 +92,36 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-capitalize" for="From8">From</label>
-                    <input id="From8" class="form-control" type="text" placeholder="From Date" name="i4" required value="<%out.println(from);%>">
+                    <input id="From8" class="form-control" type="text" placeholder="From Date" name="i4" required value="<%out.println(present_emplyee_from);%>">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-capitalize" for="To8">To</label>
-                    <input id="To8" class="form-control" placeholder="From To" required type="text" name="i5" value="<%out.println(to);%>">
+                    <input id="To8" class="form-control" placeholder="From To" required type="text" name="i5" value="<%out.println(present_emplyee_to);%>">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text-capitalize" for="pay-band">Pay In Pay Band</label>
-                    <select class="form-control" id="pay-band" name="i6" required>
-                        <option value="" <%if (pay_in_band.equalsIgnoreCase("")){%>selected<%}%>>Select Pay Band</option>
-                        <option value="Option1" <%if (pay_in_band.equalsIgnoreCase("Option1")){%>selected<%}%>>Option 1</option>
-                        <option value="Option2" <%if (pay_in_band.equalsIgnoreCase("Option2")){%>selected<%}%>>Option 2</option>
-                        <option value="Option3" <%if (pay_in_band.equalsIgnoreCase("Option3")){%>selected<%}%>>Option 3</option>
-                        <option value="Option4" <%if (pay_in_band.equalsIgnoreCase("Option4")){%>selected<%}%>>Option 4</option>
+                    <label class="text-capitalize" for="present_employee_pay-band">Pay In Pay Band</label>
+                    <select class="form-control" id="present_employee_pay-band" name="i6" required>
+                        <option value="" <%if (present_emplyee_pay_in_band.equalsIgnoreCase("")){%>selected<%}%>>Select Pay Band</option>
+                        <option value="Option1" <%if (present_emplyee_pay_in_band.equalsIgnoreCase("Option1")){%>selected<%}%>>Option 1</option>
+                        <option value="Option2" <%if (present_emplyee_pay_in_band.equalsIgnoreCase("Option2")){%>selected<%}%>>Option 2</option>
+                        <option value="Option3" <%if (present_emplyee_pay_in_band.equalsIgnoreCase("Option3")){%>selected<%}%>>Option 3</option>
+                        <option value="Option4" <%if (present_emplyee_pay_in_band.equalsIgnoreCase("Option4")){%>selected<%}%>>Option 4</option>
                     </select>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text-capitalize" for="agp-gp">AGP/GP</label>
-                    <select class="form-control" id="agp-gp" name="i7" required >
-                        <option value="" <%if (agp_gp.equalsIgnoreCase("")){%>selected<%}%>>AGP/GP</option>
-                        <option value="AGP" <%if (agp_gp.equalsIgnoreCase("AGP")){%>selected<%}%>>AGP</option>
-                        <option value="GP" <%if (agp_gp.equalsIgnoreCase("GP")){%>selected<%}%>>GP</option>
+                    <label class="text-capitalize" for="present_employee_agp-gp">AGP/GP</label>
+                    <select class="form-control" id="present_employee_agp-gp" name="i7" required >
+                        <option value="" <%if (present_emplyee_agp_gp.equalsIgnoreCase("")){%>selected<%}%>>AGP/GP</option>
+                        <option value="AGP" <%if (present_emplyee_agp_gp.equalsIgnoreCase("AGP")){%>selected<%}%>>AGP</option>
+                        <option value="GP" <%if (present_emplyee_agp_gp.equalsIgnoreCase("GP")){%>selected<%}%>>GP</option>
                     </select>
                 </div>
             </div>
@@ -129,51 +129,50 @@
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-12">
                 <div class="form-group">
-                    <label class="text-capitalize" for="basic-pay">Basic Pay</label>
-                    <input id="basic-pay" class="form-control" placeholder="Enter Basic Pay" name="i8" required value="<%out.println(basic_pay);%>">
+                    <label class="text-capitalize" for="present_employee_basic-pay">Basic Pay</label>
+                    <input id="present_employee_basic-pay" class="form-control" placeholder="Enter Basic Pay" name="i8" required value="<%out.println(present_emplyee_basic_pay);%>">
                 </div>
             </div>
         </div>
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-12">
                 <div class="form-group">
-                    <label class="text-capitalize" for="nature-of work">Nature Of Work</label>
-                    <input id="nature-of work" class="form-control" placeholder="Enter Nature of Work" name="i9" required value="<%out.println(nature_of_work);%>">
+                    <label class="text-capitalize" for="present_employee_nature-of work">Nature Of Work</label>
+                    <input id="present_employee_nature-of work" class="form-control" placeholder="Enter Nature of Work" name="i9" required value="<%out.println(present_emplyee_nature_of_work);%>">
                 </div>
             </div>
         </div>
         <div class="form-actions" style="margin: 4%;background-color: transparent;text-align: center;">
-            <button class="btn btn-lg btn-danger m-1" id="reset" type="reset">Reset</button>
-            <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="b1">Save and Continue</button>
+            <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="present_employee_b1">Save</button>
         </div>
         <%
-            if(request.getParameter("b1")!=null) {
-                organisation = (request.getParameter("i1"));
-                position = request.getParameter("i2");
-                type_of_emp = request.getParameter("i3");
-                from = request.getParameter("i4");
-                to = request.getParameter("i5");
-                pay_in_band = request.getParameter("i6");
-                agp_gp = request.getParameter("i7");
-                basic_pay = request.getParameter("i8");
-                nature_of_work = request.getParameter("i9");
+            if(request.getParameter("present_employee_b1")!=null) {
+                present_emplyee_organisation = (request.getParameter("i1"));
+                present_emplyee_position = request.getParameter("i2");
+                present_emplyee_type_of_emp = request.getParameter("i3");
+                present_emplyee_from = request.getParameter("i4");
+                present_emplyee_to = request.getParameter("i5");
+                present_emplyee_pay_in_band = request.getParameter("i6");
+                present_emplyee_agp_gp = request.getParameter("i7");
+                present_emplyee_basic_pay = request.getParameter("i8");
+                present_emplyee_nature_of_work = request.getParameter("i9");
                 ResultSet present_emp_resultSet = present_emp_stmt.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
                 if (present_emp_resultSet.next() || present_emp_resultSet != null)
                 {
-                    present_emp_stmt.executeUpdate("UPDATE Present_Employee SET Organisation = '"+organisation+
-                            "', PositionHold = '"+position+
-                            "', TypeOfEmp = '"+type_of_emp+
-                            "', FromDate = '"+from+
-                            "', ToDate = '"+to+
-                            "', PayInBand = '"+pay_in_band+
-                            "', APG_GP = '"+agp_gp+
-                            "', BasicPay = '"+basic_pay+
-                            "', NatureOfWork = '"+nature_of_work+
+                    present_emp_stmt.executeUpdate("UPDATE Present_Employee SET Organisation = '"+present_emplyee_organisation+
+                            "', PositionHold = '"+present_emplyee_position+
+                            "', TypeOfEmp = '"+present_emplyee_type_of_emp+
+                            "', FromDate = '"+present_emplyee_from+
+                            "', ToDate = '"+present_emplyee_to+
+                            "', PayInBand = '"+present_emplyee_pay_in_band+
+                            "', APG_GP = '"+present_emplyee_agp_gp+
+                            "', BasicPay = '"+present_emplyee_basic_pay+
+                            "', NatureOfWork = '"+present_emplyee_nature_of_work+
                             "' WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
                     return ;
                 }
 
-                String sql = "insert into Present_Employee values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + organisation + "','" + position + "','" + type_of_emp + "','" + from + "','" + to + "','" + pay_in_band + "','" + agp_gp + "'," + basic_pay + ",'" + nature_of_work + "')";
+                String sql = "insert into Present_Employee values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + present_emplyee_organisation + "','" + present_emplyee_position + "','" + present_emplyee_type_of_emp + "','" + present_emplyee_from + "','" + present_emplyee_to + "','" + present_emplyee_pay_in_band + "','" + present_emplyee_agp_gp + "'," + present_emplyee_basic_pay + ",'" + present_emplyee_nature_of_work + "')";
                 int se = present_emp_stmt.executeUpdate(sql);
                 if (se != 0){
         %><div class="text-center alert-success">Record Inserted</div> <%
