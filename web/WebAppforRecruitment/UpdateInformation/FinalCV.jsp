@@ -120,8 +120,8 @@
             </div>
         </div>
         </div>
-        <div class="col-md-7">
-            <div data-spy="scroll" data-target="#list-example" data-offset="0" style="position:relative;height: 25%;overflow-y: scroll">
+        <div class="col-md-7 ">
+            <div class="sticky-top" data-spy="scroll" data-target="#list-example" data-offset="0" >
                 <h4 id="list-item-1">Personal Information</h4>
                     <form action="#" style="width: 100%;">
                     <div class="row">
