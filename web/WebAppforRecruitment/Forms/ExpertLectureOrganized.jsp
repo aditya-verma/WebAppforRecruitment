@@ -35,6 +35,12 @@
             });
         });
     </script>
+    <script>
+        function myFunc() {
+            $('#Organised_Others').val((document.getElementById("Organised_Specification").value));
+
+        }
+    </script>
     <style>
         body {
 
@@ -57,7 +63,7 @@
         </div>
         <div class="col-sm-8">
             <div class="form-check ">
-                <input class="form-check-input" type="radio" value="International Conference" name="Organised_Type" id="Organised_Int_Conference">
+                <input class="form-check-input" type="radio" value="International Conference" name="Organised_Type" id="Organised_Int_Conference" checked>
                 <label class="form-check-label" for="Organised_Int_Conference"> International Conference</label>
             </div>
             <div class="form-check ">
@@ -76,7 +82,7 @@
                 <input class="form-check-input" type="radio" value="Others" name="Organised_Type" id="Organised_Others">
                 <label class="form-check-label" for="Organised_Others">Others</label>
                 <div id="textbox" style="display: none">
-                    <input type="text" class="form-control" id="Attended_Specification"  name="Organised_Specification" placeholder="Please Specify" >
+                    <input type="text" class="form-control" id="Organised_Specification"  name="Organised_Specification" placeholder="Please Specify" >
                 </div>
             </div>
         </div>
@@ -170,14 +176,12 @@
 
         </div>
         <div class="col-sm-8">
-            <button class="btn btn-lg btn-primary m-1" id="add" value="Insert" type="submit" name="b1">ADD</button>
-            <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
+            <button class="btn btn-lg btn-primary m-1" id="add" value="Insert" type="submit" onclick="myFunc()" name="Organised_b1">ADD</button>
         </div>
     </div>
     <%
-        if(request.getParameter("b1")!=null) {
+        if(request.getParameter("Organised_b1")!=null) {
             String Type = (request.getParameter("Organised_Type"));
-            String Specification = (request.getParameter("Organised_Specification"));
             String Name = request.getParameter("Organised_Name");
             String Place= request.getParameter("Organised_Place");
             String From = request.getParameter("Organised_From");
@@ -191,7 +195,7 @@
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
                 stmt = connection.createStatement();
-                String sql = "insert into ExpertLectureOrganised values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + Type + "','"+Specification+"','" +Name + "','"+Place+"','" + From + "','" + To + "','" + Agency+ "','" +Budget+"','"+Participants+ "')";
+                String sql = "insert into ExpertLectureOrganised values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + Type +"','" +Name + "','"+Place+"','" + From + "','" + To + "','" + Agency+ "','" +Budget+"','"+Participants+ "')";
                 int se = stmt.executeUpdate(sql);
                 if (se != 0){
     %><div class="text-center alert-success">Record Inserted</div> <%
