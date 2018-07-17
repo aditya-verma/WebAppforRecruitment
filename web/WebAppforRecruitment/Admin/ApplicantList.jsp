@@ -1,6 +1,7 @@
-<%@ page import="java.util.Properties" %>
 <%@ page import="java.sql.*" %>
-<%@ page import="java.security.SecureRandom" %>
+<%@ page import="java.io.*" %>
+<%@ page import="org.json.JSONObject" %>
+<%@ page import="org.json.JSONException" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +18,9 @@
         $(document).ready(function() {
             $('#ApplicantListTable').DataTable();
         });
+        function setPost(){
+
+        }
     </script>
 </head>
 <body>
@@ -42,8 +46,44 @@
         </div>
     </div>
 </header>
+<%
+    String postname[];
+    String poststr="All>";
+    try {
 
+        File dir = new File("D:\\Post\\");
+        for (File file : dir.listFiles()) {
+            FileReader fileReader = new FileReader(file);
+            BufferedReader br = new BufferedReader(fileReader);
+            String str = br.readLine();
+            JSONObject jsonObject = new JSONObject(str);
+            poststr+= jsonObject.getString("name")+">";
+            br.close();
+        }
+    }
+    catch (FileNotFoundException e){}
+    catch (JSONException e){out.println("Json Exception occured");}
+    catch (Exception e){}
+    poststr.substring(0,poststr.length()-1);
+    postname = poststr.split(">");
+%>
 <div class="container">
+    <form action="" method="post">
+        <select class="form-control" name="choice" onchange="setPost()">
+            <%
+                for (int i = 0; i < postname.length; i++) {
+            %><option <%if (session.getAttribute("post")!=null&&session.getAttribute("post").equals(postname[i])){%>selected<%}%>><%out.println(postname[i]);%></option> <%
+            }
+        %>
+        </select>
+        <div class="container m-2" style="text-align: center;"><button type="submit" name="submitchoice" class="btn btn-primary">Search</button></div>
+        <%
+            if (request.getParameter("submitchoice")!=null){
+                session.setAttribute("post",request.getParameter("choice"));
+                response.sendRedirect("ApplicantList.jsp");
+            }
+        %>
+    </form>
     <table id="ApplicantListTable" class="table table-striped table-bordered table-hover"width="100%">
         <thead class="table-dark">
         <tr>
@@ -59,9 +99,15 @@
         <%
             try{
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+                Connection connection = DriverManager.getConnection(session.getAttribute("DatabaseHost").toString(),session.getAttribute("DatabaseUser").toString(),session.getAttribute("DatabasePassword").toString());
                 Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * from USERS");
+                String condition = "";
+                if (session.getAttribute("post")!=null && !session.getAttribute("post").equals("All")){
+                    condition = "WHERE Post='"+session.getAttribute("post").toString().trim()+"'";
+                }
+                else
+                    condition = "WHERE 1=1";
+                ResultSet rs = statement.executeQuery("SELECT * from USERS "+condition);
                 while (rs.next())
                 {
         %>
@@ -74,15 +120,18 @@
             <th scope="col"><a href="#">View CV</a></th>
         </tr>
         <%
-                }
-                statement.close();
-                connection.close();
             }
-            catch (com.mysql.cj.jdbc.exceptions.CommunicationsException e){
-
-            }
-            catch (Exception e){
-
+            statement.close();
+            connection.close();
+        }
+        catch (com.mysql.cj.jdbc.exceptions.CommunicationsException e){
+        %><div class="alert alert-warning rounded text-center">Check Your Internet Connection!</div> <%
+        }
+        catch (java.lang.NullPointerException e){
+        %><div class="alert alert-warning rounded text-center">Connection cannot be established.. Please try again later!</div> <%
+        }
+        catch (Exception e){
+        %><div class="alert alert-warning rounded text-center"><%out.println(e);%></div> <%
             }
         %>
         </tbody>
