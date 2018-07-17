@@ -122,9 +122,11 @@
                                 phone = "+91"+phone;
                                 int year =  Integer.parseInt(new java.text.SimpleDateFormat("yyyy").format(new java.util.Date()));
                                 String post = "";
+                                String postn="";
                                 for (int i=0; i<postname.length; i++) {
                                     if (postname[i].equalsIgnoreCase(request.getParameter("orangeForm-post"))){
                                         post=postcode[i];
+                                        postn=postname[i];
                                     }
                                 }
                                 statement.executeUpdate("INSERT INTO TEMP_USER(Year,POST,Email,FirstName,LastName,Phone) VALUES ("+year+",'"+post+"','"+email+"','"+fname+"','"+lname+"','"+phone+"')");
@@ -142,7 +144,7 @@
                                     for( int i = 0; i < 8; i++ )
                                         sb.append( AB.charAt( rnd.nextInt(AB.length()) ) );
                                     String temp_pass = sb.toString();
-                                    statement.executeUpdate("INSERT INTO USERS(ApplicationNumber,FirstName,LastName,Email,Password,Phone) VALUES ('"+ApplicationNum+"','"+fname+"','"+lname+"','"+email+"','"+temp_pass+"','"+phone+"')");
+                                    statement.executeUpdate("INSERT INTO USERS(ApplicationNumber,FirstName,LastName,Email,Password,Phone,Post) VALUES ('"+ApplicationNum+"','"+fname+"','"+lname+"','"+email+"','"+temp_pass+"','"+phone+"','"+postn+"')");
                                 }
                             }
                             else{
