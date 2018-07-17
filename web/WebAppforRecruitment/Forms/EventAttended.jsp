@@ -50,6 +50,12 @@
         });
     });
     </script>
+    <script>
+        function myFunction() {
+            $('#Attended_Others').val((document.getElementById("Attended_Specification").value));
+
+        }
+    </script>
 <body>
    <div class="container">
         <form id="EventAttended" action="" method="post">
@@ -144,14 +150,12 @@
 
                 </div>
                 <div class="col-sm-8">
-                    <button class="btn btn-lg btn-primary m-1" id="add" value="Insert" type="submit" name="b1">ADD</button>
-                    <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
+                    <button class="btn btn-md btn-primary m-1" id="add" value="Insert" onclick="myFunction()" type="submit" name="b1">ADD</button>
                 </div>
             </div>
             <%
                 if(request.getParameter("b1")!=null) {
                     String Type = (request.getParameter("Attended_Type"));
-                    String Specification = (request.getParameter("Attended_Specification"));
                     String Name = request.getParameter("Attended_Name");
                     String Place= request.getParameter("Attended_Place");
                     String From = request.getParameter("Attended_From");
@@ -163,9 +167,8 @@
                         Class.forName("com.mysql.cj.jdbc.Driver");
                         connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
                         stmt = connection.createStatement();
-                    String sql = "insert into Event_Attended values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + Type + "','"+Specification+"','" +Name + "','"+Place+"','" + From + "','" + To + "','" + Agency + "')";
-                    int se = stmt.executeUpdate(sql);
-                    if (se != 0){
+                    String sql = "insert into Event_Attended values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + Type + "','" +Name + "','"+Place+"','" + From + "','" + To + "','" + Agency + "')";
+                    int se = stmt.executeUpdate(sql);                    if (se != 0){
             %><div class="text-center alert-success">Record Inserted</div> <%
     }
     else {
