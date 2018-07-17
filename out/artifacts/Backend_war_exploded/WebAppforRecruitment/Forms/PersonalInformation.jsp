@@ -165,7 +165,7 @@
     <div class="tab-pane fade" id="nav-EducationalInformationPhd" role="tabpanel" aria-labelledby="nav-EducationalInformationPhd-tab">
         <%@include file="/WebAppforRecruitment/SignUp/2.jsp"%>
         <button type="button" class="btn btn-outline-danger" id="back2">previous</button>
-        <button type="button" class="btn btn-outline-success"style="float: right" id="next2">next</button>
+        <button type="button" class="btn btn-outline-success" style="float: right" id="next2">next</button>
     </div>
     <div class="tab-pane fade" id="nav-EducationalInformation" role="tabpanel" aria-labelledby="nav-EducationalInformation-tab">
         <%@include file="/WebAppforRecruitment/SignUp/3.jsp"%>
