@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<%@page import="java.sql.*"%>
 <head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/backgrounds.css">
+    <script src="../jquery/3.3.1/jquery.min.js"></script>
+    <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <link href="../css/datepicker.css" rel="stylesheet">
     <script src="../js/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
@@ -98,7 +104,6 @@
                     Statement stmt = null;
                     Class.forName("com.mysql.cj.jdbc.Driver");
                     con = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
-                    ResultSet res;
                     stmt = con.createStatement();
                     Industrial_Experience_Organisation = (request.getParameter("Industrial_Experience_Organisation"));
                     Industrial_Experience_Position = request.getParameter("Industrial_Experience_Position");
