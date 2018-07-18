@@ -10,9 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fef3e3a-7775-42e3-9435-2ba28fc52ac0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/PersonalInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/PersonalInformation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ViewCV.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,102 +26,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ActedAsReviewer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="PersonalInformation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp">
+      <file leaf-file-name="ViewCV.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ViewCV.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="162" column="107" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="107" />
+            <state relative-caret-position="365">
+              <caret line="552" column="59" lean-forward="true" selection-start-line="552" selection-start-column="59" selection-end-line="552" selection-end-column="59" />
               <folding>
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
+                <element signature="e#268#278#0#JSP" />
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#6074#6155#0#JSP" />
+                <element signature="e#6164#6479#0#JSP" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#9463#9564#0#JSP" />
+                <element signature="e#7437#7748#0#JSP" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#8645#8738#0#JSP" />
+                <element signature="e#9462#9753#0#JSP" />
+                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#11251#11352#0#JSP" />
+                <element signature="e#11571#11866#0#JSP" />
+                <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#table#0;n#div#0;n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#13508#13609#0#JSP" />
+                <element signature="e#13479#13761#0#JSP" />
+                <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#15247#15348#0#JSP" />
+                <element signature="e#15257#15542#0#JSP" />
+                <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#16884#16985#0#JSP" />
+                <element signature="e#17062#17348#0#JSP" />
+                <element signature="n#div#15;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#18669#18770#0#JSP" />
+                <element signature="e#18825#19113#0#JSP" />
+                <element signature="n#div#17;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#20455#20556#0#JSP" />
+                <element signature="n#div#19;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#22071#22172#0#JSP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PG Supervision.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PG Supervision.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Publications.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
+      <file leaf-file-name="FinalCV.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+            <state relative-caret-position="47">
+              <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
               <folding>
-                <element signature="n#style#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#2711#3935#0#JSP" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#34060#37438#0#JSP" />
+                <element signature="e#37554#37835#0#JSP" />
+                <element signature="n#form#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#39600#39832#0#JSP" />
+                <element signature="e#39919#40196#0#JSP" />
+                <element signature="n#form#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#42504#42736#0#JSP" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4893">
-              <caret line="233" column="52" selection-start-line="230" selection-start-column="16" selection-end-line="233" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="6.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/6.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" selection-start-line="3" selection-end-line="10" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActedAsReviewer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="7.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/7.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsultancyProvided.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ConsultancyProvided.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="29" selection-start-line="8" selection-end-line="8" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -184,7 +156,6 @@
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/EventAttended.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/2.jsp" />
-        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Educational_Qualification_PhD_Update.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/DeleteFiles/Educational_Qualification_PhD_Delete.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ApplicantList.jsp" />
@@ -192,6 +163,8 @@
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ViewCV.jsp" />
       </list>
     </option>
   </component>
@@ -218,18 +191,18 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="739" />
-    <option name="y" value="89" />
-    <option name="width" value="814" />
-    <option name="height" value="867" />
+    <option name="x" value="738" />
+    <option name="y" value="88" />
+    <option name="width" value="815" />
+    <option name="height" value="868" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,79 +213,7 @@
             <path>
               <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="Res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="Forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="SignUp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="UpdateInformation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAppforRecruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="UpdateInformation" type="462c0819:PsiDirectoryNode" />
-              <item name="UpdateFiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -324,8 +225,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/artifacts" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -355,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.FinalCV.jsp">
+  <component name="RunManager" selected="Tomcat Server.PersonalInformation.jsp">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -376,9 +277,9 @@
       <patterns />
     </configuration>
     <configuration name="8.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/WebAppforRecruitment/SignUp/8.jsp" />
-    <configuration name="AdminIndex.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/WebAppforRecruitment/Admin/AdminIndex.jsp" />
     <configuration name="FinalCV.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/WebAppforRecruitment/UpdateInformation/FinalCV.jsp" />
     <configuration name="User Page.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/WebAppforRecruitment/login/User Page.jsp" />
+    <configuration name="ViewCV.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/WebAppforRecruitment/Admin/ViewCV.jsp" />
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -442,18 +343,18 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.FinalCV.jsp" />
-      <item itemvalue="JavaScript Debug.AdminIndex.jsp" />
       <item itemvalue="JavaScript Debug.8.jsp" />
       <item itemvalue="JavaScript Debug.User Page.jsp" />
       <item itemvalue="Tomcat Server.PersonalInformation.jsp" />
+      <item itemvalue="JavaScript Debug.ViewCV.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.ViewCV.jsp" />
+        <item itemvalue="Tomcat Server.PersonalInformation.jsp" />
         <item itemvalue="JavaScript Debug.FinalCV.jsp" />
         <item itemvalue="JavaScript Debug.User Page.jsp" />
-        <item itemvalue="Tomcat Server.PersonalInformation.jsp" />
         <item itemvalue="JavaScript Debug.8.jsp" />
-        <item itemvalue="JavaScript Debug.AdminIndex.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -515,6 +416,7 @@
       <workItem from="1531756923871" duration="1602000" />
       <workItem from="1531775763968" duration="8236000" />
       <workItem from="1531823130447" duration="5573000" />
+      <workItem from="1531860178081" duration="7284000" />
     </task>
     <task id="LOCAL-00001" summary="Added Login and New User Creation">
       <created>1530226905871</created>
@@ -534,10 +436,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153901000" />
+    <option name="totallyTimeSpent" value="161185000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -558,22 +460,22 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30218446" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30282637" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14929216" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14893617" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info id="EJB" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.23645833" />
       <window_info id="Learn" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,10 +491,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="170" />
+      <option name="time" value="171" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -605,13 +515,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/resources/CountryList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3109">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/getPosts.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -800,13 +703,6 @@
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Teaching_Experience_Update.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12264">
-          <caret line="584" column="123" selection-start-line="584" selection-start-column="123" selection-end-line="584" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/UpdateFiles/Present_Employer_Update.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -848,34 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4893">
-          <caret line="233" column="52" selection-start-line="230" selection-start-column="16" selection-end-line="233" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/7.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/6.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/9.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
@@ -883,20 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ConsultancyProvided.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="29" selection-start-line="8" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="320">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -907,30 +765,118 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="162" column="107" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="233" column="52" selection-start-line="230" selection-start-column="16" selection-end-line="233" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/6.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/7.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ConsultancyProvided.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="29" selection-start-line="8" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#2711#3935#0#JSP" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#34060#37438#0#JSP" />
+            <element signature="e#37554#37835#0#JSP" />
+            <element signature="n#form#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#39600#39832#0#JSP" />
+            <element signature="e#39919#40196#0#JSP" />
+            <element signature="n#form#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#42504#42736#0#JSP" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ViewCV.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        <state relative-caret-position="365">
+          <caret line="552" column="59" lean-forward="true" selection-start-line="552" selection-start-column="59" selection-end-line="552" selection-end-column="59" />
           <folding>
-            <element signature="n#style#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
+            <element signature="e#268#278#0#JSP" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#6074#6155#0#JSP" />
+            <element signature="e#6164#6479#0#JSP" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#9463#9564#0#JSP" />
+            <element signature="e#7437#7748#0#JSP" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#8645#8738#0#JSP" />
+            <element signature="e#9462#9753#0#JSP" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#11251#11352#0#JSP" />
+            <element signature="e#11571#11866#0#JSP" />
+            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#13508#13609#0#JSP" />
+            <element signature="e#13479#13761#0#JSP" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#15247#15348#0#JSP" />
+            <element signature="e#15257#15542#0#JSP" />
+            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#16884#16985#0#JSP" />
+            <element signature="e#17062#17348#0#JSP" />
+            <element signature="n#div#15;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#18669#18770#0#JSP" />
+            <element signature="e#18825#19113#0#JSP" />
+            <element signature="n#div#17;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#20455#20556#0#JSP" />
+            <element signature="n#div#19;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#22071#22172#0#JSP" />
           </folding>
         </state>
       </provider>
@@ -977,7 +923,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>9</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
