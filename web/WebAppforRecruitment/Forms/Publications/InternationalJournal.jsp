@@ -12,6 +12,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#InternationalJournal-Month" ).datepicker({
+                format: "mm-yyyy",
+                viewMode: "months",
+                minViewMode: "months",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
 </head>
 <body>
 <div class="container mt-2">
@@ -45,8 +56,8 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group text-uppercase">
-                    <label for="InternationalJournal-Month/Year">Month/Year</label>
-                    <input class="form-control" name="InternationalJournal-Month/Year" id="InternationalJournal-Month/Year" placeholder="MM/YYYY" required>
+                    <label for="InternationalJournal-Month">Month/Year</label>
+                    <input class="form-control" name="InternationalJournal-Month" id="InternationalJournal-Month" placeholder="MM/YYYY" required>
                 </div>
             </div>
         </div>
@@ -109,7 +120,7 @@
                 String IntJVolume =request.getParameter("InternationalJournal-Volume");
                 String IntJIssue=request.getParameter("InternationalJournal-Issue");
                 String IntJPages=request.getParameter("InternationalJournal-Pages");
-                String IntJMonthYear=request.getParameter("InternationalJournal-Month/Year");
+                String IntJMonthYear=request.getParameter("InternationalJournal-Month");
                 String IntJPublisher=request.getParameter("InternationalJournal-Publisher");
                 String IntJImpactFactor=request.getParameter("InternationalJournal-ImpactFactor");
                 String IntJSCI=request.getParameter("InternationalJournal-SCI");

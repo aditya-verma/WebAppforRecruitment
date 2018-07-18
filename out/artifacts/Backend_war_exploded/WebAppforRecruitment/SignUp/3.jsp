@@ -1,5 +1,34 @@
 <%@ page import="java.sql.*" %>
 <html lang="en">
+<head>
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#PGDate" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+
+            $( "#UGDate" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+            $( "#12Date" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+            $( "#10Date" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
+</head>
 <body >
 <form class="text-center">
     <label class="label text-center"><h4 class="h4"><strong>Post Graduation Details</strong></h4></label>
@@ -22,7 +51,7 @@
             <input type="text" class="form-control" placeholder="Enter Board/University" name="PGBoard">
         </div>
         <div class="col-sm-4">
-            <input type="date" class="form-control" placeholder="Enter Date" name="PGDate">
+            <input type="text" class="form-control" placeholder="Enter Date" id="PGDate" name="PGDate">
         </div>
     </div>
     <div class="row form-group">
@@ -54,7 +83,7 @@
             <input type="text" class="form-control" placeholder="Enter Board/University" name="UGBoard">
         </div>
         <div class="col-sm-4">
-            <input type="date" class="form-control" placeholder="Enter Date" name="UGDate">
+            <input type="text" class="form-control" placeholder="Enter Date" id="UGDate" name="UGDate">
         </div>
     </div>
     <div class="row form-group">
@@ -86,7 +115,7 @@
             <input type="text" class="form-control" placeholder="Enter Board/University" name="12Board">
         </div>
         <div class="col-sm-4">
-            <input type="date" class="form-control" placeholder="Enter Date" name="12Date">
+            <input type="text" class="form-control" placeholder="Enter Date"  id="12Date" name="12Date">
         </div>
     </div>
     <div class="row form-group">
@@ -118,7 +147,7 @@
             <input type="text" class="form-control" placeholder="Enter Board/University" name="10Board">
         </div>
         <div class="col-sm-4">
-            <input type="date" class="form-control" placeholder="Enter Date" name="10Date">
+            <input type="text" class="form-control" placeholder="Enter Date" id="10Date" name="10Date">
         </div>
     </div>
     <div class="row form-group">

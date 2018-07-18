@@ -2,6 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#InternationalConferences-Month" ).datepicker({
+                format: "mm-yyyy",
+                viewMode: "months",
+                minViewMode: "months",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
 </head>
 <body>
 <div class="container">
@@ -35,8 +46,8 @@
             </div>
             <div class="col-sm-6">
                 <div class="form-group text-uppercase">
-                    <label for="InternationalConferences-Month/Year">Month/Year</label>
-                    <input class="form-control" id="InternationalConferences-Month/Year" name="InternationalConferences-Month/Year" placeholder="MM/YYYY" required>
+                    <label for="InternationalConferences-Month">Month/Year</label>
+                    <input class="form-control" id="InternationalConferences-Month" name="InternationalConferences-Month" placeholder="MM/YYYY" required>
                 </div>
             </div>
         </div>
@@ -64,7 +75,7 @@
                     String IntConPaperHeldAt = request.getParameter("InternationalConferences-HeldAt");
                     String IntConPublisher = request.getParameter("InternationalConferences-Publisher");
                     String IntConPages = request.getParameter("InternationalConferences-Pages");
-                    String IntConMonthYear = request.getParameter("InternationalConferences-Month/Year");
+                    String IntConMonthYear = request.getParameter("InternationalConferences-Month");
                     String IntConCoAuthorFromDept = request.getParameter("InternationalConferences-Co-AuthorFromDept");
                     Class.forName("com.mysql.cj.jdbc.Driver");
                     Connection connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));

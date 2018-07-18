@@ -1,6 +1,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#NationalJournal-Month" ).datepicker({
+                format: "mm-yyyy",
+                viewMode: "months",
+                minViewMode: "months",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
+</head>
 <body>
 <div class="container">
     <form id="NationalJournal">
@@ -33,8 +46,8 @@
             </div>
             <div class="col-sm-6">
                 <div class="form-group text-uppercase">
-                    <label for="NationalJournal-Month/Year">Month/Year</label>
-                    <input class="form-control" id="NationalJournal-Month/Year" name="NationalJournal-Month/Year" placeholder="MM/YYYY" required>
+                    <label for="NationalJournal-Month">Month/Year</label>
+                    <input class="form-control" id="NationalJournal-Month" name="NationalJournal-Month" placeholder="MM/YYYY" required>
                 </div>
             </div>
         </div>
@@ -97,7 +110,7 @@
                 String NtJVolume =request.getParameter("NationalJournal-Volume");
                 String NtJIssue=request.getParameter("NationalJournal-Issue");
                 String NtJPages=request.getParameter("NationalJournal-Pages");
-                String NtJMonthYear=request.getParameter("InternationalJournal-Month/Year");
+                String NtJMonthYear=request.getParameter("InternationalJournal-Month");
                 String NtJPublisher=request.getParameter("NationalJournal-Publisher");
                 String NtJImpactFactor=request.getParameter("NationalJournal-ImpactFactor");
                 String NtJSCI=request.getParameter("NationalJournal-SCI");
