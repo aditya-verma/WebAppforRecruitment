@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<%@page import="java.sql.*"%>
 <head>
-    <link href="../css/datepicker.css" rel="stylesheet">
-    <script src="../js/bootstrap-datepicker.js"></script>
+
+
     <script type="text/javascript">
         $(function() {
             $( "#From8" ).datepicker({
@@ -81,10 +82,10 @@
             </div>
         </div>
         <div class="form-actions" style="margin: 4%;background-color: transparent;text-align: center;">
-            <button class="btn btn-lg btn-primary m-1"  value="Insert" type="submit" name="Research_Experience_b1">Save</button>
+            <button class="btn btn-lg btn-primary m-1"  value="Insert" type="submit" name="Industrial_Experience_b1">Save</button>
         </div>
         <%
-            if(request.getParameter("Research_Experience_b1")!=null) {
+            if(request.getParameter("Industrial_Experience_b1")!=null) {
                 String Industrial_Experience_Organisation ="";
                 String Industrial_Experience_Position ="";
                 String Industrial_Experience_Employee ="";
@@ -98,7 +99,6 @@
                     Statement stmt = null;
                     Class.forName("com.mysql.cj.jdbc.Driver");
                     con = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
-                    ResultSet res;
                     stmt = con.createStatement();
                     Industrial_Experience_Organisation = (request.getParameter("Industrial_Experience_Organisation"));
                     Industrial_Experience_Position = request.getParameter("Industrial_Experience_Position");
