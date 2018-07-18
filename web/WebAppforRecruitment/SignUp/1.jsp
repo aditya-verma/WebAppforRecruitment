@@ -11,7 +11,26 @@
 <html lang="en">
 <%
     String countryList[] = new String[198];
-    String postname= session.getAttribute("Post").toString();
+    String postname="";
+    try {
+        String poststr="";
+        String postc="";
+        File dir = new File("D:\\Post\\");
+        for (File file : dir.listFiles()) {
+            FileReader fileReader = new FileReader(file);
+            BufferedReader br = new BufferedReader(fileReader);
+            String str = br.readLine();
+            JSONObject jsonObject = new JSONObject(str);
+            postc=jsonObject.getString("post").trim();
+            if (session.getAttribute("ApplicationNumber").toString().contains(postc)){
+                postname = jsonObject.getString("name").trim();
+            }
+            br.close();
+        }
+    }
+    catch (FileNotFoundException e){}
+    catch (JSONException e){}
+    catch (Exception e){}
     try {
         FileReader in = new FileReader("C:\\Users\\ADITYA\\Documents\\GitHub\\WebAppforRecruitment\\web\\WebAppforRecruitment\\resources\\CountryList.txt");
         BufferedReader br = new BufferedReader(in);

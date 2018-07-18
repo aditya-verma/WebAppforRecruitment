@@ -85,6 +85,7 @@
                     </div>
                 </div>
                 <div class="md-form mb-2">
+                    <label for="postApplied">Post Applied</label>
                     <select class="form-control" name="orangeForm-post" id="postApplied" required>
                         <option value="" selected disabled>Select Post Applying for</option>
                         <%
@@ -211,7 +212,6 @@
                         if (rs.next())
                         {
                             session.setAttribute("ApplicationNumber",rs.getString("ApplicationNumber"));
-                            session.setAttribute("Post",rs.getString("Post"));
                             session.setAttribute("DatabaseHost",Host);
                             session.setAttribute("DatabaseUser",databaseUser);
                             session.setAttribute("DatabasePassword",databasePassword);
