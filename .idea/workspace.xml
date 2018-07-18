@@ -195,10 +195,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="736" />
-    <option name="y" value="86" />
-    <option name="width" value="818" />
-    <option name="height" value="871" />
+    <option name="x" value="735" />
+    <option name="y" value="85" />
+    <option name="width" value="819" />
+    <option name="height" value="872" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -892,7 +892,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Backend:war exploded</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
