@@ -145,7 +145,10 @@
         <div class="form-actions" style="margin: 4%;background-color: transparent;text-align: center;">
             <button class="btn btn-lg btn-primary m-1" id="submit" value="Insert" type="submit" name="present_employee_b1">Save</button>
         </div>
-        <%
+        <% present_emp_connection.close();
+        present_emp_stmt.close();}catch (Exception e){
+
+        }
             if(request.getParameter("present_employee_b1")!=null) {
                 present_emplyee_organisation = (request.getParameter("i1"));
                 present_emplyee_position = request.getParameter("i2");
@@ -156,10 +159,17 @@
                 present_emplyee_agp_gp = request.getParameter("i7");
                 present_emplyee_basic_pay = request.getParameter("i8");
                 present_emplyee_nature_of_work = request.getParameter("i9");
-                ResultSet present_emp_resultSet = present_emp_stmt.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
-                if (present_emp_resultSet.next() || present_emp_resultSet != null)
+                int se=0;
+                try{
+                    Connection present_emp_con = null;
+                    Statement present_emp_st = null;
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    present_emp_con = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+                    present_emp_st = present_emp_con.createStatement();
+                ResultSet present_emp_resultSet = present_emp_st.executeQuery("SELECT * FROM Present_Employee WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+                if (present_emp_resultSet.next())
                 {
-                    present_emp_stmt.executeUpdate("UPDATE Present_Employee SET Organisation = '"+present_emplyee_organisation+
+                  se =  present_emp_st.executeUpdate("UPDATE Present_Employee SET Organisation = '"+present_emplyee_organisation+
                             "', PositionHold = '"+present_emplyee_position+
                             "', TypeOfEmp = '"+present_emplyee_type_of_emp+
                             "', FromDate = '"+present_emplyee_from+
@@ -169,27 +179,38 @@
                             "', BasicPay = '"+present_emplyee_basic_pay+
                             "', NatureOfWork = '"+present_emplyee_nature_of_work+
                             "' WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
-                    return ;
+
                 }
 
-                String sql = "insert into Present_Employee values('" + ((String) session.getAttribute("ApplicationNumber")) + "','" + present_emplyee_organisation + "','" + present_emplyee_position + "','" + present_emplyee_type_of_emp + "','" + present_emplyee_from + "','" + present_emplyee_to + "','" + present_emplyee_pay_in_band + "','" + present_emplyee_agp_gp + "'," + present_emplyee_basic_pay + ",'" + present_emplyee_nature_of_work + "')";
-                int se = present_emp_stmt.executeUpdate(sql);
+                else{
+                    se = present_emp_st.executeUpdate("insert into Present_Employee values('" + ((String) session.getAttribute("ApplicationNumber")) +
+                            "','" + present_emplyee_organisation +
+                            "','" + present_emplyee_position +
+                            "','" + present_emplyee_type_of_emp +
+                            "','" + present_emplyee_from +
+                            "','" + present_emplyee_to +
+                            "','" + present_emplyee_pay_in_band +
+                            "','" + present_emplyee_agp_gp +
+                            "'," + present_emplyee_basic_pay +
+                            ",'" + present_emplyee_nature_of_work + "')");
+                }
+
                 if (se != 0){
         %><div class="text-center alert-success">Record Inserted</div> <%
     }
     else {
     %><div class="text-center alert-danger">Record not Inserted</div><%
             }
-
+        present_emp_con.close();
+        present_emp_st.close();
             }
-        present_emp_connection.close();
-        present_emp_stmt.close();
-    }
+
+
     catch(Exception e)
     {
     %><div class="alert-warning text-center"><% out.print(e);%></div> <%
         }
-
+        }
     %>
     </form>
 </div>
