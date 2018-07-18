@@ -2,6 +2,19 @@
 <%@ page import="java.sql.DriverManager" %>
 <%@ page import="java.sql.Statement" %>
 <!DOCTYPE html>
+<head>
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#phd-date" ).datepicker({
+                format: "dd-mm-yyyy",
+                viewMode: "months",
+                minViewMode: "days",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
+</head>
 <body>
 <form method="post" action="" class="text-center mt-2 mb-5">
     <label class="label"><strong>Ph.D Details</strong></label>
@@ -18,7 +31,7 @@
             <input class="form-control" type="text" placeholder="Enter Institute/University" name="phd-institute">
         </div>
         <div class="col-sm-6">
-            <input class="form-control" type="date" placeholder="Enter Date of Award" name="phd-date">
+            <input class="form-control" type="text" id="phd-date" placeholder="Enter Date of Award" name="phd-date">
         </div>
     </div>
     <div class="container text-center">

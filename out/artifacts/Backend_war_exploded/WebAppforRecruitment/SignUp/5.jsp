@@ -96,11 +96,11 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="form-group">
-                    <label class="text-capitalize" for="To8">To</label>
-                    <input id="To8" class="form-control" placeholder="From To" required type="text" name="i5" value="<%out.println(present_emplyee_to);%>">
-                </div>
+            <div class="form-group">
+                <label class="text-capitalize" for="To8">To</label>
+                <input id="To8" class="form-control" placeholder="From To" required type="text" name="i5" value="<%out.println(present_emplyee_to);%>">
             </div>
+        </div>
         </div>
         <div class="row " style="margin-top: 2%">
             <div class="col-sm-6">

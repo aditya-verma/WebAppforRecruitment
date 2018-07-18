@@ -2,6 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#NationalConferences-Month" ).datepicker({
+                format: "mm-yyyy",
+                viewMode: "months",
+                minViewMode: "months",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
 </head>
 <body>
 <div class="container">
@@ -35,8 +46,8 @@
             </div>
             <div class="col-sm-6">
                 <div class="form-group text-uppercase">
-                    <label for="NationalConferences-Month/Year">Month/Year</label>
-                    <input class="form-control" id="NationalConferences-Month/Year" name="NationalConferences-Month/Year" placeholder="MM/YYYY" required>
+                    <label for="NationalConferences-Month">Month/Year</label>
+                    <input class="form-control" id="NationalConferences-Month" name="NationalConferences-Month" placeholder="MM/YYYY" required>
                 </div>
             </div>
         </div>
@@ -64,7 +75,7 @@
                     String NtConPaperHeldAt = request.getParameter("NationalConferences-HeldAt");
                     String NtConPublisher = request.getParameter("NationalConferences-Publisher");
                     String NtConPages = request.getParameter("NationalConferences-Pages");
-                    String NtConMonthYear = request.getParameter("NationalConferences-Month/Year");
+                    String NtConMonthYear = request.getParameter("NationalConferences-Month");
                     String NtConCoAuthorFromDept = request.getParameter("NationalConferences-Co-AuthorFromDept");
                     Class.forName("com.mysql.cj.jdbc.Driver");
                     Connection connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
