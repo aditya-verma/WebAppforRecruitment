@@ -218,7 +218,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="DateOfBirth">Date Of Birth</label>
-                    <input type="text" class="form-control" id="DateOfBirth" name="DateOfBirth" placeholder="dd-mm-yyyy" value="<%out.println(DateOfBirth);%>">
+                    <input type="text" pattern="[0-9-]+"  class="form-control" id="DateOfBirth" name="DateOfBirth" placeholder="dd-mm-yyyy" value="<%out.println(DateOfBirth);%>">
                 </div>
             </div>
             <div class="col-sm-6">
@@ -253,7 +253,7 @@
                     </select>
                 </div>
                 <div class="col-sm-6">
-                    <input id="ID" class="form-control" name="IdentityProofNumber" placeholder="ID number" required value="<%out.println(idNumber);%>">
+                    <input id="ID" pattern="[0-9-]+" class="form-control" name="IdentityProofNumber" placeholder="ID number" required value="<%out.println(idNumber);%>">
                 </div>
             </div>
         </div>
@@ -271,7 +271,7 @@
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Phone">Phone Number</label>
-            <input id="Phone" class="form-control" placeholder="" required value="<%out.println(phone);%>">
+            <input id="Phone" pattern="[0-9+]+" minlength="10" maxlength="13" class="form-control" placeholder="" required value="<%out.println(phone);%>">
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="PlaceOfApplying">Port/Place of Applying Form</label>
