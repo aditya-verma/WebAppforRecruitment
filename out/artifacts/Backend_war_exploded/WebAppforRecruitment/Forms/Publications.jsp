@@ -16,25 +16,25 @@
     </style>
     <script>
         $(function() {
-            $('#next1').click(function(e){
+            $('#pubnext1').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-NationalJournal"]').tab('show');
             })
         });
         $(function() {
-            $('#next2').click(function(e){
+            $('#pubnext2').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-InternationalConference"]').tab('show');
             })
         });
         $(function() {
-            $('#next3').click(function(e){
+            $('#pubnext3').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-NationalConference"]').tab('show');
             })
         });
         $(function() {
-            $('#next4').click(function(e){
+            $('#pubnext4').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-BooksChapter"]').tab('show');
             })
@@ -46,19 +46,19 @@
             })
         });
         $(function() {
-            $('#back3').click(function(e){
+            $('#pubback3').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-NationalJournal"]').tab('show');
             })
         });
         $(function() {
-            $('#back4').click(function(e){
+            $('#pubback4').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-InternationalConference"]').tab('show');
             })
         });
         $(function() {
-            $('#back5').click(function(e){
+            $('#pubback5').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-NationalConference"]').tab('show');
             })
@@ -75,29 +75,29 @@
         <li><a class="nav-item nav-link" id="nav-BooksChapter-tab" data-toggle="tab" href="#nav-BooksChapter" role="tab" aria-controls="nav-BooksChapter" aria-selected="false">Books/Book Chapters</a></li>
     </ul>
 </nav>
-<div class="tab-content" id="nav-tabContent">
+<div class="tab-content" id="nav-pubtabContent">
     <div class="tab-pane fade show active" id="nav-InternationalJournal" role="tabpanel" aria-labelledby="nav-InternationalJournal-tab">
         <%@include file="Publications/InternationalJournal.jsp"%>
-        <button type="button" class="btn btn-outline-success" style="float: right" id="next1">next</button>
+        <button type="button" class="btn btn-outline-success" style="float: right" id="pubnext1">next</button>
     </div>
     <div class="tab-pane fade" id="nav-NationalJournal" role="tabpanel" aria-labelledby="nav-NationalJournal-tab">
         <%@include file="Publications/NationalJournal.jsp"%>
-        <button type="button" class="btn btn-outline-danger" id="back2">previous</button>
-        <button type="button" class="btn btn-outline-success" style="float: right" id="next2">next</button>
+        <button type="button" class="btn btn-outline-danger" id="pubback2">previous</button>
+        <button type="button" class="btn btn-outline-success" style="float: right" id="pubnext2">next</button>
     </div>
     <div class="tab-pane fade" id="nav-InternationalConference" role="tabpanel" aria-labelledby="nav-InternationalConference-tab">
         <%@include file="Publications/InternationalConferences.jsp"%>
-        <button type="button" class="btn btn-outline-danger" id="back3">previous</button>
-        <button type="button" class="btn btn-outline-success" style="float: right" id="next3">next</button>
+        <button type="button" class="btn btn-outline-danger" id="pubback3">previous</button>
+        <button type="button" class="btn btn-outline-success" style="float: right" id="pubnext3">next</button>
     </div>
     <div class="tab-pane fade" id="nav-NationalConference" role="tabpanel" aria-labelledby="nav-NationalConference-tab">
         <%@include file="Publications/NationalConferences.jsp"%>
-        <button type="button" class="btn btn-outline-danger" id="back4">previous</button>
-        <button type="button" class="btn btn-outline-success" style="float: right" id="next4">next</button>
+        <button type="button" class="btn btn-outline-danger" id="pubback4">previous</button>
+        <button type="button" class="btn btn-outline-success" style="float: right" id="pubnext4">next</button>
     </div>
     <div class="tab-pane fade" id="nav-BooksChapter" role="tabpanel" aria-labelledby="nav-BooksChapter-tab">
         <%@include file="Publications/BooksChapters.jsp"%>
-        <button type="button" class="btn btn-outline-danger" id="back5">previous</button>
+        <button type="button" class="btn btn-outline-danger" id="pubback5">previous</button>
     </div>
 </div>
 </body>
