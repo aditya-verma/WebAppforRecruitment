@@ -77,7 +77,7 @@
                 <div class="md-form mb-2">
                     <div class="row">
                         <div class="col-sm-6 mb-sm-2">
-                            <input type="text" name="orangeForm-Fname" class="form-control validate" placeholder="First Name" required>
+                            <input type="text" name="orangeForm-Fname" pattern="[A-Za-z]{1,32}" class="form-control validate" placeholder="First Name" required>
                         </div>
                         <div class="col-sm-6">
                             <input type="text" name="orangeForm-Lname" class="form-control validate" placeholder="Last Name" required>
@@ -95,10 +95,10 @@
                     </select>
                 </div>
                 <div class="md-form mb-2">
-                    <input type="email" name="orangeForm-email" class="form-control validate" placeholder="Email" required>
+                    <input type="email" name="orangeForm-email" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="md-form mb-2">
-                    <input type="text" name="orangeForm-phone" class="form-control validate" placeholder="Mobile Number" required>
+                    <input type="text" name="orangeForm-phone" class="form-control" placeholder="Mobile Number" required>
                 </div>
             </div>
             <div class="modal-footer d-flex justify-content-center">
@@ -231,7 +231,14 @@
                 catch (com.mysql.cj.jdbc.exceptions.CommunicationsException e){
     %><div class="alert-danger text-center">Check Your Internet Connection!</div><%
                 }
-                catch(Exception e){ out.println(e);}
+                catch(Exception e){
+    %><div class="alert alert-primary rounded text-center"><%
+                        if (e.toString().equalsIgnoreCase("java.sql.SQLSyntaxErrorException: User sql12245685 already has more than 'max_user_connections' active connections")){
+                            out.println("Servers are to busy! Please try after sometime.");
+                        }
+                        else
+                        out.println(e);}%>
+    </div><%
             }
         %>
     </form>

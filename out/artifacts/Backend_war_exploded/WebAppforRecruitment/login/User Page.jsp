@@ -57,7 +57,7 @@
         connection.close();
     }catch (Exception e){}
     if (status == 0){
-        Status = "Has not been Updated";
+        Status = "Not Yet Submitted";
     }
     else if (status == 1){
         Status = "Application Under Screening";
