@@ -47,7 +47,7 @@
             <div class="col-sm-6">
                 <div class="form-group text-uppercase">
                     <label for="InternationalConferences-Month">Month/Year</label>
-                    <input class="form-control" id="InternationalConferences-Month" name="InternationalConferences-Month" placeholder="MM/YYYY" required>
+                    <input class="form-control" pattern="[0-9-]+" id="InternationalConferences-Month" name="InternationalConferences-Month" placeholder="MM/YYYY" required>
                 </div>
             </div>
         </div>
