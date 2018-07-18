@@ -20,7 +20,7 @@
     <script type="text/javascript">
         function userImagefun() {
             $(document).ready(function(){
-                document.getElementById("userImage").setAttribute("src","../Images/UserImages/user.svg");
+                document.getElementById("userImage").setAttribute("src","../Images/UserImages/user.png");
             });
         }
     </script>
@@ -28,12 +28,11 @@
 <body>
 <%
     String ApplicationNumber="";
+    String Password="";
     String Email="";
     String Name="";
     String Phone ="";
-    String path ="../Images/UserImages/user.svg";
-    int status=0;
-    String Status="Unavailable";
+    String path ="../Images/UserImages/user.png";
     try{
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection(session.getAttribute("DatabaseHost").toString(),session.getAttribute("DatabaseUser").toString(),session.getAttribute("DatabasePassword").toString());
@@ -44,7 +43,6 @@
             Email = rs.getString("Email");
             Name = rs.getString("FirstName")+" "+rs.getString("LastName");
             Phone = rs.getString("Phone");
-            status = rs.getInt("Status");
         }
         ResultSet rs1 = statement.executeQuery("SELECT * from Personal_Information where ApplicationNumber='"+ApplicationNumber+"'");
         if (rs1.next()){
@@ -56,6 +54,7 @@
         statement.close();
         connection.close();
     }catch (Exception e){}
+<<<<<<< HEAD
     if (status == 0){
         Status = "Not Yet Submitted";
     }
@@ -68,6 +67,8 @@
     else if (status == 3){
         Status = "Application Rejected";
     }
+=======
+>>>>>>> 7ce5be0d27908d2caa3fe8f0781bdc11bf238ba8
 %>
 <header>
     <nav class="navbar sticky-top navbar-light bg-light" style="border-bottom-color: #000">
@@ -141,12 +142,6 @@ background-size:16px 16px;">
                     <div class="row text-left">
                         <div class="col-md-6 text-uppercase font-weight-bold">Phone</div>
                         <div class="col-md-6 font-italic" id="card-phone"><%out.println(Phone);%></div>
-                    </div>
-                </li>
-                <li class="list-group-item list-group-flush">
-                    <div class="row text-left">
-                        <div class="col-md-6 text-uppercase font-weight-bold">Application Status</div>
-                        <div class="col-md-6 font-italic" id="card-status"><%out.println(Status);%></div>
                     </div>
                 </li>
             </ul>

@@ -52,7 +52,7 @@
         <div class="form-group row">
             <label for="BTech_Project_Completed" class="col-md-2">Completed On</label>
             <div class="col-md-10">
-                <input class="form-control" type="text" id="BTech_Project_Completed" name="Completed_On" placeholder="MM-YYYY">
+                <input class="form-control" pattern="[0-9-]+" type="text" id="BTech_Project_Completed" name="Completed_On" placeholder="MM-YYYY">
             </div>
         </div>
         <div class="row">
