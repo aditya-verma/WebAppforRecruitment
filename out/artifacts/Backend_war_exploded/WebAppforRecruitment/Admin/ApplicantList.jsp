@@ -117,7 +117,7 @@
             <th scope="col"><%=rs.getString("Email")%></th>
             <th scope="col"><%=rs.getString("Phone")%></th>
             <th scope="col">91</th>
-            <th scope="col"><a href="#">View CV</a></th>
+            <th scope="col"><a href="ViewCV.jsp?applicationNumber=<%=rs.getString("ApplicationNumber")%>">View CV</a></th>
         </tr>
         <%
             }
