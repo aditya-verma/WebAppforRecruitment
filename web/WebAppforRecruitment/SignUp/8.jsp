@@ -19,6 +19,7 @@
                 pickerPosition: "bottom-left"});
         });
     </script>
+
 </head>
 <body style="background-color: #f5f5f5;">
 <%
@@ -35,7 +36,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="Industrial_Experience_Organisation">Organisation</label>
-                    <input id="Industrial_Experience_Organisation" class="form-control" name="Industrial_Experience_Organisation" placeholder="" required>
+                    <input type="text" id="Industrial_Experience_Organisation" class="form-control" name="Industrial_Experience_Organisation" placeholder="" required>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -57,13 +58,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="From8">From</label>
-                    <input id="From8" type="text" class="form-control" name="From8" placeholder="DD-MM-YYYY" >
+                    <input id="From8" type="text" pattern="[0-9-]+ class="form-control" name="From8" placeholder="DD-MM-YYYY" required>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="To8">To</label>
-                    <input id="To8" type="text" class="form-control" name="To8" placeholder="DD-MM-YYYY" >
+                    <input id="To8" type="text" pattern="[0-9-]+ class="form-control" name="To8" placeholder="DD-MM-YYYY" required>
                 </div>
             </div>
         </div>

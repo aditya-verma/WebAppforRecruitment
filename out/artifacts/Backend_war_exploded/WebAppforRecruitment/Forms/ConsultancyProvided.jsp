@@ -87,7 +87,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-group" >
-                    <input type="text" class="form-control" id="Consultancy_Completed" name="Consultancy_Completed"  placeholder="MM-YYYY">
+                    <input type="text" pattern="[0-9-]+" class="form-control" id="Consultancy_Completed" name="Consultancy_Completed"  placeholder="MM-YYYY">
                 </div>
             </div>
         </div>
