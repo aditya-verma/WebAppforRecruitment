@@ -11,8 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2fef3e3a-7775-42e3-9435-2ba28fc52ac0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,72 +29,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SelectedApplicants.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/SelectedApplicants.jsp">
+      <file leaf-file-name="ExpertLectureOrganized.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ExpertLectureOrganized.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="124" column="48" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
+            <state relative-caret-position="395">
+              <caret line="132" column="26" lean-forward="true" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminIndex.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AdminIndex.jsp">
+      <file leaf-file-name="InvitedLecturesDelivered.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/InvitedLecturesDelivered.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            <state relative-caret-position="420">
+              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/2.jsp">
+      <file leaf-file-name="Patent.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Patent.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ResearchProjectsInvestigated.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
+            <state relative-caret-position="-214">
+              <caret line="93" column="32" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp">
+      <file leaf-file-name="ActedAsReviewer.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state relative-caret-position="-571">
+              <caret line="81" column="87" selection-start-line="81" selection-start-column="87" selection-end-line="81" selection-end-column="87" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AwardHonourReceived.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/AwardHonourReceived.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="ConsultancyProvided.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ConsultancyProvided.jsp">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ConsultancyProvided.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1980" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonalInformation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1779">
-              <caret line="119" column="143" selection-start-line="119" selection-start-column="143" selection-end-line="119" selection-end-column="143" />
+            <state relative-caret-position="233">
+              <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonalInformation.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp">
+      <file leaf-file-name="BTechProjectSupervised.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="158" column="55" lean-forward="true" selection-start-line="158" selection-start-column="55" selection-end-line="158" selection-end-column="55" />
+            <state relative-caret-position="-525" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvitedLecturesDelivered.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1102">
+              <caret line="128" column="10" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="128" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/3.jsp">
+      <file leaf-file-name="ResearchProjectsInvestigated.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6490">
-              <caret line="295" column="62" lean-forward="true" selection-start-line="295" selection-start-column="62" selection-end-line="295" selection-end-column="62" />
+            <state relative-caret-position="336">
+              <caret line="98" column="54" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,6 +152,10 @@
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AdminIndex.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/2.jsp" />
         <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/InvitedLecturesDelivered.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp" />
+        <option value="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp" />
       </list>
     </option>
   </component>
@@ -143,7 +175,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1392" />
@@ -350,6 +382,7 @@
     </configuration>
     <configuration name="login.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.8" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WebAppforRecruitment/login/login.jsp" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="Backend:war exploded">
           <settings>
@@ -483,6 +516,7 @@
       <workItem from="1531937349762" duration="727000" />
       <workItem from="1531943228918" duration="599000" />
       <workItem from="1531950738794" duration="6342000" />
+      <workItem from="1532005524399" duration="4541000" />
     </task>
     <task id="LOCAL-00001" summary="Added Login and New User Creation">
       <created>1530226905871</created>
@@ -502,10 +536,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17100000" />
+    <option name="totallyTimeSpent" value="21641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -527,46 +561,21 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.028511088" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23687753" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1484375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2059202" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info id="Learn" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.028511088" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1484375" />
-      <window_info id="Learn" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.23645833" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32946146" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40232313" />
-      <window_info id="EJB" order="9" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="2" />
+      <window_info id="EJB" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.23645833" />
+      <window_info id="Learn" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,72 +606,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Patent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/InvitedLecturesDelivered.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/BTechProjectSupervised.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/AwardsHonourReceived.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AdvancedSetup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/login/upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/4.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/8.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/BooksChapters.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/EventAttended.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1328">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/DeleteFiles/Educational_Qualification_Delete.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -677,12 +620,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Patent.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/AwardHonourReceived.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/EventAttended.jsp">
@@ -728,25 +665,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PG Supervision.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ConsultancyProvided.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="29" selection-start-line="8" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -839,14 +759,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/SelectedApplicants.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="2604">
           <caret line="124" column="48" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AdminIndex.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
+        <state relative-caret-position="1071">
           <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
         </state>
       </provider>
@@ -870,41 +790,148 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/3.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6490">
-          <caret line="295" column="62" lean-forward="true" selection-start-line="295" selection-start-column="62" selection-end-line="295" selection-end-column="62" />
+        <state relative-caret-position="6195">
+          <caret line="295" column="62" selection-start-line="295" selection-start-column="62" selection-end-line="295" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="882">
           <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ConsultancyProvided.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1980" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1779">
+        <state relative-caret-position="2499">
           <caret line="119" column="143" selection-start-line="119" selection-start-column="143" selection-end-line="119" selection-end-column="143" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="714">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/BTechProjectSupervised.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="158" column="55" lean-forward="true" selection-start-line="158" selection-start-column="55" selection-end-line="158" selection-end-column="55" />
+        <state relative-caret-position="357">
+          <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1113">
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/8.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/AwardsHonourReceived.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1991">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Publications.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-672" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ExpertLectureOrganized.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="132" column="26" lean-forward="true" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Patent.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/InvitedLecturesDelivered.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="98" column="54" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="128" column="10" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="128" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-214">
+          <caret line="93" column="32" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/AwardHonourReceived.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ConsultancyProvided.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="81" column="87" selection-start-line="81" selection-start-column="87" selection-end-line="81" selection-end-column="87" />
         </state>
       </provider>
     </entry>
