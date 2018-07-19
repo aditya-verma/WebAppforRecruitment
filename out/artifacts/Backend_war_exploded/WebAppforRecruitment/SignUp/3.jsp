@@ -80,8 +80,7 @@
             percentage10 = rs.getString("Percentage");
         }
         con.close();
-        stmt.close();
-    }
+        stmt.close();    }
     catch (Exception e){}
 %>
 <form class="text-center" method="post" action="">

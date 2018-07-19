@@ -19,7 +19,7 @@
     <form id="BooksChapter">
         <div class="form-group text-uppercase">
             <label for="BookChapter-Author">Author(s)</label>
-            <input class="form-control" id="BookChapter-Author"  name="BookChapter-Author" required>
+            <input class="form-control" id="BookChapter-Author"  name="BookChapter-Author" required placeholder="Separate authors using ';' only">
         </div>
         <div class="form-group text-uppercase">
             <label for="BookChapter-Book">Book</label>
