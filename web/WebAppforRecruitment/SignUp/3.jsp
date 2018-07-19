@@ -51,7 +51,7 @@
             <input type="text" class="form-control" placeholder="Enter Board/University" name="PGBoard">
         </div>
         <div class="col-sm-4">
-            <input type="text" pattern="[0-9-]+"  class="form-control" placeholder="Enter Date" id="PGDate" name="PGDate">
+            <input type="text" class="form-control" placeholder="Enter Date" id="PGDate" name="PGDate">
         </div>
     </div>
     <div class="row form-group">
@@ -59,7 +59,7 @@
             <input type="text" class="form-control" placeholder="Enter Division" name="PGDivision">
         </div>
         <div class="col-sm-4">
-            <input type="text" pattern="[0-9%.]+"  class="form-control" placeholder="Enter %age/CGPA" name="PGPercentage">
+            <input type="text" class="form-control" placeholder="Enter %age/CGPA" name="PGPercentage">
         </div>
     </div>
 
@@ -83,7 +83,7 @@
             <input type="text" class="form-control" placeholder="Enter Board/University" name="UGBoard">
         </div>
         <div class="col-sm-4">
-            <input type="text" pattern="[0-9-]+" class="form-control" placeholder="Enter Date" id="UGDate" name="UGDate">
+            <input type="text" class="form-control" placeholder="Enter Date" id="UGDate" name="UGDate">
         </div>
     </div>
     <div class="row form-group">
@@ -91,7 +91,7 @@
             <input type="text" class="form-control" placeholder="Enter Division" name="UGDivision">
         </div>
         <div class="col-sm-4">
-            <input type="text" pattern="[0-9.%]+"  class="form-control" placeholder="Enter %age/CGPA" name="UGPercentage">
+            <input type="text" class="form-control" placeholder="Enter %age/CGPA" name="UGPercentage">
         </div>
     </div>
 
@@ -115,7 +115,7 @@
             <input type="text" class="form-control" placeholder="Enter Board/University" name="12Board">
         </div>
         <div class="col-sm-4">
-            <input type="text" pattern="[0-9-]+"  class="form-control" placeholder="Enter Date"  id="12Date" name="12Date">
+            <input type="text" class="form-control" placeholder="Enter Date"  id="12Date" name="12Date">
         </div>
     </div>
     <div class="row form-group">
@@ -123,7 +123,7 @@
             <input type="text" class="form-control" placeholder="Enter Division" name="12Division">
         </div>
         <div class="col-sm-4">
-            <input type="text" pattern="[0-9.%]+"  class="form-control" placeholder="Enter %age/CGPA" name="12Percentage">
+            <input type="text" class="form-control" placeholder="Enter %age/CGPA" name="12Percentage">
         </div>
     </div>
 
@@ -147,7 +147,7 @@
             <input type="text" class="form-control" placeholder="Enter Board/University" name="10Board">
         </div>
         <div class="col-sm-4">
-            <input type="text" pattern="[0-9-]+"  class="form-control" placeholder="Enter Date" id="10Date" name="10Date">
+            <input type="text" class="form-control" placeholder="Enter Date" id="10Date" name="10Date">
         </div>
     </div>
     <div class="row form-group">
@@ -155,7 +155,7 @@
             <input type="text" class="form-control" placeholder="Enter Division" name="10Division">
         </div>
         <div class="col-sm-4">
-            <input type="text" pattern="[0-9.%]+"  class="form-control" placeholder="Enter %age/CGPA" name="10Percentage">
+            <input type="text" class="form-control" placeholder="Enter %age/CGPA" name="10Percentage">
         </div>
     </div>
     <div class="col-md-12 mb-3" style="margin: 0;text-align: center">

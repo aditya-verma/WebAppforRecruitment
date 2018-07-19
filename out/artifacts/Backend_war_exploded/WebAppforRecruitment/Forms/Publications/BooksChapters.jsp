@@ -39,7 +39,11 @@
         </div>
         <div class="form-group text-uppercase">
             <label for="BookChapter-Month">Published On</label>
+<<<<<<< HEAD
             <input class="form-control" pattern="[0-9-]+" id="BookChapter-Month"  name="BookChapter-Month" placeholder="MM-YYYY" required>
+=======
+            <input class="form-control" id="BookChapter-Month"  name="BookChapter-Month" placeholder="MM/YYYY" required>
+>>>>>>> d2b7851d480fbffd64c52bc2cf679a21df75cce0
         </div>
         <div class="form-group text-uppercase">
             <label for="BookChapter-Co-AuthorFromDept">Wheather Co-authors are faculty from same Department</label>

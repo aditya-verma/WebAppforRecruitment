@@ -59,7 +59,11 @@
             <div class="col-md-6">
                 <div class="form-group text-uppercase">
                     <label for="InternationalJournal-Month">Month/Year</label>
+<<<<<<< HEAD
                     <input class="form-control" pattern="[0-9-]+" name="InternationalJournal-Month" id="InternationalJournal-Month" placeholder="MM-YYYY" required>
+=======
+                    <input class="form-control" name="InternationalJournal-Month" id="InternationalJournal-Month" placeholder="MM/YYYY" required>
+>>>>>>> d2b7851d480fbffd64c52bc2cf679a21df75cce0
                 </div>
             </div>
         </div>

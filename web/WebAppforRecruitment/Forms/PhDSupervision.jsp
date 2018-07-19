@@ -51,7 +51,7 @@
         <div class="form-group row">
             <label for="PhD_Supervision_Oral" class="col-md-4">Oral-Viva Date</label>
             <div class="col-md-8">
-                <input type="text" pattern="[0-9-]+" class="form-control" id="PhD_Supervision_Oral" placeholder="DD-MM-YYYY" name="Date">
+                <input type="text" class="form-control" id="PhD_Supervision_Oral" placeholder="DD-MM-YYYY" name="Date">
             </div>
         </div>
         <fieldset class="form-group">

@@ -2,6 +2,8 @@
 <%@ page import="java.io.*" %>
 <%@ page import="org.json.JSONObject" %>
 <%@ page import="org.json.JSONException" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/js/dataTables.bootstrap4.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -47,6 +50,7 @@
     </div>
 </header>
 <%
+    List<String> list = new ArrayList<String>();
     String postname[];
     String poststr="All>";
     try {
@@ -84,6 +88,9 @@
             }
         %>
     </form>
+
+    <form method="post" action="">
+        <div class="container m-2" style="text-align: center;"><button type="submit" name="submittable" class="btn btn-primary">Submit</button></div>
     <table id="ApplicantListTable" class="table table-striped table-bordered table-hover"width="100%">
         <thead class="table-dark">
         <tr>
@@ -92,7 +99,10 @@
             <th scope="col">Email</th>
             <th scope="col">Phone Number</th>
             <th scope="col">Credit Score</th>
-            <th scope="col">View CV</th>
+            <th scope="col">Status</th>
+            <th scope="col">CV</th>
+            <th scope="col">Selected</th>
+            <th scope="col">Rejected</th>
         </tr>
         </thead>
         <tbody>
@@ -110,16 +120,36 @@
                 ResultSet rs = statement.executeQuery("SELECT * from USERS "+condition);
                 while (rs.next())
                 {
+                    if (rs.getInt("Status")!=0){
+
+
+                    list.add(rs.getString("ApplicationNumber").trim());
+                    String name=rs.getString("ApplicationNumber").trim()+"-radio";
         %>
         <tr>
-            <th scope="col"><%=rs.getString("ApplicationNumber")%></th>
-            <th scope="col"><%=rs.getString("FirstName")+" "+rs.getString("LastName")%></th>
-            <th scope="col"><%=rs.getString("Email")%></th>
-            <th scope="col"><%=rs.getString("Phone")%></th>
+            <th scope="col"><%out.println(rs.getString("ApplicationNumber"));%></th>
+            <th scope="col"><%out.println(rs.getString("FirstName")+" "+rs.getString("LastName"));%></th>
+            <th scope="col"><%out.println(rs.getString("Email"));%></th>
+            <th scope="col"><%out.println(rs.getString("Phone"));%></th>
             <th scope="col">91</th>
-            <th scope="col"><a href="#">View CV</a></th>
+            <th scope="col"><%if (Integer.parseInt(rs.getString("Status")) == 0){
+                out.println("Not Submitted");
+            }
+                else if (Integer.parseInt(rs.getString("Status")) == 1){
+                    out.println("Under Screening");
+                }
+                else if (Integer.parseInt(rs.getString("Status")) == 2){
+                    out.println("Accepted");
+                }
+                else if (Integer.parseInt(rs.getString("Status")) == 3){
+                    out.println("Rejected");
+                }%></th>
+            <th scope="col"><a href="ViewCV.jsp?applicationNumber=<%=rs.getString("ApplicationNumber")%>">View</a></th>
+            <th scope="col" style="text-align: center;"><input type="radio" name="<%=name%>" value="yes" <%if (rs.getInt("Status")==2){%>checked<%}%> ></th>
+            <th scope="col" style="text-align: center;"><input type="radio" name="<%=name%>" value="no" <%if (rs.getInt("Status")==3){%>checked<%}%> ></th>
         </tr>
         <%
+            }
             }
             statement.close();
             connection.close();
@@ -136,6 +166,36 @@
         %>
         </tbody>
     </table>
+        <%
+            if (request.getParameter("submittable")!=null)
+            {
+                try{
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    Connection connection = DriverManager.getConnection(session.getAttribute("DatabaseHost").toString(),session.getAttribute("DatabaseUser").toString(),session.getAttribute("DatabasePassword").toString());
+                    Statement statement = connection.createStatement();
+                    for (String s:list){
+                        String name=s.trim()+"-radio";
+                        String  str = request.getParameter(name);
+                        if (str.equalsIgnoreCase("yes")){
+                            statement.executeUpdate("UPDATE USERS SET Status=2 WHERE ApplicationNumber='"+s+"'");
+                        }
+                        else if (str.equalsIgnoreCase("no")){
+                            statement.executeUpdate("UPDATE USERS SET Status=3 WHERE ApplicationNumber='"+s+"'");
+                        }
+                    }
+                    connection.close();
+                    statement.close();
+                    RequestDispatcher dd = request.getRequestDispatcher("ApplicantList.jsp");
+                    dd.forward(request, response);
+                }
+                catch (java.lang.NullPointerException e){
+                }
+                catch (Exception e){
+    %><div class="alert alert-warning rounded text-center"><%out.println(e);%></div> <%
+                }
+            }
+        %>
+    </form>
 </div>
 
 <div class="card-footer align-bottom mt-2" style="background-color: #c4c4c4; ">
