@@ -159,7 +159,6 @@
     </form>
 </div>
 
-
 <div class="card-footer" style="background-color: #c4c4c4">
     <div class="container text-muted text-center rounded">
         <form method="post" action="../logout.jsp">

@@ -28,10 +28,10 @@
 
 <body>
 <div class="container mt-2">
-    <form id="InternationalJournal">
+    <form id="InternationalJournal" method="post" action="">
         <div class="form-group text-uppercase">
             <label for="InternationalJournal-Author">Author(s)</label>
-            <input class="form-control" name="InternationalJournal-Author" id="InternationalJournal-Author" required>
+            <input class="form-control" name="InternationalJournal-Author" id="InternationalJournal-Author" required placeholder="Separate authors using ';' only">
         </div>
         <div class="form-group text-uppercase">
             <label for="InternationalJournal-PaperTitle">Paper Title</label>
@@ -100,10 +100,10 @@
             </div>
         </div>
         <div class="form-group text-uppercase">
-            <label for="InternationalJournal-Co-AuthorFromDept">Wheather Co-authors are faculty from same Department</label>
+            <label for="InternationalJournal-Co-AuthorFromDept">Whether Co-authors are from same Department</label>
             <div class="row" id="InternationalJournal-Co-AuthorFromDept">
                 <div class="col">
-                    <input name id="InternationalJournal-Co-AuthorFromDept_yes" name="InternationalJournal-Co-AuthorFromDept" value="Yes" type="radio">
+                    <input id="InternationalJournal-Co-AuthorFromDept_yes" name="InternationalJournal-Co-AuthorFromDept" value="Yes" type="radio">
                     <label for="InternationalJournal-Co-AuthorFromDept_yes" class="mr-3">Yes</label>
                     <input id="InternationalJournal-Co-AuthorFromDept_no" name="InternationalJournal-Co-AuthorFromDept" value="No" type="radio">
                     <label for="InternationalJournal-Co-AuthorFromDept_no">No</label>

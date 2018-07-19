@@ -17,9 +17,11 @@
     ResultSet rs=null;
     try{
         Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection(session.getAttribute("DatabaseHost").toString(),session.getAttribute("DatabaseUser").toString(),session.getAttribute("DatabasePassword").toString());
+        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");//DriverManager.getConnection(session.getAttribute("DatabaseHost").toString(),session.getAttribute("DatabaseUser").toString(),session.getAttribute("DatabasePassword").toString());
         st=con.createStatement();
-        ResultSet rs1 = st.executeQuery("SELECT * from Personal_Information where ApplicationNumber='"+request.getParameter("applicationNumber")+"'");        //where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+        st=con.createStatement();
+        ResultSet rs1 = st.executeQuery("SELECT * from Personal_Information where ApplicationNumber='2018PF000003'");        //where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
         if (rs1.next()){
             String str =rs1.getString("ImageLocation");
             str.trim();
@@ -49,6 +51,17 @@
     <script src="../jquery/3.3.1/jquery.min.js"></script>
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <style>
+        @page  {
+            size: A4;
+        }
+        h3{
+            page-break-after: avoid;
+        }
+        table{
+            page-break-inside: avoid;
+        }
+    </style>
 </head>
 <body>
     <div class="row">
@@ -64,77 +77,76 @@
             <div class="col-md-9">
                 <table class="table table-bordered">
                     <tr>
-                        <td>NAME</td>
-                        <td><%=Name%></td>
+                        <td class="col-6">NAME</td>
+                        <td class="col-6"><%=Name%></td>
                     </tr>
                     <tr>
-                        <td>SPECIALIZATION</td>
-                        <td><%=rs.getString(2)%></td>
+                        <td class="col-6">SPECIALIZATION</td>
+                        <td class="col-6"><%=rs.getString(2)%></td>
                     </tr>
                     <tr>
-                        <td>EMAIL</td>
-                        <td><%=Email%></td>
+                        <td class="col-6">EMAIL</td>
+                        <td class="col-6"><%=Email%></td>
                     </tr>
                     <tr>
-                        <td>Post Applying for</td>
-                        <td><%=Post%></td>
+                        <td class="col-6">Post Applying for</td>
+                        <td class="col-6"><%=Post%></td>
                     </tr>
                     <tr>
-                        <td>MARITAL STATUS</td>
-                        <td><%=rs.getString("MaritalStatus")%></td>
+                        <td class="col-6">MARITAL STATUS</td>
+                        <td class="col-6"><%=rs.getString("MaritalStatus")%></td>
                     </tr>
                     <tr>
-                        <td>GENDER</td>
-                        <td><%=rs.getString("Gender")%></td>
+                        <td class="col-6">GENDER</td>
+                        <td class="col-6"><%=rs.getString("Gender")%></td>
                     </tr>
                     <tr>
-                        <td>DOMICILE</td>
-                        <td><%=rs.getString("Domicile")%></td>
+                        <td class="col-6">DOMICILE</td>
+                        <td class="col-6"><%=rs.getString("Domicile")%></td>
                     </tr>
                     <tr>
-                        <td>CATEGORY</td>
-                        <td><%=rs.getString("Category")%></td>
+                        <td class="col-6">CATEGORY</td>
+                        <td class="col-6"><%=rs.getString("Category")%></td>
                     </tr>
                     <tr>
-                        <td>HANDICAPPED</td>
-                        <td><%=rs.getString("PhysicallyHandicapped")%></td>
+                        <td class="col-6">HANDICAPPED</td>
+                        <td class="col-6"><%=rs.getString("PhysicallyHandicapped")%></td>
                     </tr>
                     <tr>
-                        <td>DATE OF BIRTH</td>
-                        <td><%=rs.getString("DateOfBirth")%></td>
+                        <td class="col-6">DATE OF BIRTH</td>
+                        <td class="col-6"><%=rs.getString("DateOfBirth")%></td>
                     </tr>
                     <tr>
-                        <td>NATIONALITY</td>
-                        <td><%=rs.getString("Nationality")%></td>
+                        <td class="col-6">NATIONALITY</td>
+                        <td class="col-6"><%=rs.getString("Nationality")%></td>
                     </tr>
                     <tr>
-                        <td>NAME OF FATHER</td>
-                        <td><%=rs.getString("NameOfFather")%></td>
+                        <td class="col-6">NAME OF FATHER</td>
+                        <td class="col-6"><%=rs.getString("NameOfFather")%></td>
                     </tr>
                     <tr>
-                        <td>NAME OF MOTHER</td>
-                        <td><%=rs.getString("NameOfMother")%></td>
+                        <td class="col-6">NAME OF MOTHER</td>
+                        <td class="col-6"><%=rs.getString("NameOfMother")%></td>
                     </tr>
                     <tr>
-                        <td>IDENTITY PROOF</td>
-                        <td><%=rs.getString("IdentityProofType")%></td>
-                        <td><%=rs.getString("IdentityProofNumber")%></td>
+                        <td class="col-6">IDENTITY PROOF</td>
+                        <td class="col-6"><%=rs.getString("IdentityProofType")+rs.getString("IdentityProofNumber")%></td>
                     </tr>
                     <tr>
                         <td>CORRESPONDANCE ADDRESS</td>
-                        <td><%=rs.getString("CorrespondenceAddress")%></td>
+                        <td class="col-6"><%=rs.getString("CorrespondenceAddress")%></td>
                     </tr>
                     <tr>
-                        <td>PERMANENT ADDRESS</td>
-                        <td><%=rs.getString("PermanentAddress")%></td>
+                        <td class="col-6">PERMANENT ADDRESS</td>
+                        <td class="col-6"><%=rs.getString("PermanentAddress")%></td>
                     </tr>
                     <tr>
-                        <td>PHONE NUMBER</td>
-                        <td><%=Number%></td>
+                        <td class="col-6">PHONE NUMBER</td>
+                        <td class="col-6"><%=Number%></td>
                     </tr>
                     <tr>
-                        <td>Port/Place of Applying Form</td>
-                        <td><%=rs.getString("PlaceOfApplying")%></td>
+                        <td class="col-6">Port/Place of Applying Form</td>
+                        <td class="col-6"><%=rs.getString("PlaceOfApplying")%></td>
                     </tr>
                 </table>
             </div>
@@ -163,20 +175,20 @@
             <div class="col-md-12">
                 <table class="table table-bordered">
                     <tr>
-                        <td>Status</td>
-                        <td><%=rs.getString("Status")%></td>
+                        <td class="col-6">Status</td>
+                        <td class="col-6"><%=rs.getString("Status")%></td>
                     </tr>
                     <tr>
-                        <td>Title</td>
-                        <td><%=rs.getString("Title")%></td>
+                        <td class="col-6">Title</td>
+                        <td class="col-6"><%=rs.getString("Title")%></td>
                     </tr>
                     <tr>
-                        <td>Institute</td>
-                        <td><%=rs.getString("Institute")%></td>
+                        <td class="col-6">Institute</td>
+                        <td class="col-6"><%=rs.getString("Institute")%></td>
                     </tr>
                     <tr>
-                        <td>Date</td>
-                        <td><%=rs.getString("Date")%></td>
+                        <td class="col-6">Date</td>
+                        <td class="col-6"><%=rs.getString("Date")%></td>
                     </tr>
                 </table>
             </div>
@@ -200,36 +212,36 @@
             <div class="col-md-12">
                 <table class="table table-bordered">
                     <tr>
-                        <td>Qualification</td>
-                        <td><%=rs.getString("Qualification")%></td>
+                        <td class="col-6">Qualification</td>
+                        <td class="col-6"><%=rs.getString("Qualification")%></td>
                     </tr>
                     <tr>
-                        <td>Degree</td>
-                        <td><%=rs.getString("Degree")%></td>
+                        <td class="col-6">Degree</td>
+                        <td class="col-6"><%=rs.getString("Degree")%></td>
                     </tr>
                     <tr>
-                        <td>Discipline</td>
-                        <td><%=rs.getString("Discipline")%></td>
+                        <td class="col-6">Discipline</td>
+                        <td class="col-6"><%=rs.getString("Discipline")%></td>
                     </tr>
                     <tr>
-                        <td>Institute</td>
-                        <td><%=rs.getString("Institute")%></td>
+                        <td class="col-6">Institute</td>
+                        <td class="col-6"><%=rs.getString("Institute")%></td>
                     </tr>
                     <tr>
-                        <td>BoardOrUniv</td>
-                        <td><%=rs.getString("BoardOrUniv")%></td>
+                        <td class="col-6">BoardOrUniv</td>
+                        <td class="col-6"><%=rs.getString("BoardOrUniv")%></td>
                     </tr>
                     <tr>
-                        <td>DateOfPassing</td>
-                        <td><%=rs.getString("DateOfPassing")%></td>
+                        <td class="col-6">DateOfPassing</td>
+                        <td class="col-6"><%=rs.getString("DateOfPassing")%></td>
                     </tr>
                     <tr>
-                        <td>Division</td>
-                        <td><%=rs.getString("Division")%></td>
+                        <td class="col-6">Division</td>
+                        <td class="col-6"><%=rs.getString("Division")%></td>
                     </tr>
                     <tr>
-                        <td>Percentage</td>
-                        <td><%=rs.getString("Percentage")%></td>
+                        <td class="col-6">Percentage</td>
+                        <td class="col-6"><%=rs.getString("Percentage")%></td>
                     </tr>
                 </table>
             </div>
@@ -253,40 +265,40 @@
             <div class="col-md-12">
                 <table class="table table-bordered">
                     <tr>
-                        <td>Degree</td>
-                        <td><%=rs.getString("Degree")%></td>
+                        <td class="col-6">Degree</td>
+                        <td class="col-6"><%=rs.getString("Degree")%></td>
                     </tr>
                     <tr>
-                        <td>Discipline</td>
-                        <td><%=rs.getString("Discipline")%></td>
+                        <td class="col-6">Discipline</td>
+                        <td class="col-6"><%=rs.getString("Discipline")%></td>
                     </tr>
                     <tr>
-                        <td>Institute</td>
-                        <td><%=rs.getString("Institute")%></td>
+                        <td class="col-6">Institute</td>
+                        <td class="col-6"><%=rs.getString("Institute")%></td>
                     </tr>
                     <tr>
-                        <td>Board/Univ</td>
-                        <td><%=rs.getString("Board")%></td>
+                        <td class="col-6">Board/Univ</td>
+                        <td class="col-6"><%=rs.getString("Board")%></td>
                     </tr>
                     <tr>
-                        <td>Marks/CGPA</td>
-                        <td><%=rs.getString("Marks")%></td>
+                        <td class="col-6">Marks/CGPA</td>
+                        <td class="col-6"><%=rs.getString("Marks")%></td>
                     </tr>
                     <tr>
-                        <td>Max Marks/CGPA</td>
-                        <td><%=rs.getString("Max_Marks")%></td>
+                        <td class="col-6">Max Marks/CGPA</td>
+                        <td class="col-6"><%=rs.getString("Max_Marks")%></td>
                     </tr>
                     <tr>
-                        <td>Percentage Marks/CGPA</td>
-                        <td><%=rs.getString("Percentage_Marks")%></td>
+                        <td class="col-6">Percentage Marks/CGPA</td>
+                        <td class="col-6"><%=rs.getString("Percentage_Marks")%></td>
                     </tr>
                     <tr>
-                        <td>Division</td>
-                        <td><%=rs.getString("Division")%></td>
+                        <td class="col-6">Division</td>
+                        <td class="col-6"><%=rs.getString("Division")%></td>
                     </tr>
                     <tr>
-                        <td>Year</td>
-                        <td><%=rs.getString("Year")%></td>
+                        <td class="col-6">Year</td>
+                        <td class="col-6"><%=rs.getString("Year")%></td>
                     </tr>
                 </table>
             </div>
@@ -298,48 +310,47 @@
         catch (Exception e){out.print(e);}
     %>
     <hr>
-    <div class="container"><h3>Present Employer</h3></div>
+    <div class="container"><h3>Present Employer</h3>
     <%
         try{
             String sql="select * from Present_Employee where ApplicationNumber='2018PF000003'";                                               //+session.getAttribute("ApplicationNumber")+"'";
             rs=st.executeQuery(sql);
             while (rs.next()){
     %>
-    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <table class="table table-bordered">
                     <tr>
-                        <td>Organisation</td>
-                        <td><%=rs.getString("Organisation")%></td>
+                        <td class="col-6">Organisation</td>
+                        <td class="col-6"><%=rs.getString("Organisation")%></td>
                     </tr>
                     <tr>
-                        <td>Type Of Employer</td>
-                        <td><%=rs.getString("TypeOfEmp")%></td>
+                        <td class="col-6">Type Of Employer</td>
+                        <td class="col-6"><%=rs.getString("TypeOfEmp")%></td>
                     </tr>
                     <tr>
-                        <td>From</td>
-                        <td><%=rs.getString("FromDate")%></td>
+                        <td class="col-6">From</td>
+                        <td class="col-6"><%=rs.getString("FromDate")%></td>
                     </tr>
                     <tr>
-                        <td>To</td>
-                        <td><%=rs.getString("ToDate")%></td>
+                        <td class="col-6">To</td>
+                        <td class="col-6"><%=rs.getString("ToDate")%></td>
                     </tr>
                     <tr>
-                        <td>Pay In Pay Band</td>
-                        <td><%=rs.getString("PayInBand")%></td>
+                        <td class="col-6">Pay In Pay Band</td>
+                        <td class="col-6"><%=rs.getString("PayInBand")%></td>
                     </tr>
                     <tr>
-                        <td>APG/GP</td>
-                        <td><%=rs.getString("APG_GP")%></td>
+                        <td class="col-6">APG/GP</td>
+                        <td class="col-6"><%=rs.getString("APG_GP")%></td>
                     </tr>
                     <tr>
-                        <td>Basic Pay</td>
-                        <td><%=rs.getString("BasicPay")%></td>
+                        <td class="col-6">Basic Pay</td>
+                        <td class="col-6"><%=rs.getString("BasicPay")%></td>
                     </tr>
                     <tr>
-                        <td>Nature Of Work</td>
-                        <td><%=rs.getString("NatureOfWork")%></td>
+                        <td class="col-6">Nature Of Work</td>
+                        <td class="col-6"><%=rs.getString("NatureOfWork")%></td>
                     </tr>
                 </table>
             </div>
@@ -363,32 +374,32 @@
             <div class="col-md-12">
                 <table class="table table-bordered">
                     <tr>
-                        <td>Organisation</td>
-                        <td><%=rs.getString("Organisation")%></td>
+                        <td class="col-6">Organisation</td>
+                        <td class="col-6"><%=rs.getString("Organisation")%></td>
                     </tr>
                     <tr>
-                        <td>Position Held</td>
-                        <td><%=rs.getString("PositionHeld")%></td>
+                        <td class="col-6">Position Held</td>
+                        <td class="col-6"><%=rs.getString("PositionHeld")%></td>
                     </tr>
                     <tr>
-                        <td>From</td>
-                        <td><%=rs.getString("FromDate")%></td>
+                        <td class="col-6">From</td>
+                        <td class="col-6"><%=rs.getString("FromDate")%></td>
                     </tr>
                     <tr>
-                        <td>To</td>
-                        <td><%=rs.getString("ToDate")%></td>
+                        <td class="col-6">To</td>
+                        <td class="col-6"><%=rs.getString("ToDate")%></td>
                     </tr>
                     <tr>
-                        <td>Pay Scale with AGP</td>
-                        <td><%=rs.getString("PayScaleWithAGP")%></td>
+                        <td class="col-6">Pay Scale with AGP</td>
+                        <td class="col-6"><%=rs.getString("PayScaleWithAGP")%></td>
                     </tr>
                     <tr>
-                        <td>Type Of Employer</td>
-                        <td><%=rs.getString("TypeOfEmployee")%></td>
+                        <td class="col-6">Type Of Employer</td>
+                        <td class="col-6"><%=rs.getString("TypeOfEmployee")%></td>
                     </tr>
                     <tr>
-                        <td>Tenure</td>
-                        <td><%=rs.getString("Tenure")%></td>
+                        <td class="col-6">Tenure</td>
+                        <td class="col-6"><%=rs.getString("Tenure")%></td>
                     </tr>
                 </table>
             </div>
@@ -412,32 +423,32 @@
             <div class="col-md-12">
                 <table class="table table-bordered">
                     <tr>
-                        <td>Organisation</td>
-                        <td><%=rs.getString("Organisation")%></td>
+                        <td class="col-6">Organisation</td>
+                        <td class="col-6"><%=rs.getString("Organisation")%></td>
                     </tr>
                     <tr>
-                        <td>Position Held</td>
-                        <td><%=rs.getString("Position_Held")%></td>
+                        <td class="col-6">Position Held</td>
+                        <td class="col-6"><%=rs.getString("Position_Held")%></td>
                     </tr>
                     <tr>
-                        <td>From</td>
-                        <td><%=rs.getString("FromDate")%></td>
+                        <td class="col-6">From</td>
+                        <td class="col-6"><%=rs.getString("FromDate")%></td>
                     </tr>
                     <tr>
-                        <td>To</td>
-                        <td><%=rs.getString("ToDate")%></td>
+                        <td class="col-6">To</td>
+                        <td class="col-6"><%=rs.getString("ToDate")%></td>
                     </tr>
                     <tr>
-                        <td>Salary </td>
-                        <td><%=rs.getString("Salary")%></td>
+                        <td class="col-6">Salary </td>
+                        <td class="col-6"><%=rs.getString("Salary")%></td>
                     </tr>
                     <tr>
-                        <td>Nature Of Work</td>
-                        <td><%=rs.getString("Nature_Of_Work")%></td>
+                        <td class="col-6">Nature Of Work</td>
+                        <td class="col-6"><%=rs.getString("Nature_Of_Work")%></td>
                     </tr>
                     <tr>
-                        <td>Tenure</td>
-                        <td><%=rs.getString("Tenure")%></td>
+                        <td class="col-6">Tenure</td>
+                        <td class="col-6"><%=rs.getString("Tenure")%></td>
                     </tr>
                 </table>
             </div>
@@ -461,32 +472,32 @@
             <div class="col-md-12">
                 <table class="table table-bordered">
                     <tr>
-                        <td>Organisation</td>
-                        <td><%=rs.getString("Organisation")%></td>
+                        <td class="col-6">Organisation</td>
+                        <td class="col-6"><%=rs.getString("Organisation")%></td>
                     </tr>
                     <tr>
-                        <td>Position</td>
-                        <td><%=rs.getString("Position")%></td>
+                        <td class="col-6">Position</td>
+                        <td class="col-6"><%=rs.getString("Position")%></td>
                     </tr>
                     <tr>
-                        <td>From</td>
-                        <td><%=rs.getString("FromDate")%></td>
+                        <td class="col-6">From</td>
+                        <td class="col-6"><%=rs.getString("FromDate")%></td>
                     </tr>
                     <tr>
-                        <td>To</td>
-                        <td><%=rs.getString("ToDate")%></td>
+                        <td class="col-6">To</td>
+                        <td class="col-6"><%=rs.getString("ToDate")%></td>
                     </tr>
                     <tr>
-                        <td>Pay Scale with AGP</td>
-                        <td><%=rs.getString("Salary")%></td>
+                        <td class="col-6">Pay Scale with AGP</td>
+                        <td class="col-6"><%=rs.getString("Salary")%></td>
                     </tr>
                     <tr>
-                        <td>Type Of Employer</td>
-                        <td><%=rs.getString("Type_Of_Employer")%></td>
+                        <td class="col-6">Type Of Employer</td>
+                        <td class="col-6"><%=rs.getString("Type_Of_Employer")%></td>
                     </tr>
                     <tr>
-                        <td>Nature Of Work</td>
-                        <td><%=rs.getString("Nature_Of_Work")%></td>
+                        <td class="col-6">Nature Of Work</td>
+                        <td class="col-6"><%=rs.getString("Nature_Of_Work")%></td>
                     </tr>
                 </table>
             </div>
@@ -510,32 +521,32 @@
             <div class="col-md-12">
                 <table class="table table-bordered">
                     <tr>
-                        <td>Name</td>
-                        <td><%=rs.getString("Name")%></td>
+                        <td class="col-6">Name</td>
+                        <td class="col-6"><%=rs.getString("Name")%></td>
                     </tr>
                     <tr>
-                        <td>Designation</td>
-                        <td><%=rs.getString("Designation")%></td>
+                        <td class="col-6">Designation</td>
+                        <td class="col-6"><%=rs.getString("Designation")%></td>
                     </tr>
                     <tr>
-                        <td>Address</td>
-                        <td><%=rs.getString("Address")%></td>
+                        <td class="col-6">Address</td>
+                        <td class="col-6"><%=rs.getString("Address")%></td>
                     </tr>
                     <tr>
-                        <td>City</td>
-                        <td><%=rs.getString("City")%></td>
+                        <td class="col-6">City</td>
+                        <td class="col-6"><%=rs.getString("City")%></td>
                     </tr>
                     <tr>
-                        <td>PIN</td>
-                        <td><%=rs.getString("PIN")%></td>
+                        <td class="col-6">PIN</td>
+                        <td class="col-6"><%=rs.getString("PIN")%></td>
                     </tr>
                     <tr>
-                        <td>Mobile</td>
-                        <td><%=rs.getString("Mobile")%></td>
+                        <td class="col-6">Mobile</td>
+                        <td class="col-6"><%=rs.getString("Mobile")%></td>
                     </tr>
                     <tr>
-                        <td>Email</td>
-                        <td><%=rs.getString("Email")%></td>
+                        <td class="col-6">Email</td>
+                        <td class="col-6"><%=rs.getString("Email")%></td>
                     </tr>
                 </table>
             </div>
@@ -559,8 +570,8 @@
             <div class="col-md-12">
                 <table class="table table-bordered">
                     <tr>
-                        <td>Information</td>
-                        <td><%=rs.getString("Information")%></td>
+                        <td class="col-6">Information</td>
+                        <td class="col-6"><%=rs.getString("Information")%></td>
                     </tr>
                 </table>
             </div>
@@ -573,5 +584,8 @@
         catch (Exception e){out.print(e);}
     %>
     <hr>
+    <div class="container"style="height:100% ">
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRh0HxXwR713emwqjGvuurb8_kDSPXstOWiQsEvhjauJp_G85-Htdc7QsEKFUQ5QmZwxmsh6n4RNyIH/pub?embedded=true" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:500px;width:100%;border:none;overflow:hidden;"></iframe>
+    </div>
 </body>
 

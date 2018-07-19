@@ -19,7 +19,7 @@
     <form id="InternationalConferences">
         <div class="form-group text-uppercase">
             <label for="InternationalConferences-Author">Author(s)</label>
-            <input class="form-control" id="InternationalConferences-Author" name="InternationalConferences-Author" required>
+            <input class="form-control" id="InternationalConferences-Author" name="InternationalConferences-Author" required placeholder="Separate authors using ';' only">
         </div>
         <div class="form-group text-uppercase">
             <label for="InternationalConferences-PaperTitle">Paper Title</label>
