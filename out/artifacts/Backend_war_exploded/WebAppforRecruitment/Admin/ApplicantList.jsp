@@ -90,7 +90,7 @@
     </form>
 
     <form method="post" action="">
-        <div class="container m-2" style="text-align: center;"><button type="submit" name="submittable" class="btn btn-primary">Submit</button></div>
+        <div class="container m-2" style="text-align: center;"><button type="submit" name="submittable" class="btn btn-primary">Save Status</button></div>
     <table id="ApplicantListTable" class="table table-striped table-bordered table-hover"width="100%">
         <thead class="table-dark">
         <tr>
