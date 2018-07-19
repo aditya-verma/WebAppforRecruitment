@@ -19,55 +19,71 @@
             $('#pubnext1').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-NationalJournal"]').tab('show');
-            })
+                var activeBreadcrumb = $('.active-breadcrumb');
+                activeBreadcrumb.text('National Journal');
+            });
+
         });
         $(function() {
             $('#pubnext2').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-InternationalConference"]').tab('show');
+                var activeBreadcrumb = $('.active-breadcrumb');
+                activeBreadcrumb.text('International Conference');
             })
         });
         $(function() {
             $('#pubnext3').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-NationalConference"]').tab('show');
+                var activeBreadcrumb = $('.active-breadcrumb');
+                activeBreadcrumb.text('National Conference');
             })
         });
         $(function() {
             $('#pubnext4').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-BooksChapter"]').tab('show');
+                var activeBreadcrumb = $('.active-breadcrumb');
+                activeBreadcrumb.text('Books Chapter');
             })
         });
         $(function() {
-            $('#back2').click(function(e){
+            $('#pubback2').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-InternationalJournal"]').tab('show');
+                var activeBreadcrumb = $('.active-breadcrumb');
+                activeBreadcrumb.text('International Journal');
             })
         });
         $(function() {
             $('#pubback3').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-NationalJournal"]').tab('show');
+                var activeBreadcrumb = $('.active-breadcrumb');
+                activeBreadcrumb.text('National Journal');
             })
         });
         $(function() {
             $('#pubback4').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-InternationalConference"]').tab('show');
+                var activeBreadcrumb = $('.active-breadcrumb');
+                activeBreadcrumb.text('International Conference');
             })
         });
         $(function() {
             $('#pubback5').click(function(e){
                 e.preventDefault();
                 $('#mypubtabs a[href="#nav-NationalConference"]').tab('show');
+                var activeBreadcrumb = $('.active-breadcrumb');
+                activeBreadcrumb.text('National Conference');
             })
         });
     </script>
     <script>
         $(function() {
             var activeBreadcrumb = $('.active-breadcrumb');
-
             $('#mypubtabs').on('click', '.nav-link', function () {
                 var self = $(this);
                 activeBreadcrumb.attr('href', self.data('url'));
@@ -81,7 +97,8 @@
 <body>
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../login/User Page.jsp">Update Information</a></li>
+        <li class="breadcrumb-item"><a href="../login/User Page.jsp">User Page</a></li>
+        <li class="breadcrumb-item">Update information</li>
         <li class="breadcrumb-item">Publications</li>
         <li class="breadcrumb-item active-breadcrumb" aria-current="page">International Journal</li>
     </ol>

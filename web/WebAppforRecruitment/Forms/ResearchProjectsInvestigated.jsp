@@ -28,7 +28,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="Project_Investigated_Role" value="PI" id="Project_Investigated_Pi">
+                    <input class="form-check-input" type="radio" name="Project_Investigated_Role" value="PI" id="Project_Investigated_Pi" checked>
                     <label class="form-check-label" for="Project_Investigated_Pi">PI</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -45,7 +45,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-group" >
-                    <input type="text" class="form-control" name="Project_Investigated_i1" id="Project_Investigated_P_Title"  placeholder="Enter Title">
+                    <input type="text" class="form-control" name="Project_Investigated_i1" id="Project_Investigated_P_Title"  placeholder="Enter Title" required>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-group" >
-                    <input type="text" class="form-control" name="Project_Investigated_Funding_Agency" id="Project_Investigated_Funding_Agency"  placeholder="Enter Funding Agency">
+                    <input type="text" class="form-control" name="Project_Investigated_Funding_Agency" id="Project_Investigated_Funding_Agency"  placeholder="Enter Funding Agency" required>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-group" >
-                    <input type="text" class="form-control" name="Project_Investigated_Amount" id="Project_Investigated_Amount"  placeholder="Enter Amount">
+                    <input type="text" class="form-control" pattern="[0-9/-:]+" name="Project_Investigated_Amount" id="Project_Investigated_Amount"  placeholder="Enter Amount" required>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" value="Completed" name="Project_Investigated_Status" id="Project_Investigated_Complete">
+                    <input class="form-check-input" type="radio" value="Completed" name="Project_Investigated_Status" id="Project_Investigated_Complete" checked>
                     <label class="form-check-label" for="Project_Investigated_Complete">Complete</label>
                 </div>
                 <div class="form-check form-check-inline">
