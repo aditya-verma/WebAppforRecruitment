@@ -19,7 +19,9 @@
         Class.forName("com.mysql.jdbc.Driver");
         con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");//DriverManager.getConnection(session.getAttribute("DatabaseHost").toString(),session.getAttribute("DatabaseUser").toString(),session.getAttribute("DatabasePassword").toString());
         st=con.createStatement();
-        ResultSet rs1 = st.executeQuery("SELECT * from Personal_Information where ApplicationNumber='2018PF000003'");//+request.getParameter("applicationNumber")+"'");
+        con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
+        st=con.createStatement();
+        ResultSet rs1 = st.executeQuery("SELECT * from Personal_Information where ApplicationNumber='2018PF000003'");        //where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
         if (rs1.next()){
             String str =rs1.getString("ImageLocation");
             str.trim();

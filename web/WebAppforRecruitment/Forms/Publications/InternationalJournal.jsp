@@ -28,7 +28,7 @@
 
 <body>
 <div class="container mt-2">
-    <form id="InternationalJournal">
+    <form id="InternationalJournal" method="post" action="">
         <div class="form-group text-uppercase">
             <label for="InternationalJournal-Author">Author(s)</label>
             <input class="form-control" name="InternationalJournal-Author" id="InternationalJournal-Author" required>
