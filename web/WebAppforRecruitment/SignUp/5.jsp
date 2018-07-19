@@ -62,10 +62,8 @@
                     present_emplyee_basic_pay = present_emp_res.getString(9);
                     present_emplyee_nature_of_work = present_emp_res.getString(10);
 
-
                 }
         %>
-
         <div class="row " style="margin-top: 5%">
             <div class="col-sm-12">
                 <div class="form-group">
@@ -204,8 +202,6 @@
         present_emp_con.close();
         present_emp_st.close();
             }
-
-
     catch(Exception e)
     {
     %><div class="alert-warning text-center"><% out.print(e);%></div> <%

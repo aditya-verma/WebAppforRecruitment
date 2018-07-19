@@ -53,9 +53,11 @@
                         status+"','"+title+"','"+institute+"','"+date+"')";
                 int result = stmt.executeUpdate(sql);
                 if (result<=0){
+
     %><div class="alert-warning text-center">Error occured please try again!</div><%
                 }
             }
+
             catch (com.mysql.cj.jdbc.exceptions.CommunicationsException e){
     %><div class="alert-danger text-center">Check Your Internet Connection!</div><%
         }

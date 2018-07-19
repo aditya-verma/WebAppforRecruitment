@@ -117,10 +117,7 @@
     %><div class="text-center alert-danger">Record not Inserted</div><%
         }con.close();
         stmt.close();
-
     }
-
-
     catch(Exception e)
     {
     %><div class="alert-warning text-center"><% out.print(e);%></div> <%

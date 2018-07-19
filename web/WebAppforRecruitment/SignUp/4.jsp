@@ -37,7 +37,6 @@
     <div class="col-md-12 " style="margin: 0;text-align: center">
         <button class="btn btn-dark " id="but_add"  onclick="add()">Add New Row</button>
     </div>
-
     <script>
         function add() {
             $("#makeEditable").append("<tr><td colspan=\"2\"><input type=\"text\" placeholder=\"NIL\" name=\"degree\"></td><td colspan=\"2\"><input type=\"text\" placeholder=\"NIL\" name=\"discipline\"></td><td colspan=\"2\"><input type=\"text\" placeholder=\"NIL\" name=\"institute\"></td><td colspan=\"1\"><input type=\"text\" placeholder=\"NIL\" name=\"university\"></td><td colspan=\"1\"><input type=\"text\" placeholder=\"NIL\" name=\"marks\"></td><td colspan=\"1\"><input type=\"text\" placeholder=\"NIL\" name=\"maxmarks\"></td><tdcolspan=\"1\"><input type=\"text\" placeholder=\"NIL\" name=\"percent\"></td><td colspan=\"1\"><input type=\"text\" placeholder=\"NIL\" name=\"division\"></td><td colspan=\"1\"><input type=\"text\" placeholder=\"NIL\" name=\"year\"></td><td colspan=\"1\"><input type=\"text\" placeholder=\"NIL\" name=\"year\"></tr>");

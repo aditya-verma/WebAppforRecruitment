@@ -158,8 +158,6 @@
             <input type="text" pattern="[0-9.%]+"  class="form-control" placeholder="Enter %age/CGPA" name="10Percentage">
         </div>
     </div>
-
-
     <div class="col-md-12 mb-3" style="margin: 0;text-align: center">
         <button class="btn btn-primary" name="btn-educationalqualification"  type="submit">Submit</button>
         <button class="btn btn-dark " id="reset"  type="reset">Reset</button>

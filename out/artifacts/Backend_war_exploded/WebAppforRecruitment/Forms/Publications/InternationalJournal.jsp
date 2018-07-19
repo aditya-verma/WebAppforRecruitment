@@ -23,7 +23,9 @@
                 pickerPosition: "bottom-left"});
         });
     </script>
+
 </head>
+
 <body>
 <div class="container mt-2">
     <form id="InternationalJournal">
@@ -57,7 +59,7 @@
             <div class="col-md-6">
                 <div class="form-group text-uppercase">
                     <label for="InternationalJournal-Month">Month/Year</label>
-                    <input class="form-control" pattern="[0-9-]+" name="InternationalJournal-Month" id="InternationalJournal-Month" placeholder="MM/YYYY" required>
+                    <input class="form-control" pattern="[0-9-]+" name="InternationalJournal-Month" id="InternationalJournal-Month" placeholder="MM-YYYY" required>
                 </div>
             </div>
         </div>
