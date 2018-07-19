@@ -105,13 +105,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-capitalize" for="from">From</label>
-                    <input id="from" class="form-control" type="text" placeholder="From Date" name="i4" required>
+                    <input id="from" pattern="[0-9-]+" class="form-control" type="text" placeholder="From Date" name="i4" required>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-capitalize" for="to">To</label>
-                    <input id="to" class="form-control" placeholder="To Date" required type="text" name="i5" >
+                    <input id="to" pattern="[0-9-]+" class="form-control" placeholder="To Date" required type="text" name="i5" >
                 </div>
             </div>
         </div>

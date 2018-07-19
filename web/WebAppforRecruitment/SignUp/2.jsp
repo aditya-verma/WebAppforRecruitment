@@ -31,7 +31,7 @@
             <input class="form-control" type="text" placeholder="Enter Institute/University" name="phd-institute">
         </div>
         <div class="col-sm-6">
-            <input class="form-control" type="text" id="phd-date" placeholder="Enter Date of Award" name="phd-date">
+            <input class="form-control" pattern="[0-9/-]+" type="text" id="phd-date" placeholder="Enter Date of Award" name="phd-date">
         </div>
     </div>
     <div class="container text-center">

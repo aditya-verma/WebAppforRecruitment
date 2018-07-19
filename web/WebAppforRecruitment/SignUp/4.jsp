@@ -23,11 +23,11 @@
                     <td colspan="2"><input type="text" placeholder="NIL" name="discipline"></td>
                     <td colspan="2"><input type="text" placeholder="NIL" name="institute"></td>
                     <td colspan="1"><input type="text" placeholder="NIL" name="university"></td>
-                    <td colspan="1"><input type="text" placeholder="NIL" name="marks"></td>
-                    <td colspan="1"><input type="text" placeholder="NIL" name="maxmarks"></td>
-                    <td colspan="1"><input type="text" placeholder="NIL" name="percent"></td>
+                    <td colspan="1"><input type="text" pattern="[0-9.%]+" placeholder="NIL" name="marks"></td>
+                    <td colspan="1"><input type="text"  pattern="[0-9.%]+"placeholder="NIL" name="maxmarks"></td>
+                    <td colspan="1"><input type="text"  pattern="[0-9.%]+"placeholder="NIL" name="percent"></td>
                     <td colspan="1"><input type="text" placeholder="NIL" name="division"></td>
-                    <td colspan="1"><input type="text" placeholder="NIL" name="year"></td>
+                    <td colspan="1"><input type="text" pattern="[0-9-]+" placeholder="NIL" name="year"></td>
                 </div>
             </tr>
         </table>

@@ -59,7 +59,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-group" >
-                    <input class="form-control" type="text" id="date" name="i2" placeholder="DD/MM/YYYY" >
+                    <input class="form-control" pattern="[0-9-]+" type="text" id="date" name="i2" placeholder="DD-MM-YYYY" >
                 </div>
             </div>
         </div>
