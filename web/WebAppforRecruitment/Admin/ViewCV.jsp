@@ -17,15 +17,11 @@
     ResultSet rs=null;
     try{
         Class.forName("com.mysql.jdbc.Driver");
-<<<<<<< HEAD
         con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");//DriverManager.getConnection(session.getAttribute("DatabaseHost").toString(),session.getAttribute("DatabaseUser").toString(),session.getAttribute("DatabasePassword").toString());
         st=con.createStatement();
-        ResultSet rs1 = st.executeQuery("SELECT * from Personal_Information where ApplicationNumber='2018PF000003'");//+request.getParameter("applicationNumber")+"'");
-=======
         con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
         st=con.createStatement();
         ResultSet rs1 = st.executeQuery("SELECT * from Personal_Information where ApplicationNumber='2018PF000003'");        //where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
->>>>>>> 6bbf5e045cb9fd6b1db725ebd3dd37fb6ef17219
         if (rs1.next()){
             String str =rs1.getString("ImageLocation");
             str.trim();

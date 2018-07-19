@@ -97,6 +97,12 @@
                 </div>
                 <!--------------Research Project Investigated-------------->
                 <div class="tab-pane fade show active" id="list-ResearchProjectInvestigated" role="tabpanel" aria-labelledby="list-ResearchProjectInvestigated-list">
+                    <nav aria-label="breadcrumb" class="sticky-top">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../login/User Page.jsp">Update Information</a></li>
+                            <li class="breadcrumb-item">Research Projects Investigated</li>
+                        </ol>
+                    </nav>
                     <%@include file="/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp"%>
                    <!-- <button class="btn btn-success" onclick="window.location.href='/WebAppforRecruitment/UpdateInformation/Publications.jsp'">Continue</button> -->
                 </div>
@@ -120,12 +126,10 @@
         </div>
     </div>
 </div>
+
 <div class="card-footer align-bottom mt-2" style="background-color: #c4c4c4">
-    <div class="container text-muted text-center rounded">
-        <form method="post" action="../logout.jsp">
-            <button class="btn btn-danger btn-sm" name="logout">Logout</button>
-        </form>
-    </div>
+    <div class="container text-muted text-center rounded">This is footer</div>
 </div>
+
 </body>
 </html>

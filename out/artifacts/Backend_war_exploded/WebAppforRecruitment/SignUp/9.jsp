@@ -12,7 +12,6 @@
             }
         }
     </script>
-
 </head>
 <body style="background-color: #f5f5f5;">
 <%
@@ -27,13 +26,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="References_name">Name</label>
-                    <input type="text" id="References_name" class="form-control" pattern="[a-zA-Z ]+" name="References_name" placeholder="" required>
+                    <input type="text" pattern="[a-zA-z ]+" id="References_name" class="form-control" name="References_name" placeholder="">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="References_designation">Designation</label>
-                    <input type="text" id="References_designation"  class="form-control" pattern="[a-zA-Z ]+" name="References_designation" placeholder="" required>
+                    <input id="References_designation" class="form-control" name="References_designation" placeholder="">
                 </div>
             </div>
        </div>
@@ -41,7 +40,7 @@
             <div class="col-sm-12">
                <div class="form-group">
                <label class="text" for="References_Address">Address</label>
-                <input type="text" id="References_Address" class="form-control" name="References_Address" placeholder="" required>
+                <input id="References_Address" class="form-control" name="References_Address" placeholder="">
                  </div>
             </div>
        </div>
@@ -49,13 +48,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="References_city">City</label>
-                    <input  id="References_city" class="form-control" pattern="[a-zA-Z ]+" name="References_city" placeholder="" required>
+                    <input type="text" id="References_city" class="form-control" name="References_city" placeholder="">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="References_pin">PIN</label>
-                    <input  type="text"  id="References_pin" class="form-control" name="References_pin" placeholder="" onkeypress='validatenum(event)'  value="${cpCon.receiveNo}"  tabindex="34" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false" autocomplete=off required>
+                    <input id="References_pin" class="form-control" onkeypress='validatenum(event)' maxlength="11" value="${cpCon.receiveNo}"  tabindex="34" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false" autocomplete=off name="References_pin" placeholder="" >
                 </div>
             </div>
        </div>
@@ -63,13 +62,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="References_mobile">Mobile no</label>
-                    <input type="text" id="References_mobile" class="form-control" name="References_mobile" placeholder="" onkeypress='validatenum(event)' minlength="10" maxlength="11" value="${cpCon.receiveNo}"  tabindex="34" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false" autocomplete=off required>
+                    <input id="References_mobile" class="form-control" onkeypress='validatenum(event)' minlength="10" maxlength="11" value="${cpCon.receiveNo}"  tabindex="34" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false" autocomplete=off name="References_mobile" placeholder="">
                 </div>
             </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label class="text" for="References_email">Email</label>
-                        <input type="email" id="References_email" class="form-control" name="References_email" placeholder="" required>
+                        <input type="email" id="References_email" class="form-control" name="References_email" placeholder="">
                     </div>
                 </div>
        </div>
@@ -109,8 +108,7 @@
     %><div class="text-center alert-danger">Record not Inserted</div><%
         }con.close();
         stmt.close();
-
-    }
+                }
 
 
     catch(Exception e)

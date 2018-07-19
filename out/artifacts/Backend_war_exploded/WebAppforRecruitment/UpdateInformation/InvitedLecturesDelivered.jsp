@@ -92,6 +92,12 @@
                 </div>
                 <!--------------ExpertInvited Lecture-------------->
                 <div class="tab-pane fade show active" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
+                    <nav aria-label="breadcrumb" class="sticky-top">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../login/User Page.jsp">Update Information</a></li>
+                            <li class="breadcrumb-item">Invited Lectures Delivered</li>
+                        </ol>
+                    </nav>
                     <%@ include file="/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp"%>
                 </div>
                 <!--------------Research Project Investigated-------------->
@@ -118,12 +124,10 @@
         </div>
     </div>
 </div>
+
 <div class="card-footer align-bottom mt-2" style="background-color: #c4c4c4">
-    <div class="container text-muted text-center rounded">
-        <form method="post" action="../logout.jsp">
-            <button class="btn btn-danger btn-sm" name="logout">Logout</button>
-        </form>
-    </div>
+    <div class="container text-muted text-center rounded">This is footer</div>
 </div>
+
 </body>
 </html>

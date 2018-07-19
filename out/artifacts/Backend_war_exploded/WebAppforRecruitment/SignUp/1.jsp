@@ -11,26 +11,7 @@
 <html lang="en">
 <%
     String countryList[] = new String[198];
-    String postname="";
-    try {
-        String poststr="";
-        String postc="";
-        File dir = new File("D:\\Post\\");
-        for (File file : dir.listFiles()) {
-            FileReader fileReader = new FileReader(file);
-            BufferedReader br = new BufferedReader(fileReader);
-            String str = br.readLine();
-            JSONObject jsonObject = new JSONObject(str);
-            postc=jsonObject.getString("post").trim();
-            if (session.getAttribute("ApplicationNumber").toString().contains(postc)){
-                postname = jsonObject.getString("name").trim();
-            }
-            br.close();
-        }
-    }
-    catch (FileNotFoundException e){}
-    catch (JSONException e){}
-    catch (Exception e){}
+    String postname= session.getAttribute("Post").toString();
     try {
         FileReader in = new FileReader("C:\\Users\\ADITYA\\Documents\\GitHub\\WebAppforRecruitment\\web\\WebAppforRecruitment\\resources\\CountryList.txt");
         BufferedReader br = new BufferedReader(in);
@@ -218,7 +199,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-uppercase" for="DateOfBirth">Date Of Birth</label>
-                    <input type="text" pattern="[0-9-]+"  class="form-control" id="DateOfBirth" name="DateOfBirth" placeholder="dd-mm-yyyy" value="<%out.println(DateOfBirth);%>">
+                    <input type="text" pattern="[0-9-]+" class="form-control" id="DateOfBirth" name="DateOfBirth" placeholder="dd-mm-yyyy" value="<%out.println(DateOfBirth);%>">
                 </div>
             </div>
             <div class="col-sm-6">
@@ -271,7 +252,7 @@
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="Phone">Phone Number</label>
-            <input id="Phone" pattern="[0-9+]+" minlength="10" maxlength="13" class="form-control" placeholder="" required value="<%out.println(phone);%>">
+            <input id="Phone" pattern="[0-9+]+" minlength="10" maxlength="14" class="form-control" placeholder="" required value="<%out.println(phone);%>">
         </div>
         <div class="form-group">
             <label class="text-uppercase" for="PlaceOfApplying">Port/Place of Applying Form</label>
@@ -343,12 +324,10 @@
         %><div class="text-center alert-danger">Record not Inserted</div> <%
                         }
                 }
-
             stmt.close();
             }
             catch (Exception e){%><div class="alert-warning text-center"><% out.print(e);%></div> <%}
             finally {
-
             }
         %>
     </form>

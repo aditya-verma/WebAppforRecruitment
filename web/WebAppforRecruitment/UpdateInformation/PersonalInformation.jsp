@@ -118,22 +118,17 @@
                 </div>
                 <!--------------Expert Lecture Organized-------------->
                 <div class="tab-pane fade" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
-                    Expert Lecture Organized
                 </div>
                 <!--------------Consultancy Provided-------------->
                 <div class="tab-pane fade" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
-                    Consultancy Provided
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <div class="card-footer align-bottom mt-2" style="background-color: #c4c4c4">
-    <div class="container text-muted text-center rounded">
-        <form method="post" action="../logout.jsp">
-            <button class="btn btn-danger btn-sm" name="logout">Logout</button>
-        </form>
-    </div>
+    <div class="container text-muted text-center rounded">This is footer</div>
 </div>
 
 </body>

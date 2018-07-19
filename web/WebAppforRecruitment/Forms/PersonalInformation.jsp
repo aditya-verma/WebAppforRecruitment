@@ -140,9 +140,28 @@
             }
 
         </style>
+    <script>
+        $(function() {
+            var activeBreadcrumb = $('.active-breadcrumb');
+
+            $('#mytabs').on('click', '.nav-link', function () {
+                var self = $(this);
+                activeBreadcrumb.attr('href', self.data('url'));
+                activeBreadcrumb.text(self.text());
+            });
+        });
+    </script>
 
 </head>
 <body>
+<nav aria-label="breadcrumb" class="sticky-top">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../login/User Page.jsp">User Page</a></li>
+        <li class="breadcrumb-item">Update Information</li>
+        <li class="breadcrumb-item">Personal Information</li>
+        <li class="breadcrumb-item active-breadcrumb" aria-current="page">Personal Information</li>
+    </ol>
+</nav>
 
     <ul class="nav nav-tabs" style="padding-top: 1%;" id="mytabs" role="tablist">
         <li><a class="nav-item nav-link active" id="nav-PersonalInformation-tab" data-toggle="tab" href="#nav-PersonalInformation" role="tab" aria-controls="nav-PersonalInformation" aria-selected="true">Personal Information</a></li>

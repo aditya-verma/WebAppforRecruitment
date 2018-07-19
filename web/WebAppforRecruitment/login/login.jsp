@@ -77,7 +77,7 @@
                 <div class="md-form mb-2">
                     <div class="row">
                         <div class="col-sm-6 mb-sm-2">
-                            <input type="text" name="orangeForm-Fname" class="form-control validate" placeholder="First Name" required>
+                            <input type="text" name="orangeForm-Fname" pattern="[A-Za-z]{1,32}" class="form-control validate" placeholder="First Name" required>
                         </div>
                         <div class="col-sm-6">
                             <input type="text" name="orangeForm-Lname" class="form-control validate" placeholder="Last Name" required>
@@ -85,7 +85,6 @@
                     </div>
                 </div>
                 <div class="md-form mb-2">
-                    <label for="postApplied">Post Applied</label>
                     <select class="form-control" name="orangeForm-post" id="postApplied" required>
                         <option value="" selected disabled>Select Post Applying for</option>
                         <%
@@ -96,10 +95,10 @@
                     </select>
                 </div>
                 <div class="md-form mb-2">
-                    <input type="email" name="orangeForm-email" class="form-control validate" placeholder="Email" required>
+                    <input type="email" name="orangeForm-email" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="md-form mb-2">
-                    <input type="text" name="orangeForm-phone" class="form-control validate" placeholder="Mobile Number" required>
+                    <input type="text" name="orangeForm-phone" class="form-control" placeholder="Mobile Number" required>
                 </div>
             </div>
             <div class="modal-footer d-flex justify-content-center">
@@ -160,7 +159,13 @@
                             %><div class="alert-danger text-center">Check Your Internet Connection!</div><script>$('#modalRegisterForm').modal('show');</script><%
                         }
                         catch (Exception e){
-                            %><div class="alert-danger text-center"><%out.println(e);%></div> <script>$('#modalRegisterForm').modal('show');</script><%
+                            %><div class="alert alert-primary rounded text-center"><%
+            if (e.toString().equalsIgnoreCase("java.sql.SQLSyntaxErrorException: User sql12245685 already has more than 'max_user_connections' active connections")){
+                out.println("Servers are too busy! Please try after sometime.");
+            }
+            else
+                out.println(e);%>
+        </div> <script>$('#modalRegisterForm').modal('show');</script><%
                         }
                     }
             %>
@@ -212,6 +217,7 @@
                         if (rs.next())
                         {
                             session.setAttribute("ApplicationNumber",rs.getString("ApplicationNumber"));
+                            session.setAttribute("Post",rs.getString("Post"));
                             session.setAttribute("DatabaseHost",Host);
                             session.setAttribute("DatabaseUser",databaseUser);
                             session.setAttribute("DatabasePassword",databasePassword);
@@ -231,7 +237,14 @@
                 catch (com.mysql.cj.jdbc.exceptions.CommunicationsException e){
     %><div class="alert-danger text-center">Check Your Internet Connection!</div><%
                 }
-                catch(Exception e){ out.println(e);}
+                catch(Exception e){
+    %><div class="alert alert-primary rounded text-center"><%
+                        if (e.toString().equalsIgnoreCase("java.sql.SQLSyntaxErrorException: User sql12245685 already has more than 'max_user_connections' active connections")){
+                            out.println("Servers are too busy! Please try after sometime.");
+                        }
+                        else
+                        out.println(e);%>
+    </div><%}
             }
         %>
     </form>

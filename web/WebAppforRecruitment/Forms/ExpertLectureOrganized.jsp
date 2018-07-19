@@ -131,7 +131,7 @@
         </div>
         <div class="col-sm-8">
             <div class="form-group" >
-                <input type="text"  pattern="[0-9-]+"class="form-control" id="Event_Organised_To" name="Organised_To"  placeholder="To">
+                <input type="text" pattern="[0-9-]+" class="form-control" id="Event_Organised_To" name="Organised_To"  placeholder="To">
             </div>
         </div>
     </div>

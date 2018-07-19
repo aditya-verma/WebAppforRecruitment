@@ -10,11 +10,104 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fef3e3a-7775-42e3-9435-2ba28fc52ac0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/SelectedApplicants.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Images/UserImages/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/calculateCredit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/SelectedApplicants.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Images/UserImages/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/calculateCredit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppforRecruitment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppforRecruitment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/AdminIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/AdminIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/ApplicantList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/ApplicantList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/ViewCV.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Admin/ViewCV.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/ActedAsReviewer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/ActedAsReviewer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/AwardHonourReceived.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/AwardHonourReceived.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/ConsultancyProvided.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/ConsultancyProvided.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/ExpertLectureOrganized.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/ExpertLectureOrganized.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Patent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Patent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/PersonalInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/PersonalInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/PhDSupervision.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/PhDSupervision.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/BooksChapters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/BooksChapters.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/InternationalConferences.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/InternationalConferences.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/InternationalJournal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/InternationalJournal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/NationalConferences.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/NationalConferences.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/NationalJournal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/Publications/NationalJournal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Images/UserImages/2018PF000003.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/Images/UserImages/2018PF000003.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/3.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/4.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/5.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/6.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/6.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/7.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/7.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/8.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/8.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/9.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/SignUp/9.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/AwardsHonourReceived.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/AwardsHonourReceived.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/BTechProjectSupervised.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/BTechProjectSupervised.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ConsultancyProvided.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ConsultancyProvided.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/EventAttended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/EventAttended.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ExpertLectureOrganized.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ExpertLectureOrganized.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/InvitedLecturesDelivered.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/InvitedLecturesDelivered.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/PG Supervision.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/PG Supervision.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/Patent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/Patent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/PhDSupervision.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/PhDSupervision.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/Publications.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/Publications.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/User Page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/User Page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Backend_war_exploded/WebAppforRecruitment/resources/CreditPoint.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AdminIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/AdminIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ApplicantList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ApplicantList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ViewCV.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ViewCV.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ActedAsReviewer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/AwardHonourReceived.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/AwardHonourReceived.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ConsultancyProvided.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ConsultancyProvided.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ExpertLectureOrganized.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ExpertLectureOrganized.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Patent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Patent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PersonalInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PhDSupervision.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/PhDSupervision.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/BooksChapters.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/BooksChapters.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/InternationalConferences.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/InternationalConferences.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/InternationalJournal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/InternationalJournal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/NationalConferences.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/NationalConferences.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/NationalJournal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/Publications/NationalJournal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Forms/ResearchProjectsInvestigated.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/Images/UserImages/2018PF000003.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/Images/UserImages/2018PF000003.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/3.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/4.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/5.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/6.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/6.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/7.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/7.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/8.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/8.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/9.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/SignUp/9.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ActedAsReviewer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/AwardsHonourReceived.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/AwardsHonourReceived.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/BTechProjectSupervised.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/BTechProjectSupervised.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ConsultancyProvided.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ConsultancyProvided.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/EventAttended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/EventAttended.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ExpertLectureOrganized.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ExpertLectureOrganized.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/InvitedLecturesDelivered.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/InvitedLecturesDelivered.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PG Supervision.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PG Supervision.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Patent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Patent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PersonalInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PhDSupervision.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/PhDSupervision.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Publications.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/Publications.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/ResearchProjectsInvestigated.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/login/User Page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WebAppforRecruitment/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebAppforRecruitment/resources/CreditPoint.docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,47 +124,23 @@
       <file leaf-file-name="ViewCV.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ViewCV.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="585" column="162" selection-start-line="585" selection-start-column="21" selection-end-line="585" selection-end-column="162" />
+            <state relative-caret-position="320">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding>
-                <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
-                <element signature="e#268#1909#0#JSP" />
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#6867#6943#0#JSP" />
-                <element signature="e#7024#7319#0#JSP" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#8257#8329#0#JSP" />
-                <element signature="e#8405#8696#0#JSP" />
-                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#10418#10494#0#JSP" />
-                <element signature="e#10580#10875#0#JSP" />
-                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#12769#12845#0#JSP" />
-                <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#12918#13200#0#JSP" />
-                <element signature="n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#14910#14986#0#JSP" />
-                <element signature="e#15062#15347#0#JSP" />
-                <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#16885#16961#0#JSP" />
-                <element signature="e#17060#17346#0#JSP" />
-                <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#18863#18939#0#JSP" />
-                <element signature="e#19017#19305#0#JSP" />
-                <element signature="n#div#15;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#20843#20919#0#JSP" />
-                <element signature="e#20989#21265#0#JSP" />
-                <element signature="n#div#17;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#22739#22815#0#JSP" />
-                <element signature="e#22894#23181#0#JSP" />
-                <element signature="n#div#19;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#25717#25818#0#JSP" />
-                <element signature="n#style#0;n#div#20;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#19;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#19;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicantList.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ApplicantList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="149" column="13" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -81,13 +150,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1328">
               <caret line="83" column="16" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="128" />
-              <folding>
-                <element signature="e#34060#37438#0#JSP" />
-                <element signature="e#37554#37835#0#JSP" />
-                <element signature="e#39600#39832#0#JSP" />
-                <element signature="e#39919#40196#0#JSP" />
-                <element signature="e#42504#42736#0#JSP" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -195,16 +257,17 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="735" />
-    <option name="y" value="85" />
-    <option name="width" value="819" />
-    <option name="height" value="872" />
+    <option name="x" value="734" />
+    <option name="y" value="83" />
+    <option name="width" value="820" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,15 +291,14 @@
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WebAppforRecruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="UpdateInformation" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,6 +499,8 @@
       <workItem from="1531860178081" duration="7369000" />
       <workItem from="1531925192502" duration="5550000" />
       <workItem from="1531948443728" duration="2820000" />
+      <workItem from="1531951420082" duration="168000" />
+      <workItem from="1532008661806" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="Added Login and New User Creation">
       <created>1530226905871</created>
@@ -456,37 +520,37 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169640000" />
+    <option name="totallyTimeSpent" value="170110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32946146" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40232313" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32946146" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30218446" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1627372" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1627372" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40232313" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info id="EJB" order="9" side_tool="true" />
@@ -819,68 +883,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ApplicantList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="105" column="98" lean-forward="true" selection-start-line="105" selection-start-column="98" selection-end-line="105" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/UpdateInformation/FinalCV.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1328">
           <caret line="83" column="16" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="128" />
-          <folding>
-            <element signature="e#34060#37438#0#JSP" />
-            <element signature="e#37554#37835#0#JSP" />
-            <element signature="e#39600#39832#0#JSP" />
-            <element signature="e#39919#40196#0#JSP" />
-            <element signature="e#42504#42736#0#JSP" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ApplicantList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="149" column="13" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WebAppforRecruitment/Admin/ViewCV.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="585" column="162" selection-start-line="585" selection-start-column="21" selection-end-line="585" selection-end-column="162" />
+        <state relative-caret-position="320">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
-            <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
-            <element signature="e#268#1909#0#JSP" />
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#6867#6943#0#JSP" />
-            <element signature="e#7024#7319#0#JSP" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#8257#8329#0#JSP" />
-            <element signature="e#8405#8696#0#JSP" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#10418#10494#0#JSP" />
-            <element signature="e#10580#10875#0#JSP" />
-            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#12769#12845#0#JSP" />
-            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#12918#13200#0#JSP" />
-            <element signature="n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#14910#14986#0#JSP" />
-            <element signature="e#15062#15347#0#JSP" />
-            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#16885#16961#0#JSP" />
-            <element signature="e#17060#17346#0#JSP" />
-            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#18863#18939#0#JSP" />
-            <element signature="e#19017#19305#0#JSP" />
-            <element signature="n#div#15;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#20843#20919#0#JSP" />
-            <element signature="e#20989#21265#0#JSP" />
-            <element signature="n#div#17;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#22739#22815#0#JSP" />
-            <element signature="e#22894#23181#0#JSP" />
-            <element signature="n#div#19;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#25717#25818#0#JSP" />
-            <element signature="n#style#0;n#div#20;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#19;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#19;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>

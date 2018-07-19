@@ -49,12 +49,14 @@
             </a>
         </div>
         <div class="col">
+            <a href="SelectedApplicants.jsp">
             <div class="card p-2 mb-2" style="width: 15rem;">
                 <img class="card-img-top" src="../Images/SelectedApplicants.png" alt="Card image cap">
                 <div class="card-body text-center">
                     <p class="card-text">Qualified Applicants</p>
                 </div>
             </div>
+        </a>
         </div>
         <div class="col">
             <div class="card p-2 mb-2" style="width: 15rem;">
