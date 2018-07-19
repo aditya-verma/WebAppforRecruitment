@@ -89,7 +89,7 @@
         %>
     </form>
 
-    <form>
+    <form method="post" action="">
         <div class="container m-2" style="text-align: center;"><button type="submit" name="submittable" class="btn btn-primary">Submit</button></div>
     <table id="ApplicantListTable" class="table table-striped table-bordered table-hover"width="100%">
         <thead class="table-dark">
@@ -185,7 +185,8 @@
                     }
                     connection.close();
                     statement.close();
-                    response.sendRedirect("ApplicantList.jsp");
+                    RequestDispatcher dd = request.getRequestDispatcher("ApplicantList.jsp");
+                    dd.forward(request, response);
                 }
                 catch (java.lang.NullPointerException e){
                 }

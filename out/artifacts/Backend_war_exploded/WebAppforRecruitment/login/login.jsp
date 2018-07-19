@@ -159,7 +159,13 @@
                             %><div class="alert-danger text-center">Check Your Internet Connection!</div><script>$('#modalRegisterForm').modal('show');</script><%
                         }
                         catch (Exception e){
-                            %><div class="alert-danger text-center"><%out.println(e);%></div> <script>$('#modalRegisterForm').modal('show');</script><%
+                            %><div class="alert alert-primary rounded text-center"><%
+            if (e.toString().equalsIgnoreCase("java.sql.SQLSyntaxErrorException: User sql12245685 already has more than 'max_user_connections' active connections")){
+                out.println("Servers are too busy! Please try after sometime.");
+            }
+            else
+                out.println(e);%>
+        </div> <script>$('#modalRegisterForm').modal('show');</script><%
                         }
                     }
             %>
@@ -234,11 +240,11 @@
                 catch(Exception e){
     %><div class="alert alert-primary rounded text-center"><%
                         if (e.toString().equalsIgnoreCase("java.sql.SQLSyntaxErrorException: User sql12245685 already has more than 'max_user_connections' active connections")){
-                            out.println("Servers are to busy! Please try after sometime.");
+                            out.println("Servers are too busy! Please try after sometime.");
                         }
                         else
-                        out.println(e);}%>
-    </div><%
+                        out.println(e);%>
+    </div><%}
             }
         %>
     </form>
