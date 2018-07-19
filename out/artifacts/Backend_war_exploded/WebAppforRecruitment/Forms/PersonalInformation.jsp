@@ -156,7 +156,8 @@
 <body>
 <nav aria-label="breadcrumb" class="sticky-top">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../login/User Page.jsp">Update Information</a></li>
+        <li class="breadcrumb-item"><a href="../login/User Page.jsp">User Page</a></li>
+        <li class="breadcrumb-item">Update Information</li>
         <li class="breadcrumb-item">Personal Information</li>
         <li class="breadcrumb-item active-breadcrumb" aria-current="page">Personal Information</li>
     </ol>

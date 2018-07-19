@@ -17,21 +17,44 @@
 </head>
 <body>
 <form method="post" action="" class="text-center mt-2 mb-5">
+    <%
+        String phdstatus="";
+        String phdtitle="";
+        String phdinstitute="";
+        String phddate="";
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection((String)session.getAttribute("DatabaseHost"),(String)session.getAttribute("DatabaseUser"),(String)session.getAttribute("DatabasePassword"));
+            Statement stmt = connection.createStatement();
+            ResultSet rs=stmt.executeQuery("SELECT * FROM Educational_Qualification_PhD WHERE ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'");
+            if (rs.next()) {
+                phdstatus=rs.getString("Status");
+                phdtitle=rs.getString("Title");
+                phdinstitute=rs.getString("Institute");
+                phddate=rs.getString("Date");
+            }
+        }
+        catch (Exception e){}
+    %>
     <label class="label"><strong>Ph.D Details</strong></label>
     <div class="form-row form-group">
         <div class="col-sm-6 mb-3">
-            <input class="form-control" type="text" placeholder="Enter Status" name="phd-status">
+            <select name="phd-status" class="form-control">
+                <option value="Select Status" disabled>Select Status</option>
+                <option value="Awarded" <%if (phdstatus.equalsIgnoreCase("Awarded")){%>selected<%}%> >Awarded</option>
+                <option value="Ongoing" <%if (phdstatus.equalsIgnoreCase("Ongoing")){%>selected<%}%> >Ongoing</option>
+            </select>
         </div>
         <div class="col-sm-6">
-            <input class="form-control" type="text" placeholder="Enter Title" name="phd-title">
+            <input class="form-control" type="text" placeholder="Enter Title" name="phd-title" value="<%=phdtitle%>">
         </div>
     </div>
     <div class="form-row form-group">
         <div class="col-sm-6 mb-3">
-            <input class="form-control" type="text" placeholder="Enter Institute/University" name="phd-institute">
+            <input class="form-control" type="text" placeholder="Enter Institute/University" name="phd-institute" value="<%=phdinstitute%>">
         </div>
         <div class="col-sm-6">
-            <input class="form-control" pattern="[0-9/-]+" type="text" id="phd-date" placeholder="Enter Date of Award" name="phd-date">
+            <input class="form-control" pattern="[0-9/-]+" type="text" id="phd-date" placeholder="Enter Date of Award" name="phd-date" value="<%=phddate%>">
         </div>
     </div>
     <div class="container text-center">
