@@ -79,6 +79,8 @@
             division10 = rs.getString("Division");
             percentage10 = rs.getString("Percentage");
         }
+        con.close();
+        stmt.close();
     }
     catch (Exception e){}
 %>
