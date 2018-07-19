@@ -47,6 +47,7 @@
         </div>
     </div>
 </header>
+
 <div class="container align-middle align-content-center align-items-center">
     <div class="row">
         <div class="col-sm-4">
@@ -93,6 +94,12 @@
                 </div>
                 <!--------------Acted As Reviewer-------------->
                 <div class="tab-pane fade show active" id="list-ActedAsReviewer" role="tabpanel" aria-labelledby="list-ActedAsReviewer-list">
+                    <nav aria-label="breadcrumb" class="sticky-top">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../login/User Page.jsp">Update Information</a></li>
+                            <li class="breadcrumb-item">Acted as Reviewer</li>
+                        </ol>
+                    </nav>
                     <%@include file="/WebAppforRecruitment/Forms/ActedAsReviewer.jsp"%>
                 </div>
                 <!--------------ExpertInvited Lecture-------------->

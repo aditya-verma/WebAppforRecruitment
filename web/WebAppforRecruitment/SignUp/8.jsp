@@ -57,13 +57,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="From8">From</label>
-                    <input id="From8" type="text" class="form-control" name="From8" placeholder="DD-MM-YYYY" >
+                    <input id="From8" type="text" pattern="[0-9-]+" class="form-control" name="From8" placeholder="DD-MM-YYYY" >
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="To8">To</label>
-                    <input id="To8" type="text" class="form-control" name="To8" placeholder="DD-MM-YYYY" >
+                    <input id="To8" pattern="[0-9-]+" type="text" class="form-control" name="To8" placeholder="DD-MM-YYYY" >
                 </div>
             </div>
         </div>
@@ -117,10 +117,7 @@
     %><div class="text-center alert-danger">Record not Inserted</div><%
         }con.close();
         stmt.close();
-
     }
-
-
     catch(Exception e)
     {
     %><div class="alert-warning text-center"><% out.print(e);%></div> <%

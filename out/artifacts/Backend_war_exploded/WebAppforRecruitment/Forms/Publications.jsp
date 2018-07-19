@@ -64,10 +64,30 @@
             })
         });
     </script>
+    <script>
+        $(function() {
+            var activeBreadcrumb = $('.active-breadcrumb');
+
+            $('#mypubtabs').on('click', '.nav-link', function () {
+                var self = $(this);
+                activeBreadcrumb.attr('href', self.data('url'));
+                activeBreadcrumb.text(self.text());
+            });
+        });
+    </script>
+
+
 </head>
 <body>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../login/User Page.jsp">Update Information</a></li>
+        <li class="breadcrumb-item">Publications</li>
+        <li class="breadcrumb-item active-breadcrumb" aria-current="page">International Journal</li>
+    </ol>
+</nav>
 <nav>
-    <ul class="nav nav-tabs" style="padding-top: 1%" id="mypubtabs" role="tablist">
+    <ul class="nav nav-tabs"  style="padding-top: 1%" id="mypubtabs" role="tablist">
         <li><a class="nav-item nav-link active" id="nav-InternationalJournal-tab" data-toggle="tab" href="#nav-InternationalJournal" role="tab" aria-controls="nav-InternationalJournal" aria-selected="true">Internaltional Journal</a></li>
         <li><a class="nav-item nav-link" id="nav-NationalJournal-tab" data-toggle="tab" href="#nav-NationalJournal" role="tab" aria-controls="nav-NationalJournal" aria-selected="false">National Journal</a></li>
         <li><a class="nav-item nav-link" id="nav-InternationalConference-tab" data-toggle="tab" href="#nav-InternationalConference" role="tab" aria-controls="nav-InternationalConference" aria-selected="false">International Conference</a></li>
@@ -75,6 +95,7 @@
         <li><a class="nav-item nav-link" id="nav-BooksChapter-tab" data-toggle="tab" href="#nav-BooksChapter" role="tab" aria-controls="nav-BooksChapter" aria-selected="false">Books/Book Chapters</a></li>
     </ul>
 </nav>
+
 <div class="tab-content" id="nav-pubtabContent">
     <div class="tab-pane fade show active" id="nav-InternationalJournal" role="tabpanel" aria-labelledby="nav-InternationalJournal-tab">
         <%@include file="Publications/InternationalJournal.jsp"%>

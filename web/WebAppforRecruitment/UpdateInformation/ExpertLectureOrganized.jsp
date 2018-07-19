@@ -112,11 +112,17 @@
                 </div>
                 <!--------------Expert Lecture Organized-------------->
                 <div class="tab-pane fade show active" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
+                    <nav aria-label="breadcrumb" class="sticky-top">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../login/User Page.jsp">Update Information</a></li>
+                            <li class="breadcrumb-item">Expert Lecture Organised</li>
+                        </ol>
+                    </nav>
                     <%@include file="/WebAppforRecruitment/Forms/ExpertLectureOrganized.jsp"%>
                 </div>
                 <!--------------Consultancy Provided-------------->
                 <div class="tab-pane fade" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
-                    Consultancy Provided
+
                 </div>
             </div>
         </div>

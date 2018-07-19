@@ -20,9 +20,6 @@
     </style>
 </head>
 <body>
-
-
-
 <div class="container">
     <form id="Project_Investigated" action="" method="post" style="width: 100%;">
         <div class="row " >

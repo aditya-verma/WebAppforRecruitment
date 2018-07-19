@@ -62,10 +62,8 @@
                     present_emplyee_basic_pay = present_emp_res.getString(9);
                     present_emplyee_nature_of_work = present_emp_res.getString(10);
 
-
                 }
         %>
-
         <div class="row " style="margin-top: 5%">
             <div class="col-sm-12">
                 <div class="form-group">
@@ -92,13 +90,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text-capitalize" for="From8">From</label>
-                    <input id="From8" class="form-control" type="text" placeholder="From Date" name="i4" required value="<%out.println(present_emplyee_from);%>">
+                    <input id="From8" pattern="[0-9-]+" class="form-control" type="text" placeholder="From Date" name="i4" required value="<%out.println(present_emplyee_from);%>">
                 </div>
             </div>
             <div class="col-sm-6">
             <div class="form-group">
                 <label class="text-capitalize" for="To8">To</label>
-                <input id="To8" class="form-control" placeholder="From To" required type="text" name="i5" value="<%out.println(present_emplyee_to);%>">
+                <input id="To8" pattern="[0-9-]+" class="form-control" placeholder="From To" required type="text" name="i5" value="<%out.println(present_emplyee_to);%>">
             </div>
         </div>
         </div>
@@ -204,8 +202,6 @@
         present_emp_con.close();
         present_emp_st.close();
             }
-
-
     catch(Exception e)
     {
     %><div class="alert-warning text-center"><% out.print(e);%></div> <%

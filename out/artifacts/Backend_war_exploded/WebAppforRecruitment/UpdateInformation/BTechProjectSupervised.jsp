@@ -84,6 +84,12 @@
                 </div>
                 <!--------------Btech Project guided-------------->
                 <div class="tab-pane fade show active" id="list-BTechProjectGuided" role="tabpanel" aria-labelledby="list-BTechProjectGuided-list">
+                    <nav aria-label="breadcrumb" class="sticky-top">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../login/User Page.jsp">Update Information</a></li>
+                            <li class="breadcrumb-item">B.Tech Project Supervised</li>
+                        </ol>
+                    </nav>
                     <%@include file="/WebAppforRecruitment/Forms/BTechProjectSupervised.jsp"%>
                 </div>
                 <!--------------Acted As Reviewer-------------->

@@ -60,13 +60,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="From6">From</label>
-                    <input type="text" class="form-control" id="From6" name="i12" placeholder="DD-MM-YYYY" >
+                    <input type="text" pattern="[0-9-]+" class="form-control" id="From6" name="i12" placeholder="DD-MM-YYYY" >
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="text" for="To6">To</label>
-                    <input type="text" class="form-control" id="To6" name="i13" placeholder="DD-MM-YYYY" >
+                    <input type="text" pattern="[0-9-]+" class="form-control" id="To6" name="i13" placeholder="DD-MM-YYYY" >
                 </div>
             </div>
         </div>
@@ -79,8 +79,8 @@
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="text" for="Teaching_Experience_tenure">Tenure</label>
-                    <input id="Teaching_Experience_tenure" class="form-control" name="i16" placeholder="" >
+                    <label class="text" for="Teaching_Experience_tenure">Tenure(in months)</label>
+                    <input id="Teaching_Experience_tenure" type="number" value="0" class="form-control" name="i16" placeholder="" >
                 </div>
             </div>
         </div>
@@ -123,8 +123,6 @@
                 stmt.close();
 
         }
-
-
     catch(Exception e)
     {
     %><div class="alert-warning text-center"><% out.print(e);%></div> <%
