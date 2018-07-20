@@ -81,6 +81,7 @@
                         </ol>
                     </nav>
                     <%@include file="/WebAppforRecruitment/Forms/Patent.jsp"%>
+                    <button type="button" class="btn btn-outline-success" style="float: right" onclick="location.href = 'WebAppforRecruitment/UpdateInformation/PhDSupervision.jsp';" id="n">next</button>
                 </div>
                 <!--------------PhDSupervision-------------->
                 <div class="tab-pane fade" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">

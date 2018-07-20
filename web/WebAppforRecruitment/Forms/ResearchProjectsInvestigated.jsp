@@ -69,7 +69,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-group" >
-                    <input type="text" class="form-control" pattern="[0-9/-:]+" name="Project_Investigated_Amount" id="Project_Investigated_Amount"  placeholder="Enter Amount" required>
+                    <input type="text" class="form-control" pattern="[0-9/-:]+" name="Project_Investigated_Amount" id="Project_Investigated_Amount"  placeholder="Numeric Amount" required>
                 </div>
             </div>
         </div>
