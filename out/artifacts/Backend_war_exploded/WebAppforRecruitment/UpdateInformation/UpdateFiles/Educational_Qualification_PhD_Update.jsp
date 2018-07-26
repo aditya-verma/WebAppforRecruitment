@@ -40,7 +40,7 @@
 </head>
 <%
     String id=request.getParameter("id");
-    String title=request.getParameter("title");
+    String date=request.getParameter("date");
     Connection con=null;
     Statement st;
     ResultSet rs;
@@ -48,7 +48,7 @@
         Class.forName("com.mysql.jdbc.Driver");
         con = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12245685","sql12245685","fpStvI5rK8");
         st=con.createStatement();
-        String sql="select * from Educational_Qualification_PhD where Application_Number='"+id+"' and Title='"+title+"'";
+        String sql="select * from Educational_Qualification_PhD where ApplicationNumber='"+id+"' and Title='"+date+"'";
         rs=st.executeQuery(sql);
         rs.next();
 %>
@@ -86,12 +86,12 @@
         if(request.getParameter("b1")!=null)
         {
 
-            String status,title2,inst,date;
+            String status,title,inst,date2;
             status=(request.getParameter("Status"));
-            title2=request.getParameter("Title");
+            title=request.getParameter("Title");
             inst=(request.getParameter("Institute"));
-            date=request.getParameter("Date");
-            sql="update Educational_Qualification_PhD set Status='"+status+"', Title='"+title+"',Institute='"+inst+"', Date='"+date+"' where Application_Number='"+id+"' and Title='"+title+"'";
+            date2=request.getParameter("Date");
+            sql="update Educational_Qualification_PhD set Status='"+status+"', Title='"+title+"',Institute='"+inst+"', Date='"+date2+"' where ApplicationNumber='"+id+"' and Date='"+date+"'";
             int res=st.executeUpdate(sql);
             if(res!=0)
                 response.sendRedirect("../FinalCV.jsp");

@@ -92,6 +92,13 @@
                 </div>
                 <!--------------ExpertInvited Lecture-------------->
                 <div class="tab-pane fade show active" id="list-ExpertInvitedLecture" role="tabpanel" aria-labelledby="list-ExpertInvitedLecture-list">
+                    <nav aria-label="breadcrumb" class="sticky-top">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../login/User Page.jsp">User Page</a></li>
+                            <li class="breadcrumb-item">Update Information</li>
+                            <li class="breadcrumb-item">Invited Lectures Delivered</li>
+                        </ol>
+                    </nav>
                     <%@ include file="/WebAppforRecruitment/Forms/InvitedLecturesDelivered.jsp"%>
                 </div>
                 <!--------------Research Project Investigated-------------->

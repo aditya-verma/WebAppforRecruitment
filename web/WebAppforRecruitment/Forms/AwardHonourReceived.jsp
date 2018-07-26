@@ -30,7 +30,7 @@
 <body>
 
     <form id="Awards_Received" action="" method="post" style="width: 100%;">
-        <div class="row " style="margin-top: 5%">
+        <div class="row " >
             <div class="col-sm-4" style="text-align: left">
                 <div class="form-group" >
                     <label >Description</label>
@@ -50,7 +50,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="form-group" >
-                    <input type="text" class="form-control" name="i2" id="Awards_Received_Date"  placeholder="DD/MM/YYYY">
+                    <input type="text" pattern="[0-9-]+" class="form-control" name="i2" id="Awards_Received_Date"  placeholder="DD-MM-YYYY">
                 </div>
             </div>
         </div>

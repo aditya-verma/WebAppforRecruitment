@@ -1,6 +1,3 @@
-<%@ page import="java.util.Properties" %>
-<%@ page import="java.sql.*" %>
-<%@ page import="java.security.SecureRandom" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,20 +49,14 @@
             </a>
         </div>
         <div class="col">
+            <a href="SelectedApplicants.jsp">
             <div class="card p-2 mb-2" style="width: 15rem;">
                 <img class="card-img-top" src="../Images/SelectedApplicants.png" alt="Card image cap">
                 <div class="card-body text-center">
                     <p class="card-text">Qualified Applicants</p>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card p-2 m-2" style="width: 15rem;">
-                <img class="card-img-top" src="../Images/SearchApplicant.png" alt="Card image cap">
-                <div class="card-body text-center">
-                    <p class="card-text">Search Applicant</p>
-                </div>
-            </div>
+        </a>
         </div>
         <div class="col">
             <div class="card p-2 mb-2" style="width: 15rem;">
@@ -90,14 +81,6 @@
                 <img class="card-img-top" src="../Images/AddCreditCriteria.svg" alt="Card image cap">
                 <div class="card-body text-center">
                     <p class="card-text">Add/Edit Credit Criteria</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card p-2 mb-2" style="width: 15rem;">
-                <img class="card-img-top" src="../Images/SearchApplicant.png" alt="Card image cap">
-                <div class="card-body text-center">
-                    <p class="card-text">Search Applicant</p>
                 </div>
             </div>
         </div>

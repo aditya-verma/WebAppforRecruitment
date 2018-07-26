@@ -120,8 +120,8 @@
             </div>
         </div>
         </div>
-        <div class="col-md-7">
-            <div data-spy="scroll" data-target="#list-example" data-offset="0" style="position:relative;height: 25%;overflow-y: scroll">
+        <div class="col-md-7 ">
+            <div class="sticky-top" data-spy="scroll" data-target="#list-example" data-offset="0" >
                 <h4 id="list-item-1">Personal Information</h4>
                     <form action="#" style="width: 100%;">
                     <div class="row">
@@ -559,7 +559,7 @@
                 <h4 id="list-item-2">Educational Details(PhD)</h4>
                     <%
                             try{
-                                String sql="select * from Educational_Qualification_PhD where Application_Number='"+session.getAttribute("ApplicationNumber")+"'";
+                                String sql="select * from Educational_Qualification_PhD where ApplicationNumber='"+session.getAttribute("ApplicationNumber")+"'";
                                 rs=st.executeQuery(sql);
                         %>
                     <form class="table-responsive" id="Educational_Details(PhD)" action="" method="post">
@@ -581,8 +581,8 @@
                                         <td><%=rs.getString(3)%></td>
                                         <td><%=rs.getString(4)%></td>
                                         <td><%=rs.getString(5)%></td>
-                                        <td><a href="UpdateFiles/Educational_Qualification_PhD_Update.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-edit"></i></a></td>
-                                        <td><a href="DeleteFiles/Educational_Qualification_PhD_Delete.jsp?id=2018PF000003&title=<%=rs.getString(3)%>"><i class="fa fa-trash-alt"></i></a></td>
+                                        <td><a href="UpdateFiles/Educational_Qualification_PhD_Update.jsp?id=2018PF000003&date=<%=rs.getString(5)%>"><i class="fa fa-edit"></i></a></td>
+                                        <td><a href="DeleteFiles/Educational_Qualification_PhD_Delete.jsp?id=2018PF000003&date=<%=rs.getString(5)%>"><i class="fa fa-trash-alt"></i></a></td>
                                     </tr>
                                     <%}%>
                                 </tbody>

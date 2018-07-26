@@ -73,7 +73,15 @@
                 </div>
                 <!--------------Patent-------------->
                 <div class="tab-pane fade show active" id="list-Patent" role="tabpanel" aria-labelledby="list-Patent-list">
+                    <nav aria-label="breadcrumb" class="sticky-top">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../login/User Page.jsp">User Page</a></li>
+                            <li class="breadcrumb-item">Update Information</li>
+                            <li class="breadcrumb-item">Patent</li>
+                        </ol>
+                    </nav>
                     <%@include file="/WebAppforRecruitment/Forms/Patent.jsp"%>
+                    <button type="button" class="btn btn-outline-success" style="float: right" >next</button>
                 </div>
                 <!--------------PhDSupervision-------------->
                 <div class="tab-pane fade" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">

@@ -77,6 +77,13 @@
                 </div>
                 <!--------------PhDSupervision-------------->
                 <div class="tab-pane fade show active" id="list-PhDSupervision" role="tabpanel" aria-labelledby="list-PhDSupervision-list">
+                    <nav aria-label="breadcrumb" class="sticky-top">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../login/User Page.jsp">User Page</a></li>
+                            <li class="breadcrumb-item">Update Information</li>
+                            <li class="breadcrumb-item">PhD Supervision</li>
+                        </ol>
+                    </nav>
                     <%@include file="/WebAppforRecruitment/Forms/PhDSupervision.jsp"%>
                 </div>
                 <!--------------PGSupervision-------------->

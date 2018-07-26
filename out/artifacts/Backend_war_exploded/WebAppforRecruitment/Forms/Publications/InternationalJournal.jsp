@@ -12,13 +12,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="../css/datepicker.css" rel="stylesheet">
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#InternationalJournal-Month" ).datepicker({
+                format: "mm-yyyy",
+                viewMode: "months",
+                minViewMode: "months",
+                pickerPosition: "bottom-left"});
+        });
+    </script>
+
 </head>
+
 <body>
 <div class="container mt-2">
-    <form id="InternationalJournal">
+    <form id="InternationalJournal" method="post" action="">
         <div class="form-group text-uppercase">
             <label for="InternationalJournal-Author">Author(s)</label>
-            <input class="form-control" name="InternationalJournal-Author" id="InternationalJournal-Author" required>
+            <input class="form-control" name="InternationalJournal-Author" id="InternationalJournal-Author" required placeholder="Separate authors using ';' only">
         </div>
         <div class="form-group text-uppercase">
             <label for="InternationalJournal-PaperTitle">Paper Title</label>
@@ -45,8 +58,8 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group text-uppercase">
-                    <label for="InternationalJournal-Month/Year">Month/Year</label>
-                    <input class="form-control" name="InternationalJournal-Month/Year" id="InternationalJournal-Month/Year" placeholder="MM/YYYY" required>
+                    <label for="InternationalJournal-Month">Month/Year</label>
+                    <input class="form-control" pattern="[0-9-]+" name="InternationalJournal-Month" id="InternationalJournal-Month" placeholder="MM-YYYY" required>
                 </div>
             </div>
         </div>
@@ -87,10 +100,10 @@
             </div>
         </div>
         <div class="form-group text-uppercase">
-            <label for="InternationalJournal-Co-AuthorFromDept">Wheather Co-authors are faculty from same Department</label>
+            <label for="InternationalJournal-Co-AuthorFromDept">Whether Co-authors are from same Department</label>
             <div class="row" id="InternationalJournal-Co-AuthorFromDept">
                 <div class="col">
-                    <input name id="InternationalJournal-Co-AuthorFromDept_yes" name="InternationalJournal-Co-AuthorFromDept" value="Yes" type="radio">
+                    <input id="InternationalJournal-Co-AuthorFromDept_yes" name="InternationalJournal-Co-AuthorFromDept" value="Yes" type="radio">
                     <label for="InternationalJournal-Co-AuthorFromDept_yes" class="mr-3">Yes</label>
                     <input id="InternationalJournal-Co-AuthorFromDept_no" name="InternationalJournal-Co-AuthorFromDept" value="No" type="radio">
                     <label for="InternationalJournal-Co-AuthorFromDept_no">No</label>
@@ -109,7 +122,7 @@
                 String IntJVolume =request.getParameter("InternationalJournal-Volume");
                 String IntJIssue=request.getParameter("InternationalJournal-Issue");
                 String IntJPages=request.getParameter("InternationalJournal-Pages");
-                String IntJMonthYear=request.getParameter("InternationalJournal-Month/Year");
+                String IntJMonthYear=request.getParameter("InternationalJournal-Month");
                 String IntJPublisher=request.getParameter("InternationalJournal-Publisher");
                 String IntJImpactFactor=request.getParameter("InternationalJournal-ImpactFactor");
                 String IntJSCI=request.getParameter("InternationalJournal-SCI");

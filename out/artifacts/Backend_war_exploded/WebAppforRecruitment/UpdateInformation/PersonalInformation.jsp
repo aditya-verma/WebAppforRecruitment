@@ -52,8 +52,8 @@
 
 <div class="container align-middle align-content-center align-items-center">
     <div class="row">
-        <div class="col-sm-4">
-            <div class="list-group" id="list-tab" role="tablist">
+        <div class="col-sm-4 ">
+            <div class="list-group sticky-top" style="padding-top: 3%" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active" id="list-PersonalInfo-list" href="PersonalInformation.jsp" role="tab" >Personal Information</a>
                 <a class="list-group-item list-group-item-action " id="list-Publication-list" href="Publications.jsp" role="tab" >Publications</a>
                 <a class="list-group-item list-group-item-action " id="list-Patent-list" href="Patent.jsp" role="tab" >Patent</a>
@@ -118,11 +118,9 @@
                 </div>
                 <!--------------Expert Lecture Organized-------------->
                 <div class="tab-pane fade" id="list-ExpertLectureOrganized" role="tabpanel" aria-labelledby="list-ExpertLectureOrganized-list">
-                    Expert Lecture Organized
                 </div>
                 <!--------------Consultancy Provided-------------->
                 <div class="tab-pane fade" id="list-ConsultancyProvided" role="tabpanel" aria-labelledby="list-ConsultancyProvided-list">
-                    Consultancy Provided
                 </div>
             </div>
         </div>
