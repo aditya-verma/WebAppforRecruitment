@@ -52,14 +52,26 @@
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <style>
-        @page  {
-            size: A4;
-        }
-        h3{
-            page-break-after: avoid;
-        }
-        table{
-            page-break-inside: avoid;
+        @media print {
+            body{
+                float: none;
+            }
+            @page  {
+                size: A4;
+            }
+            h3{
+                page-break-after: avoid;
+            }
+            table {
+                page-break-inside: avoid;
+            }
+            .table-bordered th,
+            .table-bordered td {
+                border: 1px solid #000 !important;
+                padding: 0.5rem;
+                margin: 5%;
+                border-collapse: collapse;
+            }
         }
     </style>
 </head>
@@ -584,7 +596,7 @@
         catch (Exception e){out.print(e);}
     %>
     <hr>
-    <div class="container"style="height:fit-content; ">
+    <div class="container"style="height:100% ">
         <iframe src="https://docs.google.com/document/d/e/2PACX-1vRh0HxXwR713emwqjGvuurb8_kDSPXstOWiQsEvhjauJp_G85-Htdc7QsEKFUQ5QmZwxmsh6n4RNyIH/pub?embedded=true" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:500px;width:100%;border:none;overflow:hidden;"></iframe>
     </div>
 </body>
