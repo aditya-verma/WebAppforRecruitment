@@ -89,7 +89,6 @@
             </div>
             <div class="col-sm-8">
                 <button class="btn btn-lg btn-primary m-1" id="add" value="Insert" type="submit" name="b1">ADD</button>
-                <button class="btn btn-lg btn-success m-1" id="submit" value="Insert" type="submit" name="b2">Continue</button>
             </div>
            </div>
             <%
@@ -122,7 +121,6 @@
         }
     }
 %>
-
     </form>
 </div>
 </body>
