@@ -26,10 +26,10 @@
     <form id="Patent">
         <fieldset class="form-group">
             <div class="row">
-                <label class="col-form-label col-sm-2 pt-0">Type</label>
+                <legend class="col-form-label col-sm-2 pt-0">Type</legend>
                 <div class="col-sm-10">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Patent_Applied_Option" value="Applied" checked>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Patent_Applied_Option" value="Applied">
                         <label class="form-check-label" for="Patent_Applied_Option">
                             Applied
                         </label>
@@ -46,34 +46,34 @@
         <div class="form-group row">
             <label for="Patent_Date" class="col-md-2">Date</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control col-md-10" pattern="[0-9-]+" id="Patent_Date" placeholder="DD-MM-YYYY" name="Date" required>
+                <input type="text" class="form-control pattern="[0-9-]+" col-md-10" id="Patent_Date" placeholder="DD-MM-YYYY" name="Date">
             </div>
         </div>
         <div class="form-group row">
             <label for="Patent_Number" class="col-md-2">Number</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control  col-md-10" pattern="[0-9.:/-]+" id="Patent_Number" placeholder="" name="Number" required>
+                <input type="text" class="form-control  col-md-10" id="Patent_Number" placeholder="" name="Number">
             </div>
         </div>
         <div class="form-group row">
             <label for="Patent_Type" class="col-md-2">Type</label>
             <div class="col-sm-10">
-                <input class="form-control  col-md-10" id="Patent_Type" placeholder="" name="Type" required>
+                <input class="form-control  col-md-10" id="Patent_Type" placeholder="" name="Type">
             </div>
         </div>
         <div class="form-group row">
             <label for="Patent_Description" class="col-md-2">Description</label>
             <div class="col-sm-10">
-               <textarea class="form-control" id="Patent_Description" placeholder="Write description here. " name="Description" required></textarea>
+               <textarea class="form-control" id="Patent_Description" placeholder="Write description here. " name="Description"></textarea>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-2" style="display:flex;margin: auto;">
-                <button class="btn btn-lg btn-primary btn-block m-1" id="Patent_b1" value="Insert" type="submit" name="Patent_b1" >Submit</button>
+                <button class="btn btn-lg btn-primary btn-block m-1" id="next" value="Insert" type="submit" name="b1" >Submit</button>
             </div>
         </div>
         <%
-            if(request.getParameter("Patent_b1")!=null)
+            if(request.getParameter("b1")!=null)
             {
                 Connection con=null;
                 Statement st;

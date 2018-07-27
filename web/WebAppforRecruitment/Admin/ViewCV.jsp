@@ -52,26 +52,14 @@
     <script src="../jquery/popper.js/1.14.3/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <style>
-        @media print {
-            body{
-                float: none;
-            }
-            @page  {
-                size: A4;
-            }
-            h3{
-                page-break-after: avoid;
-            }
-            table {
-                page-break-inside: avoid;
-            }
-            .table-bordered th,
-            .table-bordered td {
-                border: 1px solid #000 !important;
-                padding: 0.5rem;
-                margin: 5%;
-                border-collapse: collapse;
-            }
+        @page  {
+            size: A4;
+        }
+        h3{
+            page-break-after: avoid;
+        }
+        table{
+            page-break-inside: avoid;
         }
     </style>
 </head>

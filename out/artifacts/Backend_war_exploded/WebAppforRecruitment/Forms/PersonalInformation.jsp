@@ -28,144 +28,108 @@
             $('#next1').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-EducationalInformationPhd"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Educational InformationPhd');
             })
         });
         $(function() {
             $('#next2').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-EducationalInformation"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Educational Information');
             })
         });
         $(function() {
             $('#next3').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-OtherAcademicQualication"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Other Academic Information');
             })
         });
         $(function() {
             $('#next4').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-PresentEmployer"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Present Employer');
             })
         });
         $(function() {
             $('#next5').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-TeachingExperience"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Teaching Experience');
             })
         });
         $(function() {
             $('#next6').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-ResearchExperience"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Research Experience');
             })
         });
         $(function() {
             $('#next7').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-IndustrialExperience"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Industrial Experience');
             })
         });
         $(function() {
             $('#next8').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-References"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('References');
             })
         });
         $(function() {
             $('#next9').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-AnyOtherInfo"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('AnyOtherInfo');
             })
         });
         $(function() {
             $('#back2').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-PersonalInformation"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Personal Information');
             })
         });
         $(function() {
             $('#back3').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-EducationalInformationPhd"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Educational Information Phd');
             })
         });
         $(function() {
             $('#back4').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-EducationalInformation"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Educational Information');
             })
         });
         $(function() {
             $('#back5').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-OtherAcademicQualication"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Other Academic Information');
             })
         });
         $(function() {
             $('#back6').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-PresentEmployer"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Present Employer');
             })
         });
         $(function() {
             $('#back7').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-TeachingExperience"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Teaching Experience');
             })
         });
         $(function() {
             $('#back8').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-ResearchExperience"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Research Experience');
             })
         });
         $(function() {
             $('#back9').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-IndustrialExperience"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('Industrial Experience');
             })
         });
         $(function() {
             $('#back10').click(function(e){
                 e.preventDefault();
                 $('#mytabs a[href="#nav-References"]').tab('show');
-                var activeBreadcrumb = $('.active-breadcrumb');
-                activeBreadcrumb.text('References');
             })
         });
     </script>

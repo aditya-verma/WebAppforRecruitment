@@ -33,33 +33,33 @@
         <div class="form-group row">
             <label for="PhD_Supervision_Name" class="col-md-4">Name</label>
             <div class="col-md-8">
-                <input type="text" class="form-control" id="PhD_Supervision_Name" placeholder="Enter Name" name="Name" required>
+                <input type="text" class="form-control" id="PhD_Supervision_Name" placeholder="Enter Name" name="Name">
             </div>
         </div>
         <div class="form-group row">
             <label for="PhD_Supervision_RNumber" class="col-md-4">Registration Number</label>
             <div class="col-md-8">
-                <input type="text" id="PhD_Supervision_RNumber" class="form-control" placeholder="Enter Registration Number of student" name="Registration_Number" required>
+                <input type="text" id="PhD_Supervision_RNumber" class="form-control" placeholder="Enter Registration Number of student" name="Registration_Number">
             </div>
         </div>
         <div class="form-group row">
             <label for="PhD_Supervision_Title" class="col-md-4">Title of Thesis</label>
             <div class="col-md-8">
-                <input type="text" class="form-control" id="PhD_Supervision_Title" placeholder="Enter Title of Thesis" name="Title" required>
+                <input type="text" class="form-control" id="PhD_Supervision_Title" placeholder="Enter Title of Thesis" name="Title">
             </div>
         </div>
         <div class="form-group row">
             <label for="PhD_Supervision_Oral" class="col-md-4">Oral-Viva Date</label>
             <div class="col-md-8">
-                <input type="text" class="form-control" pattern="[0-9-]+" id="PhD_Supervision_Oral" placeholder="DD-MM-YYYY" name="Date" required>
+                <input type="text" class="form-control" pattern="[0-9-]+" id="PhD_Supervision_Oral" placeholder="DD-MM-YYYY" name="Date">
             </div>
         </div>
         <fieldset class="form-group">
             <div class="row">
-                <label class="col-form-label col-sm-4 pt-0">Whether there are Co-Supervisors</label>
+                <legend class="col-form-label col-sm-4 pt-0">Whether there are Co-Supervisors</legend>
                 <div class="col-sm-8">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="PhD_Supervision_Yes" value="Yes" checked>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="PhD_Supervision_Yes" value="Yes">
                         <label class="form-check-label" for="PhD_Supervision_Yes">
                             Yes
                         </label>
@@ -78,11 +78,11 @@
 
             </div>
             <div class="col-md-8">
-                <button class="btn btn-lg btn-primary m-1" id="PhD_Supervisionnext" value="Insert" type="submit" name="PhD_Supervision_b1">Submit</button>
+                <button class="btn btn-lg btn-primary m-1" id="next" value="Insert" type="submit" name="b1">Submit</button>
             </div>
         </div>
         <%
-            if(request.getParameter("PhD_Supervision_b1")!=null)
+            if(request.getParameter("b1")!=null)
             {
                 Connection con=null;
                 Statement st;
